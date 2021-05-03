@@ -1,8 +1,9 @@
 import argparse
-from flask import Flask,request, render_template
+from flask import Flask,request,render_template,redirect
 import commands
 import sqlite3
 import datetime
+import os
 
 app =Flask(__name__)
 parser = argparse.ArgumentParser(description='db')
@@ -10,9 +11,14 @@ parser.add_argument('--port', dest='port',default=1234,type=int,help='www port''
 parser.add_argument('--db_file', dest='db_file', default="db_file.db", help='dbfile')
 parser.add_argument('--db_table_devices', dest='db_table_devices',default="db_table",help='db_table')
 parser.add_argument('--db_element_devices', dest='db_element_devices',default="id,Chip,Vendor,Part_number,Note,Interface,Type,Ranks,RCD_Vendor,Capacity,speed,Count,Stock,Fail,Owner,Remark,Share",help='dbname')
+parser.add_argument('--db_table_request', dest='db_table_request',default="db_table_request",help='db_table_request')
+parser.add_argument('--db_element_request', dest='db_element_request',default="id,device_id,email,Part_number,number,note,info,client_info,time",help='db_element_request')
 
 
 args = parser.parse_args()
+
+def id_by_time():
+    return str(datetime.datetime.today().strftime('%y%m%d%H%M%S%f'))
 
 def now():
     return str(datetime.datetime.today().strftime('%y%m%d_%H%M%S'))
@@ -26,11 +32,63 @@ def exec_cmd(e,retry = 3):
             return re
     return -1,"exec_cmd %s retry" %(e,retry)
 
+def db_request():
+    return [args.db_file,args.db_table_request,args.db_element_request]
+
 def db_devices():
     return [args.db_file,args.db_table_devices,args.db_element_devices]
 
 def db_element(db):
     return db[2].split(",")
+
+#def send_email_th(to,subject,body,attachment_location):
+#    bg = Thread(target = send_email, args = (to,ascii(subject),ascii(body),attachment_location))
+#    bg.do_run = True
+#    bg.start()
+
+def email_type(type, db, device, attachment_location):
+    email = device[get_db_index("email", db)]
+    part_number = device[get_db_index("Part_number", db)]
+    number = device[get_db_index("number", db)]
+    id = device[get_db_index("id", db)]
+
+    email_list = args.email_list + "," + email
+    email_list_all = ""
+    for e in email_list.split(","):
+        if e == "":
+            continue
+        if e.find("@") == -1:
+            e = e + "@amperecomputing.com"
+        email_list_all = email_list_all + e + ","
+    email_list_all = email_list_all[0:len(email_list_all) - 1]
+    if type == "REQUEST":
+        html_link = "/page_request_submit/" + str(id)
+    if type == "APPROVED":
+        html_link = "/page_shared_submit/" + str(id)
+    if type == "RETURN":
+        html_link = "/page_history_submit/" + str(id)
+    if type == "DENIED":
+        html_link = "/page_denied_submit/" + str(id)
+
+    title = "Request device %s x %s  by %s" % (number, part_number, email)
+    body = "Hi %s!\n" % (email.split("@")[0])
+    body = "%sYour device <strong>%s %s</strong>!\n" % (body, href(part_number, html_link), type)
+    body = "%s SUBMIT_ID:   %s \n" % (body, device[get_db_index("id", db)])
+    body = "%s ID:          %s \n" % (body, device[get_db_index("device_id", db)])
+    body = "%s EMAIL:       %s \n" % (body, email_list_all)
+    body = "%s PART:        <b>%s</b> \n" % (body, part_number)
+    body = "%s NUMBER:      <b>%s</b> \n" % (body, device[get_db_index("number", db)])
+    body = "%s NOTE:        <b>%s</b> \n" % (body, device[get_db_index("note", db)])
+    body = "%s INFO:        %s \n" % (body, device[get_db_index("info", db)])
+    body = "%s CLIENT_INFO: %s \n" % (body, device[get_db_index("client_info", db)])
+    body = "%s TIME:        %s \n" % (body, device[get_db_index("time", db)])
+
+    # body = "%s <img src='http://%s:%s/static/qr/%s.png'> \n" %(body,args.web_ip,str(args.port),part_number)
+    body = body.replace("\n", "<br>\n")
+    #send_email_th(email_list_all, title, body, attachment_location)
+
+def email_request(db,device,attachment_location):
+    email_type("REQUEST",db,device,attachment_location)
 
 def open_file(filename):
     try:
@@ -54,6 +112,17 @@ def backup_db(db_file,dir="backup/"):
 
 def db_unpark(db):
     return db[0],db[1],db[2]
+
+def save_file_upload(id,request,type):
+    file_upload =""
+    f = request.files['file']
+    f_pwd = ""
+    if f:
+        filename, file_extension = os.path.splitext(f.filename)
+        file_upload = id + "_"+ type  + file_extension
+        f_pwd =  args.upload_dir +"/" + file_upload
+        f.save(os.path.join(args.upload_dir, file_upload))
+    return f_pwd
 
 def sql_db(db,value=None,id=None,get_max_id=None,rm_by_id=False):
     db_file, db_table,db_element = db_unpark(db)
@@ -162,6 +231,27 @@ def get_devices_main(db,id=None,filter=""):
             devices.append(value)
     return devices
 
+def devices_filter(devices,filter=""):
+    devices_filter = []
+    for e in devices:
+        msg = ""
+        for ee in e:
+            msg = "%s%s" %(msg,ee)
+        append = True
+        for f in filter.split(",s"):
+            if msg.find(f) == -1:
+                append = False
+        if append:
+            devices_filter.append(e)
+    return devices_filter
+
+def get_devices(db,id,filter=""):
+    devices = sql_db(db,id=id)
+    if filter == "" or id != None:
+        return devices
+    else
+        return devices_filter(devices,filter)
+
 @app.route("/", methods=['POST', 'GET'])
 def hello():
     global args
@@ -170,9 +260,76 @@ def hello():
         if e == "filter" and request.form[e] !="":
             filter = request.form[e]
 
+    #print ("request.form=",request.form[e])
     msg="Welcome %s to home filter = %s admin=%s" %(request.remote_addr,filter,is_admin(request.remote_addr))
     devices=get_devices_main(db_devices(),filter=filter)
     return render_template('home.html',devices=devices,msg=msg,filter=filter)
+
+@app.route("/share/<path:id>", methods=['POST', 'GET'])
+def share(id):
+    msg="Welcome to share = %s" %(id)
+    device=get_devices_main(db_devices(),id=int(id))
+    if device == None:
+        return render_template('error.html',msg="INVALID ID")
+    element = "Index,Count,Stock,Fail,Share,Part_number,Info".split(",")
+    return render_template('share.html',msg=msg,len=len(device),device=device,element=element)
+
+
+@app.route("/request_submit/<path:id>", methods=['POST', 'GET'])
+def request_submit(id):
+    msg = "Welcome to request_submit id = %s" % (id)
+    submit_id = id_by_time()
+    print "submit_id = ",submit_id
+    email = request.form["email"]
+    print "email = ",email
+    number = request.form["number"]
+    print "number = ",number
+    note = request.form["note"]
+    print "note =",note
+    if note != "":
+        note = "REQUEST %s: %s x%s" % (now(), note, number)
+    f_pwd = save_file_upload(submit_id, request, "request")
+
+    device = get_devices_main(db_devices(), id=int(id))
+    if device == None:
+        return render_template('error.html', msg="INVALID ID")
+
+    if email == "" or number == "" or (number.isnumeric() == False) or note == "":
+        msg = msg + " Error miss info <br> email='%s' number='%s' note='%s'" % (email, number, note)
+        element = "Index,Count,Stock,Fail,Share,Part_number,Info".split(",")
+        return render_template('share.html', msg=msg, len=len(device), device=device, element=element)
+    part_number = device[5]
+    info = device[6]
+    client_info = request.remote_addr
+    time = now()
+    value = [submit_id, id, email, part_number, number, note, info, client_info, time]
+    sql_db(db_request(), value=value)
+    #email_request(db_request(), value, f_pwd)
+
+    return redirect("/submit_info/%s" % (id))
+
+@app.route("/submit_info/<path:id>", methods=['POST', 'GET'])
+def submit_info(id):
+    #db_file,db_table,db_element = get_devices_db()
+    device=get_devices_main(db_devices(),id=int(id))
+    if device == None:
+        return render_template('error.html',msg="INVALID ID")
+    part_number = device[5]
+    msg = "Your device %s it requested . Please check email !!!" %(part_number)
+    element = "Index,Count,Stock,Fail,Share,Part_number,Info".split(",")
+    return render_template('submit_info.html',msg=msg,len=len(device),device=device,element=element)
+
+@app.route("/page_request", methods=['POST', 'GET'])
+def page_request():
+    msg = "page_request device"
+    filter = ""
+    for e in request.form:
+        if e == "filter" and request.form[e] !="":
+            filter = request.form[e]
+    devices = get_devices(db_request(),id=None,filter=filter)
+    action = "/page_request"
+    return render_template('devices_page.html',devices=devices,msg=msg,action=action,filter=filter)
+
 
 if __name__=="__main__":
     import logging
