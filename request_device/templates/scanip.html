@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}{{action}}{% endblock %}
+{% block body %}
+
+ <div class="container">
+ <form action="/scanip"  method="post"  enctype="multipart/form-data">
+  <div class="w3">
+	<div class="w3-indigo"><label class="w3-indigo">Scan IP</label></div>
+	<textarea  id='scanip' name="scanip"  rows='1' style='width:100%' ></textarea>
+  </div>
+  <input type="submit" value="Scan" class= "w3-button w3-xlarge w3-green"></input>
+ </form>
+</div>
+	
+	
+<div class="w3-container w3-row-padding w3-row w3-light-blue">
+	{% for e in dirs %}
+		<div class="w3-row w3-light-blue w3-col m6">
+			<a href="/logs/scanip/{{e}}">{{e}}</a>
+		</div>
+	{% endfor %}
+</div>
+{% endblock %}

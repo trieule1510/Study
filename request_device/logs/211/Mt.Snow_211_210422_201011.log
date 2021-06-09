@@ -1,0 +1,16 @@
+<div class='w3-container '><p>./linux_test.py --test_case test_delivery --loop 10 --start_test 1 --time 1800 --linux_script ./test_delivery.sh --sensor_bg 1 --sol_atf 0 --sol_s0cli 0 --sol_s1cli 0 --bmcip 10.38.172.46 --board Mt.Snow --test_cfg test_delivery_01.cfg --wait 0 --sys_log logs/211/Mt.Snow_211_210422_201011.log --test_cfg test_delivery_01.cfg --nv_scan SI_SOC_VMARGIN[0.-38.37],SI_DDR_VMARGIN[0.-60.60]  </p></div>
+
+
+
+
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostuser amcclab --bmcip 10.38.172.46 --board Mt.Jade --debug 0 --hostpass amcc1234
+CHASSIS POWER OFF[210422_201011]
+search_board_type Mt.Jade
+ERROR:exec_cmd ipmitool -H 10.38.172.46 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  chassis power off retry 3
+exec_cmd ./xconsole.py --cmd off --hostuser amcclab --bmcip 10.38.172.46 --board Mt.Jade --debug 0 --hostpass amcc1234
+CHASSIS POWER OFF[210422_201012]
+search_board_type Mt.Jade
+ERROR:exec_cmd ipmitool -H 10.38.172.46 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  chassis power off retry 3
+retry 2
+__ERROR__: exec_cmd ./xconsole.py --cmd off --hostuser amcclab --bmcip 10.38.172.46 --board Mt.Jade --debug 0 --hostpass amcc1234

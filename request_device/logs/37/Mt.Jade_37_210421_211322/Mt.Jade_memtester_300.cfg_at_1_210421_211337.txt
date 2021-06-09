@@ -1,0 +1,368 @@
+search_board_type Mt.Jade
+ipmitool -H 10.38.172.51 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  sol deactivate instance=2
+Setting large buffer to 32767
+ipmitool -H 10.38.172.51 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  sol activate=usesolkeepalive instance=2
+logs/37/Mt.Jade_37_210421_211322/Mt.Jade_memtester_300.cfg_at_1_210421_211337s0cli.log
+
+
+SMpro Rom Firmware v1.0 - build 20190626
+search_board_type Mt.Jade
+ipmitool -H 10.38.172.51 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  sol deactivate instance=4
+Setting large buffer to 32767
+ipmitool -H 10.38.172.51 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  sol activate=usesolkeepalive instance=4
+logs/37/Mt.Jade_37_210421_211322/Mt.Jade_memtester_300.cfg_at_1_210421_211337s1cli.log
+
+
+Pub key verify fail: 84:0xF1000009
+
+Calculated pub key hash: 85: len: 32
+D5C2B1C0485574B1077A8389A6A6B98E
+97691612D8A7C36935C17A16392AFF71
+
+
+Actual pub key hash: 86: len: 32
+A454B70A9F78317DAC0C7BA3CA51FD57
+DBEA5EA33C5B2FA47CB8B6A65D32209D
+
+
+CommonCertVerify fail: 265:0xF1000006
+
+CommonCertVerify fail: 340:0xF1000006
+CM:fuselock: 00000001 tmmdbglockr: 00000001
+tmmnsdbgcsr: 00000000 tmmsdbgcsr: 00000000
+Ignoring error code: 0000040A
+
+SMpro Runtime Firmware v1.4 - build 20210326
+Failsafe: 0
+Load PMpro
+
+Pub key verify fail: 84:0xF1000009
+
+Calculated pub key hash: 85: len: 32
+D5C2B1C0485574B1077A8389A6A6B98E
+97691612D8A7C36935C17A16392AFF71
+
+
+Actual pub key hash: 86: len: 32
+A454B70A9F78317DAC0C7BA3CA51FD57
+DBEA5EA33C5B2FA47CB8B6A65D32209D
+
+
+CommonCertVerify fail: 267:0xF1000006
+
+CommonCertVerify fail: 345:0xF1000006
+ERR: Authenticate PMpro
+Board: config 0
+Available CPM: 0x000000FFFFFFFFFF
+Release S1
+
+SMpro Rom Firmware v1.0 - build 20190626
+
+Pub key verify fail: 84:0xF1000009
+
+Calculated pub key hash: 85: len: 32
+D5C2B1C0485574B1077A8389A6A6B98E
+97691612D8A7C36935C17A16392AFF71
+
+
+Actual pub key hash: 86: len: 32
+A454B70A9F78317DAC0C7BA3CA51FD57
+DBEA5EA33C5B2FA47CB8B6A65D32209D
+
+
+CommonCertVerify fail: 265:0xF1000006
+
+CommonCertVerify fail: 340:0xF1000006
+CM:fuselock: 00000001 tmmdbglockr: 00000001
+tmmnsdbgcsr: 00000000 tmmsdbgcsr: 00000000
+Ignoring error code: 0000040A
+
+SMpro Runtime Firmware v1.4 - build 20210326
+Load PMpro
+S1: Ready
+
+Pub key verify fail: 84:0xF1000009
+
+Calculated pub key hash: 85: len: 32
+D5C2B1C0485574B1077A8389A6A6B98E
+97691612D8A7C36935C17A16392AFF71
+
+
+Actual pub key hash: 86: len: 32
+A454B70A9F78317DAC0C7BA3CA51FD57
+DBEA5EA33C5B2FA47CB8B6A65D32209D
+
+
+CommonCertVerify fail: 267:0xF1000006
+
+CommonCertVerify fail: 345:0xF1000006
+ERR: Authenticate PMpro
+S1: Sync
+Master: Ready
+Boot PMpro
+Board: config 0
+Load BL1
+Available CPM: 0x000000FFFFFFFFFF
+ERR: Auth BL1 image 0xFFFFF8EE
+S1: Sync
+ERR: BL1 load/auth
+Boot PMpro
+Probe I2C10 DIMM0
+Probe I2C10 DIMM0
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM1
+Probe I2C10 DIMM1
+Probe I2C10 DIMM2
+I2C10: Clear bus
+Probe I2C10 DIMM3
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM2
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM3
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM4
+Probe I2C10 DIMM4
+I2C10: Clear bus
+Probe I2C10 DIMM5
+I2C10: Clear bus
+Probe I2C10 DIMM6
+I2C10: Clear bus
+Probe I2C10 DIMM7
+I2C10: Clear bus
+Probe I2C10 DIMM5
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM6
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM7
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C2 DIMM0
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM1
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM2
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM3
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM4
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM5
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM6
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM7
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+DDR: Unsupported MCU mask 0x00000000
+DDR: Operational     DIMM: 0x00000000
+DDR: Failure         DIMM: 0x00000000
+DDR: Non-Operational DIMM: 0x00000000
+Probe I2C2 DIMM0
+Probe I2C2 DIMM1
+Probe I2C2 DIMM2
+Probe I2C2 DIMM3
+Probe I2C2 DIMM4
+Probe I2C2 DIMM5
+Probe I2C2 DIMM6
+Probe I2C2 DIMM7
+DDR: Operational     DIMM: 0x00000003
+DDR: Failure         DIMM: 0x00000000
+DDR: Non-Operational DIMM: 0x00000000
+128KB OCM protection active
+PCP initialized
+128KB OCM protection active
+PCP initialized
+vTPM: SCP Measurement Completes.
+SMpro ready
+S1-cli>vTPM: SCP Measurement Completes.
+SMpro ready
+S0-cli> 
+PMpro output start
+PMpro Runtime Firmware v1.4 - build 20210326
+2P mode: 0x00000002
+2P Cfg: 0xFFFFFF01
+2PLINK1 (RC/EP): 0x00000010/0x00000000 0x00000004/0x00000000
+2PLINK0 (RC/EP): 0x00000010/0x00000000 0x00000004/0x00000000
+2PLINK0 (RC/EP): 0x00000010/0x00000000 0x00000004/0x00000000
+2PLINK0: EP: Link Up
+2PLINK1 (RC/EP): 0x00000010/0x00000000 0x00000004/0x00000000
+2PLINK1: EP: Link Up
+PMpro output complete
+
+S1-cli> 
+PMpro output start
+PMpro Runtime Firmware v1.4 - build 20210326
+2P mode: 0x00000002
+2P Cfg: 0xFFFFFF01
+2PLINK0 (RC/EP): 0x00000010/0x00000010 0x00000004/0x00000004
+2PLINK1 (RC/EP): 0x00000010/0x00000010 0x00000004/0x00000004
+2PLINK0 (RC/EP): 0x00000010/0x00000010 0x00000004/0x00000004
+2PLINK0: Link Up
+2PLINK1 (RC/EP): 0x00000010/0x00000010 0x00000004/0x00000004
+2PLINK1: Link Up
+PMpro output complete
+
+S0-cli> 
+help
+Unknown command - 
+help
+S1-cli> 
+help
+Unknown command - 
+help
+S0-cli> 
+
+
+Unknown command - 
+
+
+S1-cli> mdw -l 0x50002d14
+0x80150302
+S1-cli> 
+
+
+Unknown command - 
+
+
+S1-cli> mdw -l 0x50002d18
+0x033800BC
+S1-cli> 
+ 
+
+
+Unknown command - 
+
+
+S0-cli> mdw -l 0x50002d14
+0x8005050A
+S0-cli> 
+
+
+Unknown command - 
+
+
+S0-cli> mdw -l 0x50002d18
+0x033800BC
+S0-cli> 
+search_board_type Mt.Jade
+ipmitool -H 10.38.172.51 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  sol deactivate instance=1
+Setting large buffer to 32767
+ipmitool -H 10.38.172.51 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  sol activate=usesolkeepalive instance=1
+logs/37/Mt.Jade_37_210421_211322/Mt.Jade_memtester_300.cfg_at_1_210421_211337uefi.log
+
+NOTICE:  DRAM FW version 210212
+CP: 0ff00900
+MEMC param:
+  mcu_enable_mask = 00000001 [default: 000000ff]
+  bg_scrub = 00015180 [default: 000005a0]
+DRAM populated DIMMs:
+  SK0 MC0 S0: RDIMM[2c:80] 16GB 2666 ECC 2R x8 RCD[b3:04] 18ASF2G72PDZ-2G6E1  
+  SK0 MC0 S1: RDIMM[2c:80] 16GB 2666 ECC 2R x8 RCD[b3:04] 18ASF2G72PDZ-2G6E1  
+CP: 3ff00100
+CP: 3ff00200
+CP: 00f01902
+CP: 0ff00a00
+CP: 0ff00b01
+CP: 00f01901
+CP: 00f01904
+CP: 00f02901
+CP: 00f01905
+CP: 00f02902
+CP: 00f02903
+CP: 00f02904
+CP: 00f01907
+CP: 00f01906
+CP: 00f01908
+CP: 00f01909
+CP: 0ff00b02
+CP: 0ff00c00
+CP: 3ff00300
+CP: 00001a02
+CP: 00001a03
+CP: 00001a04
+CP: 00101a02
+CP: 00101a03
+CP: 00101a04
+CP: 00201a02
+CP: 00201a03
+CP: 00201a04
+CP: 00301a02
+CP: 00301a03
+CP: 00301a04
+CP: 00001a05
+CP: 00101a05
+CP: 00201a05
+CP: 00301a05
+CP: 00f01a07
+CP: 00001a09
+CP: 00101a09
+CP: 00201a09
+CP: 00301a09
+CP: 00001a0a
+CP: 00201a0a
+CP: 00001a0b
+CP: 00001a0c
+CP: 00001a0c
+CP: 00101a0b
+CP: 00101a0c
+CP: 00101a0c
+CP: 00201a0b
+CP: 00201a0c
+CP: 00201a0c
+CP: 00301a0b
+CP: 00301a0c
+CP: 00301a0c
+CP: 3ff00400
+CP: 0ff01000
+CP: 0ff01101
+DRAM ECC Initialization: [3] [ =>                   ]DRAM ECC Initialization: [6] [ ==>                  ]DRAM ECC Initialization: [9] [ ==>                  ]DRAM ECC Initialization: [12] [ ===>                 ]DRAM ECC Initialization: [15] [ ====>                ]DRAM ECC Initialization: [18] [ ====>                ]DRAM ECC Initialization: [21] [ =====>               ]DRAM ECC Initialization: [25] [ ======>              ]DRAM ECC Initialization: [28] [ ======>              ]DRAM ECC Initialization: [31] [ =======>             ]DRAM ECC Initialization: [34] [ =======>             ]DRAM ECC Initialization: [37] [ ========>            ]DRAM ECC Initialization: [40] [ =========>           ]DRAM ECC Initialization: [43] [ =========>           ]DRAM ECC Initialization: [46] [ ==========>          ]DRAM ECC Initialization: [50] [ ===========>         ]DRAM ECC Initialization: [53] [ ===========>         ]DRAM ECC Initialization: [56] [ ============>        ]DRAM ECC Initialization: [59] [ ============>        ]DRAM ECC Initialization: [62] [ =============>       ]DRAM ECC Initialization: [65] [ ==============>      ]DRAM ECC Initialization: [68] [ ==============>      ]DRAM ECC Initialization: [71] [ ===============>     ]DRAM ECC Initialization: [75] [ ================>    ]DRAM ECC Initialization: [78] [ ================>    ]DRAM ECC Initialization: [81] [ =================>   ]DRAM ECC Initialization: [84] [ =================>   ]DRAM ECC Initialization: [87] [ ==================>  ]DRAM ECC Initialization: [90] [ ===================> ]DRAM ECC Initialization: [93] [ ===================> ]DRAM ECC Initialization: [96] [ ==================== ]DRAM ECC Initialization: [100] [ ==================== ]
+CP: 0ff01200
+CP: 3ff00800
+DRAM memory regions:
+  Node[0] Region[0]: 0x000080000000 - 0x0000bfffffff 
+  Node[0] Region[1]: 0x080000000000 - 0x08007fffffff 
+  Node[0] Region[2]: 0x0800c0000000 - 0x0807ffffffff 
+DRAM: 32GB DDR4 2666 SECDED ECC
+Checkpoint

@@ -1,0 +1,71 @@
+search_board_type Mt.Snow_137
+./sshpass -p Ampere@4655 ssh -o StrictHostKeyChecking=no -t amplab@10.38.167.2 'ipmitool -H 10.38.167.37 -U admin -P password -I lanplus -z 0x7fff  fru print'
+Setting large buffer to 32767
+FRU Device Description : Builtin FRU Device (ID 0)
+ Chassis Type          : Rack Mount Chassis
+ Chassis Part Number   : K612020263
+ Chassis Serial        : 00013
+ Board Mfg Date        : Fri Jan  7 00:00:00 2000
+ Board Mfg             : GIGABYTE
+ Board Product         : MP32-AR0-00
+ Board Serial          : 00020
+ Board Part Number     : 1/C/S20125
+ Board Extra           : NULL
+ Product Manufacturer  : GIGABYTE
+ Product Name          : R272-P30-00
+ Product Part Number   : 000000000001
+ Product Version       : 0100
+ Product Serial        : 01234567890123456789AB
+ Product Asset Tag     : 01234567890123456789AB
+
+FRU Device Description : FRU01 (ID 1)
+ Chassis Type          : Rack Mount Chassis
+ Chassis Part Number   : 01234567
+ Chassis Serial        : 01234567890123456789AB
+ Board Mfg Date        : Sat Jan  1 00:00:00 2000
+ Board Mfg             : NULL
+ Board Product         : MP32-AR0-00
+ Board Serial          : 01234567890123456789AB
+ Board Part Number     : 01234567
+ Board Extra           : NULL
+ Product Manufacturer  : NULL
+ Product Name          : R272-P30-00
+ Product Part Number   : 000000000001
+ Product Version       : 0100
+ Product Serial        : 01234567890123456789AB
+ Product Asset Tag     : 01234567890123456789AB
+
+Connection to 10.38.167.2 closed.
+./sshpass -p Ampere@4655 ssh -o StrictHostKeyChecking=no -t amplab@10.38.167.2 'ipmitool -H 10.38.167.37 -U admin -P password -I lanplus -z 0x7fff  mc info'
+Setting large buffer to 32767
+Device ID                 : 32
+Device Revision           : 1
+Firmware Revision         : 12.50
+IPMI Version              : 2.0
+Manufacturer ID           : 15370
+Manufacturer Name         : Unknown (0x3C0A)
+Product ID                : 530 (0x0212)
+Product Name              : Unknown (0x212)
+Device Available          : yes
+Provides Device SDRs      : yes
+Additional Device Support :
+    Sensor Device
+    SDR Repository Device
+    SEL Device
+    FRU Inventory Device
+    IPMB Event Receiver
+    IPMB Event Generator
+    Chassis Device
+Aux Firmware Rev Info     : 
+    0x0c
+    0x00
+    0x00
+    0x00
+Connection to 10.38.167.2 closed.
+./sshpass -p superuser ssh -o StrictHostKeyChecking=no -t sysadmin@10.38.167.37 'ifconfig|grep HWaddr'
+Warning: Permanently added '10.38.167.37' (RSA) to the list of known hosts.
+bond0     Link encap:Ethernet  HWaddr B4:2E:99:3B:72:92  
+eth0      Link encap:Ethernet  HWaddr B4:2E:99:3B:72:92  
+eth1      Link encap:Ethernet  HWaddr B4:2E:99:3B:72:92  
+usb0      Link encap:Ethernet  HWaddr FA:91:78:11:1E:48  
+Connection to 10.38.167.37 closed.

@@ -1,0 +1,9 @@
+./xconsole.py --cmd off --bmcip 10.38.172.46 --debug 0 --board_type Mt.Snow
+./xconsole.py --bmcip 10.38.172.46 --set_nvparm [SI_SOC_VMARGIN:1130504:0x0] --debug 0 --board_type Mt.Snow
+./xconsole.py --cmd on --bmcip 10.38.172.46 --debug 0 --board_type Mt.Snow
+./xconsole.py --cmd off --bmcip 10.38.172.46 --debug 0 --board_type Mt.Snow
+./xconsole.py --bmcip 10.38.172.46 --set_nvparm [SI_SOC_VMARGIN:1130504:0xFFFFFFDA] --debug 0 --board_type Mt.Snow
+./xconsole.py --cmd on --bmcip 10.38.172.46 --debug 0 --board_type Mt.Snow
+./xconsole.py --cmd off --bmcip 10.38.172.46 --debug 0 --board_type Mt.Snow
+./xconsole.py --bmcip 10.38.172.46 --set_nvparm [SI_SOC_VMARGIN:1130504:0x25] --debug 0 --board_type Mt.Snow
+./xconsole.py --cmd on --bmcip 10.38.172.46 --debug 0 --board_type Mt.Snow

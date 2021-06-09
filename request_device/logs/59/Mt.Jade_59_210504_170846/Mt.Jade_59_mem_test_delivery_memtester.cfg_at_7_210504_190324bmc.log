@@ -1,0 +1,101 @@
+[3079 : 3079 INFO]INFO: Received Signal 10 from IPMI Stack 
+
+[3079 : 3079 INFO]STOP mirroring/logging...
+
+[789 : 884 INFO]BOOTFW VERSION: 1.05.20210426
+
+[333115.670000] I2C0: Resetting the controller
+Init telemetry success
+Init telemetry success
+Starting to Read Current PostCode buffer...
+No Post Codes ...
+Stopping Bootlogo Daemon.
+Bootlogo: Switch to VGA
+[333157.460000] UsbConfigureHS(): USB Device 0 is running in High Speed
+[333157.460000] UsbConfigureHS(): USB Device 1 is running in High Speed
+[333157.460000] UsbConfigureHS(): USB Device 2 is running in High Speed
+[333157.460000] UsbConfigureLS(): USB Device 3 is running in Low Speed
+[333157.570000] HUB port 0 reset
+[333157.570000] UsbConfigureHS(): USB Device 0 is running in High Speed
+[333157.640000] HUB port 1 reset
+[333157.640000] UsbConfigureHS(): USB Device 1 is running in High Speed
+[333157.710000] HUB port 2 reset
+[333157.710000] UsbConfigureHS(): USB Device 2 is running in High Speed
+[333157.780000] HUB port 3 reset
+[333157.780000] UsbConfigureLS(): USB Device 3 is running in Low Speed
+[333160.520000] **************REMOTE_NDIS_RESET_MSG ???**************
+[333160.530000] **************REMOTE_NDIS_HALT_MSG ???**************
+[333160.550000] **************REMOTE_NDIS_HALT_MSG ???**************
+[333160.580000] **************REMOTE_NDIS_RESET_MSG ???**************
+[333160.590000] **************REMOTE_NDIS_HALT_MSG ???**************
+[333168.740000] UsbWriteDataNonBlock():Previous Write Pending for Dev 2 Ep 3
+[333168.740000] UsbWriteDataNonBlock():TxData=0x0 DataLen=0x15b DataPos=0x15b Zero=1 Ready=0
+[333168.840000] UsbWriteDataNonBlock():Previous Write Pending for Dev 2 Ep 3
+[333168.840000] UsbWriteDataNonBlock():TxData=0x0 DataLen=0x15b DataPos=0x15b Zero=1 Ready=0
+[333168.940000] UsbWriteDataNonBlock():Previous Write Pending for Dev 2 Ep 3
+[333168.940000] UsbWriteDataNonBlock():TxData=0x0 DataLen=0x164 DataPos=0x164 Zero=1 Ready=0
+[333169.040000] UsbWriteDataNonBlock():Previous Write Pending for Dev 2 Ep 3
+[333169.040000] UsbWriteDataNonBlock():TxData=0x0 DataLen=0x164 DataPos=0x164 Zero=1 Ready=0
+[333169.140000] UsbWriteDataNonBlock():Previous Write Pending for Dev 2 Ep 3
+[333169.140000] UsbWriteDataNonBlock():TxData=0x0 DataLen=0x18d DataPos=0x18d Zero=1 Ready=0
+[789 : 872 CRITICAL][nwcfg.c:6359]No data while scanning /proc/net/arp 
+
+[789 : 872 CRITICAL][nwcfg.c:6391]No default entry in gateway info.
+
+[333176.160000]  [KERNCRITICAL] [/home/buildsw/gitlab-runner/builds/LAF7NV5m/0/AmpereComputing/firmware/scripts/amp-build-scripts/amp-ami-bmc/workspace/Build/.build/eth-6.9.0.0.0-src/data/ether.c:382]EthNetTxHandler() : no packets
+[333197.070000] **************REMOTE_NDIS_HALT_MSG ???**************
+[333214.060000] UsbConfigureHS(): USB Device 0 is running in High Speed
+[333214.060000] UsbConfigureHS(): USB Device 1 is running in High Speed
+[333214.060000] UsbConfigureHS(): USB Device 2 is running in High Speed
+[333214.060000] UsbConfigureLS(): USB Device 3 is running in Low Speed
+[333214.370000] HUB port 0 reset
+[333214.370000] UsbConfigureHS(): USB Device 0 is running in High Speed
+[333214.500000] HUB port 0 reset
+[333214.500000] UsbConfigureHS(): USB Device 0 is running in High Speed
+[333214.700000] HUB port 1 reset
+[333214.700000] UsbConfigureHS(): USB Device 1 is running in High Speed
+[333214.840000] HUB port 1 reset
+[333214.840000] UsbConfigureHS(): USB Device 1 is running in High Speed
+[333215.050000] HUB port 2 reset
+[333215.050000] UsbConfigureHS(): USB Device 2 is running in High Speed
+[333215.170000] HUB port 2 reset
+[333215.170000] UsbConfigureHS(): USB Device 2 is running in High Speed
+[333215.360000] HUB port 3 reset
+[333215.360000] UsbConfigureLS(): USB Device 3 is running in Low Speed
+[333215.480000] HUB port 3 reset
+[333215.480000] UsbConfigureLS(): USB Device 3 is running in Low Speed
+[333222.230000] ProcessStandardRequest(): WARNING : Unsupported Request. EP Stalled
+[333222.230000] ProcessStandardRequest(): WARNING : bmRequestType: 0x1 bmRequest: 0xb
+file has vanished: "/conf/resolv.confEoVrVl"
+rsync warning: some files vanished before they could be transferred (code 24) at main.c(1183) [sender=3.1.1]
+Couldn't watch /conf/: No such file or directory
+file has vanished: "/conf/resolv.confPD24LQ"
+rsync warning: some files vanished before they could be transferred (code 24) at main.c(1183) [sender=3.1.1]
+cat: read error: Invalid argument
+IFACEname : eth0
+IFACEname : eth1
+Delete the /conf/upnp/desc.tmpl for upnp restart
+Restarting Bootlogo DaemonPDK LPC Reset is invoked
+.
+Framebuffer information: 800x600 (32)bpp, 8388608
+Bootlogo: Show BMC IP Addr 10.38.175.43
+[334208.250000] Configuring the Host SPI Clock to HCLK/16 
+[334208.310000] Creating 1 MTD partitions on "MX25L25635F":
+[334208.310000] 0x000000000000-0x000002000000 : "Host SPI Flash"
+[334208.340000] Configuring the Host SPI Clock to HCLK/16 
+[334209.660000] Configuring the Host SPI Clock to HCLK/16 
+[334209.730000] Creating 1 MTD partitions on "MX25L25635F":
+[334209.740000] 0x000000000000-0x000002000000 : "Host SPI Flash"
+[334209.820000] Configuring the Host SPI Clock to HCLK/16 
+[789 : 889 INFO]Signal Sent Successfully to UART Logging application
+
+[3079 : 3079 INFO]INFO: Received Signal 14 from IPMI Stack 
+
+[3079 : 3079 INFO]START mirroring/logging...
+
+[3079 : 3079 INFO]INFO: Setting the Attributes for the UART...
+
+[3079 : 19148 INFO]Recv Thread: Starting the thread to mirror data from /dev/ttyS3 to /dev/ttyS3
+
+[3079 : 19147 INFO]Send Thread: Starting the thread to mirror data from /dev/ttyS3 to /dev/ttyS3
+

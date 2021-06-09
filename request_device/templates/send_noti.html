@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}{{action}}{% endblock %}
+{% block body %}
+ <div class="container w3-row">
+
+  <form class="w3-container w3-card-4" action="/send_noti_action/{{device[0]}}" method="post" enctype="multipart/form-data">
+  	<div class="w3-indigo"><label class="w3-indigo">To</label></div>
+  	<input class="w3-col m12 w3-input" type="text"  name="email" value="{{device[2]}}"/>
+  	<div class="w3-indigo"><label class="w3-indigo">Text</label></div>
+  	<textarea  id='email_body' name="email_body"  rows='10' style='width:100%' >
+Hey {{device[2]}}!
+	NOTIFICATIONS : Device {{device[3]}} x {{device[4]}} borrow in {{device[1]}} days
+	Request ID    : {{device[0]}}
+Thanks You !	
+  	</textarea>
+	<input type="submit" value="Send" class= "w3-button w3-xlarge w3-green"></input>
+  </form>
+  
+  {% for e in device %}
+	<label class="w3-text-blue" style="white-space: pre-line" >{{e | safe }}<br></label>
+  {% endfor %}
+</div>
+
+{% endblock %}

@@ -1,0 +1,187 @@
+<!DOCTYPE html><html lang='en'><head><title>Mt.Jade_37</title><link rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css'><script src='https://cdn.jsdelivr.net/npm/chart.js@2.8.0'></script><style>.eye_main {width:100%;}.eye_element {width:25%;}.eye_table {width:80%;}.eye_fail {background-color: Purple;}.eye_fail_mask {background-color: DarkRed;}.eye_pass {background-color: YellowGreen;}.eye_pass_mask {background-color: ForestGreen;}.eye_title {background-color: whilte;}.eye_hw {background-color: aqua;}.eye_point{width:auto;}.overflowTest {padding: 15px;width: auto;height: 600px;overflow: scroll;border: 1px solid #ccc;}</style></head><body><h1 align='center'><img src='data:image/png;base64,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' scale='0'></h1><p align='center'><font size='7' color='blue'><span>Mt.Jade_37</span></font></p>
+
+
+<div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CLI ARGV</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >./linux_test.py --start_test 1 --linux_script echo --time 10 --sendfile static/test_script/test_delivery.sh,static/test_script/memtester.elf,static/test_script/stressapptest.elf --hostip 10.38.172.2 --hostuser root --hostpass root --bmcip 10.38.172.51 --board_type Mt.Jade --board Mt.Jade_37 --test_cfg send_file_uart.cfg --wait 0 --sys_log logs/37/Mt.Jade_37_210425_095711.log --test_cfg send_file_uart.cfg   </a></div></div>
+
+
+
+
+
+
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostuser root --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+exec_cmd ./xconsole.py --cmd sel_list --hostuser root --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+./xconsole.py --tty 2 --log logs/37/Mt.Jade_37_210425_095711/Mt.Jade_37_send_file_uart.cfg_at_1_210425_095711s0cli.log --hostuser root --note s0cli --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+./xconsole.py --tty 4 --log logs/37/Mt.Jade_37_210425_095711/Mt.Jade_37_send_file_uart.cfg_at_1_210425_095711s1cli.log --hostuser root --note s1cli --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+./xconsole.py --tty 3 --log logs/37/Mt.Jade_37_210425_095711/Mt.Jade_37_send_file_uart.cfg_at_1_210425_095711atf.log --hostuser root --note atf --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+./xconsole.py --tty 1 --log logs/37/Mt.Jade_37_210425_095711/Mt.Jade_37_send_file_uart.cfg_at_1_210425_095711uefi.log --hostuser root --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 1</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/37/Mt.Jade_37_210425_095711/Mt.Jade_37_send_file_uart.cfg_at_1_210425_095711.txt'>210425_095711</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostuser root --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+|_send mdw -l 0x50002d14
+|_send mdw -l 0x50002d14
+|_send mdw -l 0x50002d18
+|_send mdw -l 0x50002d18
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >210212_32GB_2666_SECDED_ECC_1P_2DPC_2_2xDIMM_16GB_18ASF2G72PDZ-2G6E1</a></div></div></div>
+|_send root
+|_send root
+|_send alias rc='echo -n _rc_$?_ex;echo -n it_'
+|_send cd /var/tmp;rc
+|_send dhclient -v;rc
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210425_100036
+cksum 963489143
+|_send cksum test_delivery.sh;rc
+cksum diff 963489143 [root@localhost tmp]# 
+[root@localhost tmp]# cksum test_delivery.sh;rc
+4294967295 0 test_delivery.sh
+_rc_0
+|_send wget http://10.38.19.97/:2021//static/test_script/test_delivery.sh -O test_delivery.sh && chmod 777 test_delivery.sh;rc
+[root@localhost tmp]# 
+[root@localhost tmp]# wget http://10.38.19.97/:2021//static/test_script/test_del ivery.sh -O test_delivery.sh && chmod 777 test_delivery.sh;rc
+--2021-04-24 22:43:48--  http://10.38.19.97/:2021//static/test_script/test_delivery.sh
+Connecting to 10.38.19.97:80... failed: Network is unreachable.
+_rc_4
+send_file_b64 test_delivery.sh ... 210425_100044
+|_send rm -rf f64;rc
+|_send echo 'QlpoOTFBWSZTWevvBd8ACSl/hNAwAIB9/////6feiv////4AAgAIYAj/ePevWYjvXa2dra1QAAAB'>>f64;rc
+|_send echo 'ro0GQiZFT9NKbJkegiep5NJg0GhGRoyM00DU9R6Q0wlTEp4IU8FI9NRtQxA9EDQ2oaMgAyDQMIIm'>>f64;rc
+|_send echo 'EalN6p7VPUNqMjIZAADEDQMjJhNGJiAJNRSEJ+oQNNGRo0AABoBoAaZAA0A4aGTTQ0yNDTIyDIyN'>>f64;rc
+|_send echo 'DIDE0ZNAGTIxDCRIJojIAJkyAk9U9TTT1NMT0agHqaA9T1AA0/Z9328PfJARQSRgh9t5Lt7iqqqB'>>f64;rc
+|_send echo 'RhCQSgSWMAGJGIsRiJEYojBFGBFdRqIqgqwMBoggwYIIIrFYAymllLUqIiiu9PpoanEvO0sr66/t'>>f64;rc
+|_send echo 'uO9lFSwLymcr4YFdbtCoIiwMo4w3peAUjl0gSIHsdfRrGgVdbEeeAznvYuyRg8Q8F08dEL95aTRF'>>f64;rc
+|_send echo 'kkmWCLd08LcKKyfF4GxpzepYC+BxArzmlMc1wI6fSSRzSU05BBB5r+mZnhetEzU1YNpvBzoDMDli'>>f64;rc
+|_send echo 'Jo3nm68f6OcZnBMyguREAJgCNMgIzLO+mBJABIs8i67ab7ZHAmsjxy+2oNFENEsQplVVtztncyq5'>>f64;rc
+|_send echo '8iOVhmqav2ClV1tyoF+SMP3l2oOLYX259dqhNP3DRnJhZRm5JPMtOJER+bpaj0ECZRSDq8GSUShg'>>f64;rc
+|_send echo 'xFszNLva9xthKRoWgsLblwdNwQq5Bds9U+9WjIow64pvaBXnrIJ30ASCPG4LcBxpBBrChMR+VZXO'>>f64;rc
+|_send echo 'WiA2dtfQCNqmuW2lWiFQLIwcdXZCn5xDY5Q+rCoTPTv2agdvvHNREeoxuqVXy3GcYzMSJhb0eYZp'>>f64;rc
+|_send echo 'KZKRlAnOOzO3uq/Vps4GFttL0LSrVRvoBOyeVCBSyzS51RUcpgdUv7BTXq1hNRU6i98EN+xccFIm'>>f64;rc
+|_send echo '2i5XtDSYlH2GxNTShFYymEPHwnWXtq/7JheaAbnUyQsFGQpUIJSup9FRZDqmKrQ2Am0xhcR65zJt'>>f64;rc
+|_send echo 'TgzuZ1BkYdd4OnCoYSe6As1Lil2IjTsgGRLSlSxOWI1EI35m91+5PCeEL2H22YmKlfBAKgZSEeY0'>>f64;rc
+|_send echo 'JMaIBhXCD3nw+A3hehimGi7Knsv67/U+w/F387fHaVa6i3RML7kEgRQWLA2FEkgUfvDtoyIjjT3U'>>f64;rc
+|_send echo '/cm0CLBQEVDHoLow6ZdZtU2Mfjlo0bkY5ks9WfXJtEJpD2TMr7nYJqxQnJUJk+s9Uh7a3ZfReWvF'>>f64;rc
+|_send echo 'svFrw3VthmRW+Uqz1Qj4lLYPh29YDTsC6DaFPUCo6Ts1VwkNmuYzuym2rVxlPbkTkQICCYVVW59T'>>f64;rc
+|_send echo 'WxjrwSfgLnp+5Us3zfNqa+AZ0+Abkm4+ZmkrhP6VHMfgPHym6XBdQGLy43B5QsVELD4BpDQUpsuC'>>f64;rc
+|_send echo 'NTSJjF1Pa4S7Oz6uZA4lIkNxRQ0ymrssbu7G0pqqFgUMk2CbJ/ISJoXjA2oE0VQeQw/kgkrhtKth'>>f64;rc
+|_send echo 'Qqr91EK1RB2nhq3rc+JuScVhU4CDtD2PR0GIRyPhzyMg79MwwuyF7yApxQcLFZbkOm9XzN4rxSVc'>>f64;rc
+|_send echo '4fHkcnBmfYLxjtYvI8hHMNAOFwQ5s1d5+iLgLp8Veq7yOM+YETxY+K9dGTnQYQ0BD7gkQj99bO7d'>>f64;rc
+|_send echo 'bf9m45scZFNkRIgdZShi5Cy0vabALzURnKGMggNBscNRBmuQpqfqI1BXIu39yhn+oCJbeJFVLaqm'>>f64;rc
+|_send echo '0OpFVYuIKkS5fGs8M0RGYeE2QWXpQpNsggiqAwQsweOkWgfexF5mrmtKQgx08lh9phgMWhfWMDVE'>>f64;rc
+|_send echo 'AMYvNI42JJZyuUCg5jFcMa1mKkgLV0nyGlHPTuqDsj8TEkTGkTSttQYGmCRMVVIp2vwZuO0L77EH'>>f64;rc
+|_send echo 'JkhxKThSe3T5Ykd6DWyfBUQGJMWzJBqSer47JeZ4Xxz7qG/hSVJry1mOggIgZCQa3OXiZ0vTebb7'>>f64;rc
+|_send echo 'I5GvxN98kj1skggiAQ9s5Iz6AG85JdTl2m4hos2zedC9G4PADJArlzfhI0b/DsIRXHklEQK5B5yG'>>f64;rc
+|_send echo 'Tmm02JtHXp3VSoGWj7k2g5bjtAOQd9vvWCZciprn7JF/hPZC8t+tSFmfF3wipZrj6Fg28AGxMghG'>>f64;rc
+|_send echo 'zpMuFt4vIwS2RyqQMDNZrMNyVobfUWwwKd4bEtTRcXoGe5RA/WwtQXqaXiQLCYoFfIFk0ibVTTUc'>>f64;rc
+|_send echo 'MNME5w6IzIkQrUf0lYE0rhl2ZAzDVNGH2MLbD3UxL1iXIckQgJvTw8c1EGsPEEbz1MH/lbzihV0d'>>f64;rc
+|_send echo '6SXhMFoBqgqQjp7rIqFgxzppk86eMX9PDgvmZNEjgKw1hBAQs8HBwocElADGhXi6MWqyuops7acw'>>f64;rc
+|_send echo '7VBzcqI8gyFiaykZMbGNbG3BEIxAcyGHkGraIPlAxsD+XU3qGLMkHtz6UZQKDQjEwNBW3lII7/U2'>>f64;rc
+|_send echo 'VJBUw4PiJm2iL95DTn1uj24SDoKxRqepogPR/JJjGIgg3WyL1nq0kZ0JpCzX23wL58yqgezZQXSi'>>f64;rc
+|_send echo 'RS1lEQRJJy7kdu3O9GrTEQiac6V416042mEOW1GMsLXZrURg1PAKtzCRijBGBnwEDHSqcm7lhlmh'>>f64;rc
+|_send echo 'UeCPZnmebAxMlCDvZegN178DccJk1KIIRkDtVAG/8D8DWQIpOFnwfEiWixIQHpZCaWBUzJde5t2a'>>f64;rc
+|_send echo 'HblFHSiI3G7EDpgWOgV7BpBMCouhLsQxF/M8icppM7vAXeK9MsjSZVqiZaKArvmojM16ZHX5yJZc'>>f64;rc
+|_send echo 'zQUNiZx1DHii8SrsZejVfgAWS8Jy4BBjCFExQ87n1wHV9Ere9m7hhrZLzLhKHLXzS5UrWBg24L4J'>>f64;rc
+|_send echo 'a3Dc5UlOcc1ESghRFOMLO59ZVnoxHjIvvjNEOxbBjbO9IP/i7kinChIdfeC74A=='>>f64;rc
+|_send cat f64 | base64 -di | tar xvfj -;rc
+send_file_b64 test_delivery.sh ... 210425_100402
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210425_100402
+cksum 718862820
+|_send cksum memtester.elf;rc
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210425_100403
+cksum 3518503503
+|_send cksum stressapptest.elf;rc
+cksum diff 3518503503 [root@localhost tmp]# 
+[root@localhost tmp]# cksum stressapptest.elf;rc
+4294967295 0 stressapptest.elf
+_rc_0
+|_send wget http://10.38.19.97/:2021//static/test_script/stressapptest.elf -O stressapptest.elf && chmod 777 stressapptest.elf;rc
+[root@localhost tmp]# 
+[root@localhost tmp]# wget http://10.38.19.97/:2021//static/test_script/stressappptest.elf -O stressapptest.elf && chmod 777 stressapptest.elf;rc
+--2021-04-24 22:47:16--  http://10.38.19.97/:2021//static/test_script/stressapptest.elf
+Connecting to 10.38.19.97:80... failed: Network is unreachable.
+_rc_4
+send_file_b64 stressapptest.elf ... 210425_100412
+|_send rm -rf f64;rc
+|_send echo 'QlpoOTFBWSZTWXiysu4BnVx/////////////////////////////////////////////4iXfNt4A'>>f64;rc
+|_send echo 'HpVAJ7tWADTx4AcfKj0+72XeHDveyM8AANAd8deY57fS7fRfeO+8Afd9x6ABXOL22Ws25N7G2eB7'>>f64;rc
+|_send echo 'D4B57HQ3XfX089t867fR7jw0VZp3rp8fIe+08AD4G+O9nkpiYTr0HGWXdx2gAb3vdD1jBtDF7qB0'>>f64;rc
+|_send echo '71Zuw3SC51QADbGg229UPeru+8DfAAfa+ymV59A3wYCFAYwC17u7Rzo0KfVAKDds+9xHPr4muCge'>>f64;rc
+|_send echo '2Nm2LZB4N9c7Y7697kYAE88seY+jn1hTpV9souT61K58zmjoKDmJ7wqMXm2PvZ77ne9wBzVlvt9e'>>f64;rc
+|_send echo '8OADvAVQXsDdhpR06VWbpeV8x4u+9zX3vdugM+29gPbDvs++z2ecHVDpru4cNJB6OqA9D0HyvMvT'>>f64;rc
+|_send echo 'L2euQfO5wRX1fe3Hw+PTr6KNsZ1uFkUyZ3btvJwD4NgIwoAbJXoGhvuejxZecWMF9nc+feHvOtmq'>>f64;rc
+|_send echo 'C4LM7OI95y9u8a8Hu3svHA5sAHNmop1wXHj13vOr3XB0q6dwX2dV3dvePvYXra33dvh3NujWdwAP'>>f64;rc
+|_send echo 'oHuXn3DmO93W497yL3jLtgDIADp3jwbPudclV3173oyNA0Nb2d1hb3l3noDeMOgnsPCgHyjNPT57'>>f64;rc
+|_send echo 'z3t5e3vLp5cDSze33H3VFb3sD6daF33emeve13m3ZK47NR9dys2PdPdz3nHrWVjvXuHB0JApvbt1'>>f64;rc
+|_send echo '7nvB24vaG728u9zncOme7nerhyOl5broeS8wqgJBQB6AFAUM9gDa9Oxvr594fezJXfe56hEjrp9f'>>f64;rc
+|_send echo 'W+NCe8+8727jvM91T7nve7ul3dPKDt7wndubH0PEN73APURb3jPF7XmBx6++53nfc61602O7Teyv'>>f64;rc
+|_send echo 'IuIAHr4F6AAAd75SPXeGBvZ6yJvdN832HYtSDgB7feVO49zexdK6vMPRd8X22htoh9a+J9V0z3vb'>>f64;rc
+|_send echo 'zzYdVRyt7sKWn11Xz74ABz6fdbrKps7hnz7b7O7OVM77udnq3PbXefSKtmvPQDjXVGV69Oo89sh9'>>f64;rc
+|_send echo 'fL4np93r7313ve9KfRvLkh2TWOfNe9xl5ahnvd5pKiyM9GnxjdtIpR7vj3x9Y0KW+6vHeA3p7sO+'>>f64;rc
+|_send echo 'bq7d2vV3Q6CvQAe7e+2q488W6VOzxPvO7Q+qShPXF8beB0bnyKe2RAEL6D3t4VXY0LH18PeIhVAA'>>f64;rc
+|_send echo 'V9e7AGHXvfc9fMdpgJBy1U2aKbYVShA5l2dxzU497PdH03dzrnjnZvd6yg5iUPB6AZKKF72aPXY+'>>f64;rc
+|_send echo 'Z97LsceFjNed697uzIVG9XvXY7r7dVyPrfe67ayJNQHcsAB4CCc7j0ANAGgAAAB6UDoe8lnu5IpL'>>f64;rc
+|_send echo 'z7Y5kbN9qt3vim++0Xzpyz3gL7757zkFAAq3w9NsregdXOE0fd7vvuTm7jp0TNrdd2zbWuhQNDp1'>>f64;rc
+|_send echo 'LrvY3DF7nk+9bq0fd10bPc177Olu5ybLMoAt93333XKa+r2ezGpJr2972nAHoAAHdm63tjlUFi5v'>>f64;rc
+|_send echo 'eHuPe5x3dx0lCarSqoYUqlIhJSWbcwCtb298m80jVPO+vd1A3ve89eR7x716Znr3vHrPWnp7tp6c'>>f64;rc
+|_send echo '7yIAAAAAAAAAAAAGN2Vkqj66A+h721PnpoPeAAAAFufb5FAAA6+957q6hVRA7e9YA9BTrDWFegGg'>>f64;rc
+|_send echo 'SREqHr2L3AAABBsPsGppBAAQAAAAAAAAAAI00xMmRoyGhhAAAAAAAAAAAAACZNMJgATCaYmgAABA'>>f64;rc
+|_send echo '1NBAAE0AAJpoAAAEwgAAAE00YTTRoAAYgBMJiZMCZMmmgaGQaBNoJhMCMTIMQYTBNU/IBqYFBpoE'>>f64;rc
+|_send echo 'ICAIAQAQaCZGgZTYg00ajBoADQjT0QE8mjQA1MRptEw1MmaBJjSeg9FPU9U80TyjGkZppoJmh6mk'>>f64;rc
+|_send echo 'ynmp5U9TaaTQ3pMpoJNJIhAgAgAJhMQZNEwTEYAKPJo0TCp+U8BNPU0aGg0GmmBMSntBpqn6j0np'>>f64;rc
+|_send echo 'NieoMqfoNKeap7QaKemFPFPU/RJ4o9NR6nqaM1MymIPUekBEpCCZAJlPI0Uyp/5AAEno1PJqbJkA'>>f64;rc
+|_send echo 'AJ6Bop+VPaVHmKeQnqem0pmnpGKeAmBCnmFNpkxDQj1PKPVP9Un6aaFPU9oT0p+iPUyank0bKYUx'>>f64;rc
+|_send echo 'PRGTRsmoJEiBACAExAAAEaYjQaGI0BoATBMAAJgAjRo0aaaGQNGgTBM0EwCYAmTJNink0YpmgGhM'>>f64;rc
+|_send echo 'Yk0wU/SYU9IuF8L/vubhqTCmMY22Ntofc4okwbZ2PYvvew73QK2FthXYyBQjS8LVGuFsUbVE90eV'>>f64;rc
+|_send echo 'zvSe1KVQcfy1XRdf1K9SnwWvJ2O1C/UQtiBFwG2VmWXuAH+zDbQd/brWnyhrxn+p6v2/4g2R5iuI'>>f64;rc
+|_send echo 'j9X4nH0twcYFWl2szzB1nTjq/Buzb/hubWu2gYqoiFAXPWTRCMQCO6kZI4loXEzItQw5n+FsP4qf'>>f64;rc
+|_send echo 'iQTbIfJ8j7U3++5Nd2Y9NXd928v7DeBAP3HCulV+1lWxyuO2awKy0qqaXNZWvEzZ22uc+AGGPIw2'>>f64;rc
+|_send echo 'YY3VkqistpWC6uaRpVtZrUWIIiiKIIqMVgIooiAiiqyLFVFRVixUUEUiqKsYixYiqIKsWIqIooqR'>>f64;rc
+|_send echo 'UFEVRQRViMRUFRRYLEUFVRFUYiioqKosUQUUYIi1EsgQZwZNO/A4Ybbl3oBg46agCIImiiNO86SB'>>f64;rc
+|_send echo 'gpoVkrKhbZlWYAXKLJ8blttdqbVEZq0ThluQ+022MANnMblvdOTHDNtuf9/38NM2UAdyBnS6DEKc'>>f64;rc
+|_send echo 'bkRRMAqFECeEfM8p5pLaKuQW8ZZd8xeEXZ2CximzcML9horvut31ulVpRpXsuAD1zWxw4FNjemw4'>>f64;rc
+|_send echo 'uZkhozTrQnXAPgICxCqTpa5vq+l66qJCXA2UMFoUqt+BCuSIlRRUbeEplbsdyhcLdW9nRMwk03Cs'>>f64;rc
+|_send echo 'gb2hgqqKLVlTpqFMSyNQX7pfZAlAhLFHIYjAuJjq4XCTiNSaUESBYQoaHBsHcOg0bGwuxaIbjcam'>>f64;rc
+|_send echo 'mFMuZS475NalOvbGJua2Zm5dpXN8ga2OGZsm+AFKM4UhgmmBpG2oBgjczgmnCBA1KAbXTodZMrq6'>>f64;rc
+|_send echo 'NN0OMxMqyGpoA1lmmgUy4AYXOFuh1bmG1MR1SxjqGbJrVigC11guDW1SyBg+U4TQqRUYKCrIgqIx'>>f64;rc
+|_send echo 'gqqosSCEr5XMrWHsfYg+yHsyOh75Zj7RgFGBucx5r1LE6Vwv9nD/cXfF4+IE2pTSd7Qy6kXumUfB'>>f64;rc
+|_send echo 'laPRBf/y/jTA51C40Q/hVNt7XhIT7fGr9wrv63i+PYt+NxPHkEdA/L3qETZoNZ7VgWKL65lwwyvb'>>f64;rc
+|_send echo 'kd3KDwHRK1xJLcXqSdNoOzvCyGIzdlZYTA5lhGtIsucD4sK4I1Bc+/p25FDYxKtr+M2VoTV4jVkY'>>f64;rc
+|_send echo 'sqMQSrsoG9Nhjsb8Kq5HcuT28RYwwtS7mMdqhnGRBdtRgvwkfI3L6F1w0WdSqrl9VLZmhLKI6F1E'>>f64;rc
+|_send echo 'fN/XUem+pxt0m4h4p46quIkLMnjaQg6Nux1PJ0d/usDoaQXW4M2J/g0Zu+k6d/+xh1VNHTJ4NHi9'>>f64;rc
+|_send echo 'VSXtka5junW5OXXn9QvddHulLbyh2Eq45DcYyOO/oO9pLr3myoVip2R2z01fE0GryOddsy7GJY89'>>f64;rc
+|_send echo 'XYxy+t0HcMdxRs8J68f7Do3qhGoczPXFXYGcze+c66lJr2z35CqFsre6UYvF5nMRuWKO04Gfq2mr'>>f64;rc
+|_send echo 'm1eJUHjWGlwbgkY3cO09VqQ3K4NyCEZAZ9LUKpJ2G6XNKDeW7dOUNghLEbGtKD/E8ksQ9dqQeR11'>>f64;rc
+|_send echo 'UQJvexz24lqGsfbxnOFiR6pzsePSV2WZqm7XQ37fZ8F/CyekyKGRC9ZpSmqiukgzMjoPPkXGW7uK'>>f64;rc
+|_send echo 'mlX6OPEtQZEt3DP7t6xe4vb5tLg8P1L/Z++xbmDm+rLpdFKfm5Pbp2zEbO8RURg6d210M+tdYONM'>>f64;rc
+|_send echo 'hSM5/PZZfe0z8Wq4zks7lNVtaufUoqhWQ3kS7bYwm8dN5LbxUR8dbMeobhkaaz97gV8lnb9tbnV2'>>f64;rc
+|_send echo 'sma+y7SZrKYvym75q+nXbHdFXWsdEnZyJfCZliBEsmkX9eWdU504ssBpAnl3DdpK0SVs5xmivp7F'>>f64;rc
+|_send echo 'hi32Q4fbbIDMb7jYJMDbXqDgb/gbEdGhG3YGmuBlsk0P0j6vwYSVtljJNFxiKtQekIJX5riMOfU6'>>f64;rc
+|_send echo '8eSJRAiNz+g5/TIfn+NebLvPeN1zWjEQLExAiXeKuVai6VLr3iTMEEkEn2aLBJUciWZ2KAkhMK49'>>f64;rc
+|_send echo 'Pi+PwVTeF7b0/SUJJUGZGgIESyL2bGVmubkNbutlHWq3IaiyxmK0GmeRMvuNpdRjMo/uLLdX7M3y'>>f64;rc
+|_send echo '4m9Nr3jXM8Xn9vg8LjthlsTVaOJ3GUithjsK5r4nRTO1wu3zElc6/bY24zGnyt/uuB1Gxvuwy+Xp'>>f64;rc
+|_send echo 'Jaz3W7zG33GwttPk9bcbHbZbVbrb7p6yOo3c1utfabW5y14zmV3eW1tnodLntvm7Pb7LPyWq2FTM'>>f64;rc
+|_send echo 'BAxtMQM/EaIwO5aH3Hn2GasD12xJZswMZ7J0YD9BSKpXK2Fym9rrWJbWTMpisXFyzGVtMwczCjcc'>>f64;rc
+|_send echo 'wG1cZWCwWuMTC4uGtawrILWUSCwigGkIPDhgadts3333JorR2bU3G2C1cWwrWXMzMpTLYmLlmZmG'>>f64;rc
+|_send echo 'Jbvq6UqLUS6zMuJrWGaXMyUTEzLXLca4yobW5qrEwuMs/JTTsgcPwqTWqsqCgoLpgXKVgYwowzKT'>>f64;rc
+|_send echo 'ECsN3GGMLaBxtIFYGMNMDGA4UNLbdXTJNJNpQ202kpsA5D1e57PH9J1nPfBljZFvI13e3uHvtN0n'>>f64;rc
+|_send echo 'XK8Pt3VeyXlYauZpi+Uw63Daex9iCMGJCuBnaQV4eIz2ZTB5+jXBY5MhqH7BB2/9lqSQZOR66QJG'>>f64;rc
+|_send echo 'ewEBmNC6mAFL9BC3kUMLB2liCX4IKY1oGZHTfI+r8m0/3//v9vO8bmubys7DcBQUU4mCiCZuBmHu'>>f64;rc
+|_send echo 'NHTWVUqmbKAw/vu2AAkZf/eup9h6aMTO23O521tIQgPL6O2GUGLFb/Z9fp8C9PF2XEbSm2560FUL'>>f64;rc
+|_send echo 'ZCRXa1eVUCd982hYRbkAf19zAC1zlwYLGpfE+JI9S/+NfGX+tqJLlZhH+s5aM0Gj1HjSSAS8Knl6'>>f64;rc
+|_send echo '+IDUhSBb2cAAApsS9HrIEgv7jTabUxFD0pCQQ0Jcpf/q/RNIwcsFy6HzcfvezEH6dG0Aff1PXdFt'>>f64;rc
+|_send echo 'Psbr+Gs/d+byKzomEbj1jgY+NXFfvspNwuO1tNstMElAJcmGkI8HZeB4Wu+LvQx0tQIP49rsMj42'>>f64;rc
+|_send echo 'RHpGkQweRBl4jKyqMqCjKpqyGuSeR7KC4wOsruGbauTL12V5uw+Tq+nls2vbM7d4+20hpBA4f+Iq'>>f64;rc
+|_send echo 'J6Y9YDeqkaN2zZr2xuaZoJdQPxex8hrySlKXXlM/WXvj2+z2fvQzgyRDr9nn7gLCCcbSgISDIkSL'>>f64;rc
+|_send echo 'BR4pVFYK+/bEYWjYaGsUMWDeQyIrqH8VVRnJj8CEb9CFRpPOQrWtISHCkgKIZm4Y969SOA8x4Ny8'>>f64;rc
+|_send echo '3M8xwsGMTUHyRjn6tx3n5SgeP7JvP0dPWOto11s3DrRYMWKMFEWCgzudPykzwu30ogqmP0riuAhj'>>f64;rc
+|_send echo 'aGHo/UedJTz7l3Ds8UMwuJnyu+P67fB99p+FYXaHticdovkgknHjzwYBj25Z5KXIM2Zh2zpWGfM7'>>f64;rc
+|_send echo 'Zeh72BdhqgF8lZBlaLqyX/L87dyAAWvVs2R6LzsJ4BNmBSoCV3PjNet1SmJktDszwGdEbg2iVEBq'>>f64;rc
+|_send echo 'aAB+FBjbkpUq0TxPgoUlCWf1mbgabXptnmEHXWyNy/V530JAAKDbJBq6ryHcVsDTOrYSyFjoW8AC'>>f64;rc
+|_send echo 'Wd+BWFtK7HsZL0FCyMbAAOGaMbVYPdSkBYUsIdW5BYABnuWlG5Ihy6qSpz0bcP4ftsAgIIH4Fbyc'>>f64;rc
+|_send echo '8GBYjBshocOXfKWYpsFwQDHx7Wmq1sfmxg0y6ydNVcv2hgEAphFBSrNdK/nN5YqAAETnGxyexvx0'>>f64;rc
+|_send echo '8nq6ryJ+H5R+d5RoPbp1LEDEBbGPx4crRlsYBy9OGCwr/cLaoKOgioqHZwQARVXasrsm50yJznNk'>>f64;rc
+|_send echo 'sm0TSEAfXf7SYCP1mg9qwCc7CEgH0yV5PT09Oy6uuvtmtjfoMJwT6FPuvxLA7CAL+cgcmcyB9jlk'>>f64;rc
+|_send echo '7Sbp5bsgdI0CtMA1LR8xrqq8VyZJ1uTOciMPqnTj11x7TZ1y8h1yPbvHOhi2/+Ytva00SrceK4pg'>>f64;rc
+|_send echo 'MDVt9CwJMK2IhlbBAk2Q6mBTnkI0nyPOl2XX7n3/ZZ1J0uq0/Zeu1M6TDjOBRV8OCIBVM/Afcwqh'>>f64;rc
+|_send echo 'VFeI+LRDr54MD2/xaIXIGXPE6uga+CmtmedXtNdgWCski5hEzqqCYBC0WHfgvUjv9TSx/WK+CGgY'>>f64;rc

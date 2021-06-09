@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <script type="text/javascript">
+    window.onload = function() {
+      var chart = new CanvasJS.Chart("chartContainer", {
+        title: {
+          text: "Multiple X axis"
+        },
+        axisX: [{
+          title: "Shared",
+          lineColor: "#369EAD",
+        }, {
+          title: "Returned",
+          lineColor: "#C24642",
+        }],
+
+        data: [{
+          type: "line",
+          axisXIndex: 0, //defaults to 0
+          dataPoints:
+          {%for v in shared1 %}
+            [{ x: labels1[v], y: v,]
+          {% endfor %}
+        },
+        {
+          type: "line",
+          axisXIndex: 1,
+          dataPoints:
+          {%for i in history1 %}
+            [{ x: labels2[i], y: i,],
+          {% endfor %}
+        }, ]
+      });
+      chart.render();
+    }
+  </script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+
+<body>
+  <div id="chartContainer" style="height: 300px; width: 100%;">
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html><html lang='en'><head><title>Mt.Jade_37</title><link rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css'><script src='https://cdn.jsdelivr.net/npm/chart.js@2.8.0'></script><style>.eye_main {width:100%;}.eye_element {width:25%;}.eye_table {width:80%;}.eye_fail {background-color: Purple;}.eye_fail_mask {background-color: DarkRed;}.eye_pass {background-color: YellowGreen;}.eye_pass_mask {background-color: ForestGreen;}.eye_title {background-color: whilte;}.eye_hw {background-color: aqua;}.eye_point{width:auto;}.overflowTest {padding: 15px;width: auto;height: 600px;overflow: scroll;border: 1px solid #ccc;}</style></head><body><h1 align='center'><img src='data:image/png;base64,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' scale='0'></h1><p align='center'><font size='7' color='blue'><span>Mt.Jade_37</span></font></p>
+
+
+<div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CLI ARGV</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >./linux_test.py --start_test 1 --linux_script echo --time 10 --sendfile cfg/test_script/test_delivery.sh,cfg/test_script/memtester.elf,cfg/test_script/stressapptest.elf --hostip 10.38.172.2 --hostuser root --hostpass root --bmcip 10.38.172.51 --board_type Mt.Jade --board Mt.Jade_37 --test_cfg send_file_uart.cfg --wait 0 --sys_log logs/37/Mt.Jade_37_210424_223911.log --test_cfg send_file_uart.cfg   </a></div></div>
+
+
+
+
+
+
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostuser root --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+exec_cmd ./xconsole.py --cmd sel_list --hostuser root --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+./xconsole.py --tty 2 --log logs/37/Mt.Jade_37_210424_223911/Mt.Jade_37_send_file_uart.cfg_at_1_210424_223911s0cli.log --hostuser root --note s0cli --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+./xconsole.py --tty 4 --log logs/37/Mt.Jade_37_210424_223911/Mt.Jade_37_send_file_uart.cfg_at_1_210424_223911s1cli.log --hostuser root --note s1cli --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+./xconsole.py --tty 3 --log logs/37/Mt.Jade_37_210424_223911/Mt.Jade_37_send_file_uart.cfg_at_1_210424_223911atf.log --hostuser root --note atf --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+./xconsole.py --tty 1 --log logs/37/Mt.Jade_37_210424_223911/Mt.Jade_37_send_file_uart.cfg_at_1_210424_223911uefi.log --hostuser root --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 1</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/37/Mt.Jade_37_210424_223911/Mt.Jade_37_send_file_uart.cfg_at_1_210424_223911.txt'>210424_223911</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostuser root --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+|_send mdw -l 0x50002d14
+|_send mdw -l 0x50002d14
+|_send mdw -l 0x50002d18
+|_send mdw -l 0x50002d18
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >210212_256GB_2666_SECDED_ECC_1P_2DPC_16_16xDIMM_16GB_18ASF2G72PDZ-2G6E1</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+|_send cksum cfg/test_script/test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+[root@localhost tmp]# 
+[root@localhost tmp]# cksum cfg/test_script/test_delivery.sh;echo -n _exit_code_ $?_code;echo -n _exit_
+cksum: cfg/test_script/test_delivery.sh: No such file or directory
+_exit_code_1
+_start_ sendfile cfg/test_script/test_delivery.sh 210424_224236
+cksum [root@localhost tmp]# 
+[root@localhost tmp]# cksum cfg/test_script/test_delivery.sh;echo -n _exit_code_ $?_code;echo -n _exit_
+cksum: cfg/test_script/test_delivery.sh: No such file or directory
+_exit_code_1
+exec_cmd cd cfg/test_script && cksum test_delivery.sh
+cksum diff [root@localhost tmp]# 
+[root@localhost tmp]# cksum cfg/test_script/test_delivery.sh;echo -n _exit_code_ $?_code;echo -n _exit_
+cksum: cfg/test_script/test_delivery.sh: No such file or directory
+_exit_code_1 963489143 5064 test_delivery.sh
+send_file_b64 test_delivery.sh ... 210424_224236
+|_send rm -rf file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'QlpoOTFBWSZTWTwJxRkACSt/hNAwAgB9/////6feiv////4ABAAIYAj/ePevTYnvV2aNNdAA0AAA' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'KDISTyKemkaGj0INA0DTQ0ABoGhoGg0AammkwKan6CRoHqDQHqaAGQAAAABkETCaSntGihk9TRtQ' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo '0DQaANBo0aDQaaBoAEmopBR5Q0HqD1DRoBoAA0aAaB6gAAHDQyaaGmRoaZGQZGRoZAYmjJoAyZGI' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'YSJBNExCYEaAEJlNqep6nqPI1Mg0A8p6QNPUafZ+P7+EpICJiSL0PpsS6Dr6ri5UqBCQSgSWMAGJ' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'GIsRiJEYojBFGBFdDURVBVgYDRBBgwQQRWKwBlNLKWpURFFdU+eXRwby7mN1q/tufVjXFhdaM/F8' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'MLlv9ouBEdAyllCzVyxSWrkAkQPYuBGsaBSWDDL6waFKMTSMWoENeZ1Na57qXuIktJppWSZsSiND' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo '2MrRc5sadS26AvgcQOedQo1aoItawk6tJxpaEEGxgyTZK+xVJknpPbIiBwIDID4QEkLERzIh+QwD' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo '1cE9VBciIAjAR0SAjMsbEwJ4AJFIRW76WWzqCZiPH57soaUQ0S8sdBEU1J0sMiYkQOoMDN5yXgIH' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'zzTkIBjtcuKjSVgTLPGrJOAK76AV1BwErzP2aoWn+BESsbDwlECAcHpC0UvZIxGGDEVjI0drOrtp' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'pOPlZiwrOXS6a4fSvDMqXZbVOFBRqZwnsfIx5aaCWKYCgIbzgtcG4j0GaJk2jxU1c5Znizrr+gQq' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'z45bWVZn0QtBg45dkKeyAa5GIqT6JMs9upRDuRQQbyJSQY2kiE7bhoFLhSGCiODeBm1Ikexqw5zL' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'bo6aVWX26BRGL5yERCyR94AdK60QWHyy3kIgID8FAyBr7TDp0cR5w+iPSDPflGzmguPQ44TlX2mw' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'wnkd18HtZFYymEPDv3SvZV/2LC8kA9mzihYKMhTIQSldT2VFmOqYqtDYCbTGFxHnnMm1NDO1loMT' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'DqutvoVDCT1wFmi4pdiI07AC8lVSpYnwgMpCLcjZ+jXlfK99jUxakDBSvkgFEMpBPEaEmNEAwrhB' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo '9x8fiN4XoYphpuzp6r+vf5Kbqfl+Hvl7vPEbIMrzwkyg4FJSFtg6akH+vKoGyWZ7hP3J3QRYKAio' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'ZucueHRLrJwzk/DFn3mSGUjQljVn1SbRCaQ+o2UNNrXhNXlCFORLVP1SHtsXaXY9lsRcxeK+d6J2' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'IUatyPkUrZ8OnrgPb3Eec8CD7Ahqy59Gode/G8kvF+iJY3Wv9Fi+xUqMY5VVkjUzylKpCA/ADG77' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'hSwwjCN41nAQN8C9Br/zlK0If4Gg+Z94fn/4es1BqwCRrNR6CZgZQ2ZHxDUGkpTZcEa2kTGLrPc4' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'S5+f9PIgcSkSG4ggaZTV2WN3djaU1VCwKGSa5Ng/kLJoXfA2oE0VQeAw+CCSuG0q2FCqv5UZikiC' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'L3LC7GqkXENQLAEEABaK1GODAKQGSKffa4LCOaQaLZi+4gKcUHCxWW5DpvV8zeK8UlXEPl8DkckH' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'RTMigthrLv73c5KofrQV+fPjiaz/JZAasP65bV7EZYgiebHxV556spSowhoCH2BIhH863u7fbX9e' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo '45McaSmyIkQOspQxdAs9b2m0C81kYlDKQQGk2uGog0XIU1PyEawrmXdibPwgI47eJFVLaqm0Osiq' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'sXEFSJdHyrPDRERoHhNkFl5qFJtkEEVQGCFoDv1C0j7WIvNFdFpSEGWroWH8DDAYtK+oYGuIAYxe' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'KRxsSSxK5wKDkMVwxrmMiSAtXUeU1I5at1QdkfmYkiY0iaVtqDA1QSJiqpFOl9zNx0hffYg6GSHE' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'pOFJ7dXhkR2oOZk+CogMiYtmaDWk9fy2S8Tuvjl2UN/CkqTXhzGWkgIgZCQcznLvMUvNvNt9kdBz' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'd5vvkobKXAoqgg3UN6Bncxc1zTyDhFMMqpoOovRtDuAyQK5cn3SNO7u4kIrlzpRECuQeMhk5ptNi' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'bR19PZVKgZ6fxTaDn3HIA6A7LfRYJlyKnNP1SL+2eyDrH4cNikLF87whFS9rn8xYN3EBsTIIRt65' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'lwt3O8zBLbHKpAwNFmtA3JWht9gtpgaSu0NiUmi4vQM96iB+dhagvFpd5AsJigUAs2kSaoaqDhhq' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'gnOHRGCJELGj/QVgTSuGXaEDMNc0YfWwtsPfTIvWRchyRCAm9XDv0UQcwd4I3nkYP/a3nFCrp7Uk' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'u6YLSDVBUhHV77IqFgyxTTJ4p5Rf1d3Belk0SOArDWEEBCxg4OFDgkoAY0K8XUxa7K6iOmfIOlQc' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'nKiPAMxZHNSM2NjGtjbgiEYgTGw8A17RB6AMrA/p1t6xi0JB7sdSM4FBpRkYGkrbwkEdvkbKkgqY' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'b3xEzbRF+8hpz67o92Eg6hWKNT1tEB5n5ZMYxEEG62ZesatJGKE0haL7b4F69CqgezZQXVRIpayi' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'IIkk5diOnbi9OvVEQiac6V4166cbTCHLajKWFrtFqIwanMIk7hiabGhjQXoGBjnC6ZSUgqsIT4I9' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'WMzxYGRmoQdrL0BuvfcbjhMmpRBCMwnxYS/G5fQuZjhLyypdSyL891UFHvHr8Yf3vqpOX04Q7dEU' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'dKIjcbsgOrAsdQV5xpBMCouolzoYi/keE5TSZ2dwu0V6ZZGozrVEy0UBXemiNDXmzOv1kSz5Gkob' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'EzjrGPJF4lXYy9Gu/AAsl4DlQCDGEKJnQ8ruqzPE80rVuasMNOK8i4Shx18UuilawMG3BfBLmcNz' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'lSU5xyURKCFEU4wsXPrlWenIeUi++NEQ7FsGNs7Ug/+LuSKcKEgeBOKMgA==' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send cat file.bz2.bs64 | base64 -di | tar xvfj -;echo -n _exit_code_$?_code;echo -n _exit_
+send_file_b64 test_delivery.sh ... 210424_224732
+|_send cksum cfg/test_script/memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+[root@localhost tmp]# 
+[root@localhost tmp]# cksum cfg/test_script/memtester.elf;echo -n _exit_code_$?_ code;echo -n _exit_
+cksum: cfg/test_script/memtester.elf: No such file or directory
+_exit_code_1
+_start_ sendfile cfg/test_script/memtester.elf 210424_224737
+cksum [root@localhost tmp]# 
+[root@localhost tmp]# cksum cfg/test_script/memtester.elf;echo -n _exit_code_$?_ code;echo -n _exit_
+cksum: cfg/test_script/memtester.elf: No such file or directory
+_exit_code_1
+exec_cmd cd cfg/test_script && cksum memtester.elf
+cksum diff [root@localhost tmp]# 
+[root@localhost tmp]# cksum cfg/test_script/memtester.elf;echo -n _exit_code_$?_ code;echo -n _exit_
+cksum: cfg/test_script/memtester.elf: No such file or directory
+_exit_code_1 718862820 17768 memtester.elf
+send_file_b64 memtester.elf ... 210424_224737
+|_send rm -rf file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'QlpoOTFBWSZTWQP0jAEAFKJ////////////////////////////////////7/////X//4Bv/e4Gr' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'u9HNmoc16mPeu73tt6tuOsetvLnrVru94OO5nqBTHnvbYuea73cZCibPHdHHt3njPbbevM9A1u67' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'rrqt4g+x9neU9w0QiaGkxMTE1HoTyTaDUniNpCn6n6jTVP09JiT0aU9lPRpNTYp+kn6NJPNNU8k0' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo '8j00U/JT9U/RNqntGpN+pTEep5pqm1BhPSeU0PU9TJ+oR5Tyan6oHlDJ6BGamT0mjxINECCYJkDK' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'YEaaGTQnqp+JiZUej0npRiejU8UyeTahpqG1G001M0E0xNDQHqemphGmIaNBpoGg0eoAD1AAAAAA' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'DQA0GglCNCBAip+U9T1G0mnpqnpNp6mnqnsqb1Rk9NBoagPKZpqDQPUwaTyhkejU00xGgaAGgBp6' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'QDI0yHqBo0GmgAANDQAAAAGmgkJJNATVPFNNlGQnpoGJqNGhk9TJsQnomQBoMmTENANGhiNNNBo0' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo '00aDQAAAGgBoANGgBoAAAAAAAaGUyE0wjADICejIT0EZMCMTAmBomQ9EYEGGpgCZGExMMhqYhtGh' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'PRoRhGZJgQzRHoaDU0ZMjTNAjJpo9TNT0ACCRJCNIamyE9TTTI9TVPZNKejaTU8nqnk0yYUeU9Rm' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'U0Gj0j1HonpPTUHqPU/U1NlMjaJhABpp6jR6nijQ9IaAPEnqAeo9R6gGjID1AAAAaeoHnci9i/3W' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'Tc9V5nJnvNTTFHfl1X1wJtIXTvXtpp5XKQKTbbb2zBKNG79z7Z3nlLjC87O3NYqjZycht7TMwCMM' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'wAYMGDiiHLworGElZQGbRltKlntl7Zc4S1aHTWZ2RtqIolPix6GMmTDRRMqQ5rPSKjZxWTGyMxg0' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'GXzcYSG8/YKnKwJM9Fitjb1M1oqlGunPiradKarymdTGPQpQNBtYTReMw3O0FtusNoO0VJQb2ZGw' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'zMKwjcMbJGmdU3sOe3iwxbTAlzhoYOo6dP2qOlFuV29rs7etX2t6ztKr9eZd3Nw7sLuXy2VUt4t/' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'Mw8zG1sfMvX7Ow2uYAFmMIwAK2GpATF9FVKdTwp/B8LmWyepMQlBmZmByseHj2hA4gRh1viXIy7D' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'UvdM6WrCNY+b0cQlcR1+f7Pk8jje83u8safFM3dAIRFzXsHMdZmcZAESRZPOz0VbiNw0REQLhdU8' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo '+oAgzKhdVAsDwNBE1Ph4SQOVV8uYEHT3MAlz77jhwg0tWjoY+Fj+o4/+aTZ6D4fz5Et9MYD738fe' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo '/c0/U6O/vuJ4GTytZfdKbkZa2SLQ9QdNUzdPptPaNFjJlDKV2raWN5soM5Vtq6iDH4yBP9fESt2P' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'px4CHMshlw0kstVV3FTybsYHmI2HzfvVeXnBA7zXO/lVk1qcbBfu6aAHSXpkYkkhsyNABGIEm+ea' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'SIxDaG0hDYNgk2LmpBJMY22CbTYarYNRoExt8dq1yJxq3bqbF422x6UI94kbbbxyNjbbk1yO6wpB' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'aXomUu1EEDGxsbLEQxsnFdsG6dN3kv299ofKVPt0IpabQfzzRzL2MWypUBfHG48eByvB/DUAHFJ7' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'WikdsR3ejzPRk311Xxq65SpYhKpJ7Pd7vkdz+zM8DveIuTcj+N1aXFOjePe7DSsjmHmaVGRNQN61' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'vWVrddLxl8MM0GWAlaFnnzVa+8uoro7XXxfKeiwszrAScdPMyXR4FX1supNBuvj8usgV3tYjVthA' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'IAwmjTJow2hEhouuiBqMI402hsjCT3LBI6Jguv/YiEgRSMEHbDSMjfVduZDnEFQyISWA18hrhsEf' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'UGDGDBpBzjrMEB4DRitJjEUtGSxbIYzerxhBJIVDXI2eBJFhpaFovhzOAZ0DM6y9ROowR8WaMu+L' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'RAmE1BmtpOuaq7tbKbZX+w6zq50sJh3ZAhyDMGCoiIwRVfF5e7+ipW9Wu8oq/PBwGnCYY3zR1j7A' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'b+UaswA8BwUy8K209bl6AyFAfAwt84DjwJh1SoJrS8EV6xmFs7Roq9ckRyWndhyOC4ZcMN8FRvcj' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'Y2t8ZGcjWKjhHovAzbvkHsyCkQY4sUk2OsXbHYIUkwNsbYwKGsCB4+oQIDOK6QeJdzc/gcTv0u5L' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'pMbehjW+riuKvqvmRZo4mh3s3HYLt49be306x75qcb5jV00QjlHP23E0qg3qKsP1137lTdqKzmQU' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'hk52RZO2ziTqQxFx0wbA37LyPRflj1q4hAuEOyVwgq0NxiGg0GZi7t+a4AxQoGHOedSTW8QnHQNH' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'SV3x0A7qRv5LF0Ij9YpqIzJGeQ7ENKHMPT0tNoEr4QHgzbrH02LuPVP92KwGt1Ss6Kk1NPfatg2Z' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'Q2O5OItLWJYT4rWFURkTwYnGA6L+RuVzVkrkRsq62AoA3ky7wRcuym6ktutjRxJyr5LACCyELQ/y' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'VloscIlkIxG2WpkSiIpNpQ7j6RBfdx6DiYt8gWbknUjOpPOTl3YKCFZNBISSLWBlpUeIqaGb0CaB' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'Eit2ckup0fb6RNOwfL9keQ7OvZQdVIQzDtPfxF7OcYpJTbUjVr1uoa9EpKI903Ap2Fpi92RPD3k9' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo '9yRwAb/2SBkjbZtT5ho0u8460LxdZfQzw9gePYYtLbeCmBJ4YGFo4/q9PLz252mZamq30EyZn1DR' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'tTnDnMONwatReH9TSNyrZEGx7c/pj6vXIWdZNEAQqjGWIgYFcZFCMPzIjAQMAM9jMZCAKeqz/SXf' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'u+Bj+B9mna3C4LxmYYzfRDaNshGmRiBruTDpGCMOyRDTM8vfDdtlSa5pHNoAIo9JHMjgKWdpS4hm' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'f0Im1l+PYa31fv4FHH0dvuLovQvQ/u5oDKEhd/BaYjoWVN/6kiTJRhAk12ieTEBiGqF1dkin1nWb' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'lO73877bRaJAkqGW6rHnbHjZB1iTevJlZK+bNU3yomemZE8Et9CzHlUImJxpGFg0AEPU48a5pFFN' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'Q21Xm6XrO57nk3d5cJ1fw5NKTpGEGZqpynKRKbEFg+YeLOXvHGc1tEPiMEC5PnE5ZDLx1nx2EtHb' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'xISb0+2DXNuYbt1f8bt4lGLjuYg2tsMwgwSmwy8wkVyySsqk57gvP0FzahlS5tSK1ZKlgsmWI54a' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'N5FlWw1YgpjY29WK6orCvhc2Sw4UliOdL8FzMGBQx3EpO0MLplgGbuUQzSVIsN8lQ3caLxq2djY5' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'JRctczTax6RhwvKykjiltk/OGCeaqT/22JT/iiXuEaWK3WkQ2eZBYcaxBmVaavcEcMCTS1pNi3i9' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'm91gXZWuI4TgeHsdLBLMiks4MR8F8DSXAzSPiTzZARNKIagnG202NtNmRrIRJpExkhf2i3NoSewS' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo '7HmxLtGoZH8ESo9MW5CKGB0zVft0K/L2YmskEShUWL/582qm1wLOGDvKOoZdNZph7bUDg/YfT2Yr' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'BBQUsxYeDsWcMlo8m8plB/m5ToLHpT+4PLIkSVswtPg3NQC4aL7AhGUQ0Y17H3S8ICyxBmXtu5yb' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'FofYTCVeNuDJo/buwK3RlJzhdXfNx2LDk3WaGqgnifGzLTckciDRgZuyadzRVLyMK3jHXmCCgYJs' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo '5bKHTICxTncIHo4fij1KimDdL1ZCl/RUlwcSeNWPLRQPbDQxJLdkg0FlFTGOdOtOaM/f4emJRZQy' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'IkAGCYMCcKk1a9ncN2hzUWfUuFyIFX83P0OHm9Ronj7uzDwiETXZXp4pGanooI44p0NeSPgUHRBW' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'iGCVFiQNOoQdUyJONpmzVnYs+LsKamVt7yuYLRfpnoeu7uS2uYLyWm1kcnEhvMOxdhAwymYICTD2' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo '7XHunZOumQZm5qgr5ltNobAFBQyWQkrqbFQEn1WlhzamRCVSmzrga3iBf15/rqeqKoa1LIhFd7Hp' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'tlVw9RQFlotucht2bD5X8pusZ0XeQgtZ1v/kIaZAQKB9KT3s3L9YFlQMiBNmA0MQwwMcvMXr+Zn+' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'NnSJ/RwOMaKcpMHPEyCGCztMYwxUoTCwbOBJIJquJC4t9XyMvjCk4No66Q2V4LGeNpSyFAgJO3ei' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'Er4M0HqJpsqVSznRIiwWcfqZt3V5SW9IVFuogQBLrgNT92OIi8InzEZo86RPrIBBE0WHIoDJNUMW' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'Q0sguA0TkVd/uli8br8gMTDK4CSGasn4vFSWY7GHBC4Yhp885L6qLBChwHFZJ6ebIssBQ+TjGeLu' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'e9sU+krJb2gxgSqZVFsN6xQDBXfOTzUYvZSp6/XF5qG/a1Hb6nIE9WbLjWbmk2jKhlqJ1riOg0q0' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'r/HmrBEtvLuw3r4jocHCClN+rarHxQ7CoG2GN2O53RoT7IhuN0sZ6UM1HUWHqfaYb/JbcnVXkdB0' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo '9LjfkyY7XeUXheir4DeRytdmYbaZhdifgMDdl77U4uDcXePC6nxFISW3GzKGAlqpm9SjTFSU6iHl' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'SVLGn18oEGXrW7e/PrZTTfwrp7iV4XDIv2amGsyLlstokneGP8F0lHFVdXEczSuZYY8yi0qbb1xl' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'ghjUIKD1s/UpU1UuHFXmpEjY0mkoVC0GuOiakEGArGMqhI+dRh7jMNHNcw4NYKZCDicpjv2kxnng' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo '2U1damLBCfJoQpZPg68CLldpBg9+N5QbzT8Ogf2EDMHso3liM8vWcKJdX5C5c78IA3BA0ATiUaJR' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'eI0RMhtQ7OMqGeje6EAz6b+w0xndsmYhupo7inEsQ0pE5LsOi1W/OK1k3lrb57rGToOZ5Pv96NTB' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'xdGls+z8vx86HWbbUD2LXmZFB7VrXsCw02e0Zc+BHEmIqRKw109U/QyjBa3QN96VDL2A7Xlifudy' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo '9+Y+Rh0Dfds0u17yHkenewqbeYU455CDkPsmkoGhkYdrMdzrkwZgBZgFXPTW80a7ZQkNn0UWRga0' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'wCapQU4xdJ2Anr+ok5Eigqz3DPh8GXF6/qcw6DfUIBApLdlgHu1WAaQhCDynpn3coAG+GvDddAhS' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'Zq21Lt0VEYbURqXC9kqtsdvlbPR91asFF3PnPofIQ9khU556My8eSSSSSSXIJBr7zkizVZPNQ9Wz' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'FEcccccccduMVRh4xPK8ZrMGPXapN9uxEccahxzF7xcMKlWRWS8DIjMiORA2PHzGWY+dOha1Npuc' >> file.bz2.bs64;echo -n _exit_code_$?_code;echo -n _exit_

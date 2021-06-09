@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}{{action}}{% endblock %}
+{% block body %}
+<div class="w3-container w3-row-padding">
+	<div class="w3-row w3-light-blue">
+	<!-- id,device_id,email,Part_number,number,note,info,client_info,time -->
+		<div class="w3-col m2">Index</div>
+		<div class="w3-col m1">Device id</div>
+		<div class="w3-col m2">Email</div>
+		<div class="w3-col m2">Part_number</div>
+		<div class="w3-col m1">Number</div>
+		<div class="w3-col m4">Note</div>
+	</div>
+	<!-- submit_id,device_id,email,Part_number,number,note,info,client_info,time -->
+	{% for e in devices %}
+	<div class="w3-light-blue"> <br> </div>
+	<div class="w3-row">
+		<a class="w3-col m2" style="white-space: pre-line" >{{e[0]|safe }}</a>
+		<a class="w3-col m1" style="white-space: pre-line" >{{e[1]|safe }}</a>
+		<a class="w3-col m2" style="white-space: pre-line" href="send_noti/{{e[0]}}" >{{e[2]}}</a>
+		<a class="w3-col m2" style="white-space: pre-line" href="{{action}}_submit/{{e[0]}}" >{{e[3]}}</a>
+		<a class="w3-col m1" style="white-space: pre-line" >{{e[4]|safe }}</a>
+		<a class="w3-col m4" style="white-space: pre-line" >{{e[5]|safe }}</a> 
+	</div>
+	{% endfor %}
+			
+</div>
+{% endblock %}

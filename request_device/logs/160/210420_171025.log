@@ -1,0 +1,18 @@
+<div class='w3-container '><p>./linux_test.py --start_test 1 --linux_script dmidecode --time 60 --debug 1 --hostip 10.38.172.2 --hostuser root --hostpass root --bmcip 10.38.162.31 --tty_uefi FTEZFHCC --tty_atf AD0K8YY4 --tty_s0cli AD0K8KF3 --board Mt.Snow --wait 0 --sys_log logs/160/210420_171025.log --test_cfg dmidecode.cfg   </p></div>
+CHASSIS POWER OFF
+exec_cmd sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.172.2 'ipmitool -H 10.38.162.31 -U ADMIN -P ADMIN -I lanplus -z 0x7fff chassis power off'
+
+
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Error: Unable to establish IPMI v2 / RMCP+ session
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Error: Unable to establish IPMI v2 / RMCP+ session
+exec_cmd sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.172.2 'ipmitool -H 10.38.162.31 -U ADMIN -P ADMIN -I lanplus -z 0x7fff chassis power off'
+
+
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Error: Unable to establish IPMI v2 / RMCP+ session
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Error: Unable to establish IPMI v2 / RMCP+ session
+retry 2
+__ERROR__: exec_cmd sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.172.2 'ipmitool -H 10.38.162.31 -U ADMIN -P ADMIN -I lanplus -z 0x7fff chassis power off'

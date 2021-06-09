@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}{{action}}{% endblock %}
+{% block body %}
+<div class="w3-container">
+    {% for i in range(0,len) %}
+    {% if element[i] == "Info" or element[i] == "info" %}
+    {% else %}
+    <div class="w3-row">
+    	<label class="w3-col m4 w3-text-blue" style="white-space: pre-line" >{{ element[i]|safe}}</label>
+    	{% if element[i] == "Part_number" %}
+    	<a class="w3-col m8 w3-text-blue"  href="/?search=id%3A{{device[1]}}+" >{{device[i]|safe }}</a>
+    	{% else %}
+    	<label class="w3-col m8 w3-text-blue" style="white-space: pre-line" >{{device[i]|safe}}</label>
+    	{% endif %}
+    </div>
+    {% endif %}
+	{% endfor %}
+</div>
+<div class="w3-container"><img src="/static/qr/{{device[5]}}.png"></div>
+{% endblock %}

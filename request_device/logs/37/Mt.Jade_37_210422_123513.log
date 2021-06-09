@@ -1,0 +1,52 @@
+<div class='w3-container '><p>./linux_test.py --test_case ddr_margin --loop 1 --start_test 1 --time 1800 --eye_type wrdq,rdfall,rdrise,adcmd --hostip 10.38.172.2 --hostuser root --hostpass root --bmcip 10.38.172.51 --board Mt.Jade --test_cfg test_delivery.cfg --wait 0 --sys_log logs/37/Mt.Jade_37_210422_123513.log --test_cfg test_delivery.cfg   </p></div>
+
+
+
+
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+exec_cmd ./xconsole.py --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --set_nvparm [SI_S0_PCP_ACTIVECPM_32_63:1146888:0xFFFFFFFF][SI_RO_BOARD_S0_DIMM_AVAIL:6225952:0xFFFF][SI_PLT_Y_BOTTOM:1130840:0xFFFFFFE8][SI_DDR_ECC_MODE:1146952:0x0][SI_PLT_Y_PARAM:1130808:0x2][SI_PLT_X_RIGHT:1130824:0x50][SI_RAS_BERT_ENABLED:1147080:0x1][SI_PLT_EN:1130752:0x1][SI_RO_BOARD_S1_DIMM_AVAIL:6225960:0xFFFF][SI_DDR_SCRUB_EN:1146944:0x0][SI_PLT_X_STEP:1130832:0x4][SI_S0_PCP_ACTIVECPM_0_31:1146880:0xFFFFFFFF][SI_S1_PCP_ACTIVECPM_0_31:1146896:0xFFFFFFFF][SI_PLT_Y_TOP:1130848:0x18][SI_PLT_X_PARAM:1130800:0x3][SI_S1_PCP_ACTIVECPM_32_63:1146904:0xFFFFFFFF][SI_PLT_Y_STEP:1130856:0x2][SI_PLT_X_LEFT:1130816:0xFFFFFFB0][SI_DDR_ZQCS_EN:1147208:0x0] --debug 0 --hostpass root --hostip 10.38.172.2
+./xconsole.py --tty 2 --log logs/37/Mt.Jade_37_210422_123513/Mt.Jade_ddr_margin_test_delivery.cfg_at_1_210422_123514s0cli.log --hostip 10.38.172.2 --hostuser root --note s0cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 4 --log logs/37/Mt.Jade_37_210422_123513/Mt.Jade_ddr_margin_test_delivery.cfg_at_1_210422_123514s1cli.log --hostip 10.38.172.2 --hostuser root --note s1cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 3 --log logs/37/Mt.Jade_37_210422_123513/Mt.Jade_ddr_margin_test_delivery.cfg_at_1_210422_123514atf.log --hostip 10.38.172.2 --hostuser root --note atf --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 1 --log logs/37/Mt.Jade_37_210422_123513/Mt.Jade_ddr_margin_test_delivery.cfg_at_1_210422_123514uefi.log --hostip 10.38.172.2 --hostuser root --note uefi --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+<div class='w3-container '><p><a href='/logs/37/Mt.Jade_37_210422_123513/Mt.Jade_ddr_margin_test_delivery.cfg_at_1_210422_123514.txt'>CHASSIS POWER ON[210422_123514]</a></p></div>
+exec_cmd ./xconsole.py --cmd on --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+|_send mdw -l 0x50002d14
+|_send mdw -l 0x50002d14
+|_send mdw -l 0x50002d18
+|_send mdw -l 0x50002d18
+<div class='w3-container '><p>__INFO__: 210212_256GB_2666_NO_ECC_1P_2DPC_16_16xDIMM_16GB_18ASF2G72PDZ-2G6E1</p></div>
+4 0 4 8 12 16 20 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80 
+ 0x18 .........................................
+ 0x16 .........................................
+ 0x14 .........................................
+ 0x12 .........................................
+ 0x10 .............++++++++++++++++............
+ 0x0e ........+++++++++++++++++++++++++........
+ 0x0c .......++++++++++++++++++++++++++++......
+ 0x0a .....+++++++++++++++++++++++++++++++.....
+ 0x08 ....+++++++++++++++++++++++++++++++++....
+ 0x06 ...+++++++++++++++++++++++++++++++++++...
+ 0x04 ..++++++++++++++++++++++++++++++++++++++.
+ 0x02 ..+++++++++++++++++++++++++++++++++++++++
+ 0x00 ..++++++++++++++++++*+++++++++++++++++++.
+-0x02 ...+++++++++++++++++++++++++++++++++++++.
+-0x04 ...+++++++++++++++++++++++++++++++++++...
+-0x06 ....++++++++++++++++++++++++++++++++++...
+-0x08 .....+++++++++++++++++++++++++++++++.....
+-0x0a .....++++++++++++++++++++++++++++++......
+-0x0c ........+++++++++++++<div class='w3-container '><p>./linux_test.py --test_case disable_plt_en --loop 1 --start_test 0 --hostip 10.38.172.2 --hostuser root --hostpass root --bmcip 10.38.172.51 --board Mt.Jade --test_cfg test_delivery.cfg --wait 0 --sys_log logs/37/Mt.Jade_37_210422_123513.log --test_cfg test_delivery.cfg --nv_scan SI_PLT_EN[0],SI_DDR_ECC_MODE[1],SI_DDR_ZQCS_EN[1],SI_DDR_SCRUB_EN[0x000005a0]  </p></div>
+
+
+
+
+exec_cmd ./xconsole.py --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --set_nvparm [SI_DDR_SCRUB_EN:1146944:0x5A0][SI_DDR_ZQCS_EN:1147208:0x1][SI_DDR_ECC_MODE:1146952:0x1][SI_PLT_EN:1130752:0x0] --debug 0 --hostpass root --hostip 10.38.172.2
+<div class='w3-container '><p>./linux_test.py --test_case test_delivery --loop 10 --start_test 1 --time 1800 --linux_script ./test_delivery.sh --hostip 10.38.172.2 --hostuser root --hostpass root --bmcip 10.38.172.51 --board Mt.Jade --test_cfg test_delivery.cfg --wait 0 --sys_log logs/37/Mt.Jade_37_210422_123513.log --test_cfg test_delivery.cfg --nv_scan SI_SOC_VMARGIN[0.-38.37],SI_DDR_VMARGIN[0.-60.60]  </p></div>
+
+
+
+
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+exec_cmd ./xconsole.py --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --set_nvparm [SI_DDR_VMARGIN:1130496:0x0][SI_SOC_VMARGIN:1130504:0x0] --debug 0 --hostpass root --hostip 10.38.172.2

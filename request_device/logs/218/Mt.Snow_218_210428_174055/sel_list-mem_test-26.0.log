@@ -1,0 +1,225 @@
+search_board_type Mt.Snow
+ipmitool -H 10.38.165.34 -U admin -P password  sel list
+   1 | 03/30/2021 | 00:14:34 | Drive Slot #0x02 | Drive Present | Asserted
+   2 | 03/30/2021 | 00:14:35 | Drive Slot #0x03 | Drive Present | Asserted
+   3 | 03/30/2021 | 00:14:35 | Drive Slot #0x04 | Drive Present | Asserted
+   4 | 03/30/2021 | 00:14:36 | Drive Slot #0x05 | Drive Present | Asserted
+   5 | 03/30/2021 | 00:14:37 | Drive Slot #0x06 | Drive Present | Asserted
+   6 | 03/30/2021 | 00:14:39 | Drive Slot #0x09 | Drive Present | Asserted
+   7 | 03/30/2021 | 00:14:39 | Drive Slot #0x0a | Drive Present | Asserted
+   8 | 03/30/2021 | 00:14:40 | Drive Slot #0x0b | Drive Present | Asserted
+   9 | 03/30/2021 | 00:14:40 | Drive Slot #0x0c | Drive Present | Asserted
+   a | 03/30/2021 | 00:14:41 | Drive Slot #0x0d | Drive Present | Asserted
+   b | 03/30/2021 | 00:14:42 | Drive Slot #0x0e | Drive Present | Asserted
+   c | 03/30/2021 | 00:14:42 | Drive Slot #0x0f | Drive Present | Asserted
+   d | 03/30/2021 | 00:14:43 | Drive Slot #0x10 | Drive Present | Asserted
+   e | 03/30/2021 | 00:14:53 | Drive Slot #0x07 | Drive Present | Asserted
+   f | 03/30/2021 | 00:14:54 | Drive Slot #0x08 | Drive Present | Asserted
+  10 | 03/30/2021 | 00:15:06 | Drive Slot #0x01 | Drive Present | Asserted
+  11 | 03/30/2021 | 00:16:34 | Processor #0xe4 | Presence detected | Asserted
+  12 | 03/30/2021 | 00:16:41 | Power Supply #0xe6 | Presence detected | Asserted
+  13 | 03/30/2021 | 00:16:56 | Power Unit #0xff | Power off/down | Asserted
+  14 | 03/30/2021 | 00:17:16 | Processor #0xe4 | Presence detected | Asserted
+  15 | 03/30/2021 | 00:41:10 | OEM record c1 | 000000 | 06980a263756
+  16 | 03/30/2021 | 00:41:16 | OEM record c1 | 000000 | 06000a263756
+  17 | 03/30/2021 | 00:44:54 | OEM record c1 | 000000 | 06980a263756
+  18 | 03/30/2021 | 00:44:59 | OEM record c1 | 000000 | 06000a263756
+  19 | 03/30/2021 | 00:57:49 | System Event | OEM System boot event | Asserted
+  1a | 03/30/2021 | 00:58:46 | Power Supply #0xe6 | Presence detected | Asserted
+  1b | 03/30/2021 | 00:59:24 | OS Boot #0x22 | boot completed - device not specified | Asserted
+  1c | 03/30/2021 | 01:01:33 | Reserved #0x6f | Transition to OK | Asserted
+  1d | 03/30/2021 | 01:34:52 | Reserved #0x6f | Device Absent | Asserted
+  1e | 03/30/2021 | 02:41:18 | System Event | OEM System boot event | Asserted
+  1f | 03/30/2021 | 02:41:27 | OS Boot #0x22 | boot completed - device not specified | Asserted
+  20 | 03/30/2021 | 02:45:35 | Power Unit #0xff | Power off/down | Asserted
+  21 | 03/30/2021 | 02:45:41 | OEM record c1 | 000000 | 06000a260d66
+  22 | 03/30/2021 | 02:46:02 | OEM record c1 | 000000 | 06000a260d66
+  23 | 03/30/2021 | 02:47:09 | System Event | OEM System boot event | Asserted
+  24 | 03/30/2021 | 02:47:19 | OS Boot #0x22 | boot completed - device not specified | Asserted
+  25 | 03/30/2021 | 07:26:05 | Power Unit #0xff | Power off/down | Asserted
+  26 | 03/30/2021 | 07:26:11 | OEM record c1 | 000000 | 06000a260d66
+  27 | 03/30/2021 | 07:26:27 | OEM record c1 | 000000 | 06000a260d66
+  28 | 03/30/2021 | 07:27:28 | System Event | OEM System boot event | Asserted
+  29 | 03/30/2021 | 07:27:37 | OS Boot #0x22 | boot completed - device not specified | Asserted
+  2a | 03/30/2021 | 07:28:50 | Voltage #0x58 | Lower Non-critical going low  | Asserted
+  2b | 03/30/2021 | 07:28:50 | Voltage #0x58 | Lower Critical going low  | Asserted
+  2c | 03/30/2021 | 07:30:10 | Power Unit #0xff | Power off/down | Asserted
+  2d | 03/30/2021 | 07:30:15 | OEM record c1 | 000000 | 06000a260d66
+  2e | 03/30/2021 | 07:30:34 | OEM record c1 | 000000 | 06000a260d66
+  2f | 03/30/2021 | 07:31:34 | System Event | OEM System boot event | Asserted
+  30 | 03/30/2021 | 07:31:43 | OS Boot #0x22 | boot completed - device not specified | Asserted
+  31 | 03/30/2021 | 07:32:39 | Voltage #0x58 | Lower Critical going low  | Deasserted
+  32 | 03/30/2021 | 07:32:39 | Voltage #0x58 | Lower Non-critical going low  | Deasserted
+  33 | 03/30/2021 | 07:34:16 | Power Unit #0xff | Power off/down | Asserted
+  34 | 03/30/2021 | 07:34:20 | OEM record c1 | 000000 | 06000a260d66
+  35 | 03/30/2021 | 07:34:38 | OEM record c1 | 000000 | 06000a260d66
+  36 | 03/30/2021 | 07:35:40 | System Event | OEM System boot event | Asserted
+  37 | 03/30/2021 | 07:35:49 | OS Boot #0x22 | boot completed - device not specified | Asserted
+  38 | 03/30/2021 | 07:36:46 | Voltage #0x5a | Lower Non-critical going low  | Asserted
+  39 | 03/30/2021 | 07:36:46 | Voltage #0x5a | Lower Critical going low  | Asserted
+  3a | 03/30/2021 | 07:36:46 | Voltage #0x5d | Lower Non-critical going low  | Asserted
+  3b | 03/30/2021 | 07:36:46 | Voltage #0x5d | Lower Critical going low  | Asserted
+  3c | 03/30/2021 | 07:38:23 | Power Unit #0xff | Power off/down | Asserted
+  3d | 03/30/2021 | 07:38:29 | OEM record c1 | 000000 | 06000a260d66
+  3e | 03/30/2021 | 07:38:45 | OEM record c1 | 000000 | 06000a260d66
+  3f | 03/30/2021 | 07:39:46 | System Event | OEM System boot event | Asserted
+  40 | 03/30/2021 | 07:39:55 | OS Boot #0x22 | boot completed - device not specified | Asserted
+  41 | 03/30/2021 | 07:41:02 | Voltage #0x58 | Lower Non-critical going low  | Asserted
+  42 | 03/30/2021 | 07:41:02 | Voltage #0x58 | Lower Critical going low  | Asserted
+  43 | 03/30/2021 | 07:42:31 | Power Unit #0xff | Power off/down | Asserted
+  44 | 03/30/2021 | 07:42:35 | OEM record c1 | 000000 | 06000a260d66
+  45 | 03/30/2021 | 07:42:54 | OEM record c1 | 000000 | 06000a260d66
+  46 | 03/30/2021 | 07:43:55 | System Event | OEM System boot event | Asserted
+  47 | 03/30/2021 | 07:44:04 | OS Boot #0x22 | boot completed - device not specified | Asserted
+  48 | 03/30/2021 | 07:45:07 | Voltage #0x58 | Lower Critical going low  | Deasserted
+  49 | 03/30/2021 | 07:45:07 | Voltage #0x58 | Lower Non-critical going low  | Deasserted
+  4a | 03/30/2021 | 07:46:06 | Power Unit #0xff | Power off/down | Asserted
+  4b | 03/30/2021 | 07:46:12 | OEM record c1 | 000000 | 06000a260d66
+  4c | 03/30/2021 | 07:46:30 | OEM record c1 | 000000 | 06000a260d66
+  4d | 03/30/2021 | 07:47:31 | System Event | OEM System boot event | Asserted
+  4e | 03/30/2021 | 07:47:40 | OS Boot #0x22 | boot completed - device not specified | Asserted
+  4f | 03/30/2021 | 07:48:29 | Voltage #0x5a | Lower Critical going low  | Deasserted
+  50 | 03/30/2021 | 07:48:29 | Voltage #0x5a | Lower Non-critical going low  | Deasserted
+  51 | 03/30/2021 | 07:48:29 | Voltage #0x5a | Upper Non-critical going high | Asserted
+  52 | 03/30/2021 | 07:48:29 | Voltage #0x5d | Lower Critical going low  | Deasserted
+  53 | 03/30/2021 | 07:48:29 | Voltage #0x5d | Lower Non-critical going low  | Deasserted
+  54 | 03/30/2021 | 07:48:29 | Voltage #0x5d | Upper Non-critical going high | Asserted
+  55 | 03/30/2021 | 07:50:15 | Power Unit #0xff | Power off/down | Asserted
+  56 | 03/30/2021 | 07:50:24 | OEM record c1 | 000000 | 06000a260d66
+  57 | 03/30/2021 | 07:50:41 | OEM record c1 | 000000 | 06000a260d66
+  58 | 03/30/2021 | 07:51:41 | System Event | OEM System boot event | Asserted
+  59 | 03/30/2021 | 07:51:51 | OS Boot #0x22 | boot completed - device not specified | Asserted
+  5a | 03/30/2021 | 07:52:53 | Voltage #0x58 | Lower Non-critical going low  | Asserted
+  5b | 03/30/2021 | 07:52:53 | Voltage #0x58 | Lower Critical going low  | Asserted
+  5c | 03/30/2021 | 07:54:24 | Power Unit #0xff | Power off/down | Asserted
+  5d | 03/30/2021 | 07:54:30 | OEM record c1 | 000000 | 06000a260d66
+  5e | 03/30/2021 | 07:54:47 | OEM record c1 | 000000 | 06000a260d66
+  5f | 03/30/2021 | 07:55:49 | System Event | OEM System boot event | Asserted
+  60 | 03/30/2021 | 07:55:58 | OS Boot #0x22 | boot completed - device not specified | Asserted
+  61 | 03/30/2021 | 07:56:58 | Voltage #0x58 | Lower Critical going low  | Deasserted
+  62 | 03/30/2021 | 07:56:58 | Voltage #0x58 | Lower Non-critical going low  | Deasserted
+  63 | 03/30/2021 | 07:58:33 | Power Unit #0xff | Power off/down | Asserted
+  64 | 03/30/2021 | 07:58:40 | OEM record c1 | 000000 | 06000a260d66
+  65 | 03/30/2021 | 07:58:57 | OEM record c1 | 000000 | 06000a260d66
+  66 | 03/30/2021 | 07:59:59 | System Event | OEM System boot event | Asserted
+  67 | 03/30/2021 | 08:00:08 | OS Boot #0x22 | boot completed - device not specified | Asserted
+  68 | 03/30/2021 | 08:00:57 | Voltage #0x5a | Upper Non-critical going high | Deasserted
+  69 | 03/30/2021 | 08:00:57 | Voltage #0x5d | Upper Non-critical going high | Deasserted
+  6a | 03/30/2021 | 08:02:45 | Power Unit #0xff | Power off/down | Asserted
+  6b | 03/30/2021 | 08:02:54 | OEM record c1 | 000000 | 06000a260d66
+  6c | 03/30/2021 | 08:03:11 | OEM record c1 | 000000 | 06000a260d66
+  6d | 03/30/2021 | 08:04:12 | System Event | OEM System boot event | Asserted
+  6e | 03/30/2021 | 08:04:21 | OS Boot #0x22 | boot completed - device not specified | Asserted
+  6f | 03/30/2021 | 08:05:25 | Voltage #0x58 | Lower Non-critical going low  | Asserted
+  70 | 03/30/2021 | 08:05:25 | Voltage #0x58 | Lower Critical going low  | Asserted
+  71 | 03/30/2021 | 08:06:57 | Power Unit #0xff | Power off/down | Asserted
+  72 | 03/30/2021 | 08:07:04 | OEM record c1 | 000000 | 06000a260d66
+  73 | 03/30/2021 | 08:07:21 | OEM record c1 | 000000 | 06000a260d66
+  74 | 03/30/2021 | 08:08:22 | System Event | OEM System boot event | Asserted
+  75 | 03/30/2021 | 08:08:31 | OS Boot #0x22 | boot completed - device not specified | Asserted
+  76 | 03/30/2021 | 08:09:28 | Voltage #0x58 | Lower Critical going low  | Deasserted
+  77 | 03/30/2021 | 08:09:28 | Voltage #0x58 | Lower Non-critical going low  | Deasserted
+  78 | 03/30/2021 | 08:14:40 | Power Unit #0xff | Power off/down | Asserted
+  79 | 03/30/2021 | 08:14:49 | OEM record c1 | 000000 | 06000a260d66
+  7a | 03/30/2021 | 08:15:06 | OEM record c1 | 000000 | 06000a260d66
+  7b | 03/30/2021 | 08:16:07 | System Event | OEM System boot event | Asserted
+  7c | 03/30/2021 | 08:16:16 | OS Boot #0x22 | boot completed - device not specified | Asserted
+  7d | 03/30/2021 | 08:17:24 | Voltage #0x5a | Lower Non-critical going low  | Asserted
+  7e | 03/30/2021 | 08:17:24 | Voltage #0x5a | Lower Critical going low  | Asserted
+  7f | 03/30/2021 | 08:17:24 | Voltage #0x5d | Lower Non-critical going low  | Asserted
+  80 | 03/30/2021 | 08:17:24 | Voltage #0x5d | Lower Critical going low  | Asserted
+  81 | 03/30/2021 | 08:18:52 | Power Unit #0xff | Power off/down | Asserted
+  82 | 03/30/2021 | 08:18:59 | OEM record c1 | 000000 | 06000a260d66
+  83 | 03/30/2021 | 08:19:15 | OEM record c1 | 000000 | 06000a260d66
+  84 | 03/30/2021 | 08:20:17 | System Event | OEM System boot event | Asserted
+  85 | 03/30/2021 | 08:20:26 | OS Boot #0x22 | boot completed - device not specified | Asserted
+  86 | 03/30/2021 | 08:21:25 | Voltage #0x58 | Lower Non-critical going low  | Asserted
+  87 | 03/30/2021 | 08:21:25 | Voltage #0x58 | Lower Critical going low  | Asserted
+  88 | 03/30/2021 | 08:23:01 | Power Unit #0xff | Power off/down | Asserted
+  89 | 03/30/2021 | 08:23:11 | OEM record c1 | 000000 | 06000a260d66
+  8a | 03/30/2021 | 08:23:27 | OEM record c1 | 000000 | 06000a260d66
+  8b | 03/30/2021 | 08:24:28 | System Event | OEM System boot event | Asserted
+  8c | 03/30/2021 | 08:24:37 | OS Boot #0x22 | boot completed - device not specified | Asserted
+  8d | 03/30/2021 | 08:25:28 | Voltage #0x58 | Lower Critical going low  | Deasserted
+  8e | 03/30/2021 | 08:25:28 | Voltage #0x58 | Lower Non-critical going low  | Deasserted
+  8f | 03/30/2021 | 08:27:19 | Power Unit #0xff | Power off/down | Asserted
+  90 | 03/30/2021 | 08:27:29 | OEM record c1 | 000000 | 06000a260d66
+  91 | 03/30/2021 | 08:27:46 | OEM record c1 | 000000 | 06000a260d66
+  92 | 03/30/2021 | 08:28:47 | System Event | OEM System boot event | Asserted
+  93 | 03/30/2021 | 08:28:56 | OS Boot #0x22 | boot completed - device not specified | Asserted
+  94 | 03/30/2021 | 08:29:49 | Voltage #0x5a | Lower Critical going low  | Deasserted
+  95 | 03/30/2021 | 08:29:49 | Voltage #0x5a | Lower Non-critical going low  | Deasserted
+  96 | 03/30/2021 | 08:29:49 | Voltage #0x5a | Upper Non-critical going high | Asserted
+  97 | 03/30/2021 | 08:29:49 | Voltage #0x5d | Lower Critical going low  | Deasserted
+  98 | 03/30/2021 | 08:29:49 | Voltage #0x5d | Lower Non-critical going low  | Deasserted
+  99 | 03/30/2021 | 08:29:49 | Voltage #0x5d | Upper Non-critical going high | Asserted
+  9a | 03/30/2021 | 08:31:32 | Power Unit #0xff | Power off/down | Asserted
+  9b | 03/30/2021 | 08:31:42 | OEM record c1 | 000000 | 06000a260d66
+  9c | 03/30/2021 | 08:31:58 | OEM record c1 | 000000 | 06000a260d66
+  9d | 03/30/2021 | 08:33:00 | System Event | OEM System boot event | Asserted
+  9e | 03/30/2021 | 08:33:10 | OS Boot #0x22 | boot completed - device not specified | Asserted
+  9f | 03/30/2021 | 08:34:16 | Voltage #0x58 | Lower Non-critical going low  | Asserted
+  a0 | 03/30/2021 | 08:34:16 | Voltage #0x58 | Lower Critical going low  | Asserted
+  a1 | 03/30/2021 | 08:35:47 | Power Unit #0xff | Power off/down | Asserted
+  a2 | 03/30/2021 | 08:35:56 | OEM record c1 | 000000 | 06000a260d66
+  a3 | 03/30/2021 | 08:36:13 | OEM record c1 | 000000 | 06000a260d66
+  a4 | 03/30/2021 | 08:37:14 | System Event | OEM System boot event | Asserted
+  a5 | 03/30/2021 | 08:37:23 | OS Boot #0x22 | boot completed - device not specified | Asserted
+  a6 | 03/30/2021 | 08:38:22 | Voltage #0x58 | Lower Critical going low  | Deasserted
+  a7 | 03/30/2021 | 08:38:22 | Voltage #0x58 | Lower Non-critical going low  | Deasserted
+  a8 | 03/30/2021 | 08:39:59 | Power Unit #0xff | Power off/down | Asserted
+  a9 | 03/30/2021 | 08:40:08 | OEM record c1 | 000000 | 06000a260d66
+  aa | 03/30/2021 | 08:40:23 | OEM record c1 | 000000 | 06000a260d66
+  ab | 03/30/2021 | 08:41:27 | System Event | OEM System boot event | Asserted
+  ac | 03/30/2021 | 08:41:36 | OS Boot #0x22 | boot completed - device not specified | Asserted
+  ad | 03/30/2021 | 08:42:34 | Voltage #0x5a | Upper Non-critical going high | Deasserted
+  ae | 03/30/2021 | 08:42:34 | Voltage #0x5d | Upper Non-critical going high | Deasserted
+  af | 03/30/2021 | 08:44:12 | Power Unit #0xff | Power off/down | Asserted
+  b0 | 03/30/2021 | 08:44:22 | OEM record c1 | 000000 | 06000a260d66
+  b1 | 03/30/2021 | 08:44:39 | OEM record c1 | 000000 | 06000a260d66
+  b2 | 03/30/2021 | 08:45:41 | System Event | OEM System boot event | Asserted
+  b3 | 03/30/2021 | 08:45:50 | OS Boot #0x22 | boot completed - device not specified | Asserted
+  b4 | 03/30/2021 | 08:46:59 | Voltage #0x58 | Lower Non-critical going low  | Asserted
+  b5 | 03/30/2021 | 08:46:59 | Voltage #0x58 | Lower Critical going low  | Asserted
+  b6 | 03/30/2021 | 08:48:25 | Power Unit #0xff | Power off/down | Asserted
+  b7 | 03/30/2021 | 08:48:32 | OEM record c1 | 000000 | 06000a260d66
+  b8 | 03/30/2021 | 08:48:49 | OEM record c1 | 000000 | 06000a260d66
+  b9 | 03/30/2021 | 08:49:51 | System Event | OEM System boot event | Asserted
+  ba | 03/30/2021 | 08:50:01 | OS Boot #0x22 | boot completed - device not specified | Asserted
+  bb | 03/30/2021 | 08:50:48 | Voltage #0x58 | Lower Critical going low  | Deasserted
+  bc | 03/30/2021 | 08:50:48 | Voltage #0x58 | Lower Non-critical going low  | Deasserted
+  bd | 03/30/2021 | 08:52:37 | Power Unit #0xff | Power off/down | Asserted
+  be | 03/30/2021 | 08:52:47 | OEM record c1 | 000000 | 06000a260d66
+  bf | 03/30/2021 | 08:53:04 | OEM record c1 | 000000 | 06000a260d66
+  c0 | 03/30/2021 | 08:54:05 | System Event | OEM System boot event | Asserted
+  c1 | 03/30/2021 | 08:54:15 | OS Boot #0x22 | boot completed - device not specified | Asserted
+  c2 | 03/30/2021 | 08:55:16 | Voltage #0x5a | Lower Non-critical going low  | Asserted
+  c3 | 03/30/2021 | 08:55:16 | Voltage #0x5a | Lower Critical going low  | Asserted
+  c4 | 03/30/2021 | 08:55:16 | Voltage #0x5d | Lower Non-critical going low  | Asserted
+  c5 | 03/30/2021 | 08:55:16 | Voltage #0x5d | Lower Critical going low  | Asserted
+  c6 | 03/30/2021 | 08:56:51 | Power Unit #0xff | Power off/down | Asserted
+  c7 | 03/30/2021 | 08:56:59 | OEM record c1 | 000000 | 06000a260d66
+  c8 | 03/30/2021 | 08:57:17 | OEM record c1 | 000000 | 06000a260d66
+  c9 | 03/30/2021 | 08:58:18 | System Event | OEM System boot event | Asserted
+  ca | 03/30/2021 | 08:58:27 | OS Boot #0x22 | boot completed - device not specified | Asserted
+  cb | 03/30/2021 | 08:59:31 | Voltage #0x58 | Lower Non-critical going low  | Asserted
+  cc | 03/30/2021 | 08:59:31 | Voltage #0x58 | Lower Critical going low  | Asserted
+  cd | 03/30/2021 | 09:01:00 | Power Unit #0xff | Power off/down | Asserted
+  ce | 03/30/2021 | 09:01:07 | OEM record c1 | 000000 | 06000a260d66
+  cf | 03/30/2021 | 09:01:25 | OEM record c1 | 000000 | 06000a260d66
+  d0 | 03/30/2021 | 09:02:27 | System Event | OEM System boot event | Asserted
+  d1 | 03/30/2021 | 09:02:36 | OS Boot #0x22 | boot completed - device not specified | Asserted
+  d2 | 03/30/2021 | 09:03:35 | Voltage #0x58 | Lower Critical going low  | Deasserted
+  d3 | 03/30/2021 | 09:03:35 | Voltage #0x58 | Lower Non-critical going low  | Deasserted
+  d4 | 03/30/2021 | 09:05:13 | Power Unit #0xff | Power off/down | Asserted
+  d5 | 03/30/2021 | 09:05:22 | OEM record c1 | 000000 | 06000a260d66
+  d6 | 03/30/2021 | 09:05:40 | OEM record c1 | 000000 | 06000a260d66
+  d7 | 03/30/2021 | 09:06:42 | System Event | OEM System boot event | Asserted
+  d8 | 03/30/2021 | 09:06:51 | OS Boot #0x22 | boot completed - device not specified | Asserted
+  d9 | 03/30/2021 | 09:07:51 | Voltage #0x5a | Lower Critical going low  | Deasserted
+  da | 03/30/2021 | 09:07:51 | Voltage #0x5a | Lower Non-critical going low  | Deasserted
+  db | 03/30/2021 | 09:07:51 | Voltage #0x5a | Upper Non-critical going high | Asserted
+  dc | 03/30/2021 | 09:07:51 | Voltage #0x5d | Lower Critical going low  | Deasserted
+  dd | 03/30/2021 | 09:07:51 | Voltage #0x5d | Lower Non-critical going low  | Deasserted
+  de | 03/30/2021 | 09:07:51 | Voltage #0x5d | Upper Non-critical going high | Asserted
+  df | 03/30/2021 | 09:09:27 | Power Unit #0xff | Power off/down | Asserted

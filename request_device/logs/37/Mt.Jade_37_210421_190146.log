@@ -1,0 +1,53 @@
+<div class='w3-container '><p>./linux_test.py --start_test 0 --hostip 10.38.172.2 --hostuser root --hostpass root --bmcip 10.38.172.51 --board Mt.Jade --test_cfg memtester_300.cfg --wait 0 --sys_log logs/37/Mt.Jade_37_210421_190146.log --test_cfg memtester_300.cfg --nv_scan SI_PLT_EN[0],SI_DDR_ECC_MODE[1],SI_DDR_ZQCS_EN[1],SI_DDR_SCRUB_EN[0x000005a0]  </p></div>
+
+
+
+
+exec_cmd ./xconsole.py --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --set_nvparm [SI_DDR_SCRUB_EN:1146944:0x5A0][SI_DDR_ZQCS_EN:1147208:0x1][SI_DDR_ECC_MODE:1146952:0x1][SI_PLT_EN:1130752:0x0] --debug 0 --hostpass root --hostip 10.38.172.2
+<div class='w3-container '><p>./linux_test.py --start_test 1 --linux_script echo --time 1800 --loop 2 --hostip 10.38.172.2 --hostuser root --hostpass root --bmcip 10.38.172.51 --board Mt.Jade --test_cfg memtester_300.cfg --wait 0 --sys_log logs/37/Mt.Jade_37_210421_190146.log --test_cfg memtester_300.cfg --nv_scan SI_DDR_VMARGIN[-60.60]  </p></div>
+
+
+
+
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+exec_cmd ./xconsole.py --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --set_nvparm [SI_DDR_VMARGIN:1130496:0xFFFFFFC4] --debug 0 --hostpass root --hostip 10.38.172.2
+./xconsole.py --tty 2 --log logs/37/Mt.Jade_37_210421_190146/Mt.Jade_memtester_300.cfg_at_1_210421_190206s0cli.log --hostip 10.38.172.2 --hostuser root --note s0cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 4 --log logs/37/Mt.Jade_37_210421_190146/Mt.Jade_memtester_300.cfg_at_1_210421_190206s1cli.log --hostip 10.38.172.2 --hostuser root --note s1cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 3 --log logs/37/Mt.Jade_37_210421_190146/Mt.Jade_memtester_300.cfg_at_1_210421_190206atf.log --hostip 10.38.172.2 --hostuser root --note atf --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 1 --log logs/37/Mt.Jade_37_210421_190146/Mt.Jade_memtester_300.cfg_at_1_210421_190206uefi.log --hostip 10.38.172.2 --hostuser root --note uefi --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+<div class='w3-container '><p><a href='/logs/37/Mt.Jade_37_210421_190146/Mt.Jade_memtester_300.cfg_at_1_210421_190206.txt'>CHASSIS POWER ON[210421_190206]</a></p></div>
+exec_cmd ./xconsole.py --cmd on --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+|_send help
+|_send help
+|_send mdw -l 0x50002d14
+|_send mdw -l 0x50002d14
+|_send mdw -l 0x50002d18
+|_send mdw -l 0x50002d18
+<div class='w3-container '><p>__INFO__: 210212_256GB_2666_SECDED_ECC_1P_2DPC_16_16xDIMM_16GB_18ASF2G72PDZ-2G6E1</p></div>
+|_send root
+|_send root
+|_send cd /var/tmp
+[210421_190442]Start echo
+|_send echo 1800
+echo break re=[]#]
+[210421_190443]End echo in 1 sec
+|_send echo exit_code_$?_
+OrderedDict([('uefi Call trace', ''), ('uefi crashdump kernel', ''), ('uefi Kernel panic', ''), ('uefi No such file or directory', ''), ('uefi Hardware error', ''), ('uefi Synchronous Exception', ''), ('uefi DDRFAILSAFE', ''), ('uefi ERROR:', ''), ('uefi mismatch errors', ''), ('uefi initialization failure', ''), ('uefi Killed', ''), ('uefi ERR:', ''), ('atf Call trace', ''), ('atf crashdump kernel', ''), ('atf Kernel panic', ''), ('atf No such file or directory', ''), ('atf Hardware error', ''), ('atf Synchronous Exception', ''), ('atf DDRFAILSAFE', ''), ('atf mismatch errors', ''), ('atf initialization failure', ''), ('atf Killed', ''), ('atf ERR:', ''), ('s0cli Call trace', ''), ('s0cli crashdump kernel', ''), ('s0cli Kernel panic', ''), ('s0cli No such file or directory', ''), ('s0cli Hardware error', ''), ('s0cli Synchronous Exception', ''), ('s0cli DDRFAILSAFE', ''), ('s0cli ERROR:', ''), ('s0cli mismatch errors', ''), ('s0cli initialization failure', ''), ('s0cli Killed', ''), ('s1cli Call trace', ''), ('s1cli crashdump kernel', ''), ('s1cli Kernel panic', ''), ('s1cli No such file or directory', ''), ('s1cli Hardware error', ''), ('s1cli Synchronous Exception', ''), ('s1cli DDRFAILSAFE', ''), ('s1cli ERROR:', ''), ('s1cli mismatch errors', ''), ('s1cli initialization failure', ''), ('s1cli Killed', '')])
+<div class='w3-container  w3-text-blue'><p>__STATUS__:  SI_DDR_VMARGIN[0xFFFFFFC4] loop[1] TEST_PASS[PASS] total_pass[1/4] total_fail[0/4]</p></div>
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+exec_cmd ./xconsole.py --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --set_nvparm [SI_DDR_VMARGIN:1130496:0x3C] --debug 0 --hostpass root --hostip 10.38.172.2
+./xconsole.py --tty 2 --log logs/37/Mt.Jade_37_210421_190146/Mt.Jade_memtester_300.cfg_at_2_210421_190448s0cli.log --hostip 10.38.172.2 --hostuser root --note s0cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 4 --log logs/37/Mt.Jade_37_210421_190146/Mt.Jade_memtester_300.cfg_at_2_210421_190448s1cli.log --hostip 10.38.172.2 --hostuser root --note s1cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 3 --log logs/37/Mt.Jade_37_210421_190146/Mt.Jade_memtester_300.cfg_at_2_210421_190448atf.log --hostip 10.38.172.2 --hostuser root --note atf --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 1 --log logs/37/Mt.Jade_37_210421_190146/Mt.Jade_memtester_300.cfg_at_2_210421_190448uefi.log --hostip 10.38.172.2 --hostuser root --note uefi --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+<div class='w3-container '><p><a href='/logs/37/Mt.Jade_37_210421_190146/Mt.Jade_memtester_300.cfg_at_2_210421_190448.txt'>CHASSIS POWER ON[210421_190448]</a></p></div>
+exec_cmd ./xconsole.py --cmd on --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+|_send help
+|_send help
+|_send mdw -l 0x50002d14
+|_send mdw -l 0x50002d14
+|_send mdw -l 0x50002d18
+|_send mdw -l 0x50002d18
+<div class='w3-container '><p>__INFO__: 210212_256GB_2666_SECDED_ECC_1P_2DPC_16_16xDIMM_16GB_18ASF2G72PDZ-2G6E1</p></div>

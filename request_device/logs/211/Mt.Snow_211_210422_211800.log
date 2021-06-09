@@ -1,0 +1,47 @@
+
+
+<div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >sys_argv</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >./linux_test.py --test_case test_delivery --loop 10 --start_test 1 --time 1800 --linux_script ./test_delivery.sh --sensor_bg 1 --sol_atf 0 --sol_s0cli 0 --sol_s1cli 0 --bmcip 10.38.172.46 --board_type Mt.Snow --test_cfg test_delivery_01.cfg --wait 0 --sys_log logs/211/Mt.Snow_211_210422_211800.log --test_cfg test_delivery_01.cfg --nv_scan SI_SOC_VMARGIN[0.-38.37],SI_DDR_VMARGIN[0.-60.60]  </a></div></div>
+
+
+
+
+
+
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --bmcip 10.38.172.46 --board Mt.Snow --debug 0
+exec_cmd ./xconsole.py --bmcip 10.38.172.46 --board Mt.Snow --set_nvparm [SI_DDR_VMARGIN:1130496:0x0][SI_SOC_VMARGIN:1130504:0x0] --debug 0
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/211/Mt.Snow_211_210422_211800/BMCIP_10.38.172.46_test_delivery_test_delivery_01.cfg_at_1_210422_211801uefi.log --note uefi --bmcip 10.38.172.46 --board Mt.Snow --debug 0
+<div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/211/Mt.Snow_211_210422_211800/BMCIP_10.38.172.46_test_delivery_test_delivery_01.cfg_at_1_210422_211801.txt'>210422_211801</a></a></div></div>
+exec_cmd ./xconsole.py --cmd on --bmcip 10.38.172.46 --board Mt.Snow --debug 0
+<div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >ddr_info</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp
+[210422_212026]Start ./test_delivery.sh
+|_send ./test_delivery.sh 1800
+./test_delivery.sh break re=[]#]
+[210422_212055]End ./test_delivery.sh in 28 sec
+|_send echo exit_code_$?_
+<div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0x0] SI_SOC_VMARGIN[0x0] loop[1]</a>    <a class='w3-col m9 show-white-space w3-text-red' style='white-space: pre-line' >TEST_FAIL[FAIL]</a></div></div>
+<div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >test_summary</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[0/90] total_fail[1/90]</a></div></div>
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --bmcip 10.38.172.46 --board Mt.Snow --debug 0
+exec_cmd ./xconsole.py --bmcip 10.38.172.46 --board Mt.Snow --set_nvparm [SI_DDR_VMARGIN:1130496:0x0][SI_SOC_VMARGIN:1130504:0xFFFFFFDA] --debug 0
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/211/Mt.Snow_211_210422_211800/BMCIP_10.38.172.46_test_delivery_test_delivery_01.cfg_at_2_210422_212123uefi.log --note uefi --bmcip 10.38.172.46 --board Mt.Snow --debug 0
+<div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/211/Mt.Snow_211_210422_211800/BMCIP_10.38.172.46_test_delivery_test_delivery_01.cfg_at_2_210422_212123.txt'>210422_212123</a></a></div></div>
+exec_cmd ./xconsole.py --cmd on --bmcip 10.38.172.46 --board Mt.Snow --debug 0
+<div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >ddr_info</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp
+[210422_212350]Start ./test_delivery.sh
+|_send ./test_delivery.sh 1800
+wait[2400]
+wait[2340]
+wait[2280]

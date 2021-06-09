@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}{{action}}{% endblock %}
+{% block body %}
+<div class="container">
+ <form action="/platform_import_log/{{id}}"  method="post"  enctype="multipart/form-data">
+
+  <div class="w3-container w3-indigo w3-row">
+	   	<div class="w3-col m12 w3-indigo"><label>Upload File Linux_Console Log</label></div>
+	 	<div class="w3-row w3-indigo">
+	    	<input class="w3-col m12 w3-input" type="file" name="file1" autocomplete="off" >
+	   	</div>
+    	<div class="w3-col m12 w3-indigo"><label>OR href link</label></div>
+    	<textarea  class="w3-col m12 w3-input html_link" id='html_link' name="html_link" rows='1' style='width:100%' ></textarea>
+  </div>
+  <div class="w3-container w3-indigo w3-row">
+  	<input type="submit" value="submit" class= "w3-button w3-xlarge w3-purple"></input>
+  </div>
+ </form>
+</div>
+{% endblock %}

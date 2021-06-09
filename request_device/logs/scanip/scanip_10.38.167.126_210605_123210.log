@@ -1,0 +1,150 @@
+Start scan IP 10.38.167.126 to 10.38.167.255
+10.38.167.126 
+ipmitool -H 10.38.167.126 -U ADMIN -P ADMIN -I lanplus -z 0x7fff fru print
+Error: Unable to establish IPMI v2 / RMCP+ session
+ipmitool -H 10.38.167.126 -U admin -P password -I lanplus -z 0x7fff fru print
+Setting large buffer to 32767
+FRU Device Description : Builtin FRU Device (ID 0)
+ Chassis Type          : Rack Mount Chassis
+ Chassis Part Number   : 25EC5-R27203-I0R
+ Chassis Serial        : K61206000800112
+ Board Mfg Date        : Sat Jan  1 07:52:00 2000
+ Board Mfg             : GIGABYTE
+ Board Product         : MP32-AR0-JG
+ Board Serial          : LG2P6000058
+ Board Part Number     : 5MP32AR0NR-JG-10B
+ Board Extra           : NULL
+ Product Manufacturer  : GIGABYTE
+ Product Name          : R272-P30-JG
+ Product Part Number   : 9NR272P30MR-JG-101
+ Product Version       : 101
+ Product Serial        : GLG2P7812A0013
+ Product Asset Tag     : 01234567890123456789AB
+
+FRU Device Description : FRU01 (ID 1)
+ Chassis Type          : Rack Mount Chassis
+ Chassis Part Number   : 01234567
+ Chassis Serial        : 01234567890123456789AB
+ Board Mfg Date        : Sat Jan  1 07:52:00 2000
+ Board Mfg             : NULL
+ Board Product         : MP32-AR0-JG
+ Board Serial          : 01234567890123456789AB
+ Board Part Number     : 01234567
+ Board Extra           : NULL
+ Product Manufacturer  : NULL
+ Product Name          : R272-P30-JG
+ Product Part Number   : 000000000001
+ Product Version       : 0100
+ Product Serial        : 01234567890123456789AB
+ Product Asset Tag     : 01234567890123456789AB
+
+./sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.167.126 'ifconfig | grep HWaddr'
+sh: ./sshpass: cannot execute binary file
+./sshpass -p superuser ssh -o StrictHostKeyChecking=no -t sysadmin@10.38.167.126 'ifconfig | grep HWaddr'
+sh: ./sshpass: cannot execute binary file
+./sshpass -p superuser ssh -o StrictHostKeyChecking=no -t sysadmin@10.38.167.126 'ifconfig | grep HWaddr'
+sh: ./sshpass: cannot execute binary file
+
+10.38.167.127 
+ipmitool -H 10.38.167.127 -U ADMIN -P ADMIN -I lanplus -z 0x7fff fru print
+Error: Unable to establish IPMI v2 / RMCP+ session
+ipmitool -H 10.38.167.127 -U admin -P password -I lanplus -z 0x7fff fru print
+Error: Unable to establish IPMI v2 / RMCP+ session
+ipmitool -H 10.38.167.127 -U admin -P admin -I lanplus -z 0x7fff fru print
+Error: Unable to establish IPMI v2 / RMCP+ session
+./sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.167.127 'ipmitool lan print && dmidecode'
+sh: ./sshpass: cannot execute binary file
+ERROR:exec_cmd ./sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.167.127 'ipmitool lan print && dmidecode' retry 1
+10.38.167.134 
+ipmitool -H 10.38.167.134 -U ADMIN -P ADMIN -I lanplus -z 0x7fff fru print
+Setting large buffer to 32767
+FRU Device Description : Builtin FRU Device (ID 0)
+ Chassis Type          : Rack Mount Chassis
+ Chassis Part Number   : XXX.XXXXX.XXXX
+ Chassis Serial        : XXXXXXXXXXXX
+ Board Mfg Date        : Fri Sep 11 21:08:00 2020
+ Board Mfg             : WIWYNN
+ Board Product         : Mt.Jade Motherboard
+ Board Serial          : B8103010003303400022J0SA
+ Board Part Number     : B81.03010.0033
+ Board Extra           : 70:E2:84:8F:5D:08
+ Product Manufacturer  : WIWYNN
+ Product Name          : Mt.Jade Server System
+ Product Part Number   : B81.03001.0005
+ Product Version       : DVT
+ Product Serial        : B8103001000501500050N0SA
+ Product Extra         : NULL
+
+./sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.167.134 'ifconfig | grep HWaddr'
+sh: ./sshpass: cannot execute binary file
+./sshpass -p superuser ssh -o StrictHostKeyChecking=no -t sysadmin@10.38.167.134 'ifconfig | grep HWaddr'
+sh: ./sshpass: cannot execute binary file
+./sshpass -p superuser ssh -o StrictHostKeyChecking=no -t sysadmin@10.38.167.134 'ifconfig | grep HWaddr'
+sh: ./sshpass: cannot execute binary file
+
+10.38.167.135 
+ipmitool -H 10.38.167.135 -U ADMIN -P ADMIN -I lanplus -z 0x7fff fru print
+Setting large buffer to 32767
+FRU Device Description : Builtin FRU Device (ID 0)
+ Chassis Type          : Rack Mount Chassis
+ Chassis Part Number   : XXX.XXXXX.XXXX
+ Chassis Serial        : XXXXXXXXXXXX
+ Board Mfg Date        : Mon Dec 30 14:19:00 2019
+ Board Mfg             : WIWYNN
+ Board Product         : Mt.Jade Motherboard
+ Board Serial          : B810301000330330001CJ0SA
+ Board Part Number     : B81.03010.0033
+ Board Extra           : 70:E2:84:8F:31:06
+ Product Manufacturer  : WIWYNN
+ Product Name          : Mt.Jade Server System
+ Product Part Number   : XXX.XXXXX.XXXX
+ Product Version       : EVT2
+ Product Serial        : XXXXXXXXXXXXXXXXXXXXXXXX
+ Product Extra         : XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+
+./sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.167.135 'ifconfig | grep HWaddr'
+sh: ./sshpass: cannot execute binary file
+./sshpass -p superuser ssh -o StrictHostKeyChecking=no -t sysadmin@10.38.167.135 'ifconfig | grep HWaddr'
+sh: ./sshpass: cannot execute binary file
+./sshpass -p superuser ssh -o StrictHostKeyChecking=no -t sysadmin@10.38.167.135 'ifconfig | grep HWaddr'
+sh: ./sshpass: cannot execute binary file
+
+10.38.167.163 
+ipmitool -H 10.38.167.163 -U ADMIN -P ADMIN -I lanplus -z 0x7fff fru print
+Error: Unable to establish IPMI v2 / RMCP+ session
+ipmitool -H 10.38.167.163 -U admin -P password -I lanplus -z 0x7fff fru print
+Error: Unable to establish IPMI v2 / RMCP+ session
+ipmitool -H 10.38.167.163 -U admin -P admin -I lanplus -z 0x7fff fru print
+Error: Unable to establish IPMI v2 / RMCP+ session
+./sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.167.163 'ipmitool lan print && dmidecode'
+sh: ./sshpass: cannot execute binary file
+ERROR:exec_cmd ./sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.167.163 'ipmitool lan print && dmidecode' retry 1
+10.38.167.178 
+ipmitool -H 10.38.167.178 -U ADMIN -P ADMIN -I lanplus -z 0x7fff fru print
+Setting large buffer to 32767
+FRU Device Description : Builtin FRU Device (ID 0)
+ Chassis Type          : Rack Mount Chassis
+ Chassis Part Number   : B60.03008.0001
+ Chassis Serial        : 03900009J0SA
+ Board Mfg Date        : Tue Sep 29 13:37:00 2020
+ Board Mfg             : WIWYNN
+ Board Product         : Mt.Jade Motherboard
+ Board Serial          : B810301000330370007EJ0SA
+ Board Part Number     : B81.03010.0033
+ Board Extra           : 70:E2:84:8F:E2:52
+ Product Manufacturer  : WIWYNN
+ Product Name          : Mt.Jade Server System
+ Product Part Number   : B81.03001.0006
+ Product Version       : DVT
+ Product Serial        : B8103001000603900009J0SA
+ Product Asset Tag     : NULL
+ Product Extra         : NULL
+
+./sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.167.178 'ifconfig | grep HWaddr'
+sh: ./sshpass: cannot execute binary file
+./sshpass -p superuser ssh -o StrictHostKeyChecking=no -t sysadmin@10.38.167.178 'ifconfig | grep HWaddr'
+sh: ./sshpass: cannot execute binary file
+./sshpass -p superuser ssh -o StrictHostKeyChecking=no -t sysadmin@10.38.167.178 'ifconfig | grep HWaddr'
+sh: ./sshpass: cannot execute binary file
+
+DONE

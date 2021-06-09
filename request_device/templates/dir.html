@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block title %} {{pwd}} {% endblock %}
+{% block body %}
+<script>
+function debug(msg){
+	console.log(msg)
+}
+function get_log_info(id,e)
+{
+	ajax_pwd = "/ajax_log_info/{{pwd}}/" + e
+	$.ajax(ajax_pwd,
+	{
+		success: function (data, status, xhr) {
+			var obj = JSON.parse(data, function (key, value) {
+				if (key == "info"){
+					$("."+id+"_info_text").text(value)
+				}else if (key == "status"){
+			    }else{
+			    	debug(key)
+			    	debug(value)
+			    }
+			});
+		}
+	});	
+}
+</script>
+
+<div class="w3-container w3-row-padding w3-row">
+	{% for e in dirs %}
+		<div class="w3-row w3-light-blue w3-col m5">
+			<a href="/{{pwd}}/{{e}}">{{e[-60:]}}</a>
+		</div>
+		<div class="w3-row w3-light-blue w3-col m7">
+			<a class="{{e.replace('.','_')}}_info_text">Info...</a>
+		</div>
+		<script>
+			//get_log_info("{{e.replace('.','_')}}","{{e}}")
+		</script>
+	{% endfor %}
+</div>
+{% endblock %}

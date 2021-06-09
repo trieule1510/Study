@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %} {{action}} {% endblock %}
+{% block body %}
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+<div class="w3-container" style="margin-top:1px">
+  <div class="table-responsive"> 
+    <table class="js-dynamitable table table-bordered">
+      <thead>
+        <tr>
+        {% for title in titles %}
+          <th>{{title['name']}}<span class="js-sorter-desc glyphicon glyphicon-chevron-down pull-right"></span> <span class="js-sorter-asc glyphicon glyphicon-chevron-up pull-right"></span> </th>
+		{% endfor %}
+        </tr>
+        <tr>
+        {% for title in titles %}
+          <th><input  class="js-filter  form-control" type="text" value=""></th>
+        {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+	{% for device in devices %}
+  		<tr>
+  		{% for title in titles %}
+  			{% if title["name"] == "Other" %}
+  				<td style="white-space: pre-line" >{% for e in other_title %} {% if device[e] != "" or device[e] != "None" or device[e] != None %} {{e|safe}}:{{device[e]|safe}}<br>{% endif %}{% endfor %}</td>
+  			{% elif title["href"] != "" %}
+  				<td><a style="white-space: pre-line" href="{{title['href']}}/{{device['id']}}">{{device[title['name']]|safe}}</a></td>
+  			{% else %}
+  				<td style="white-space: pre-line" >{{device[title['name']]|safe}}</td>
+  			{% endif %}
+  		{% endfor %}
+  		</tr>
+	{% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/dynamitable.jquery.min.js') }}"></script>
+{% endblock %}

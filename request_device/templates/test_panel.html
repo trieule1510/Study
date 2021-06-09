@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+{% block title %} test_panel {% endblock %}
+{% block body %}
+<script>
+function debug(msg){
+	console.log(msg)
+}
+function kill_pid(id,pid){
+	$(id).click(function() {
+		var r = confirm("kill -9 " + pid +"?");
+		if (r == false) 
+			return
+		ajax_pwd = "/kill/" + pid
+		$.ajax(ajax_pwd,
+		{
+			success: function (data, status, xhr) {
+				$("#opentab_header_" + id.replace("#","").replace("_kill","")).hide()
+				$("#opentab_body_"   + id.replace("#","").replace("_kill","")).hide()
+			}
+		});	
+	});
+}
+function openTabs(id_body,id_header) {
+	  var i;
+	  var x = document.getElementsByClassName("opentab_body");
+	  var y = document.getElementsByClassName("opentab_header");
+	  for (i = 0; i < x.length; i++) {
+	    x[i].style.display = "none";  
+	    y[i].style.color = "magenta";
+	  }
+	  document.getElementById(id_body).style.display = "block";
+	  document.getElementById(id_header).style.color = "blue";
+	}
+function boards_header(i,e,data){
+	var pid = data[e].pid
+	var board_name = i+"." +data[e].name
+	var id = e + pid
+	var tab_header_class = "tab_header_class_" + id
+	var tab_body_id= "tab_body_id_"+ id
+	var h =""	
+    h = h + "<button class='w3-bar-item w3-button w3-col m3 opentab_header w3-left-align "+ tab_header_class + "' id='opentab_header_" + id + "' onclick='openTabs(\"opentab_body_"+id+"\",\"opentab_header_"+ id +"\")'>" +  board_name +  "</button>" 
+	return h
+}
+function board_body_tab(i,e,data,display){
+	var href = data[e].log
+	var cmd = data[e].cmd
+	var pid = data[e].pid
+	var board_name = i+"." +data[e].name
+	var id = e + pid
+	var tab_body_class= "tab_body_class_"+ id
+	var tab_body_id= "tab_body_id_"+ id
+	var tab_data_class= "tab_data_class_"+ id
+	var html_class = "class='w3-container w3-black select_tab  "+ tab_body_class +"' "
+	var h = ""
+	h = h + "<div class='w3-container w3-blue opentab_body ' id='opentab_body_" + id + "' style='display:" + display + "'>"
+	h = h + "	<div class='w3-row w3-purple' id='"+ tab_body_id +"'>"    
+    h = h + "		<button class='w3-button w3-purple w3-col m4' >"
+    h = h + "			<a href='#" + tab_body_id +"'>"+ board_name +"</a>"
+    h = h + "		</button>" 
+	h = h + "  		<div class='w3-button w3-purple w3-col m2' id='"+id+"_kill'>kill -9 "+pid+"</div>"
+	h = h + "  		<script>kill_pid('#"+id+"_kill','"+pid+"')<\/script>"
+    h = h + "  		<div class='w3-button w3-purple w3-col m6'><a href='/"+ href +"'>"+ cmd +"</a></div>" 
+	h = h + "	</div>"
+	h = h + "	<div class='w3-container w3-white'>"
+	h = h + "		<div class='" + tab_data_class +" overflowTest '>"
+	h = h + "		</div>"
+	h = h + "	</div>"
+	h = h + "</div>"
+	return h
+}
+var websocket = new WebSocket("ws://{{ws_ip}}/");
+websocket.onmessage = function (event) {
+	console.log(event.data);
+    data = JSON.parse(event.data);
+    console.log(data);
+    var i = 0
+    for (e in data) {
+    	var pid = data[e].pid
+    	var id = e + pid
+    	var tab_header_class = "tab_header_class_" + id
+    	var tab_data_class= "tab_data_class_"+ id
+    	var display ="none"
+    	if (!$("." + tab_header_class)[0]){
+    	    $(".tab_header").append(boards_header(i,e,data))
+    	    if (i == 0 )
+    	    	display = "block"
+        	$(".tab_body").append(board_body_tab(i,e,data,display))
+    	}
+    	if (data[e].data != "")
+	    	$("." + tab_data_class).html(data[e].data)
+	    	var signals = ["TEST ERROR", "_DONE_","2DPC","1DPC"];
+    	for (signal of signals) {
+		    if (data[e].data.includes(signal) & !$("." + tab_header_class).text().includes(signal)){		    	
+		    	$("." + tab_header_class).text( $("." + tab_header_class).text() + " " + signal )
+		    }
+    	}
+    	i++
+    }
+};
+</script>
+<div class='w3-container w3-blue w3-row'>
+	<div class="w3-bar w3-black tab_header"> </div>
+</div>
+<div class="tab_body"></div>  
+{% endblock %}

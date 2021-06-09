@@ -1,0 +1,67 @@
+<div class='w3-container '><p>./linux_test.py --start_test 0 --hostip 10.38.172.2 --hostuser root --hostpass root --bmcip 10.38.172.51 --board Mt.Jade --test_cfg memtester_300.cfg --wait 0 --sys_log logs/37/Mt.Jade_37_210421_135508.log --test_cfg memtester_300.cfg --nv_scan SI_PLT_EN[0],SI_DDR_ECC_MODE[1],SI_DDR_ZQCS_EN[1],SI_DDR_SCRUB_EN[0x000005a0]  </p></div>
+exec_cmd ./xconsole.py --cmd 0 --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+
+
+[795060.518308] ttyUSB15' AD0K8YXF
+[795055.398535] ttyUSB14' AD0K8YY7
+[795048.749962] ttyUSB13' AD0K8YXU
+[792950.508806] ttyUSB12' FTDBIMR1
+[791698.280043] ttyUSB1' FTBELRP0
+[788546.901077] ttyUSB11' AD0K8YY4
+[788540.501197] ttyUSB8' AD0K8KF3
+[788533.581139] ttyUSB7' AD0K8YYB
+[782355.642588] ttyUSB6' AD0K99AT
+[777769.620585] ttyUSB10' AD0K9J3K
+[777757.940384] ttyUSB5' AB0KUEMT
+[777750.679301] ttyUSB4' AD0K8YXP
+[760956.946947] ttyUSB3' FTBQZF1O
+[698277.608500] ttyUSB2' FTEZFKQR
+[676695.120014] ttyUSB0' FTBZED1L
+[75470.996882] ttyUSB9' FTEZFHCC
+
+
+
+
+exec_cmd ./xconsole.py --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --set_nvparm [SI_DDR_SCRUB_EN:1146944:0x5A0][SI_DDR_ZQCS_EN:1147208:0x1][SI_DDR_ECC_MODE:1146952:0x1][SI_PLT_EN:1130752:0x0] --debug 0 --hostpass root --hostip 10.38.172.2
+<div class='w3-container '><p>./linux_test.py --start_test 1 --linux_script ./memtest_launcher_v12.sh --time 1800 --loop 10 --hostip 10.38.172.2 --hostuser root --hostpass root --bmcip 10.38.172.51 --board Mt.Jade --test_cfg memtester_300.cfg --wait 0 --sys_log logs/37/Mt.Jade_37_210421_135508.log --test_cfg memtester_300.cfg   </p></div>
+exec_cmd ./xconsole.py --cmd 0 --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+
+
+[795060.518308] ttyUSB15' AD0K8YXF
+[795055.398535] ttyUSB14' AD0K8YY7
+[795048.749962] ttyUSB13' AD0K8YXU
+[792950.508806] ttyUSB12' FTDBIMR1
+[791698.280043] ttyUSB1' FTBELRP0
+[788546.901077] ttyUSB11' AD0K8YY4
+[788540.501197] ttyUSB8' AD0K8KF3
+[788533.581139] ttyUSB7' AD0K8YYB
+[782355.642588] ttyUSB6' AD0K99AT
+[777769.620585] ttyUSB10' AD0K9J3K
+[777757.940384] ttyUSB5' AB0KUEMT
+[777750.679301] ttyUSB4' AD0K8YXP
+[760956.946947] ttyUSB3' FTBQZF1O
+[698277.608500] ttyUSB2' FTEZFKQR
+[676695.120014] ttyUSB0' FTBZED1L
+[75470.996882] ttyUSB9' FTEZFHCC
+
+
+
+
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+./xconsole.py --tty 2 --log logs/37/Mt.Jade_37_210421_135508/Mt.Jade_memtester_300.cfg_at_1_210421_135530s0cli.log --hostip 10.38.172.2 --hostuser root --note s0cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 4 --log logs/37/Mt.Jade_37_210421_135508/Mt.Jade_memtester_300.cfg_at_1_210421_135530s1cli.log --hostip 10.38.172.2 --hostuser root --note s1cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 3 --log logs/37/Mt.Jade_37_210421_135508/Mt.Jade_memtester_300.cfg_at_1_210421_135530atf.log --hostip 10.38.172.2 --hostuser root --note atf --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 1 --log logs/37/Mt.Jade_37_210421_135508/Mt.Jade_memtester_300.cfg_at_1_210421_135530uefi.log --hostip 10.38.172.2 --hostuser root --note uefi --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+<div class='w3-container '><p><a href='/logs/37/Mt.Jade_37_210421_135508/Mt.Jade_memtester_300.cfg_at_1_210421_135530.txt'>CHASSIS POWER ON[210421_135530]</a></p></div>
+exec_cmd ./xconsole.py --cmd on --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+<div class='w3-container '><p>__INFO__: dimm_type_16xDIMM_16GB_18ASF2G72PDZ-2G6E1</p></div>
+<div class='w3-container  w3-text-blue w3-text-red'><p>__STATUS__:  loop[1] TEST_FAIL[Shell>] PASS[0/10]CLI[0]</p></div>
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+./xconsole.py --tty 2 --log logs/37/Mt.Jade_37_210421_135508/Mt.Jade_memtester_300.cfg_at_2_210421_135713s0cli.log --hostip 10.38.172.2 --hostuser root --note s0cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 4 --log logs/37/Mt.Jade_37_210421_135508/Mt.Jade_memtester_300.cfg_at_2_210421_135713s1cli.log --hostip 10.38.172.2 --hostuser root --note s1cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 3 --log logs/37/Mt.Jade_37_210421_135508/Mt.Jade_memtester_300.cfg_at_2_210421_135713atf.log --hostip 10.38.172.2 --hostuser root --note atf --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 1 --log logs/37/Mt.Jade_37_210421_135508/Mt.Jade_memtester_300.cfg_at_2_210421_135713uefi.log --hostip 10.38.172.2 --hostuser root --note uefi --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+<div class='w3-container '><p><a href='/logs/37/Mt.Jade_37_210421_135508/Mt.Jade_memtester_300.cfg_at_2_210421_135713.txt'>CHASSIS POWER ON[210421_135713]</a></p></div>
+exec_cmd ./xconsole.py --cmd on --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2

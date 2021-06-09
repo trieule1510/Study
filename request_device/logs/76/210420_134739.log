@@ -1,0 +1,716 @@
+<div class='w3-container '><p>./linux_test.py --start_test 1 --linux_script dmidecode --time 60 --debug 1 --cleannv 1 --bmcip 10.38.172.55 --board Mt.Jade --wait 0 --sys_log logs/76/210420_134739.log --test_cfg dmidecode.cfg --nv_scan SI_S0_PCP_ACTIVECPM_0_31[0x1],SI_S0_PCP_ACTIVECPM_32_63[0x0],SI_S1_PCP_ACTIVECPM_0_31[0x1],SI_S1_PCP_ACTIVECPM_32_63[0x0]  </p></div>
+exec_cmd sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.172.55 'echo cleannv && gpiotool --set-data-low 226 && nvparm -c -o 0x110000 && nvparm -c -o 0x120000 && nvparm -c  -o 0x5F0000 && gpiotool --set-data-high 226'
+
+
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+cleannv
+Inside Set Gpio low 
+
+GPIO pin is set to low 
+
+Erasing blocks: 1/1 (100%)Erasing blocks: 1/1 (100%)
+Erasing blocks: 1/1 (100%)Erasing blocks: 1/1 (100%)
+Erasing blocks: 1/1 (100%)Erasing blocks: 1/1 (100%)
+Inside Set Gpio high 
+
+GPIO pin is set to high 
+
+CHASSIS POWER OFF
+exec_cmd ipmitool -H 10.38.172.55 -U ADMIN -P ADMIN -I lanplus -z 0x7fff chassis power off
+
+
+Setting large buffer to 32767
+Chassis Power Control: Down/Off
+exec_cmd sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.172.55 'echo SI_S1_PCP_ACTIVECPM_32_63 && gpiotool --set-data-low 226 && nvparm -s 0x0 -o 0x118018 && gpiotool --set-data-high 226;\
+echo SI_S1_PCP_ACTIVECPM_0_31 && gpiotool --set-data-low 226 && nvparm -s 0x1 -o 0x118010 && gpiotool --set-data-high 226;\
+echo SI_S0_PCP_ACTIVECPM_32_63 && gpiotool --set-data-low 226 && nvparm -s 0x0 -o 0x118008 && gpiotool --set-data-high 226;\
+echo SI_S0_PCP_ACTIVECPM_0_31 && gpiotool --set-data-low 226 && nvparm -s 0x1 -o 0x118000 && gpiotool --set-data-high 226;\
+'
+
+
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+SI_S1_PCP_ACTIVECPM_32_63
+Inside Set Gpio low 
+
+GPIO pin is set to low 
+
+Erasing blocks: 1/1 (100%)Erasing blocks: 1/1 (100%)
+Inside Set Gpio high 
+
+GPIO pin is set to high 
+
+SI_S1_PCP_ACTIVECPM_0_31
+Inside Set Gpio low 
+
+GPIO pin is set to low 
+
+Erasing blocks: 1/1 (100%)Erasing blocks: 1/1 (100%)
+Inside Set Gpio high 
+
+GPIO pin is set to high 
+
+SI_S0_PCP_ACTIVECPM_32_63
+Inside Set Gpio low 
+
+GPIO pin is set to low 
+
+Erasing blocks: 1/1 (100%)Erasing blocks: 1/1 (100%)
+Inside Set Gpio high 
+
+GPIO pin is set to high 
+
+SI_S0_PCP_ACTIVECPM_0_31
+Inside Set Gpio low 
+
+GPIO pin is set to low 
+
+Erasing blocks: 1/1 (100%)Erasing blocks: 1/1 (100%)
+Inside Set Gpio high 
+
+GPIO pin is set to high 
+
+
+
+./xconsole.py --tty 2 --log logs/76/210420_134739/Mt.Jade_dmidecode.cfg_at_1_210420_134755s0cli.log --hostuser amcclab --note s0cli --board Mt.Jade --bmcip 10.38.172.55 --hostpass amcc1234
+
+
+./xconsole.py --tty 4 --log logs/76/210420_134739/Mt.Jade_dmidecode.cfg_at_1_210420_134755s1cli.log --hostuser amcclab --note s1cli --board Mt.Jade --bmcip 10.38.172.55 --hostpass amcc1234
+
+
+./xconsole.py --tty 3 --log logs/76/210420_134739/Mt.Jade_dmidecode.cfg_at_1_210420_134755atf.log --hostuser amcclab --note atf --board Mt.Jade --bmcip 10.38.172.55 --hostpass amcc1234
+
+
+./xconsole.py --tty 1 --log logs/76/210420_134739/Mt.Jade_dmidecode.cfg_at_1_210420_134755uefi.log --hostuser amcclab --note uefi --board Mt.Jade --bmcip 10.38.172.55 --hostpass amcc1234
+
+
+<div class='w3-container '><p><a href='/logs/76/210420_134739/Mt.Jade_dmidecode.cfg_at_1_210420_134755.txt'>CHASSIS POWER ON[210420_134755]</a></p></div>
+exec_cmd ipmitool -H 10.38.172.55 -U ADMIN -P ADMIN -I lanplus -z 0x7fff chassis power on
+
+
+Setting large buffer to 32767
+Chassis Power Control: Up/On
+ipmitool -H 10.38.172.55 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  sol deactivate instance=2
+Setting large buffer to 32767
+ipmitool -H 10.38.172.55 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  sol activate=usesolkeepalive instance=2
+logs/76/210420_134739/Mt.Jade_dmidecode.cfg_at_1_210420_134755s0cli.log
+
+SEC:fuselock: 00000001 tmmdbglockr: 00000001
+tmmnsdbgcsr: 00000003 tmmsdbgcsr: 00000003
+
+SMpro Runtime Firmware v1.4 - build 20210326
+Failsafe: 0
+Load PMpro
+ipmitool -H 10.38.172.55 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  sol deactivate instance=4
+Setting large buffer to 32767
+ipmitool -H 10.38.172.55 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  sol activate=usesolkeepalive instance=4
+logs/76/210420_134739/Mt.Jade_dmidecode.cfg_at_1_210420_134755s1cli.log
+
+ipmitool -H 10.38.172.55 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  sol deactivate instance=1
+Setting large buffer to 32767
+ipmitool -H 10.38.172.55 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  sol activate=usesolkeepalive instance=1
+logs/76/210420_134739/Mt.Jade_dmidecode.cfg_at_1_210420_134755uefi.log
+
+
+SMpro Rom Firmware v1.0 - build 20190626
+Authenticated PMpro
+Board: config 0
+Available CPM: 0x0000000000000001
+Release S1
+SEC:fuselock: 00000001 tmmdbglockr: 00000001
+tmmnsdbgcsr: 00000003 tmmsdbgcsr: 00000003
+
+SMpro Runtime Firmware v1.4 - build 20210326
+Load PMpro
+S1: Ready
+S1: Sync
+Authenticated PMpro
+Master: Ready
+Board: config 0
+Available CPM: 0x0000000000000001
+S1: Sync
+Boot PMpro
+Load BL1
+Boot PMpro
+Probe I2C10 DIMM0
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM1
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM2
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM3
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM4
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM5
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM6
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+BL1 authenticated
+Probe I2C10 DIMM0
+Probe I2C10 DIMM1
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM2
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM3
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM4
+Probe I2C10 DIMM5
+Probe I2C10 DIMM6
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM7
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C2 DIMM0
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM1
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM2
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM3
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C10 DIMM7
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C2 DIMM0
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM1
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2Probe I2C2 DIMM4
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM5
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM6
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: CC2: Clear bus
+Probe I2C2 DIMM2
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM3
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM4
+lear bus
+Probe I2C2 DIMM7
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+DDR: Unsupported MCU mask 0x00000000
+DDR: Operational     DIMM: 0x00000000
+DDR: Failure         DIMM: 0x00000000
+DDR: Non-Operational DIMM: 0x00000000
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM5
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM6
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM7
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+DDR: Unsupported MCU mask 0x00000005
+DDR: Fallback MCU mask 0x00000001
+DDR: Operational     DIMM: 0x00000001
+DDR: Failure         DIMM: 0x00000000
+DDR: Non-Operational DIMM: 0x00000030
+128KB OCM protection active
+PCP initialized
+vTPM: SCP Measurement Fails.
+SMpro ready
+S0-cli>  2P: reset host
+System reboot
+NOTICE:  DRAM FW version 210212
+CP: 0ff00900
+MEMC param:
+  mcu_enable_mask = 00000001 [default: 000000ff]
+DRAM populated DIMMs:
+  SK0 MC0 S0: RDIMM[ce:80] 16GB 2666 ECC 2R x8 RCD[b3:80] M393A2K43CB2-CTD    
+CP: 3ff00100
+CP: 3ff00200
+CP: 00f01902
+CP: 0ff00a00
+CP: 0ff00b01
+CP: 00f01901
+CP: 00f01904
+CP: 00f02901
+CP: 00f01905
+CP: 00f02902
+CP: 00f02903
+CP: 00f02904
+CP: 00f01907
+CP: 00f01906
+CP: 00f01908
+CP: 00f01909
+CP: 0ff00b02
+CP: 0ff00c00
+CP: 3ff00300
+CP: 00001a02
+CP: 00001a03
+CP: 00001a04
+CP: 00101a02
+CP: 00101a03
+CP: 00101a04
+CP: 00001a05
+CP: 00101a05
+CP: 00f01a07
+CP: 00001a09
+
+PMpro output start
+PMpro Runtime Firmware v1.4 - build 20210326
+2P mode: 0x00000002
+2P Cfg: 0xFFFFFF01
+2PLINK1 (RC/EP): 0x00000010/0x00000010 0x00000004/0x00000004
+2PLINK0: Link Down
+2PLINK1 (RC/EP): 0x00000010/0x00000010 0x00000004/0x00000004
+2PLINK1: Link Up
+PMpro output complete
+128KB OCM protection active
+PCP initialized
+vTPM: SCP Measurement Completes.
+CP: 00101a09
+CP: 00001a0a
+CP: 00001a0b
+CP: 00001a0c
+CP: 00001a0c
+CP: 00101a0b
+CP: 00101a0c
+CP: 00101a0c
+CP: 3ff00400
+CP: 0ff01000
+CP: 0ff01101
+DRAM ECC Initialization: [6] [ ==>                  ]DRAM ECC Initialization: [12] [ ===>                 ]DRAM ECC Initialization: [18] [ ====>                ]DRAM ECC Initialization: [25] [ ======>              ]DRAM ECC Initialization: [31] [ =======>             ]DRAM ECC Initialization: [37] [ ========>            ]DRAM ECC Initialization: [43] [ =========>           ]DRAM ECC Initialization: [50] [ ===========>         ]DRAM ECC Initialization: [56] [ ============>        ]DRAM ECC Initialization: [62] [ =============>       ]DRAM ECC Initialization: [68] [ ==============>      ]DRAM ECC Initialization: [75] [ ================>    ]DRAM ECC Initialization: [81] [ =================>   ]DRAM ECC Initialization: [87] [ ==================>  ]DRAM ECC Initialization: [93] [ ===================> ]DRAM ECC Initialization: [100] [ ==================== ]
+CP: 0ff01200
+CP: 3ff00800
+DRAM memory regions:
+  Node[0] Region[0]: 0x000080000000 - 0x0000bfffffff 
+  Node[0] Region[1]: 0x080000000000 - 0x08007fffffff 
+  Node[0] Region[2]: 0x0800c0000000 - 0x0803ffffffff 
+DRAM: 16GB DDR4 2666 SECDED ECC
+ZQCS period(msec): 200
+
+Error: SMPRO S0 -  {UE}
+TIMER: 0x0000000001AC3C2E
+MSG: 0x00000003
+DATA0: 0x2149008D
+DATA1: 0x00000005
+
+Error: SMPRO S0 -  {UE}
+TIMER: 0x0000000001AC5F00
+MSG: 0x00000002
+DATA0: 0x714C008A
+DATA1: 0x00000000
+
+Error: PMPRO S0 -  {UE}
+TIMER: 0x0000000001AC83F7
+MSG: 0x00000003
+DATA0: 0x22440074
+DATA1: 0x00000000
+
+SMpro Rom Firmware v1.0 - build 20190626
+SEC:fuselock: 00000001 tmmdbglockr: 00000001
+tmmnsdbgcsr: 00000003 tmmsdbgcsr: 00000003
+
+SMpro Runtime Firmware v1.4 - build 20210326
+Failsafe: 0
+Load PMpro
+
+SMpro Rom Firmware v1.0 - build 20190626
+Authenticated PMpro
+Board: config 0
+Available CPM: 0x0000000000000001
+Release S1
+SEC:fuselock: 00000001 tmmdbglockr: 00000001
+tmmnsdbgcsr: 00000003 tmmsdbgcsr: 00000003
+
+SMpro Runtime Firmware v1.4 - build 20210326
+Load PMpro
+S1: Ready
+Authenticated PMpro
+Master: Ready
+Board: config 0
+Available CPM: 0x0000000000000001
+S1: Sync
+Boot PMpro
+S1: Sync
+Probe I2C10 DIMM0
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM1
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM2
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: CleaBoot PMpro
+Load BL1
+BL1 authenticated
+Probe I2C10 DIMM0
+r bus
+I2C10: Clear bus
+Probe I2C10 DIMM3
+I2C10: Clear bus
+Probe I2C10 DIMM1
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM2
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM4
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM5
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM3
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM4
+Probe I2C10 DIMM5
+Probe I2C10 DIMM6
+DIMM6
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM7
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C2 DIMM0
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM1
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM2
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM7
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C2 DIMM0
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM3
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM4
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM5
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: CProbe I2C2 DIMM1
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM2
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM3
+lear bus
+Probe I2C2 DIMM6
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM7
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+DDR: Unsupported MCU mask 0x00000000
+DDR: I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM4
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM5
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bOperational     DIMM: 0x00000000
+DDR: Failure         DIMM: 0x00000000
+DDR: Non-Operational DIMM: 0x00000000
+us
+I2C2: Clear bus
+Probe I2C2 DIMM6
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM7
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+DDR: Unsupported MCU mask 0x00000005
+DDR: Fallback MCU mask 0x00000001
+DDR: Operational     DIMM: 0x00000001
+DDR: Failure         DIMM: 0x00000000
+DDR: Non-Operational DIMM: 0x00000030
+128KB OCM protection active
+PCP initialized
+NOTICE:  DRAM FW version 210212
+CP: 0ff00900
+MEMC param:
+  mcu_enable_mask = 00000001 [default: 000000ff]
+DRAM populated DIMMs:
+  SK0 MC0 S0: RDIMM[ce:80] 16GB 2666 ECC 2R x8 RCD[b3:80] M393A2K43CB2-CTD    
+CP: 3ff00100
+CP: 3ff00200
+CP: 00fvTPM: SCP Measurement Fails.
+SMpro ready
+S0-cli> 2P: reset host
+System reboot
+
+PMpro output start
+PMpro Runtime Firmware v1.4 - build 20210326
+2P mode: 0x00000002
+2P Cfg: 0xFFFFFF01
+2PLINK1 (RC/EP): 0x00000010/0x00000010 0x00000004/0x0000001902
+CP: 0ff00a00
+CP: 0ff00b01
+CP: 00f01901
+CP: 00f01904
+CP: 00f02901
+CP: 00f01905
+CP: 00f02902
+CP: 00f02903
+CP: 00f02904
+CP: 00f01907
+CP: 00f01906
+CP: 00f01908
+CP: 00f01909
+CP: 0ff00b02
+CP: 0ff00c00
+CP: 3ff00300
+CP: 00001a02
+CP: 00001a03
+CP: 00001a04
+CP: 00101a02
+CP: 00101a03
+CP: 00101a04
+CP: 00001a05
+CP: 00101a05
+CP: 00f01a07
+CP: 00001a09
+004
+2PLINK0: Link Down
+2PLINK1 (RC/EP): 0x00000010/0x00000010 0x00000004/0x00000004
+2PLINK1: Link Up
+PMpro output complete
+128KB OCM protection active
+PCP initialized
+vTPM: SCP Measurement Completes.
+CP: 00101a09
+CP: 00001a0a
+CP: 00001a0b
+CP: 00001a0c
+CP: 00001a0c
+CP: 00101a0b
+CP: 00101a0c
+CP: 00101a0c
+CP: 3ff00400
+CP: 0ff01000
+CP: 0ff01101
+DRAM ECC Initialization: [6] [ ==>                  ]DRAM ECC Initialization: [12] [ ===>                 ]DRAM ECC Initialization: [18] [ ====>                ]DRAM ECC Initialization: [25] [ ======>              ]DRAM ECC Initialization: [31] [ =======>             ]DRAM ECC Initialization: [37] [ ========>            ]DRAM ECC Initialization: [43] [ =========>           ]DRAM ECC Initialization: [50] [ ===========>         ]DRAM ECC Initialization: [56] [ ============>        ]DRAM ECC Initialization: [62] [ =============>       ]DRAM ECC Initialization: [68] [ ==============>      ]DRAM ECC Initialization: [75] [ ================>    ]DRAM ECC Initialization: [81] [ =================>   ]DRAM ECC Initialization: [87] [ ==================>  ]DRAM ECC Initialization: [93] [ ===================> ]DRAM ECC Initialization: [100] [ ==================== ]
+CP: 0ff01200
+CP: 3ff00800
+DRAM memory regions:
+  Node[0] Region[0]: 0x000080000000 - 0x0000bfffffff 
+  Node[0] Region[1]: 0x080000000000 - 0x08007fffffff 
+  Node[0] Region[2]: 0x0800c0000000 - 0x0803ffffffff 
+DRAM: 16GB DDR4 2666 SECDED ECC
+ZQCS period(msec): 200
+
+Error: SMPRO S0 -  {UE}
+TIMER: 0x0000000001AC7FA6
+MSG: 0x00000003
+DATA0: 0x2149008D
+DATA1: 0x00000005
+
+Error: SMPRO S0 -  {UE}
+TIMER: 0x0000000001ACA2A1
+MSG: 0x00000002
+DATA0: 0x714C008A
+DATA1: 0x00000000
+
+Error: PMPRO S0 -  {UE}
+TIMER: 0x0000000001ACC76F
+MSG: 0x00000003
+DATA0: 0x22440074
+DATA1: 0x00000000
+Checkpoint 2F
+Checkpoint 2E
+Checkpoint 31
+<div class='w3-container '><p>__INFO__: dimm_type_1xDIMM_16GB_M393A2K43CB2-CTD</p></div>
+Checkpoint 32
+UEFI RC version: Master
+SCP FW version    : 1.4
+SCP FW build date : 20210326
+Failsafe status                 : 0
+Reset status                    : 3
+CPU info
+    CPU ID                      : 413FD0C1
+    CPU Clock                   : 2800 MHz
+    Number of active sockets    : 1
+    Number of active cores      : 2
+    Socket[0]: Core voltage     : 960
+    Socket[0]: SCU ProductID    : A00001
+    Socket[0]: Max cores        : 80
+    Socket[0]: Warranty         : 0
+    Socket[0]: Subnuma          : 0
+    Socket[0]: RC disable mask  : 3
+    Socket[0]: AVS enabled      : 1
+    Socket[0]: AVS voltage      : 1000
+SOC info
+    DDR Frequency               : 2666 MHz
+    Socket[0]: Soc voltage      : 750
+    Socket[0]: DIMM1 voltage    : 1200
+    Socket[0]: DIMM2 voltage    : 1200
+    PCP Clock                   : 1350 MHz
+    SOC Clock                   : 2000 MHz
+    SYS Clock                   : 400 MHz
+    AHB Clock                   : 200 MHz
+User Configuration Setting:
+    8000: 0x1 (1)
+    8008: 0x0 (0)
+    8010: 0x1 (1)
+    8018: 0x0 (0)
+Checkpoint 4F
+Checkpoint 60
+Checkpoint 61
+Checkpoint 9A
+Checkpoint 90
+Checkpoint 91
+Checkpoint 91
+Checkpoint 97
+[2J[1;1H[1;1H[25;78H98[1;1HCheckpoint 98
+[0;37;40m[2J[1;1H[1;1H[1;1HVersion 2.21.1280. Copyright (C) 2021 AMI                                       [2;1HBIOS Date: 2021/03/26 17:52:49 Ver: 0ACOI 1.4.20210326                          [3;1H                                                                                [4;1H                                                                                [5;1H                                                                                [6;1H                                                                                [7;1H                                                                                [8;1H                                                                                [9;1H                                                                                [10;1H                                                                                [11;1H                                                                                [12;1H                                                                                [13;1H                                                                                [14;1H                                                                                [15;1H                                                                                [16;1H                                                                                [17;1H                                                                                [18;1H                                                                                [19;1H                                                                                [20;1H                                                                                [21;1H                                                                                [22;1H                                                                                [23;1H                                                                                [24;1H                                                                                [25;1H                                                                               [3;1H[3;1HPress <DEL> or <ESC> to enter setup.Checkpoint AD
+[2J[1;1H[2J[1;1H[1;1HUEFI Interactive Shell v2.2
+EDK II
+UEFI v2.70 (American Megatrends, 0x0005000F)
+[1;33;40mMapping table[0;37;40m
+[4;1H[1;37;40mmap[0;37;40m: No mapping found.
+[5;1HPress [1;37;40mESC[0;37;40m in 5 seconds to skip [1;33;40mstartup.nsh[0;37;40m or any other key to continue.[5;1HPress [1;37;40mESC[0;37;40m in 4 seconds to skip [1;33;40mstartup.nsh[0;37;40m or any other key to continue.[5;1HPress [1;37;40mESC[0;37;40m in 3 seconds to skip [1;33;40mstartup.nsh[0;37;40m or any other key to continue.[5;1HPress [1;37;40mESC[0;37;40m in 2 seconds to skip [1;33;40mstartup.nsh[0;37;40m or any other key to continue.[5;1HPress [1;37;40mESC[0;37;40m in 1 seconds to skip [1;33;40mstartup.nsh[0;37;40m or any other key to continue.
+[6;1H[1;33;40mShell> [0;37;40m<div class='w3-container  w3-text-blue w3-text-red'><p>__STATUS__:  SI_S1_PCP_ACTIVECPM_32_63[0x0] SI_S1_PCP_ACTIVECPM_0_31[0x1] SI_S0_PCP_ACTIVECPM_32_63[0x0] SI_S0_PCP_ACTIVECPM_0_31[0x1] loop[1] TEST_FAIL[Shell>] PASS[0/1]CLI[0]</p></div>

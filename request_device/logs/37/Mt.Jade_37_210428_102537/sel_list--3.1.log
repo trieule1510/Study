@@ -1,0 +1,64 @@
+search_board_type Mt.Jade
+./sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.172.2 'ipmitool -H 10.38.172.51 -U ADMIN -P ADMIN  sel list'
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+   1 | 04/27/2021 | 21:40:36 | Version Change | Invalid or unsupported firmware or software version | Asserted
+   2 | 04/27/2021 | 22:35:49 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+   3 | 04/27/2021 | 22:35:49 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+   4 | 04/27/2021 | 22:43:58 | OEM record c0 | 00cd3a | ca907105ffff
+   5 | 04/27/2021 | 22:43:58 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+   6 | 04/27/2021 | 22:43:58 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+   7 | 04/27/2021 | 22:43:59 | OEM record c0 | 00cd3a | 0feb70020000
+   8 | 04/27/2021 | 22:43:59 | OEM record c0 | 00cd3a | ca8f7101ffff
+   9 | 04/27/2021 | 22:43:59 | OEM record c0 | 00cd3a | ca90f105ffff
+   a | 04/27/2021 | 22:44:00 | OEM record c0 | 00cd3a | 0feb70120000
+   b | 04/27/2021 | 22:44:00 | OEM record c0 | 00cd3a | ca8ff101ffff
+   c | 04/27/2021 | 22:48:29 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+   d | 04/27/2021 | 22:48:29 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+   e | 04/27/2021 | 22:49:33 | OEM record c0 | 00cd3a | ca907105ffff
+   f | 04/27/2021 | 22:49:33 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+  10 | 04/27/2021 | 22:49:33 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+  11 | 04/27/2021 | 22:49:34 | OEM record c0 | 00cd3a | 0feb70020000
+  12 | 04/27/2021 | 22:49:34 | OEM record c0 | 00cd3a | ca8f7101ffff
+  13 | 04/27/2021 | 22:49:34 | OEM record c0 | 00cd3a | ca90f105ffff
+  14 | 04/27/2021 | 22:49:35 | OEM record c0 | 00cd3a | 0feb70120000
+  15 | 04/27/2021 | 22:49:35 | OEM record c0 | 00cd3a | ca8ff101ffff
+  16 | 04/27/2021 | 22:53:20 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+  17 | 04/27/2021 | 22:53:20 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+  18 | 04/27/2021 | 22:54:24 | OEM record c0 | 00cd3a | ca907105ffff
+  19 | 04/27/2021 | 22:54:24 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+  1a | 04/27/2021 | 22:54:24 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+  1b | 04/27/2021 | 22:54:25 | OEM record c0 | 00cd3a | 0feb70020000
+  1c | 04/27/2021 | 22:54:25 | OEM record c0 | 00cd3a | ca8f7101ffff
+  1d | 04/27/2021 | 22:54:25 | OEM record c0 | 00cd3a | ca90f105ffff
+  1e | 04/27/2021 | 22:54:26 | OEM record c0 | 00cd3a | 0feb70120000
+  1f | 04/27/2021 | 22:54:26 | OEM record c0 | 00cd3a | ca8ff101ffff
+  20 | 04/27/2021 | 23:26:02 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+  21 | 04/27/2021 | 23:26:02 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+  22 | 04/27/2021 | 23:28:37 | OEM record c0 | 00cd3a | ca907105ffff
+  23 | 04/27/2021 | 23:28:38 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+  24 | 04/27/2021 | 23:28:38 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+  25 | 04/27/2021 | 23:28:38 | OEM record c0 | 00cd3a | 0feb70020000
+  26 | 04/27/2021 | 23:28:38 | OEM record c0 | 00cd3a | ca8f7101ffff
+  27 | 04/27/2021 | 23:28:38 | OEM record c0 | 00cd3a | ca90f105ffff
+  28 | 04/27/2021 | 23:28:39 | OEM record c0 | 00cd3a | 0feb70120000
+  29 | 04/27/2021 | 23:28:39 | OEM record c0 | 00cd3a | ca8ff101ffff
+  2a | 04/27/2021 | 23:33:09 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+  2b | 04/27/2021 | 23:33:09 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+  2c | 04/27/2021 | 23:34:12 | OEM record c0 | 00cd3a | ca907105ffff
+  2d | 04/27/2021 | 23:34:12 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+  2e | 04/27/2021 | 23:34:12 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+  2f | 04/27/2021 | 23:34:13 | OEM record c0 | 00cd3a | 0feb70020000
+  30 | 04/27/2021 | 23:34:13 | OEM record c0 | 00cd3a | ca8f7101ffff
+  31 | 04/27/2021 | 23:34:13 | OEM record c0 | 00cd3a | ca90f105ffff
+  32 | 04/27/2021 | 23:34:14 | OEM record c0 | 00cd3a | 0feb70120000
+  33 | 04/27/2021 | 23:34:14 | OEM record c0 | 00cd3a | ca8ff101ffff
+  34 | 04/27/2021 | 23:37:52 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+  35 | 04/27/2021 | 23:37:52 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+  36 | 04/27/2021 | 23:38:56 | OEM record c0 | 00cd3a | ca907105ffff
+  37 | 04/27/2021 | 23:38:57 | OEM record c0 | 00cd3a | 0feb70020000
+  38 | 04/27/2021 | 23:38:57 | OEM record c0 | 00cd3a | ca8f7101ffff
+  39 | 04/27/2021 | 23:38:57 | OEM record c0 | 00cd3a | ca90f105ffff
+  3a | 04/27/2021 | 23:38:58 | OEM record c0 | 00cd3a | 0feb70120000
+  3b | 04/27/2021 | 23:38:58 | OEM record c0 | 00cd3a | ca8ff101ffff
+  3c | 04/27/2021 | 23:38:58 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+  3d | 04/27/2021 | 23:38:59 | System ACPI Power State #0x8a | S0/G0: working | Asserted
