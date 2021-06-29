@@ -1,0 +1,789 @@
+<!DOCTYPE html><html lang='en'><head><title>Mt.Jade_37</title><link rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css'><script src='https://cdn.jsdelivr.net/npm/chart.js@2.8.0'></script><style>.eye_main {width:100%;}.eye_element {width:25%;}.eye_table {width:80%;}.eye_fail {background-color: Purple;}.eye_fail_mask {background-color: DarkRed;}.eye_pass {background-color: YellowGreen;}.eye_pass_mask {background-color: ForestGreen;}.eye_title {background-color: whilte;}.eye_hw {background-color: aqua;}.eye_point{width:auto;}.overflowTest {padding: 15px;width: auto;height: 600px;overflow: scroll;border: 1px solid #ccc;}</style></head><body><h1 align='center'><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABzZJREFUeNrsXc11IjkYlPuyV4eAN4Gxb3tbHMHYERgiwESAiQAcAUwEw0YAc9vbEMFCCFz35JV2PvzaGEmf/roluuo9nneNp7vpqq/0qVp0X729vQmgu7iCACAAnAUIAIAAAAgAgAAACACAAAAIAIAAAAgAgAAACACAAAAIAIAAAAgAgAAACACAAAAIAIAAAAgAgACAcqEEcPoCePj3j9978jUrmmsIIEgAC/l6k69+qQI4OwRcXV2BXUb1yx87+t/Nb3//c1+CAE5RgUpvLGr/3S/FBVhNIBzAWv2K7PXJr/fSBW7gAN3A5MzvVEM4gANcfvUPTuz/gwvI1510ggMcoFvV/+4C8vUMB7jc6lfk2ub9qvpvcnQBOEAY+deW6j+C+3dZAALg45nIZf0t5QQYAi6k+hWZO8d/tpTDwBBDwOU3fjoMSgiHIAB79d8qMg0N3zyycCCAzGDq+l/la0rz/3PIPiKGAMzVr8jrm6qfpntTTwFBAAVX//g415c/lwYXuM05IoYA9NWvSLvVvL0n0usYltgLQAB+pI1PfyEFsZE/Npq/VxeKXiCAcqpfkdXTvK0Wf6w075l6gRGliRBA5uQrkkaGP9GSTC6w1LyttvsMAZRh/bpKXRLJwkcgatu5RcQQwMfq71mqdGrbhhTI3uAC2TWEEACfnDmRy8GYcoJzGFC6CAFkVv19YY58p9xtUT7w6pkvQAAZVv+rxwKPucEFsomIIQBhjXz3wnzBx+QC49xdAAL4hYWp8fNd3lVCRFyh+v8nQTc1Oxf5umKc84yg6jj5tvV7wSt6KDXUZQc9WmgKAbSEZ2GOfDeR9mMLh64hgHaqf+RJmqsLKCHprh+0GhF32QFCI9+YvcCorYi46mj190Rg5OvhAmo2sDS4wAQCaA4zy7Rvn2i/toi4BwGkr/6+/PGgedu2yjfUBWwR8QICaGbs1+G1ge/0ZRURVx2rflX5uhOsQp+X1MfAWEU8gQBaGvubOggpAuUCe4MLDCCA+NWvTqquydpGiHxdkYULVB0h/9pS/eOmj4kEp8saGouIu+IApq92bxKEPlFcoImIuOpI9Y9yqv6aC2wMLtBIRNwFB5gJc+S7bfn4TFcck0fE1YVXvzp5gxw6f4MLqNnA0uACSRvCi7xDCIUpivwnw7x/ypn3H1fwpnQKEupPg1PdxIinz3JdugBojFcBzxcim7PkmnUnL9r2rkaMGq9/qGkjNY+HiJ/jxVDtK7mvRwjgY1Uq0r8yCf/U+FEYE0LKURB/EUH7CELeGVzgPnS2UrQAyCYfqKMPaYzY9/SV+9w57Eu5wrcQMVjuQxh8R/IiBUD5/ZPQX8Fz7ro5qZ/llrA2qNU/3wzfIvYV3aPPNosUABEwCax27ypyrH6t24hfl3+X3H7Bdi/ikDuSFyGARMQ7jaPUY8zoGGIcx3EdwJwjBLn/tWH2MvS9bpG1ACIQf6jNnaONodSc3RIhfxqIiSYEzfMInGYwxQiAPuzMs5vfHrtwOjHJ59K1Y/5KfUnPUwhT00zE4gJTn7ULWQmgdoVu4DGuKsJf64SqBzgZtpXstq00XDzRvq89Psvw3LBE2/0Z0wWyEQBNdyaOJ2xDpK80U8Sd4WTdJVzoeTqMPXkMEysSwuFke1FF3boAiKiF4wlaEvHbJu0ygiuMHN3t07DAuEm107DWqgBoPr9wqHpVFWPbB0zVMEUU/MRRCBtygz1t40VEiohbEYDHWL+hStgwt2+qflbk25AQZg5h1oFEsIoZETcuALLCheBfoBm7zHFThiaZzHjUuVALVp4NLsCe3jb6vACy/DXzw87Jql0DDqe7ebYNVanydSfM3xCqY0DncCUS3ZE8iQMwrqJZp0GB+8j+Ua5k7QvmsHCgofEhxO2SDwGO4/1ceN5+pYlLpw0KwbU51sEaEScVAJHCsfz3BieRw0RZPNGCG3wXYTHzXlgeWpmsB6ilVjbyt3SQIeT3Shv7Gb3BgYaskGPvCY9VxMEOQOSvGRYWJY5tK/JtOET6LvyvMWhzj+gO4ED+MBL5tgc4jUXhoMTzTui/L2CC8ypibwdgkq9IeYzVkOUW+TbgBjPh9+WQsxFxNAdgkr+P2Y1zHuAkLgzy3ClH83HOSTIHYJK/JfJjLps2NZnDFr7d26QT9KkvcJkqfiq+4Glgi+QPREGRb8LmcO0ggk9hWNAQ0Bb5DEsbiw6AmsN7OsccsCLiKiL5qxTkBzzACSJgLGu3DgGM2DXZ/PuSIt8E54V7oe29P3IeAmo7Mtp+wvCl6bt5luIEBwcnmIQMATaVHS0phcp7ouG7eV6oCIwPrawMBCw45CdcbhXrAU5dEIGNA+1DKytD4zVoi3xG5DsVgIsItLebOdsEAt0BBAABQAAQAAABABAAAAEAEAAAAQAQAAABABAAAAEAEAAAAQAQAAABABAAAAEAEAAAAQAQAAABABAAAAEA5eI/AQYANT2i2iNsRMcAAAAASUVORK5CYII=' scale='0'></h1><p align='center'><font size='7' color='blue'><span>Mt.Jade_37</span></font></p>
+
+
+<div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CLI ARGV</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >./linux_test.py --start_test 1 --linux_script echo --time 10 --sendfile static/test_script/test_delivery.sh,static/test_script/memtester.elf,static/test_script/stressapptest.elf --hostip 10.38.172.2 --hostuser root --hostpass root --bmcip 10.38.172.51 --board_type Mt.Jade --board Mt.Jade_37 --test_cfg send_file_uart.cfg --wait 0 --sys_log logs/37/Mt.Jade_37_210425_173831.log --test_cfg send_file_uart.cfg   </a></div></div>
+
+
+
+
+
+
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostuser root --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+exec_cmd ./xconsole.py --cmd sel_list --hostuser root --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+./xconsole.py --tty 2 --log logs/37/Mt.Jade_37_210425_173831/Mt.Jade_37_send_file_uart.cfg_at_1_210425_173832s0cli.log --hostuser root --note s0cli --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+./xconsole.py --tty 4 --log logs/37/Mt.Jade_37_210425_173831/Mt.Jade_37_send_file_uart.cfg_at_1_210425_173832s1cli.log --hostuser root --note s1cli --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+./xconsole.py --tty 3 --log logs/37/Mt.Jade_37_210425_173831/Mt.Jade_37_send_file_uart.cfg_at_1_210425_173832atf.log --hostuser root --note atf --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+./xconsole.py --tty 1 --log logs/37/Mt.Jade_37_210425_173831/Mt.Jade_37_send_file_uart.cfg_at_1_210425_173832uefi.log --hostuser root --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+./xconsole.py --tty ssh --log logs/37/Mt.Jade_37_210425_173831/Mt.Jade_37_send_file_uart.cfg_at_1_210425_173832bmc.log --hostuser root --note bmc --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 1</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/37/Mt.Jade_37_210425_173831/Mt.Jade_37_send_file_uart.cfg_at_1_210425_173832.txt'>210425_173832</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostuser root --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+|_send mdw -l 0x50002d14 [210425_174004]
+|_send mdw -l 0x50002d14 [210425_174005]
+|_send mdw -l 0x50002d18 [210425_174006]
+|_send mdw -l 0x50002d18 [210425_174007]
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >210212_32GB_2666_SECDED_ECC_1P_2DPC_2_2xDIMM_16GB_18ASF2G72PDZ-2G6E1</a></div></div></div>
+|_send root [210425_174141]
+|_send root [210425_174142]
+|_send alias rc='echo -n _rc_$?_ex;echo -n it_' [210425_174143]
+|_send cd /var/tmp;rc [210425_174145]
+|_send dhclient -v;rc [210425_174147]
+exec_cmd cksum static/test_script/test_delivery.sh
+|_send cksum test_delivery.sh;rc [210425_174148]
+skip sendfile static/test_script/test_delivery.sh same cksum 963489143
+exec_cmd cksum static/test_script/memtester.elf
+|_send cksum memtester.elf;rc [210425_174150]
+skip sendfile static/test_script/memtester.elf same cksum 718862820
+exec_cmd cksum static/test_script/stressapptest.elf
+|_send cksum stressapptest.elf;rc [210425_174152]
+start sendfile static/test_script/stressapptest.elf
+|_send wget http://10.38.19.97/:2021//static/test_script/stressapptest.elf -O stressapptest.elf && chmod 777 stressapptest.elf;rc [210425_174154]
+[root@localhost tmp]# 
+[root@localhost tmp]# wget http://10.38.19.97/:2021//static/test_script/stressappptest.elf -O stressapptest.elf && chmod 777 stressapptest.elf;rc
+--2021-04-25 06:25:02--  http://10.38.19.97/:2021//static/test_script/stressapptest.elf
+Connecting to 10.38.19.97:80... failed: Network is unreachable.
+_rc_4
+send_file_b64 stressapptest.elf ... 210425_174200(222)
+|_send alias rc='echo -n _rc_$?_ex;echo -n it_' [210425_174200]
+|_send cd /var/tmp [210425_174202]
+|_send rm -rf f64;rc [210425_174203]
+send_file_b64 QlpoOTFBWSZTWbiY+cABnVx/////////////////////////////////////////////4iXffd3f 1 2672 210425_174204
+|_send echo 'echo QlpoOTFBWSZTWbiY+cABnVx/////////////////////////////////////////////4iXffd3f>>f64;rc' > /dev/ttyS0;rc [210425_174204]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo QlpoOTFBWSZTWbiY+cABnVx//////////////////////////////////////////////4iXffd3f>>f64;rc
+ 0
+send_file_b64 AA+lUAnu1YHodMeAG4+qNPrzW4cN68jPAAH3YD3HXsOT6W3r6vvju8Afd9x6FAVzi9tlrWuTextn 2 2672 210425_174210
+|_send echo 'echo AA+lUAnu1YHodMeAG4+qNPrzW4cN68jPAAH3YD3HXsOT6W3r6vvju8Afd9x6FAVzi9tlrWuTextn>>f64;rc' > /dev/ttyS0;rc [210425_174210]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo AA+lUAnu1YHodMeAG4+qNPrzW4cN68jPAAH3YD3HXsOT6W3r6vvju88Afd9x6FAVzi9tlrWuTextn>>f64;rc
+ 0
+send_file_b64 gew+AevR0N1890nbedT0d48Ns1Zp3t3Pj5D77TwAPgb7XezkGJhOvQcZY7sdkAHnu9F7bUFYRe6t 3 2672 210425_174216
+|_send echo 'echo gew+AevR0N1890nbedT0d48Ns1Zp3t3Pj5D77TwAPgb7XezkGJhOvQcZY7sdkAHnu9F7bUFYRe6t>>f64;rc' > /dev/ttyS0;rc [210425_174216]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo gew+AevR0N1890nbedT0d48Ns1Zp3t3Pj5D77TwAPgb7XezkGJhOvQQcZY7sdkAHnu9F7bUFYRe6t>>f64;rc
+ 0
+send_file_b64 DpvVm7DdILh0AA2xo1bb1Q96u77wPg+gF6+yg3n0DfBgIUDDALXu7tHOjR9FUAoN2z73Ec+vj268 4 2672 210425_174222
+|_send echo 'echo DpvVm7DdILh0AA2xo1bb1Q96u77wPg+gF6+yg3n0DfBgIUDDALXu7tHOjR9FUAoN2z73Ec+vj268>>f64;rc' > /dev/ttyS0;rc [210425_174222]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo DpvVm7DdILh0AA2xo1bb1Q96u77wPg+gF6+yg3n0DfBgIUDDALXu7ttHOjR9FUAoN2z73Ec+vj268>>f64;rc
+ 0
+send_file_b64 FA7Y2bYtkp4N9c7Y77vWRgATzyw9j6OfWFOlX2yi5PrUrnzOaOgoOYnvCox983Y72e+53vcAc1Zb 5 2672 210425_174228
+|_send echo 'echo FA7Y2bYtkp4N9c7Y77vWRgATzyw9j6OfWFOlX2yi5PrUrnzOaOgoOYnvCox983Y72e+53vcAc1Zb>>f64;rc' > /dev/ttyS0;rc [210425_174228]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo FA7Y2bYtkp4N9c7Y77vWRgATzyw9j6OfWFOlX2yi5PrUrnzOaOgoOYYnvCox983Y72e+53vcAc1Zb>>f64;rc
+ 0
+send_file_b64 7fXvOoAO8BVBewN2GlHTpVZul5XzHi773Nfe926Az7b2A9sO+z77Xp5wdzAa7u04dFC9jqhdvQ0H 6 2672 210425_174234
+|_send echo 'echo 7fXvOoAO8BVBewN2GlHTpVZul5XzHi773Nfe926Az7b2A9sO+z77Xp5wdzAa7u04dFC9jqhdvQ0H>>f64;rc' > /dev/ttyS0;rc [210425_174234]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo 7fXvOoAO8BVBewN2GlHTpVZul5XzHi773Nfe926Az7b2A9sO+z77Xpp5wdzAa7u04dFC9jqhdvQ0H>>f64;rc
+ 0
+send_file_b64 yvMvTL7PXIOdzgivdfbmvh8enXo9Ghz1nFkVZndcN5PAPg2AlhQAt7NaBQvuejxZ44uMF9nc+feH 7 2672 210425_174240
+|_send echo 'echo yvMvTL7PXIOdzgivdfbmvh8enXo9Ghz1nFkVZndcN5PAPg2AlhQAt7NaBQvuejxZ44uMF9nc+feH>>f64;rc' > /dev/ttyS0;rc [210425_174240]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo yvMvTL7PXIOdzgivdfbmvh8enXo9Ghz1nFkVZndcN5PAPg2AlhQAt77NaBQvuejxZ44uMF9nc+feH>>f64;rc
+ 0
+send_file_b64 vOtmqC94bmeziLnbbe8a8Hu3seOBmwAbu5qKdOFx49d7zj3XB0p25wX2dV3dvePvYXra33dvh3Nu 8 2672 210425_174247
+|_send echo 'echo vOtmqC94bmeziLnbbe8a8Hu3seOBmwAbu5qKdOFx49d7zj3XB0p25wX2dV3dvePvYXra33dvh3Nu>>f64;rc' > /dev/ttyS0;rc [210425_174247]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo vOtmqC94bmeziLnbbe8a8Hu3seOBmwAbu5qKdOFx49d7zj3XB0p25wwX2dV3dvePvYXra33dvh3Nu>>f64;rc
+ 0
+send_file_b64 mY7AA+gfc3mD5473dbjveYveMu2AMgAOnePBs+4NKrfXvejI0Doa72d1heeXHoep4w6dM9hwoB9I 9 2672 210425_174253
+|_send echo 'echo mY7AA+gfc3mD5473dbjveYveMu2AMgAOnePBs+4NKrfXvejI0Doa72d1heeXHoep4w6dM9hwoB9I>>f64;rc' > /dev/ttyS0;rc [210425_174253]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo mY7AA+gfc3mD5473dbjveYveMu2AMgAOnePBs+4NKrfXvejI0Doa722d1heeXHoep4w6dM9hwoB9I>>f64;rc
+ 0
+send_file_b64 zT0+e897eXtx7p5cGSy9nHtUVu+wPp0DdbrfK5Nza5T3j3moxaoze6+dz3nHrWVjvXuHB0FApvbt 10 2672 210425_174259
+|_send echo 'echo zT0+e897eXtx7p5cGSy9nHtUVu+wPp0DdbrfK5Nza5T3j3moxaoze6+dz3nHrWVjvXuHB0FApvbt>>f64;rc' > /dev/ttyS0;rc [210425_174259]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo zT0+e897eXtx7p5cGSy9nHtUVu+wPp0DdbrfK5Nza5T3j3moxaoze66+dz3nHrWVjvXuHB0FApvbt>>f64;rc
+ 0
+send_file_b64 1Z2D26r2hu9vLzM9w0z3ud6uHIHeTu6HkoHqgqQUAegBQAM9gDbe5sb7vneHbMlffe56hEq66fe+ 11 2672 210425_174305
+|_send echo 'echo 1Z2D26r2hu9vLzM9w0z3ud6uHIHeTu6HkoHqgqQUAegBQAM9gDbe5sb7vneHbMlffe56hEq66fe+>>f64;rc' > /dev/ttyS0;rc [210425_174305]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo 1Z2D26r2hu9vLzM9w0z3ud6uHIHeTu6HkoHqgqQUAegBQAM9gDbe5ssb7vneHbMlffe56hEq66fe+>>f64;rc
+ 0
+send_file_b64 7uNCe8uXb7jvMb1Pue97u6Xd08oO+++E77c2PQ8R3e3APBFveM8XteY049fMc943zetWju13e5XI 12 2672 210425_174311
+|_send echo 'echo 7uNCe8uXb7jvMb1Pue97u6Xd08oO+++E77c2PQ8R3e3APBFveM8XteY049fMc943zetWju13e5XI>>f64;rc' > /dev/ttyS0;rc [210425_174311]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo 7uNCe8uXb7jvMb1Pue97u6Xd08oO+++E77c2PQ8R3e3APBFveM8XteeY049fMc943zetWju13e5XI>>f64;rc
+ 0
+send_file_b64 udgAevgX0AAA775UPV4boe2esib3bXzfYdk1IOAE+4T7j3N7F0rq8w9J3xfbaG2i6fXV8b1fe53z 13 2672 210425_174317
+|_send echo 'echo udgAevgX0AAA775UPV4boe2esib3bXzfYdk1IOAE+4T7j3N7F0rq8w9J3xfbaG2i6fXV8b1fe53z>>f64;rc' > /dev/ttyS0;rc [210425_174317]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo udgAevgX0AAA775UPV4boe2esib3bXzfYdk1IOAE+4T7j3N7F0rq8ww9J3xfbaG2i6fXV8b1fe53z>>f64;rc
+ 0
+send_file_b64 724XgdUcre7Clp9dV8++AAc+n3W6ytLXcO98tRbPnWdz7t1ntXPbO9fZFWzXPQDjXVGV69Oo89sh 14 2672 210425_174323
+|_send echo 'echo 724XgdUcre7Clp9dV8++AAc+n3W6ytLXcO98tRbPnWdz7t1ntXPbO9fZFWzXPQDjXVGV69Oo89sh>>f64;rc' > /dev/ttyS0;rc [210425_174323]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo 724XgdUcre7Clp9dV8++AAc+n3W6ytLXcO98tRbPnWdz7t1ntXPbO99fZFWzXPQDjXVGV69Oo89sh>>f64;rc
+ 0
+send_file_b64 9fL4np93r7313ve9KUXJ99sPZMx55rvcZ3ndexz3d5pILIzo0+Mb7aRSj7vq98fWNClvur3173wO 15 2672 210425_174328
+|_send echo 'echo 9fL4np93r7313ve9KUXJ99sPZMx55rvcZ3ndexz3d5pILIzo0+Mb7aRSj7vq98fWNClvur3173wO>>f64;rc' > /dev/ttyS0;rc [210425_174328]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo 9fL4np93r7313ve9KUXJ99sPZMx55rvcZ3ndexz3d5pILIzo0+Mb7aaRSj7vq98fWNClvur3173wO>>f64;rc
+ 0
+send_file_b64 +lsO+bqW2vV3Rdg16AD3t77arteeLelTs8T7zuofVJQnrxfG3gdG58ikUQUQvoO+141XY0Jn18Xv 16 2672 210425_174334
+|_send echo 'echo +lsO+bqW2vV3Rdg16AD3t77arteeLelTs8T7zuofVJQnrxfG3gdG58ikUQUQvoO+141XY0Jn18Xv>>f64;rc' > /dev/ttyS0;rc [210425_174334]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo +lsO+bqW2vV3Rdg16AD3t77arteeLelTs8T7zuofVJQnrxfG3gdG588ikUQUQvoO+141XY0Jn18Xv>>f64;rc
+ 0
+send_file_b64 EQqgAK+3XAGl1733Pb5jaMCQctVNmi2thVKGwc5dje49Tx5O9H03dzrnjnWvd6yg57mUYHoBlIoX 17 2672 210425_174341
+|_send echo 'echo EQqgAK+3XAGl1733Pb5jaMCQctVNmi2thVKGwc5dje49Tx5O9H03dzrnjnWvd6yg57mUYHoBlIoX>>f64;rc' > /dev/ttyS0;rc [210425_174341]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo EQqgAK+3XAGl1733Pb5jaMCQctVNmi2thVKGwc5dje49Tx5O9H03dzzrnjnWvd6yg57mUYHoBlIoX>>f64;rc
+ 0
+send_file_b64 vZo9dj5n3suxx4WM15ve3u7WYVG9XvXY7r7dVyPp97XtrIk1AdywOgeAgnnuAAUAegAAAB6UDoe8 18 2672 210425_174347
+|_send echo 'echo vZo9dj5n3suxx4WM15ve3u7WYVG9XvXY7r7dVyPp97XtrIk1AdywOgeAgnnuAAUAegAAAB6UDoe8>>f64;rc' > /dev/ttyS0;rc [210425_174347]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo vZo9dj5n3suxx4WM15ve3u7WYVG9XvXY7r7dVyPp97XtrIk1AdywOggeAgnnuAAUAegAAAB6UDoe8>>f64;rc
+ 0
+send_file_b64 lnu5IpLz7Y5kbN9qt3vim++0XzpdtuD0vt8ueQUACrfD02ysA1Z4TR3W97u0buOnRM2sbbNtHQAc 19 2672 210425_174353
+|_send echo 'echo lnu5IpLz7Y5kbN9qt3vim++0XzpdtuD0vt8ueQUACrfD02ysA1Z4TR3W97u0buOnRM2sbbNtHQAc>>f64;rc' > /dev/ttyS0;rc [210425_174353]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo lnu5IpLz7Y5kbN9qt3vim++0XzpdtuD0vt8ueQUACrfD02ysA1Z4TRR3W97u0buOnRM2sbbNtHQAc>>f64;rc
+ 0
+send_file_b64 l2dS672Nwxe559r1urS+7XRsxXfZ0t3Ofcy5gAW+7fe6+U16vW9zGvtvZ6+u9tPAHoAAHRa3tjlU 20 2672 210425_174359
+|_send echo 'echo l2dS672Nwxe559r1urS+7XRsxXfZ0t3Ofcy5gAW+7fe6+U16vW9zGvtvZ6+u9tPAHoAAHRa3tjlU>>f64;rc' > /dev/ttyS0;rc [210425_174359]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo l2dS672Nwxe559r1urS+7XRsxXfZ0t3Ofcy5gAW+7fe6+U16vW9zGvvtvZ6+u9tPAHoAAHRa3tjlU>>f64;rc
+ 0
+send_file_b64 Fi5veHuPe5x1rVJQmq0qNtYUqlIqSUlm3MANb298m9bIxPO+vd1A3rua5HvHvXpmeve8ereunp6U 21 2672 210425_174405
+|_send echo 'echo Fi5veHuPe5x1rVJQmq0qNtYUqlIqSUlm3MANb298m9bIxPO+vd1A3rua5HvHvXpmeve8ereunp6U>>f64;rc' > /dev/ttyS0;rc [210425_174405]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo Fi5veHuPe5x1rVJQmq0qNtYUqlIqSUlm3MANb298m9bIxPO+vd1A3rrua5HvHvXpmeve8ereunp6U>>f64;rc
+ 0
+send_file_b64 9PO8iAAAAAAAAAAAABjdlb7NUa6A+h721t89NB3gAAAD27z7eRQAAOvvee6uoVBA7e9YAA9OsNYV 22 2672 210425_174411
+|_send echo 'echo 9PO8iAAAAAAAAAAAABjdlb7NUa6A+h721t89NB3gAAAD27z7eRQAAOvvee6uoVBA7e9YAA9OsNYV>>f64;rc' > /dev/ttyS0;rc [210425_174411]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo 9PO8iAAAAAAAAAAAABjdlb7NUa6A+h721t89NB3gAAAD27z7eRQAAOOvvee6uoVBA7e9YAA9OsNYV>>f64;rc
+ 0
+send_file_b64 QCgSRCgddiYAAAPBsPsGppBAAQAAAAAAAAAAI00xMmJoyAYQAAAAAAAAAAAAAmTTCYAE0yaYmgA0 23 2672 210425_174418
+|_send echo 'echo QCgSRCgddiYAAAPBsPsGppBAAQAAAAAAAAAAI00xMmJoyAYQAAAAAAAAAAAAAmTTCYAE0yaYmgA0>>f64;rc' > /dev/ttyS0;rc [210425_174418]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo QCgSRCgddiYAAAPBsPsGppBAAQAAAAAAAAAAI00xMmJoyAYQAAAAAAAAAAAAAAmTTCYAE0yaYmgA0>>f64;rc
+ 0
+send_file_b64 AEDRBAATQAAIAAAATRoAAABNNGmTEaAAaaaAEwTJkyYjTIaBoNACMTJkMAEyDE0ZNDE1PJoTaCT1 24 2672 210425_174424
+|_send echo 'echo AEDRBAATQAAIAAAATRoAAABNNGmTEaAAaaaAEwTJkyYjTIaBoNACMTJkMAEyDE0ZNDE1PJoTaCT1>>f64;rc' > /dev/ttyS0;rc [210425_174424]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo AEDRBAATQAAIAAAATRoAAABNNGmTEaAAaaaAEwTJkyYjTIaBoNACMTTJkMAEyDE0ZNDE1PJoTaCT1>>f64;rc
+ 0
+send_file_b64 BpoEECAQAgJkExNGRoGU2QNNGpPAAEwI0xTCT8mk9Ew01MRqe1NM01MmJhJjSekb1NTU/VP00Tyj 25 2672 210425_174430
+|_send echo 'echo BpoEECAQAgJkExNGRoGU2QNNGpPAAEwI0xTCT8mk9Ew01MRqe1NM01MmJhJjSekb1NTU/VP00Tyj>>f64;rc' > /dev/ttyS0;rc [210425_174430]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo BpoEECAQAgJkExNGRoGU2QNNGpPAAEwI0xTCT8mk9Ew01MRqe1NM011MmJhJjSekb1NTU/VP00Tyj>>f64;rc
+ 0
+send_file_b64 TJNp6mmCZon6mkynppkTYmkZlPKaCTSSIQIAIAATTEGg1TwTIYASZhNAJlP0TTT1PU0aMg1TzKeA 26 2672 210425_174436
+|_send echo 'echo TJNp6mmCZon6mkynppkTYmkZlPKaCTSSIQIAIAATTEGg1TwTIYASZhNAJlP0TTT1PU0aMg1TzKeA>>f64;rc' > /dev/ttyS0;rc [210425_174436]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo TJNp6mmCZon6mkynppkTYmkZlPKaCTSSIQIAIAATTEGg1TwTIYASZhhNAJlP0TTT1PU0aMg1TzKeA>>f64;rc
+ 0
+send_file_b64 TEp7TQap+o9J5TYIMqfkNKbam0MinphTxNT9Enij01HqepozUzUNA9R6gESkIJkAEym0TKp/gABG 27 2672 210425_174442
+|_send echo 'echo TEp7TQap+o9J5TYIMqfkNKbam0MinphTxNT9Enij01HqepozUzUNA9R6gESkIJkAEym0TKp/gABG>>f64;rc' > /dev/ttyS0;rc [210425_174442]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo TEp7TQap+o9J5TYIMqfkNKbam0MinphTxNT9Enij01HqepozUzUNA99R6gESkIJkAEym0TKp/gABG>>f64;rc
+ 0
+send_file_b64 jQaNGQGgBpTxonlM1Rmp6nkaanptIan6U2KeAJk0JsEGTEMhPU8o9T1HpoFPU2E9Kfoj1PSamNMa 28 2672 210425_174448
+|_send echo 'echo jQaNGQGgBpTxonlM1Rmp6nkaanptIan6U2KeAJk0JsEGTEMhPU8o9T1HpoFPU2E9Kfoj1PSamNMa>>f64;rc' > /dev/ttyS0;rc [210425_174448]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo jQaNGQGgBpTxonlM1Rmp6nkaanptIan6U2KeAJk0JsEGTEMhPU8o9TT1HpoFPU2E9Kfoj1PSamNMa>>f64;rc
+ 0
+send_file_b64 mFMTxR5AyagkSIEAIATEaAABMmQ0GmjI0AmATBMAAAAI0DRpoankJtTATBM0NACaYCYJNink0Mpm 29 2672 210425_174454
+|_send echo 'echo mFMTxR5AyagkSIEAIATEaAABMmQ0GmjI0AmATBMAAAAI0DRpoankJtTATBM0NACaYCYJNink0Mpm>>f64;rc' > /dev/ttyS0;rc [210425_174454]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo mFMTxR5AyagkSIEAIATEaAABMmQ0GmjI0AmATBMAAAAI0DRpoankJttTATBM0NACaYCYJNink0Mpm>>f64;rc
+ 0
+send_file_b64 QGgGIU8mT0mJPSLh/B//dzcNUYUxjG2xttD7nFEmDbOx7F992HfaBXAvQLl2FBomg3GkNQOrTXpX 30 2672 210425_174500
+|_send echo 'echo QGgGIU8mT0mJPSLh/B//dzcNUYUxjG2xttD7nFEmDbOx7F992HfaBXAvQLl2FBomg3GkNQOrTXpX>>f64;rc' > /dev/ttyS0;rc [210425_174500]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo QGgGIU8mT0mJPSLh/B//dzcNUYUxjG2xttD7nFEmDbOx7F992HfaBXXAvQLl2FBomg3GkNQOrTXpX>>f64;rc
+ 0
+send_file_b64 szuuc3XflpsNrylvn/Y+ve0V4rnm7PbhnrI3REm4DrbDbcHCEPbh1wP/r17kJx2ZEfyet9n+EOmi 31 2672 210425_174506
+|_send echo 'echo szuuc3XflpsNrylvn/Y+ve0V4rnm7PbhnrI3REm4DrbDbcHCEPbh1wP/r17kJx2ZEfyet9n+EOmi>>f64;rc' > /dev/ttyS0;rc [210425_174506]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo szuuc3XflpsNrylvn/Y+ve0V4rnm7PbhnrI3REm4DrbDbcHCEPbh1wwP/r17kJx2ZEfyet9n+EOmi>>f64;rc
+ 0
+send_file_b64 cviI/X+Rx9TcHGBVpdrM8wdZ046vwbs2/4bm1rtoGKqIhQFz1k0QjEAjupGSN00LdTItQw5n+JsP 32 2672 210425_174512
+|_send echo 'echo cviI/X+Rx9TcHGBVpdrM8wdZ046vwbs2/4bm1rtoGKqIhQFz1k0QjEAjupGSN00LdTItQw5n+JsP>>f64;rc' > /dev/ttyS0;rc [210425_174512]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo cviI/X+Rx9TcHGBVpdrM8wdZ046vwbs2/4bm1rtoGKqIhQFz1k0QjEEAjupGSN00LdTItQw5n+JsP>>f64;rc
+ 0
+send_file_b64 46fhwTbIfJcj+scnv+SXeGPTV3nePL9jvAgH2nCulV+ylWxyuO2awKy0qqaXNZWvEzZ22uc+AGGP 33 2672 210425_174518
+|_send echo 'echo 46fhwTbIfJcj+scnv+SXeGPTV3nePL9jvAgH2nCulV+ylWxyuO2awKy0qqaXNZWvEzZ22uc+AGGP>>f64;rc' > /dev/ttyS0;rc [210425_174518]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo 46fhwTbIfJcj+scnv+SXeGPTV3nePL9jvAgH2nCulV+ylWxyuO2awKKy0qqaXNZWvEzZ22uc+AGGP>>f64;rc
+ 0
+send_file_b64 Iw2YY3VkqistpWC6uaRpVtZrUWIIiiKIIqMVgIooiAiiqyLFVFRVixUUEUiqKsYixYiqIKsWIqIo 34 2672 210425_174524
+|_send echo 'echo Iw2YY3VkqistpWC6uaRpVtZrUWIIiiKIIqMVgIooiAiiqyLFVFRVixUUEUiqKsYixYiqIKsWIqIo>>f64;rc' > /dev/ttyS0;rc [210425_174524]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo Iw2YY3VkqistpWC6uaRpVtZrUWIIiiKIIqMVgIooiAiiqyLFVFRVixxUUEUiqKsYixYiqIKsWIqIo>>f64;rc
+ 0
+send_file_b64 oqRUFEVRQRViMRUFRRYLEUFVRFUYiioqKosUQUUYIi1EsgQZwZNO/A4Ybbl3oBg46agCIImiiNO8 35 2672 210425_174530
+|_send echo 'echo oqRUFEVRQRViMRUFRRYLEUFVRFUYiioqKosUQUUYIi1EsgQZwZNO/A4Ybbl3oBg46agCIImiiNO8>>f64;rc' > /dev/ttyS0;rc [210425_174530]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo oqRUFEVRQRViMRUFRRYLEUFVRFUYiioqKosUQUUYIi1EsgQZwZNO/AA4Ybbl3oBg46agCIImiiNO8>>f64;rc
+ 0
+send_file_b64 6SBgpoVkrKhbZlWYAXKLJ8TlttdqbVEZq0ThluQ+w22MANnMblvdOTHDNtuf8Lv4aZsoA7kDOl0G 36 2672 210425_174536
+|_send echo 'echo 6SBgpoVkrKhbZlWYAXKLJ8TlttdqbVEZq0ThluQ+w22MANnMblvdOTHDNtuf8Lv4aZsoA7kDOl0G>>f64;rc' > /dev/ttyS0;rc [210425_174536]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo 6SBgpoVkrKhbZlWYAXKLJ8TlttdqbVEZq0ThluQ+w22MANnMblvdOTTHDNtuf8Lv4aZsoA7kDOl0G>>f64;rc
+ 0
+send_file_b64 IU5XRFEwCoUQJ5B9HzHmktqq5BbyVl30GARdnYLGKbNwwv7LRXfdbvrdKrSjSvZcAHrmtjhwKbG9 37 2672 210425_174543
+|_send echo 'echo IU5XRFEwCoUQJ5B9HzHmktqq5BbyVl30GARdnYLGKbNwwv7LRXfdbvrdKrSjSvZcAHrmtjhwKbG9>>f64;rc' > /dev/ttyS0;rc [210425_174543]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo IU5XRFEwCoUQJ5B9HzHmktqq5BbyVl30GARdnYLGKbNwwv7LRXfdbvvrdKrSjSvZcAHrmtjhwKbG9>>f64;rc
+ 0
+send_file_b64 NhxczJDRmnWhOuAe+QFiFUnW12+06/sKokJcGyhgtClVwxIVyREqKKjbwlMrdjuULhbq3s6JmEmm 38 2672 210425_174549
+|_send echo 'echo NhxczJDRmnWhOuAe+QFiFUnW12+06/sKokJcGyhgtClVwxIVyREqKKjbwlMrdjuULhbq3s6JmEmm>>f64;rc' > /dev/ttyS0;rc [210425_174549]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo NhxczJDRmnWhOuAe+QFiFUnW12+06/sKokJcGyhgtClVwxIVyREqKKKjbwlMrdjuULhbq3s6JmEmm>>f64;rc
+ 0
+send_file_b64 4VkDe0MFVRRasqdhQpiWRqDDhL7oEoEJYo5DEYlxMdXC4ScRqTSgiQLCFDQ4Ng7h0GjY2F2LRDcb 39 2672 210425_174555
+|_send echo 'echo 4VkDe0MFVRRasqdhQpiWRqDDhL7oEoEJYo5DEYlxMdXC4ScRqTSgiQLCFDQ4Ng7h0GjY2F2LRDcb>>f64;rc' > /dev/ttyS0;rc [210425_174555]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo 4VkDe0MFVRRasqdhQpiWRqDDhL7oEoEJYo5DEYlxMdXC4ScRqTSgiQQLCFDQ4Ng7h0GjY2F2LRDcb>>f64;rc
+ 0
+send_file_b64 jU0wplzKXHfJrUp17YxNzWzM3LtK5vkDWxwzNk3wApRnCkME0wNI21AMEbmcE04QIGpQDa6dDrJl 40 2672 210425_174601
+|_send echo 'echo jU0wplzKXHfJrUp17YxNzWzM3LtK5vkDWxwzNk3wApRnCkME0wNI21AMEbmcE04QIGpQDa6dDrJl>>f64;rc' > /dev/ttyS0;rc [210425_174601]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo jU0wplzKXHfJrUp17YxNzWzM3LtK5vkDWxwzNk3wApRnCkME0wNI211AMEbmcE04QIGpQDa6dDrJl>>f64;rc
+ 0
+send_file_b64 dXRpuhxmJlWQ1NAGss00CmXADC5wt0Orcw2piOqWMdQzZNasUAWusFwa2qWQMHynCaFSKjBQVZEF 41 2672 210425_174607
+|_send echo 'echo dXRpuhxmJlWQ1NAGss00CmXADC5wt0Orcw2piOqWMdQzZNasUAWusFwa2qWQMHynCaFSKjBQVZEF>>f64;rc' > /dev/ttyS0;rc [210425_174607]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo dXRpuhxmJlWQ1NAGss00CmXADC5wt0Orcw2piOqWMdQzZNasUAWusFFwa2qWQMHynCaFSKjBQVZEF>>f64;rc
+ 0
+send_file_b64 RGMFVVFiQQlfM6Vaw9n7MH2g9qR1nwlmPtmAUYm7mPbvUsTrXHD2sP8+/yeblBNqU1niaGXYi9+y 42 2672 210425_174613
+|_send echo 'echo RGMFVVFiQQlfM6Vaw9n7MH2g9qR1nwlmPtmAUYm7mPbvUsTrXHD2sP8+/yeblBNqU1niaGXYi9+y>>f64;rc' > /dev/ttyS0;rc [210425_174613]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo RGMFVVFiQQlfM6Vaw9n7MH2g9qR1nwlmPtmAUYm7mPbvUsTrXHD2sPP8+/yeblBNqU1niaGXYi9+y>>f64;rc
+ 0
+send_file_b64 j4krR6IMP9v+/MDqULlREeNW3HkcRKvZ5FnvF+HY8ny7V35XG8uYJKSObv0pnzwVvntC1ThZJkNN 43 2672 210425_174619
+|_send echo 'echo j4krR6IMP9v+/MDqULlREeNW3HkcRKvZ5FnvF+HY8ny7V35XG8uYJKSObv0pnzwVvntC1ThZJkNN>>f64;rc' > /dev/ttyS0;rc [210425_174619]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo j4krR6IMP9v+/MDqULlREeNW3HkcRKvZ5FnvF+HY8ny7V35XG8uYJKKSObv0pnzwVvntC1ThZJkNN>>f64;rc
+ 0
+send_file_b64 s3cjvJQeC6JWt0S3N6knTaDs7wshiM3Z2WEwOZYRriLLuB8mFcEbAunn6d9IobGJVtvymztCbPHa 44 2672 210425_174626
+|_send echo 'echo s3cjvJQeC6JWt0S3N6knTaDs7wshiM3Z2WEwOZYRriLLuB8mFcEbAunn6d9IobGJVtvymztCbPHa>>f64;rc' > /dev/ttyS0;rc [210425_174626]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo s3cjvJQeC6JWt0S3N6knTaDs7wshiM3Z2WEwOZYRriLLuB8mFcEbAuunn6d9IobGJVtvymztCbPHa>>f64;rc
+ 0
+send_file_b64 sjJlRiCVdlA3qMMdjfhVXI7lye4iLGGFqXcxjtUM4yILtqMF+Ej5nBfROuOqzqVVc/s5bQ0JZRHW 45 2672 210425_174632
+|_send echo 'echo sjJlRiCVdlA3qMMdjfhVXI7lye4iLGGFqXcxjtUM4yILtqMF+Ej5nBfROuOqzqVVc/s5bQ0JZRHW>>f64;rc' > /dev/ttyS0;rc [210425_174632]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo sjJlRiCVdlA3qMMdjfhVXI7lye4iLGGFqXcxjtUM4yILtqMF+Ej5nBBfROuOqzqVVc/s5bQ0JZRHW>>f64;rc
+ 0
+send_file_b64 XYR9P+mo9P9llbrtyjyDzV18ZQYbRI4lKE7lrreVp8HeYXS1Ayxw58qHh05/AmdXD/Y0+uqnqlcO 46 2672 210425_174638
+|_send echo 'echo XYR9P+mo9P9llbrtyjyDzV18ZQYbRI4lKE7lrreVp8HeYXS1Ayxw58qHh05/AmdXD/Y0+uqnqlcO>>f64;rc' > /dev/ttyS0;rc [210425_174638]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo XYR9P+mo9P9llbrtyjyDzV18ZQYbRI4lKE7lrreVp8HeYXS1Ayxw588qHh05/AmdXD/Y0+uqnqlcO>>f64;rc
+ 0
+send_file_b64 nx+uqM3ZldSXj7szm2aPWM3nT7xbG+pdpLuOS7IMrqIdJ/uJtm+2lKwdW2O5gns42k5fSUL1ubax 47 2672 210425_174644
+|_send echo 'echo nx+uqM3ZldSXj7szm2aPWM3nT7xbG+pdpLuOS7IMrqIdJ/uJtm+2lKwdW2O5gns42k5fSUL1ubax>>f64;rc' > /dev/ttyS0;rc [210425_174644]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo nx+uqM3ZldSXj7szm2aPWM3nT7xbG+pdpLuOS7IMrqIdJ/uJtm+2lKKwdW2O5gns42k5fSUL1ubax>>f64;rc
+ 0
+send_file_b64 rXtl9rJN7HSfxR3lO3xIL6HtOngrGVLnaLIr7Ins/wnuyqTNi6jBMVwxmb/VyC+Znc5O7ap7bhaO 48 2672 210425_174650
+|_send echo 'echo rXtl9rJN7HSfxR3lO3xIL6HtOngrGVLnaLIr7Ins/wnuyqTNi6jBMVwxmb/VyC+Znc5O7ap7bhaO>>f64;rc' > /dev/ttyS0;rc [210425_174650]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo rXtl9rJN7HSfxR3lO3xIL6HtOngrGVLnaLIr7Ins/wnuyqTNi6jBMVVwxmb/VyC+Znc5O7ap7bhaO>>f64;rc
+ 0
+send_file_b64 tccurm+UsQFacZBcMyLvH6uq1I7pkFyTEhgaNTUOtM7TeMlLDua/ePUtklTUjWvOL/NEyaI+y1Iv 49 2672 210425_174656
+|_send echo 'echo tccurm+UsQFacZBcMyLvH6uq1I7pkFyTEhgaNTUOtM7TeMlLDua/ePUtklTUjWvOL/NEyaI+y1Iv>>f64;rc' > /dev/ttyS0;rc [210425_174656]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo tccurm+UsQFacZBcMyLvH6uq1I7pkFyTEhgaNTUOtM7TeMlLDua/ePPUtklTUjWvOL/NEyaI+y1Iv>>f64;rc
+ 0
+send_file_b64 M7KuIlX/a6LspilroXch7iY0mqe7XqKi+2ztU7c9Lgu9vw4cTL6nKpZUcFupLcrLtGMhGV2talAj 50 2672 210425_174702
+|_send echo 'echo M7KuIlX/a6LspilroXch7iY0mqe7XqKi+2ztU7c9Lgu9vw4cTL6nKpZUcFupLcrLtGMhGV2talAj>>f64;rc' > /dev/ttyS0;rc [210425_174702]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo M7KuIlX/a6LspilroXch7iY0mqe7XqKi+2ztU7c9Lgu9vw4cTL6nKppZUcFupLcrLtGMhGV2talAj>>f64;rc
+ 0
+send_file_b64 11O6S7vZNEQ9sYxrXQ59oveIGJyEi5Vl42sHRbiJfGON3bW5WLSwbcvu1bhqRvfJrJw9ZeudLRsX 51 2672 210425_174708
+|_send echo 'echo 11O6S7vZNEQ9sYxrXQ59oveIGJyEi5Vl42sHRbiJfGON3bW5WLSwbcvu1bhqRvfJrJw9ZeudLRsX>>f64;rc' > /dev/ttyS0;rc [210425_174708]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo 11O6S7vZNEQ9sYxrXQ59oveIGJyEi5Vl42sHRbiJfGON3bW5WLSwbccvu1bhqRvfJrJw9ZeudLRsX>>f64;rc
+ 0
+send_file_b64 mHkTo1DQh0W24YNYjj13m8tvdqrusWUalNcbCXcqbdujEdyVX013HTJ1DGdBS3TY1jEN/hWctvc9 52 2672 210425_174714
+|_send echo 'echo mHkTo1DQh0W24YNYjj13m8tvdqrusWUalNcbCXcqbdujEdyVX013HTJ1DGdBS3TY1jEN/hWctvc9>>f64;rc' > /dev/ttyS0;rc [210425_174714]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo mHkTo1DQh0W24YNYjj13m8tvdqrusWUalNcbCXcqbdujEdyVX013HTTJ1DGdBS3TY1jEN/hWctvc9>>f64;rc
+ 0
+send_file_b64 zd0LLmXPhbfqN2FtYJz+A5gUL1rvjssWumVtZioQqdaiTNNxODZmoXQfQLbQcSKJ947cqYlKY0Hm 53 2672 210425_174720
+|_send echo 'echo zd0LLmXPhbfqN2FtYJz+A5gUL1rvjssWumVtZioQqdaiTNNxODZmoXQfQLbQcSKJ947cqYlKY0Hm>>f64;rc' > /dev/ttyS0;rc [210425_174720]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo zd0LLmXPhbfqN2FtYJz+A5gUL1rvjssWumVtZioQqdaiTNNxODZmoXXQfQLbQcSKJ947cqYlKY0Hm>>f64;rc
+ 0
+send_file_b64 6bOs2bTV32w4vc7QDOd7zZKIFt+sQBweFsx06U7loaxkDLZJofpH1fhQkrbLGSaLjEVak9IQSvzX 54 2672 210425_174726
+|_send echo 'echo 6bOs2bTV32w4vc7QDOd7zZKIFt+sQBweFsx06U7loaxkDLZJofpH1fhQkrbLGSaLjEVak9IQSvzX>>f64;rc' > /dev/ttyS0;rc [210425_174726]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo 6bOs2bTV32w4vc7QDOd7zZKIFt+sQBweFsx06U7loaxkDLZJofpH1ffhQkrbLGSaLjEVak9IQSvzX>>f64;rc
+ 0
+send_file_b64 EYc+p148kyzBmXR6To9UmGj5V9tPA927ZK5IzB42MEzb5d0vUZUtlm+UTRhRhSNqm0aloM2G9mkK 55 2672 210425_174733
+|_send echo 'echo EYc+p148kyzBmXR6To9UmGj5V9tPA927ZK5IzB42MEzb5d0vUZUtlm+UTRhRhSNqm0aloM2G9mkK>>f64;rc' > /dev/ttyS0;rc [210425_174733]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo EYc+p148kyzBmXR6To9UmGj5V9tPA927ZK5IzB42MEzb5d0vUZUtlmm+UTRhRhSNqm0aloM2G9mkK>>f64;rc
+ 0
+send_file_b64 MTjuPc8fy+GufxPZe59RYmS4s6RISJTCb+fGVmubkNbutlHYBbkNRZ4zFaDTPImX3G0uoxmUf3Fl 56 2672 210425_174738
+|_send echo 'echo MTjuPc8fy+GufxPZe59RYmS4s6RISJTCb+fGVmubkNbutlHYBbkNRZ4zFaDTPImX3G0uoxmUf3Fl>>f64;rc' > /dev/ttyS0;rc [210425_174738]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo MTjuPc8fy+GufxPZe59RYmS4s6RISJTCb+fGVmubkNbutlHYBbkNRZZ4zFaDTPImX3G0uoxmUf3Fl>>f64;rc
+ 0
+send_file_b64 ur7mb3cTem17xrmeLz+3weFx2wy2JqtHE7jKRWwx2Fc18Topna4Xb5iSudftsbcZjT5W/XXA6jY3 57 2672 210425_174744
+|_send echo 'echo ur7mb3cTem17xrmeLz+3weFx2wy2JqtHE7jKRWwx2Fc18Topna4Xb5iSudftsbcZjT5W/XXA6jY3>>f64;rc' > /dev/ttyS0;rc [210425_174744]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo ur7mb3cTem17xrmeLz+3weFx2wy2JqtHE7jKRWwx2Fc18Topna4Xb55iSudftsbcZjT5W/XXA6jY3>>f64;rc
+ 0
+send_file_b64 zYZfL0ktabrd5jb7jYW2nyetuNjtstqt1t909ZHUbua3Wvtdrc5a8ZzK7vLa200Olz23zdpt9ln5 58 2672 210425_174750
+|_send echo 'echo zYZfL0ktabrd5jb7jYW2nyetuNjtstqt1t909ZHUbua3Wvtdrc5a8ZzK7vLa200Olz23zdpt9ln5>>f64;rc' > /dev/ttyS0;rc [210425_174750]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo zYZfL0ktabrd5jb7jYW2nyetuNjtstqt1t909ZHUbua3Wvtdrc5a8ZZzK7vLa200Olz23zdpt9ln5>>f64;rc
+ 0
+send_file_b64 LVbCpmAgY2mIGfiNEYHctD7bz7DNWB6zYks2YGM9i6MB+NSKpXK2Fym9rrWJbWTMpisXFyzGVtMw 59 2672 210425_174756
+|_send echo 'echo LVbCpmAgY2mIGfiNEYHctD7bz7DNWB6zYks2YGM9i6MB+NSKpXK2Fym9rrWJbWTMpisXFyzGVtMw>>f64;rc' > /dev/ttyS0;rc [210425_174756]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo LVbCpmAgY2mIGfiNEYHctD7bz7DNWB6zYks2YGM9i6MB+NSKpXK2Fyym9rrWJbWTMpisXFyzGVtMw>>f64;rc
+ 0
+send_file_b64 czCjccwG1cZWCwWuMTC4uGtawrILWUSCwigGkIPDhgadts3333JorR2bU3G2C1cWwrWXMzMpTLYm 60 2672 210425_174803
+|_send echo 'echo czCjccwG1cZWCwWuMTC4uGtawrILWUSCwigGkIPDhgadts3333JorR2bU3G2C1cWwrWXMzMpTLYm>>f64;rc' > /dev/ttyS0;rc [210425_174803]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo czCjccwG1cZWCwWuMTC4uGtawrILWUSCwigGkIPDhgadts3333JorRR2bU3G2C1cWwrWXMzMpTLYm>>f64;rc
+ 0
+send_file_b64 LlmZmGJbvq6UqLUS6zMuJrWGaXMyUTEzLXLca4yobW5qrEwuMs/JTTsgcPwaTWqsqCgoLpgXKVgY 61 2672 210425_174809
+|_send echo 'echo LlmZmGJbvq6UqLUS6zMuJrWGaXMyUTEzLXLca4yobW5qrEwuMs/JTTsgcPwaTWqsqCgoLpgXKVgY>>f64;rc' > /dev/ttyS0;rc [210425_174809]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo LlmZmGJbvq6UqLUS6zMuJrWGaXMyUTEzLXLca4yobW5qrEwuMs/JTTTsgcPwaTWqsqCgoLpgXKVgY>>f64;rc
+ 0
+send_file_b64 wowzKTECsN3GGMLaBxtIFYGMNMDGA4UNLbdXTJNIoyJBmZGZESjAA0/Eyeql9HqN771Mkx2ZedpB 62 2672 210425_174815
+|_send echo 'echo wowzKTECsN3GGMLaBxtIFYGMNMDGA4UNLbdXTJNIoyJBmZGZESjAA0/Eyeql9HqN771Mkx2ZedpB>>f64;rc' > /dev/ttyS0;rc [210425_174815]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo wowzKTECsN3GGMLaBxtIFYGMNMDGA4UNLbdXTJNIoyJBmZGZESjAA00/Eyeql9HqN771Mkx2ZedpB>>f64;rc
+ 0
+send_file_b64 utXY4fKKAH1pswZLysNXM0xfKYdbhtPZexBGDEhXAztMK8PEZ7Mpg8/RrgscmQ1D9gg7f+y1JIMn 63 2672 210425_174821
+|_send echo 'echo utXY4fKKAH1pswZLysNXM0xfKYdbhtPZexBGDEhXAztMK8PEZ7Mpg8/RrgscmQ1D9gg7f+y1JIMn>>f64;rc' > /dev/ttyS0;rc [210425_174821]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo utXY4fKKAH1pswZLysNXM0xfKYdbhtPZexBGDEhXAztMK8PEZ7Mpg88/RrgscmQ1D9gg7f+y1JIMn>>f64;rc
+ 0
+send_file_b64 I8qQJGewEBmNCWxYBFyBBVkQXrvF0IEXGIEjFSCeR2PvftfApX+n/H/XneLzXN5ejw3AUFFOFgog 64 2672 210425_174827
+|_send echo 'echo I8qQJGewEBmNCWxYBFyBBVkQXrvF0IEXGIEjFSCeR2PvftfApX+n/H/XneLzXN5ejw3AUFFOFgog>>f64;rc' > /dev/ttyS0;rc [210425_174827]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo I8qQJGewEBmNCWxYBFyBBVkQXrvF0IEXGIEjFSCeR2PvftfApX+n/HH/XneLzXN5ejw3AUFFOFgog>>f64;rc
+ 0
+send_file_b64 miwM09npKa2qlU0UoDD/C7YACRl//tfT7D00Ymdtu93t7aQhAeX0dsMoMWK3+z63TYF6eJs+E4im 65 2672 210425_174833
+|_send echo 'echo miwM09npKa2qlU0UoDD/C7YACRl//tfT7D00Ymdtu93t7aQhAeX0dsMoMWK3+z63TYF6eJs+E4im>>f64;rc' > /dev/ttyS0;rc [210425_174833]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo miwM09npKa2qlU0UoDD/C7YACRl//tfT7D00Ymdtu93t7aQhAeX0dssMoMWK3+z63TYF6eJs+E4im>>f64;rc
+ 0
+send_file_b64 1560FULZCRXaVeTUCe7+RQsItyAP7G7gBa9y4UFjUvh/Dkeqf/OwjL/X1Mlyswj/actGaDR6j08k 66 2672 210425_174839
+|_send echo 'echo 1560FULZCRXaVeTUCe7+RQsItyAP7G7gBa9y4UFjUvh/Dkeqf/OwjL/X1Mlyswj/actGaDR6j08k>>f64;rc' > /dev/ttyS0;rc [210425_174839]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo 1560FULZCRXaVeTUCe7+RQsItyAP7G7gBa9y4UFjUvh/Dkeqf/OwjLL/X1Mlyswj/actGaDR6j08k>>f64;rc
+ 0
+send_file_b64 gEvDp5eviA1QUgW9pAAAKbEvR62BIL+51Go1URQ9OQkENCXKX/6vzzSMHLBcuh8zH77sxB+jRtAH 67 2672 210425_174845
+|_send echo 'echo gEvDp5eviA1QUgW9pAAAKbEvR62BIL+51Go1URQ9OQkENCXKX/6vzzSMHLBcuh8zH77sxB+jRtAH>>f64;rc' > /dev/ttyS0;rc [210425_174845]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo gEvDp5eviA1QUgW9pAAAKbEvR62BIL+51Go1URQ9OQkENCXKX/6vzzzSMHLBcuh8zH77sxB+jRtAH>>f64;rc
+ 0
+send_file_b64 3tV13Tbb628/frv2f3+ZYfE4y6iwgDJyLIs+FmKuGRz7l1txo1JBsm04lPi7TwfD1/xN8GOlqRB+ 68 2672 210425_174851
+|_send echo 'echo 3tV13Tbb628/frv2f3+ZYfE4y6iwgDJyLIs+FmKuGRz7l1txo1JBsm04lPi7TwfD1/xN8GOlqRB+>>f64;rc' > /dev/ttyS0;rc [210425_174851]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo 3tV13Tbb628/frv2f3+ZYfE4y6iwgDJyLIs+FmKuGRz7l1txo1JBsmm04lPi7TwfD1/xN8GOlqRB+>>f64;rc
+ 0
+send_file_b64 TbbHI8/Ij0jSIYPIgy8RlZVGVBRlU1ZDXAeR7KC4wOsruGbauTL12V5uw+RrOnltGvaM7d4+30xp 69 2672 210425_174857
+|_send echo 'echo TbbHI8/Ij0jSIYPIgy8RlZVGVBRlU1ZDXAeR7KC4wOsruGbauTL12V5uw+RrOnltGvaM7d4+30xp>>f64;rc' > /dev/ttyS0;rc [210425_174857]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo TbbHI8/Ij0jSIYPIgy8RlZVGVBRlU1ZDXAeR7KC4wOsruGbauTL12VV5uw+RrOnltGvaM7d4+30xp>>f64;rc
+ 0
+send_file_b64 hA4f98qJ6c9sDiVSNXDdu2744NM0EuoH5Hc+Y2BJSlL4FM2Zb/Xq8fivFDVBkiD0nFZtYJMYjkog 70 2672 210425_174903
+|_send echo 'echo hA4f98qJ6c9sDiVSNXDdu2744NM0EuoH5Hc+Y2BJSlL4FM2Zb/Xq8fivFDVBkiD0nFZtYJMYjkog>>f64;rc' > /dev/ttyS0;rc [210425_174903]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo hA4f98qJ6c9sDiVSNXDdu2744NM0EuoH5Hc+Y2BJSlL4FM2Zb/Xq8ffivFDVBkiD0nFZtYJMYjkog>>f64;rc
+ 0
+send_file_b64 EDYm0NIsFHilUVgr71sRhaNhoaxTHDPd5JdU17m2Zpdv4e0z+ftZm74yXOXLcm2ipAUQzNyR8B6k 71 2672 210425_174909
+|_send echo 'echo EDYm0NIsFHilUVgr71sRhaNhoaxTHDPd5JdU17m2Zpdv4e0z+ftZm74yXOXLcm2ipAUQzNyR8B6k>>f64;rc' > /dev/ttyS0;rc [210425_174909]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo EDYm0NIsFHilUVgr71sRhaNhoaxTHDPd5JdU17m2Zpdv4e0z+ftZm774yXOXLcm2ipAUQzNyR8B6k>>f64;rc
+ 0
+send_file_b64 cZ6Tx8F6el5jkYMYmoPqhlp61x5781QPH9i3n6OnrHW0a62bh1osGLFGCiLBQZ3Olykzw+304gqm 72 2672 210425_174916
+|_send echo 'echo cZ6Tx8F6el5jkYMYmoPqhlp61x5781QPH9i3n6OnrHW0a62bh1osGLFGCiLBQZ3Olykzw+304gqm>>f64;rc' > /dev/ttyS0;rc [210425_174916]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo cZ6Tx8F6el5jkYMYmoPqhlp61x5781QPH9i3n6OnrHW0a62bh1osGLLFGCiLBQZ3Olykzw+304gqm>>f64;rc
+ 0
+send_file_b64 P0riuAhjaGHo/U+1kp59y7h2mKGYXKb87wkeu7w/e6zxrTLg9kbz9OE0mpA8uiCAa9meia2TDduc 73 2672 210425_174922
+|_send echo 'echo P0riuAhjaGHo/U+1kp59y7h2mKGYXKb87wkeu7w/e6zxrTLg9kbz9OE0mpA8uiCAa9meia2TDduc>>f64;rc' > /dev/ttyS0;rc [210425_174922]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo P0riuAhjaGHo/U+1kp59y7h2mKGYXKb87wkeu7w/e6zxrTLg9kbz9OOE0mpA8uiCAa9meia2TDduc>>f64;rc
+ 0
+send_file_b64 h1CmBozu5Zpe8iZacpBnLYSS9N9hUPtPR3swAC59a3bHpwPxoiE+cFriNfe+U58PrltTpqX53iN6 74 2672 210425_174928
+|_send echo 'echo h1CmBozu5Zpe8iZacpBnLYSS9N9hUPtPR3swAC59a3bHpwPxoiE+cFriNfe+U58PrltTpqX53iN6>>f64;rc' > /dev/ttyS0;rc [210425_174928]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo h1CmBozu5Zpe8iZacpBnLYSS9N9hUPtPR3swAC59a3bHpwPxoiE+cFFriNfe+U58PrltTpqX53iN6>>f64;rc
+ 0
+send_file_b64 Y3RaZ0wHJ4AH4UkW7OXLuTgOEHGo4z0ewz8LWOe5dROMPvumXN9buvoTAAKTrZhy8szEPL2RTuva 75 2672 210425_174934
+|_send echo 'echo Y3RaZ0wHJ4AH4UkW7OXLuTgOEHGo4z0ewz8LWOe5dROMPvumXN9buvoTAAKTrZhy8szEPL2RTuva>>f64;rc' > /dev/ttyS0;rc [210425_174934]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo Y3RaZ0wHJ4AH4UkW7OXLuTgOEHGo4z0ewz8LWOe5dROMPvumXN9buvvoTAAKTrZhy8szEPL2RTuva>>f64;rc
+ 0
+send_file_b64 U2GEJXAACWd+NWFta7nsZL0FCyMbAAOGaMrVYPelICwpYQ6tziwADPdaUbniHLqpKnTVvx/e+5xC 76 2672 210425_174940
+|_send echo 'echo U2GEJXAACWd+NWFta7nsZL0FCyMbAAOGaMrVYPelICwpYQ6tziwADPdaUbniHLqpKnTVvx/e+5xC>>f64;rc' > /dev/ttyS0;rc [210425_174940]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo U2GEJXAACWd+NWFta7nsZL0FCyMbAAOGaMrVYPelICwpYQ6tziwADPPdaUbniHLqpKnTVvx/e+5xC>>f64;rc
+ 0
+send_file_b64 AggfiVwJ0xYFiMWzGpw5d85Zim4XCAZeVa01Wtj9OMWmXWTrqrl+9GIQCmMUFKs15X9FvNFQAAid 77 2672 210425_174946
+|_send echo 'echo AggfiVwJ0xYFiMWzGpw5d85Zim4XCAZeVa01Wtj9OMWmXWTrqrl+9GIQCmMUFKs15X9FvNFQAAid>>f64;rc' > /dev/ttyS0;rc [210425_174946]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo AggfiVwJ0xYFiMWzGpw5d85Zim4XCAZeVa01Wtj9OMWmXWTrqrl+9GGIQCmMUFKs15X9FvNFQAAid>>f64;rc
+ 0
+send_file_b64 QoLHhprm7HevRYL2WpPlakmHFsvNpgSYDcJp8xDlaMtjAOXpoQsK/3i2qCjnYqKh2cEAEVV2rK7J 78 2672 210425_174953
+|_send echo 'echo QoLHhprm7HevRYL2WpPlakmHFsvNpgSYDcJp8xDlaMtjAOXpoQsK/3i2qCjnYqKh2cEAEVV2rK7J>>f64;rc' > /dev/ttyS0;rc [210425_174953]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo QoLHhprm7HevRYL2WpPlakmHFsvNpgSYDcJp8xDlaMtjAOXpoQsK/33i2qCjnYqKh2cEAEVV2rK7J>>f64;rc
+ 0
+send_file_b64 udMic5zZLJtE0hAH1X+2mAj9doPaMAnOwhIB9MleT09PTsurrr7ZrY36DCcE+Qn3P4dgdhAF/RQO 79 2672 210425_174959
+|_send echo 'echo udMic5zZLJtE0hAH1X+2mAj9doPaMAnOwhIB9MleT09PTsurrr7ZrY36DCcE+Qn3P4dgdhAF/RQO>>f64;rc' > /dev/ttyS0;rc [210425_174959]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo udMic5zZLJtE0hAH1X+2mAj9doPaMAnOwhIB9MleT09PTsurrr7ZrYY36DCcE+Qn3P4dgdhAF/RQO>>f64;rc
+ 0
+send_file_b64 TOZA+uyydpN08t2QOkaBWmAapo+W11VeK5Mk63JnoIjD6t049dcez2lcvIdcj2zxzoYtv/qLb21N 80 2672 210425_175005
+|_send echo 'echo TOZA+uyydpN08t2QOkaBWmAapo+W11VeK5Mk63JnoIjD6t049dcez2lcvIdcj2zxzoYtv/qLb21N>>f64;rc' > /dev/ttyS0;rc [210425_175005]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo TOZA+uyydpN08t2QOkaBWmAapo+W11VeK5Mk63JnoIjD6t049dcez22lcvIdcj2zxzoYtv/qLb21N>>f64;rc
+ 0
+send_file_b64 Eq3HjOKYDA1bfQsCTCtiIZWwQJNkOpgU55CNN8f2suy6/d++7LOpOl1el2XlaqdJhxnAoq+HBEAq 81 2672 210425_175011
+|_send echo 'echo Eq3HjOKYDA1bfQsCTCtiIZWwQJNkOpgU55CNN8f2suy6/d++7LOpOl1el2XlaqdJhxnAoq+HBEAq>>f64;rc' > /dev/ttyS0;rc [210425_175011]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo Eq3HjOKYDA1bfQsCTCtiIZWwQJNkOpgU55CNN8f2suy6/d++7LOpOll1el2XlaqdJhxnAoq+HBEAq>>f64;rc
+ 0
+send_file_b64 nAQHqYVQqivCd/RDr54MD2Xf0QuQMyfC6ugbCCmumQ6ziNfgWCski5pE0dVBMIxcni4IP1ZMHU1e 82 2672 210425_175017
+|_send echo 'echo nAQHqYVQqivCd/RDr54MD2Xf0QuQMyfC6ugbCCmumQ6ziNfgWCski5pE0dVBMIxcni4IP1ZMHU1e>>f64;rc' > /dev/ttyS0;rc [210425_175017]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo nAQHqYVQqivCd/RDr54MD2Xf0QuQMyfC6ugbCCmumQ6ziNfgWCski55pE0dVBMIxcni4IP1ZMHU1e>>f64;rc
+ 0
+send_file_b64 T8M8AJcBAdbztXiSTb6PhZe3e+QjHq5cQpbXzqWX2eHmXTYAEdkfErWuoVUZfwGO09WCR+tpXrUS 83 2672 210425_175023
+|_send echo 'echo T8M8AJcBAdbztXiSTb6PhZe3e+QjHq5cQpbXzqWX2eHmXTYAEdkfErWuoVUZfwGO09WCR+tpXrUS>>f64;rc' > /dev/ttyS0;rc [210425_175023]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo T8M8AJcBAdbztXiSTb6PhZe3e+QjHq5cQpbXzqWX2eHmXTYAEdkfErrWuoVUZfwGO09WCR+tpXrUS>>f64;rc
+ 0
+send_file_b64 on4ob2ocqJyJrNTt2H+hMvFDSS/2057mvoff7tvJW+nCknQRQ9Y3TwKcLMJ91qP6Bq0N8iVAjU2S 84 2672 210425_175030
+|_send echo 'echo on4ob2ocqJyJrNTt2H+hMvFDSS/2057mvoff7tvJW+nCknQRQ9Y3TwKcLMJ91qP6Bq0N8iVAjU2S>>f64;rc' > /dev/ttyS0;rc [210425_175030]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo on4ob2ocqJyJrNTt2H+hMvFDSS/2057mvoff7tvJW+nCknQRQ9Y3TwwKcLMJ91qP6Bq0N8iVAjU2S>>f64;rc
+ 0
+send_file_b64 Ieyen7BU2B19L7m+fYfhgYaxFPy3+2c0Tw6CMxvhv77g3Ceg0/rlh9TrjQclOv7ajnv0+e+2+y+r 85 2672 210425_175035
+|_send echo 'echo Ieyen7BU2B19L7m+fYfhgYaxFPy3+2c0Tw6CMxvhv77g3Ceg0/rlh9TrjQclOv7ajnv0+e+2+y+r>>f64;rc' > /dev/ttyS0;rc [210425_175035]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo Ieyen7BU2B19L7m+fYfhgYaxFPy3+2c0Tw6CMxvhv77g3Ceg0/rlh99TrjQclOv7ajnv0+e+2+y+r>>f64;rc
+ 0
+send_file_b64 o5UtLzT059bz0kp/OYefW/u5Wcyh7exqebeke17PHahf18cvd7pnWQwQPwOQMPrf1IXug+/v2o4N 86 2672 210425_175042
+|_send echo 'echo o5UtLzT059bz0kp/OYefW/u5Wcyh7exqebeke17PHahf18cvd7pnWQwQPwOQMPrf1IXug+/v2o4N>>f64;rc' > /dev/ttyS0;rc [210425_175042]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo o5UtLzT059bz0kp/OYefW/u5Wcyh7exqebeke17PHahf18cvd7pnWQQwQPwOQMPrf1IXug+/v2o4N>>f64;rc
+ 0
+send_file_b64 xOegdiZg2NbaPPnqz9RrWS1fBbfegQ/uHNmpb57NL7qse+2FbTXjbPQ7672HAG81eVsJuxvxqZ7O 87 2672 210425_175047
+|_send echo 'echo xOegdiZg2NbaPPnqz9RrWS1fBbfegQ/uHNmpb57NL7qse+2FbTXjbPQ7672HAG81eVsJuxvxqZ7O>>f64;rc' > /dev/ttyS0;rc [210425_175047]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo xOegdiZg2NbaPPnqz9RrWS1fBbfegQ/uHNmpb57NL7qse+2FbTXjbPPQ7672HAG81eVsJuxvxqZ7O>>f64;rc
+ 0
+send_file_b64 bqe83eftrvW67JznabGC/wIt49j7NzZbqjqpsmdSqb7b4Dd7a3mJu8eG8SqKfuaT+PlTalrX42Ps 88 2672 210425_175053
+|_send echo 'echo bqe83eftrvW67JznabGC/wIt49j7NzZbqjqpsmdSqb7b4Dd7a3mJu8eG8SqKfuaT+PlTalrX42Ps>>f64;rc' > /dev/ttyS0;rc [210425_175053]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo bqe83eftrvW67JznabGC/wIt49j7NzZbqjqpsmdSqb7b4Dd7a3mJu88eG8SqKfuaT+PlTalrX42Ps>>f64;rc
+ 0
+send_file_b64 91qYeHuZt1QlTcnp2src4c5NajXyKd9vto3vZismR7N29WUmHab7e2J09W6xqu6Z1a8TE2trdM5m 89 2672 210425_175059
+|_send echo 'echo 91qYeHuZt1QlTcnp2src4c5NajXyKd9vto3vZismR7N29WUmHab7e2J09W6xqu6Z1a8TE2trdM5m>>f64;rc' > /dev/ttyS0;rc [210425_175059]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo 91qYeHuZt1QlTcnp2src4c5NajXyKd9vto3vZismR7N29WUmHab7e22J09W6xqu6Z1a8TE2trdM5m>>f64;rc
+ 0
+send_file_b64 Fi5b2r0Gt2xuZevxL2pPm2GH8yOLI3q8XLVK0M5mfsNxg29Pa7Ojrdc9jIqaywrIxs9yDX4Oy09D 90 2672 210425_175105
+|_send echo 'echo Fi5b2r0Gt2xuZevxL2pPm2GH8yOLI3q8XLVK0M5mfsNxg29Pa7Ojrdc9jIqaywrIxs9yDX4Oy09D>>f64;rc' > /dev/ttyS0;rc [210425_175105]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo Fi5b2r0Gt2xuZevxL2pPm2GH8yOLI3q8XLVK0M5mfsNxg29Pa7Ojrddc9jIqaywrIxs9yDX4Oy09D>>f64;rc
+ 0
+send_file_b64 Y76KTLx9fobSzRanYGhm73G0c7ZadetiV7eNby7eojQpRVdenWarJRfv6ycu1e3u002MjbLY10C8 91 2672 210425_175112
+|_send echo 'echo Y76KTLx9fobSzRanYGhm73G0c7ZadetiV7eNby7eojQpRVdenWarJRfv6ycu1e3u002MjbLY10C8>>f64;rc' > /dev/ttyS0;rc [210425_175112]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo Y76KTLx9fobSzRanYGhm73G0c7ZadetiV7eNby7eojQpRVdenWarJRRfv6ycu1e3u002MjbLY10C8>>f64;rc
+ 0
+send_file_b64 zDvq+bY2lnU2W2GLiq2Ul9N2daZr39lsb64rae2lXubBFny7atjL085uViaGpcua+Xj3KdpfN7TD 92 2672 210425_175118
+|_send echo 'echo zDvq+bY2lnU2W2GLiq2Ul9N2daZr39lsb64rae2lXubBFny7atjL085uViaGpcua+Xj3KdpfN7TD>>f64;rc' > /dev/ttyS0;rc [210425_175118]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo zDvq+bY2lnU2W2GLiq2Ul9N2daZr39lsb64rae2lXubBFny7atjL0885uViaGpcua+Xj3KdpfN7TD>>f64;rc
+ 0
+send_file_b64 ysTGrVLvA2W93pcQIRhAyBmAaJ/w7C2TnzVb9QZa2ydpc3OnKPdpQxZCMVLhjWsDdC4w3MHoU87B 93 2672 210425_175124
+|_send echo 'echo ysTGrVLvA2W93pcQIRhAyBmAaJ/w7C2TnzVb9QZa2ydpc3OnKPdpQxZCMVLhjWsDdC4w3MHoU87B>>f64;rc' > /dev/ttyS0;rc [210425_175124]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo ysTGrVLvA2W93pcQIRhAyBmAaJ/w7C2TnzVb9QZa2ydpc3OnKPdpQxxZCMVLhjWsDdC4w3MHoU87B>>f64;rc
+ 0
+send_file_b64 gnHePMXsuVvthY4Aju2beFvZRg2ql2JbnOmgaNuSWeFue1cKruyukFEXi2b65kH0jU0qhd5VbW1U 94 2672 210425_175130
+|_send echo 'echo gnHePMXsuVvthY4Aju2beFvZRg2ql2JbnOmgaNuSWeFue1cKruyukFEXi2b65kH0jU0qhd5VbW1U>>f64;rc' > /dev/ttyS0;rc [210425_175130]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo gnHePMXsuVvthY4Aju2beFvZRg2ql2JbnOmgaNuSWeFue1cKruyukFFEXi2b65kH0jU0qhd5VbW1U>>f64;rc
+ 0
+send_file_b64 /Ty7rRrlj4xkHKPn3DF6Bhyz4b23N87kc5bVI+YiTNWMFremKc7oOUYBAQbXV8KKTX5F7jv3bwhP 95 2672 210425_175136
+|_send echo 'echo /Ty7rRrlj4xkHKPn3DF6Bhyz4b23N87kc5bVI+YiTNWMFremKc7oOUYBAQbXV8KKTX5F7jv3bwhP>>f64;rc' > /dev/ttyS0;rc [210425_175136]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo /Ty7rRrlj4xkHKPn3DF6Bhyz4b23N87kc5bVI+YiTNWMFremKc7oOUUYBAQbXV8KKTX5F7jv3bwhP>>f64;rc
+ 0
+send_file_b64 O6TNewMHUfwtPeUpWvcb2GjtsvicGKhd4elrkcK71NlPw5274i3abtnEqLus1/dzk4Otd3EmdZg1 96 2672 210425_175142
+|_send echo 'echo O6TNewMHUfwtPeUpWvcb2GjtsvicGKhd4elrkcK71NlPw5274i3abtnEqLus1/dzk4Otd3EmdZg1>>f64;rc' > /dev/ttyS0;rc [210425_175142]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo O6TNewMHUfwtPeUpWvcb2GjtsvicGKhd4elrkcK71NlPw5274i3abttnEqLus1/dzk4Otd3EmdZg1>>f64;rc
+ 0
+send_file_b64 9dW5wthg77U4U3EWdvZ1b/cStdXqVd3i0bWXkb3U29nPyNdd8XOt3+6ZnZ97h7HJvo377Flm3owt 97 2672 210425_175148
+|_send echo 'echo 9dW5wthg77U4U3EWdvZ1b/cStdXqVd3i0bWXkb3U29nPyNdd8XOt3+6ZnZ97h7HJvo377Flm3owt>>f64;rc' > /dev/ttyS0;rc [210425_175148]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo 9dW5wthg77U4U3EWdvZ1b/cStdXqVd3i0bWXkb3U29nPyNdd8XOt3++6ZnZ97h7HJvo377Flm3owt>>f64;rc
+ 0
+send_file_b64 5unla7Ic3txtcWs9c3d81KoyuBrH4tOHi6rTdlbGhU2ewmaOzmXWnj5+HnjPrmBrkIBAwYASD2W0 98 2672 210425_175155
+|_send echo 'echo 5unla7Ic3txtcWs9c3d81KoyuBrH4tOHi6rTdlbGhU2ewmaOzmXWnj5+HnjPrmBrkIBAwYASD2W0>>f64;rc' > /dev/ttyS0;rc [210425_175155]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo 5unla7Ic3txtcWs9c3d81KoyuBrH4tOHi6rTdlbGhU2ewmaOzmXWnjj5+HnjPrmBrkIBAwYASD2W0>>f64;rc
+ 0
+send_file_b64 YSQsmQtaG3072/nsveAgkAyMdWi9fFzfyRbWGjVivs4avVp0M2QSgYOmYMyAQYpbYkTDmYSBgmAM 99 2672 210425_175201
+|_send echo 'echo YSQsmQtaG3072/nsveAgkAyMdWi9fFzfyRbWGjVivs4avVp0M2QSgYOmYMyAQYpbYkTDmYSBgmAM>>f64;rc' > /dev/ttyS0;rc [210425_175201]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo YSQsmQtaG3072/nsveAgkAyMdWi9fFzfyRbWGjVivs4avVp0M2QSgYYOmYMyAQYpbYkTDmYSBgmAM>>f64;rc
+ 0
+send_file_b64 je7rNj1GseBvvO5P1kjujBJNZlChAzTNCCxdtY1eZvGACGDDTz7Wc6y+cHRQYxYvj+e0VYqn5gOk 100 2672 210425_175207
+|_send echo 'echo je7rNj1GseBvvO5P1kjujBJNZlChAzTNCCxdtY1eZvGACGDDTz7Wc6y+cHRQYxYvj+e0VYqn5gOk>>f64;rc' > /dev/ttyS0;rc [210425_175207]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo je7rNj1GseBvvO5P1kjujBJNZlChAzTNCCxdtY1eZvGACGDDTz7Wc66y+cHRQYxYvj+e0VYqn5gOk>>f64;rc
+ 0
+send_file_b64 Py30fwb+sn819w/np6xKi/bLQXXl+vHH/nO+1F+5JcnO5fkQinscOJk/NvnoPLJ4+nREWHL9N3+u 101 2672 210425_175213
+|_send echo 'echo Py30fwb+sn819w/np6xKi/bLQXXl+vHH/nO+1F+5JcnO5fkQinscOJk/NvnoPLJ4+nREWHL9N3+u>>f64;rc' > /dev/ttyS0;rc [210425_175213]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo Py30fwb+sn819w/np6xKi/bLQXXl+vHH/nO+1F+5JcnO5fkQinscOJJk/NvnoPLJ4+nREWHL9N3+u>>f64;rc
+ 0
+send_file_b64 eR5wgIEGBPx3sFNFxPfj9X/ali3hZ7u8Wj3rJILyUHQGqbVhl5At3E7HWaxsGk1WkdljJ98dJuGz 102 2672 210425_175219
+|_send echo 'echo eR5wgIEGBPx3sFNFxPfj9X/ali3hZ7u8Wj3rJILyUHQGqbVhl5At3E7HWaxsGk1WkdljJ98dJuGz>>f64;rc' > /dev/ttyS0;rc [210425_175219]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo eR5wgIEGBPx3sFNFxPfj9X/ali3hZ7u8Wj3rJILyUHQGqbVhl5At3EE7HWaxsGk1WkdljJ98dJuGz>>f64;rc
+ 0
+send_file_b64 q9E9nGdiLvbYx00Igi0aBrcQVzkMRA4rE34Kcxl82p0+DtpXBS2Rles6W9zp03tQ9OTzHQOs9DNE 103 2672 210425_175225
+|_send echo 'echo q9E9nGdiLvbYx00Igi0aBrcQVzkMRA4rE34Kcxl82p0+DtpXBS2Rles6W9zp03tQ9OTzHQOs9DNE>>f64;rc' > /dev/ttyS0;rc [210425_175225]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo q9E9nGdiLvbYx00Igi0aBrcQVzkMRA4rE34Kcxl82p0+DtpXBS2Rlees6W9zp03tQ9OTzHQOs9DNE>>f64;rc
+ 0
+send_file_b64 NtkvIkdKwPZdt6LIyu77S1W2yMRADQDOtKAM/EAa+33Su96yTyrdmXfBr675PABycXS3d9RrvQWm 104 2672 210425_175231
+|_send echo 'echo NtkvIkdKwPZdt6LIyu77S1W2yMRADQDOtKAM/EAa+33Su96yTyrdmXfBr675PABycXS3d9RrvQWm>>f64;rc' > /dev/ttyS0;rc [210425_175231]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo NtkvIkdKwPZdt6LIyu77S1W2yMRADQDOtKAM/EAa+33Su96yTyrdmXXfBr675PABycXS3d9RrvQWm>>f64;rc
+ 0
+send_file_b64 rztxnogmlg4MAaR3+/pn4AZU10HgyH7cA0cV3TSNY0Bn+v9fIXj6aAqYUsW8c6o3TDCa2uQemZkV 105 2672 210425_175237
+|_send echo 'echo rztxnogmlg4MAaR3+/pn4AZU10HgyH7cA0cV3TSNY0Bn+v9fIXj6aAqYUsW8c6o3TDCa2uQemZkV>>f64;rc' > /dev/ttyS0;rc [210425_175237]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo rztxnogmlg4MAaR3+/pn4AZU10HgyH7cA0cV3TSNY0Bn+v9fIXj6aAAqYUsW8c6o3TDCa2uQemZkV>>f64;rc
+ 0
+send_file_b64 RcZQ0VNHgMW6r/VKd1Hj41Qrd7FJavA6pK8PNYrzPSa3BKx4iici+/VM05p9O5N47TGRnwg8Vh6r 106 2672 210425_175243
+|_send echo 'echo RcZQ0VNHgMW6r/VKd1Hj41Qrd7FJavA6pK8PNYrzPSa3BKx4iici+/VM05p9O5N47TGRnwg8Vh6r>>f64;rc' > /dev/ttyS0;rc [210425_175243]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo RcZQ0VNHgMW6r/VKd1Hj41Qrd7FJavA6pK8PNYrzPSa3BKx4iici+//VM05p9O5N47TGRnwg8Vh6r>>f64;rc
+ 0
+send_file_b64 y+N2Xq6ylcuwhjzs/UelPHpWzyjV7a/paa6VtmuiEZLCbKGjes+On0fsSiiokUBSIh8RlYfuWqk8 107 2672 210425_175249
+|_send echo 'echo y+N2Xq6ylcuwhjzs/UelPHpWzyjV7a/paa6VtmuiEZLCbKGjes+On0fsSiiokUBSIh8RlYfuWqk8>>f64;rc' > /dev/ttyS0;rc [210425_175249]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo y+N2Xq6ylcuwhjzs/UelPHpWzyjV7a/paa6VtmuiEZLCbKGjes+On00fsSiiokUBSIh8RlYfuWqk8>>f64;rc
+ 0
+send_file_b64 rses6dKoPrbIH+/7j3GxonJI/DpVFFYKo/g8RjcpoeVZriyLnHGtnczfO3c66IY2McUf29h1/SVS 108 2672 210425_175255
+|_send echo 'echo rses6dKoPrbIH+/7j3GxonJI/DpVFFYKo/g8RjcpoeVZriyLnHGtnczfO3c66IY2McUf29h1/SVS>>f64;rc' > /dev/ttyS0;rc [210425_175255]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo rses6dKoPrbIH+/7j3GxonJI/DpVFFYKo/g8RjcpoeVZriyLnHGtncczfO3c66IY2McUf29h1/SVS>>f64;rc
+ 0
+send_file_b64 g9f7ggXZMKHqYmSQx9ow20lHccvs5adHWO3YdHbpF/uuxf1sXYO3HjSNfqlsQv2y8CPwuKFIdyuI 109 2672 210425_175301
+|_send echo 'echo g9f7ggXZMKHqYmSQx9ow20lHccvs5adHWO3YdHbpF/uuxf1sXYO3HjSNfqlsQv2y8CPwuKFIdyuI>>f64;rc' > /dev/ttyS0;rc [210425_175301]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo g9f7ggXZMKHqYmSQx9ow20lHccvs5adHWO3YdHbpF/uuxf1sXYO3HjjSNfqlsQv2y8CPwuKFIdyuI>>f64;rc
+ 0
+send_file_b64 VboMBrj4eVf26UyHQqbHAx4+fS3fWejrXcwU3cUQ6G2yC1GYTJ5c4aGy6P0dVMv1owyzaq4IMM8Z 110 2672 210425_175307
+|_send echo 'echo VboMBrj4eVf26UyHQqbHAx4+fS3fWejrXcwU3cUQ6G2yC1GYTJ5c4aGy6P0dVMv1owyzaq4IMM8Z>>f64;rc' > /dev/ttyS0;rc [210425_175307]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo VboMBrj4eVf26UyHQqbHAx4+fS3fWejrXcwU3cUQ6G2yC1GYTJ5c4aaGy6P0dVMv1owyzaq4IMM8Z>>f64;rc
+ 0
+send_file_b64 Bk5MrbK2NtwBmtXp+mu6LuE/zJJXf7vUwS8f6+W35lxpxKqVyYSN76P5eM8CJBooH7qjkSCIbpJj 111 2672 210425_175312
+|_send echo 'echo Bk5MrbK2NtwBmtXp+mu6LuE/zJJXf7vUwS8f6+W35lxpxKqVyYSN76P5eM8CJBooH7qjkSCIbpJj>>f64;rc' > /dev/ttyS0;rc [210425_175312]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo Bk5MrbK2NtwBmtXp+mu6LuE/zJJXf7vUwS8f6+W35lxpxKqVyYSN766P5eM8CJBooH7qjkSCIbpJj>>f64;rc
+ 0
+send_file_b64 Ibsm+qExMTY2zrSLIYxWDBn7kpn4byihsljWeRMyrU/UVnK06vu9RVeW31z4lxr3F9JHp4NklUwj 112 2672 210425_175319
+|_send echo 'echo Ibsm+qExMTY2zrSLIYxWDBn7kpn4byihsljWeRMyrU/UVnK06vu9RVeW31z4lxr3F9JHp4NklUwj>>f64;rc' > /dev/ttyS0;rc [210425_175319]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo Ibsm+qExMTY2zrSLIYxWDBn7kpn4byihsljWeRMyrU/UVnK06vu9RVVeW31z4lxr3F9JHp4NklUwj>>f64;rc
+ 0
+send_file_b64 Ws0+RsVqKnWLvV8TFrvah6vOcs8BgLVipIjEJY5pUgMOpOYDZJqN2ellteX6ukQbz3PicvPTHue8 113 2672 210425_175325
+|_send echo 'echo Ws0+RsVqKnWLvV8TFrvah6vOcs8BgLVipIjEJY5pUgMOpOYDZJqN2ellteX6ukQbz3PicvPTHue8>>f64;rc' > /dev/ttyS0;rc [210425_175325]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo Ws0+RsVqKnWLvV8TFrvah6vOcs8BgLVipIjEJY5pUgMOpOYDZJqN2eellteX6ukQbz3PicvPTHue8>>f64;rc
+ 0
+send_file_b64 7H0WZ3uYYLBjbAbRoM2UoNAShJiVteTyRf9vLlNxdJv+DU5WuzVwRl8wMOhJlGZAu2MHD9jkVVFL 114 2672 210425_175331
+|_send echo 'echo 7H0WZ3uYYLBjbAbRoM2UoNAShJiVteTyRf9vLlNxdJv+DU5WuzVwRl8wMOhJlGZAu2MHD9jkVVFL>>f64;rc' > /dev/ttyS0;rc [210425_175331]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo 7H0WZ3uYYLBjbAbRoM2UoNAShJiVteTyRf9vLlNxdJv+DU5WuzVwRll8wMOhJlGZAu2MHD9jkVVFL>>f64;rc
+ 0
+send_file_b64 Y/F97IDv2B6P3/nW9zl4/WZWjjGDcYbzeniE2G0enYQm2O27dlYPqz9RKO35PuamJr6L/rd9wrt4 115 2672 210425_175337
+|_send echo 'echo Y/F97IDv2B6P3/nW9zl4/WZWjjGDcYbzeniE2G0enYQm2O27dlYPqz9RKO35PuamJr6L/rd9wrt4>>f64;rc' > /dev/ttyS0;rc [210425_175337]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo Y/F97IDv2B6P3/nW9zl4/WZWjjGDcYbzeniE2G0enYQm2O27dlYPqzz9RKO35PuamJr6L/rd9wrt4>>f64;rc
+ 0
+send_file_b64 PgxzkBs7ww8Y646+J3FfqNml+3CDKNOx+rWVHORp7nsv3+xxdlm3AK4Bm8F3nYHZ/gdK3/P9Qj+7 116 2672 210425_175343
+|_send echo 'echo PgxzkBs7ww8Y646+J3FfqNml+3CDKNOx+rWVHORp7nsv3+xxdlm3AK4Bm8F3nYHZ/gdK3/P9Qj+7>>f64;rc' > /dev/ttyS0;rc [210425_175343]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo PgxzkBs7ww8Y646+J3FfqNml+3CDKNOx+rWVHORp7nsv3+xxdlm3AKK4Bm8F3nYHZ/gdK3/P9Qj+7>>f64;rc
+ 0
+send_file_b64 K/3NJb/ssyu9Ch/CWkhXb50CtrzJvAncbwLyVkLVaVeGFcPIhotNXc3+9/yA/qhVJFpnFWClrJkb 117 2672 210425_175349
+|_send echo 'echo K/3NJb/ssyu9Ch/CWkhXb50CtrzJvAncbwLyVkLVaVeGFcPIhotNXc3+9/yA/qhVJFpnFWClrJkb>>f64;rc' > /dev/ttyS0;rc [210425_175349]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo K/3NJb/ssyu9Ch/CWkhXb50CtrzJvAncbwLyVkLVaVeGFcPIhotNXcc3+9/yA/qhVJFpnFWClrJkb>>f64;rc
+ 0
+send_file_b64 5ywCIGwzyatSJVVzIxXjaWcMQfbahI2doCFJdtSJBlank/Ekl6z9NjNryHB4xLyTcFSw3sYx4hOJ 118 2672 210425_175355
+|_send echo 'echo 5ywCIGwzyatSJVVzIxXjaWcMQfbahI2doCFJdtSJBlank/Ekl6z9NjNryHB4xLyTcFSw3sYx4hOJ>>f64;rc' > /dev/ttyS0;rc [210425_175355]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo 5ywCIGwzyatSJVVzIxXjaWcMQfbahI2doCFJdtSJBlank/Ekl6z9NjjNryHB4xLyTcFSw3sYx4hOJ>>f64;rc
+ 0
+send_file_b64 RORJSGPRhuzOefTG0agMAylsoIzLdHPnUdtN+HnvNAy8MZSfgQ7D4lje3SUnlQWggW2ns1q8jdUd 119 2672 210425_175401
+|_send echo 'echo RORJSGPRhuzOefTG0agMAylsoIzLdHPnUdtN+HnvNAy8MZSfgQ7D4lje3SUnlQWggW2ns1q8jdUd>>f64;rc' > /dev/ttyS0;rc [210425_175401]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo RORJSGPRhuzOefTG0agMAylsoIzLdHPnUdtN+HnvNAy8MZSfgQ7D4llje3SUnlQWggW2ns1q8jdUd>>f64;rc
+ 0
+send_file_b64 xvlOkbTvy1wKSdTg0kTmQeqxqVokQIYP71bMWwTc+XjniBs1u25UzfsMaJuXyy3iscRmAGogA4db 120 2672 210425_175407
+|_send echo 'echo xvlOkbTvy1wKSdTg0kTmQeqxqVokQIYP71bMWwTc+XjniBs1u25UzfsMaJuXyy3iscRmAGogA4db>>f64;rc' > /dev/ttyS0;rc [210425_175407]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo xvlOkbTvy1wKSdTg0kTmQeqxqVokQIYP71bMWwTc+XjniBs1u25UzffsMaJuXyy3iscRmAGogA4db>>f64;rc
+ 0
+send_file_b64 Q8ykU6xREUeM3+hlIAbaZl7H42m0jfRld5C9MTGIHh1HqYtDRvPFyYUXxOBDP27Nthfy/qE8ug0m 121 2672 210425_175414
+|_send echo 'echo Q8ykU6xREUeM3+hlIAbaZl7H42m0jfRld5C9MTGIHh1HqYtDRvPFyYUXxOBDP27Nthfy/qE8ug0m>>f64;rc' > /dev/ttyS0;rc [210425_175414]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo Q8ykU6xREUeM3+hlIAbaZl7H42m0jfRld5C9MTGIHh1HqYtDRvPFyYYUXxOBDP27Nthfy/qE8ug0m>>f64;rc
+ 0
+send_file_b64 joMiv/j6NWEPgq/70Vlr+3Cip4ijZJAY29HyxUZGzJVJSfWUVMJpfrS8cng74MkFoDS08URWaiU9 122 2672 210425_175420
+|_send echo 'echo joMiv/j6NWEPgq/70Vlr+3Cip4ijZJAY29HyxUZGzJVJSfWUVMJpfrS8cng74MkFoDS08URWaiU9>>f64;rc' > /dev/ttyS0;rc [210425_175420]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo joMiv/j6NWEPgq/70Vlr+3Cip4ijZJAY29HyxUZGzJVJSfWUVMJpfrrS8cng74MkFoDS08URWaiU9>>f64;rc
+ 0
+send_file_b64 EqvsxmM9hM9ZWb0xHqZnC8QpAy6Jw6PKT0iw6kACoaMNLPfyYxLC4ENuHZYfLqV4YVxwkQDZmTnK 123 2672 210425_175426
+|_send echo 'echo EqvsxmM9hM9ZWb0xHqZnC8QpAy6Jw6PKT0iw6kACoaMNLPfyYxLC4ENuHZYfLqV4YVxwkQDZmTnK>>f64;rc' > /dev/ttyS0;rc [210425_175426]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo EqvsxmM9hM9ZWb0xHqZnC8QpAy6Jw6PKT0iw6kACoaMNLPfyYxLC4EENuHZYfLqV4YVxwkQDZmTnK>>f64;rc
+ 0
+send_file_b64 wK3ZtDno6TArtA7VaE5CWrZv9NB46ocbuWOf23EOBwGJCAICSmKVAB/J/YzdkwwVFuLUdaTeLZJC 124 2672 210425_175432
+|_send echo 'echo wK3ZtDno6TArtA7VaE5CWrZv9NB46ocbuWOf23EOBwGJCAICSmKVAB/J/YzdkwwVFuLUdaTeLZJC>>f64;rc' > /dev/ttyS0;rc [210425_175432]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo wK3ZtDno6TArtA7VaE5CWrZv9NB46ocbuWOf23EOBwGJCAICSmKVABB/J/YzdkwwVFuLUdaTeLZJC>>f64;rc
+ 0
+send_file_b64 09V9+h9W71oAAtmELAeZz/Z2Wbl20idP0Ng/DawtFBikhtUFkp6eTePxiHHG6H6W5WpoOHyNq+iH 125 2672 210425_175438
+|_send echo 'echo 09V9+h9W71oAAtmELAeZz/Z2Wbl20idP0Ng/DawtFBikhtUFkp6eTePxiHHG6H6W5WpoOHyNq+iH>>f64;rc' > /dev/ttyS0;rc [210425_175438]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo 09V9+h9W71oAAtmELAeZz/Z2Wbl20idP0Ng/DawtFBikhtUFkp6eTeePxiHHG6H6W5WpoOHyNq+iH>>f64;rc
+ 0
+send_file_b64 nf2ZSr1XzM3b538Wma6U1l1ukVqPD3o+JvJAzP70srHZagH56WEsLDD+3FvoxQ2v8bzfe/pHYPh2 126 2672 210425_175445
+|_send echo 'echo nf2ZSr1XzM3b538Wma6U1l1ukVqPD3o+JvJAzP70srHZagH56WEsLDD+3FvoxQ2v8bzfe/pHYPh2>>f64;rc' > /dev/ttyS0;rc [210425_175445]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo nf2ZSr1XzM3b538Wma6U1l1ukVqPD3o+JvJAzP70srHZagH56WEsLDDD+3FvoxQ2v8bzfe/pHYPh2>>f64;rc
+ 0
+send_file_b64 lzPd4OfpYUZpP4v7WyaVnDhTz3TNhx7aDeyhs6Fo33uoRhGdA0sbm4UrIXWcjtwkfDas/AoPlxDd 127 2672 210425_175450
+|_send echo 'echo lzPd4OfpYUZpP4v7WyaVnDhTz3TNhx7aDeyhs6Fo33uoRhGdA0sbm4UrIXWcjtwkfDas/AoPlxDd>>f64;rc' > /dev/ttyS0;rc [210425_175450]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo lzPd4OfpYUZpP4v7WyaVnDhTz3TNhx7aDeyhs6Fo33uoRhGdA0sbm44UrIXWcjtwkfDas/AoPlxDd>>f64;rc
+ 0
+send_file_b64 frX6g0visoVSRD6wQ7fdUpMX6n2uI+v9D5Hcvh/o+wAYA/ENswYAtjqx4R0GsR27bh1C2A58sal4 128 2672 210425_175457
+|_send echo 'echo frX6g0visoVSRD6wQ7fdUpMX6n2uI+v9D5Hcvh/o+wAYA/ENswYAtjqx4R0GsR27bh1C2A58sal4>>f64;rc' > /dev/ttyS0;rc [210425_175457]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo frX6g0visoVSRD6wQ7fdUpMX6n2uI+v9D5Hcvh/o+wAYA/ENswYAtjjqx4R0GsR27bh1C2A58sal4>>f64;rc
+ 0
+send_file_b64 zg7kDbWLB1d2N9yHlA5waTLjHT+gyc79xs+ZJAyNnEiWEf/gGIEtmfHMDkXibziOAqMmnmJqvmFV 129 2672 210425_175503
+|_send echo 'echo zg7kDbWLB1d2N9yHlA5waTLjHT+gyc79xs+ZJAyNnEiWEf/gGIEtmfHMDkXibziOAqMmnmJqvmFV>>f64;rc' > /dev/ttyS0;rc [210425_175503]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo zg7kDbWLB1d2N9yHlA5waTLjHT+gyc79xs+ZJAyNnEiWEf/gGIEtmffHMDkXibziOAqMmnmJqvmFV>>f64;rc
+ 0
+send_file_b64 lP8/u9NrMvIEQZEpIzEjZvE4nRIhwTHHsVV9Rb29BSABoLnVs/E1vK2XTMeoiYZD3BkXkd9O63o+ 130 2672 210425_175509
+|_send echo 'echo lP8/u9NrMvIEQZEpIzEjZvE4nRIhwTHHsVV9Rb29BSABoLnVs/E1vK2XTMeoiYZD3BkXkd9O63o+>>f64;rc' > /dev/ttyS0;rc [210425_175509]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo lP8/u9NrMvIEQZEpIzEjZvE4nRIhwTHHsVV9Rb29BSABoLnVs/E1vKK2XTMeoiYZD3BkXkd9O63o+>>f64;rc
+ 0
+send_file_b64 MHbPIoPe5hvPEcfufB9s/Yo4ng+QrvPP66ZjTtHDO7zQVl/mVMBq3o3DLEkZg4th0DYczMEK3Z4v 131 2672 210425_175515
+|_send echo 'echo MHbPIoPe5hvPEcfufB9s/Yo4ng+QrvPP66ZjTtHDO7zQVl/mVMBq3o3DLEkZg4th0DYczMEK3Z4v>>f64;rc' > /dev/ttyS0;rc [210425_175515]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo MHbPIoPe5hvPEcfufB9s/Yo4ng+QrvPP66ZjTtHDO7zQVl/mVMBq3oo3DLEkZg4th0DYczMEK3Z4v>>f64;rc
+ 0
+send_file_b64 +MnjJBAEFu8yvg0UHkR8sYx0bjIjrNYnyBjUtk3/0xGfjWoVualBpdHrdPfem9Z57zGpfItVAaGv 132 2672 210425_175521
+|_send echo 'echo +MnjJBAEFu8yvg0UHkR8sYx0bjIjrNYnyBjUtk3/0xGfjWoVualBpdHrdPfem9Z57zGpfItVAaGv>>f64;rc' > /dev/ttyS0;rc [210425_175521]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo +MnjJBAEFu8yvg0UHkR8sYx0bjIjrNYnyBjUtk3/0xGfjWoVualBpddHrdPfem9Z57zGpfItVAaGv>>f64;rc
+ 0
+send_file_b64 zELr9GYYyax+L7vjvawRWn6dQ808vmksVG6aMfw6/1Khgy1+i1E7JAWV/REeJgostsVMWvI0skcW 133 2672 210425_175527
+|_send echo 'echo zELr9GYYyax+L7vjvawRWn6dQ808vmksVG6aMfw6/1Khgy1+i1E7JAWV/REeJgostsVMWvI0skcW>>f64;rc' > /dev/ttyS0;rc [210425_175527]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo zELr9GYYyax+L7vjvawRWn6dQ808vmksVG6aMfw6/1Khgy1+i1E7JAAWV/REeJgostsVMWvI0skcW>>f64;rc
+ 0
+send_file_b64 JABy3aus0fb7jFZfZy9Vc/wLzP0TZXNN0uD/TrzsiAF+IzhM0Ege+MEXM7Ds+TFisE5EhBikZYnV 134 2672 210425_175533
+|_send echo 'echo JABy3aus0fb7jFZfZy9Vc/wLzP0TZXNN0uD/TrzsiAF+IzhM0Ege+MEXM7Ds+TFisE5EhBikZYnV>>f64;rc' > /dev/ttyS0;rc [210425_175533]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo JABy3aus0fb7jFZfZy9Vc/wLzP0TZXNN0uD/TrzsiAF+IzhM0Ege+MMEXM7Ds+TFisE5EhBikZYnV>>f64;rc
+ 0
+send_file_b64 SuZOWv4d45XuvhP66f7ur8ba3kXwfd7e8gEEDjuoH/YvegcNga8CzfETA3EJ3cHOH4lzxFA9clK7 135 2672 210425_175539
+|_send echo 'echo SuZOWv4d45XuvhP66f7ur8ba3kXwfd7e8gEEDjuoH/YvegcNga8CzfETA3EJ3cHOH4lzxFA9clK7>>f64;rc' > /dev/ttyS0;rc [210425_175539]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo SuZOWv4d45XuvhP66f7ur8ba3kXwfd7e8gEEDjuoH/YvegcNga8CzffETA3EJ3cHOH4lzxFA9clK7>>f64;rc
+ 0
+send_file_b64 rhT9xXyTR8mPPw4FCwwosmD7L5mIagYyBAXVdj8BtTIJelZfjSV0xEQe1tR24LhRi6AUrv3xPPfY 136 2672 210425_175545
+|_send echo 'echo rhT9xXyTR8mPPw4FCwwosmD7L5mIagYyBAXVdj8BtTIJelZfjSV0xEQe1tR24LhRi6AUrv3xPPfY>>f64;rc' > /dev/ttyS0;rc [210425_175545]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo rhT9xXyTR8mPPw4FCwwosmD7L5mIagYyBAXVdj8BtTIJelZfjSV0xEEQe1tR24LhRi6AUrv3xPPfY>>f64;rc
+ 0
+send_file_b64 G+QuXG/zu7yN8j4cvHh9rxvXa4B05lvzPu4EU9N6sOi7LuqOesfj26Rh2Hi9zmBfxEkRzi/lWkAj 137 2672 210425_175552
+|_send echo 'echo G+QuXG/zu7yN8j4cvHh9rxvXa4B05lvzPu4EU9N6sOi7LuqOesfj26Rh2Hi9zmBfxEkRzi/lWkAj>>f64;rc' > /dev/ttyS0;rc [210425_175552]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo G+QuXG/zu7yN8j4cvHh9rxvXa4B05lvzPu4EU9N6sOi7LuqOesfj266Rh2Hi9zmBfxEkRzi/lWkAj>>f64;rc
+ 0
+send_file_b64 gMFF6RIC+3vVW9+wGDxGppl9zZ6XBNrb/VZF7nu2y/BujXbZ90z+L6SN3H2agxgpU+8r7TuawG+w 138 2672 210425_175558
+|_send echo 'echo gMFF6RIC+3vVW9+wGDxGppl9zZ6XBNrb/VZF7nu2y/BujXbZ90z+L6SN3H2agxgpU+8r7TuawG+w>>f64;rc' > /dev/ttyS0;rc [210425_175558]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo gMFF6RIC+3vVW9+wGDxGppl9zZ6XBNrb/VZF7nu2y/BujXbZ90z+L66SN3H2agxgpU+8r7TuawG+w>>f64;rc
+ 0
+send_file_b64 bo43I9w8puEJX7MoDnBZT5qAMw93Q4M97jNT2VGL9gSz+zVZXBobvUBIMED2Eu3Y3Uh3cfOgDD6o 139 2672 210425_175604
+|_send echo 'echo bo43I9w8puEJX7MoDnBZT5qAMw93Q4M97jNT2VGL9gSz+zVZXBobvUBIMED2Eu3Y3Uh3cfOgDD6o>>f64;rc' > /dev/ttyS0;rc [210425_175604]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo bo43I9w8puEJX7MoDnBZT5qAMw93Q4M97jNT2VGL9gSz+zVZXBobvUUBIMED2Eu3Y3Uh3cfOgDD6o>>f64;rc
+ 0
+send_file_b64 DZovuiunZukAgpVjxehn5Q+K70+rnPGSQ21Y9xA9gHJA6oFho3ImFSqEWCBh+WZkmoEMJ1a2AseP 140 2672 210425_175611
+|_send echo 'echo DZovuiunZukAgpVjxehn5Q+K70+rnPGSQ21Y9xA9gHJA6oFho3ImFSqEWCBh+WZkmoEMJ1a2AseP>>f64;rc' > /dev/ttyS0;rc [210425_175611]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo DZovuiunZukAgpVjxehn5Q+K70+rnPGSQ21Y9xA9gHJA6oFho3ImFSSqEWCBh+WZkmoEMJ1a2AseP>>f64;rc
+ 0
+send_file_b64 hftU23DfEQrnM51LJ0d1203D8m8wthbh83MpDDN9cNPlh0m2FEWvF5BgAY1KSRCLJG8HAQ1RwN+Q 141 2672 210425_175617
+|_send echo 'echo hftU23DfEQrnM51LJ0d1203D8m8wthbh83MpDDN9cNPlh0m2FEWvF5BgAY1KSRCLJG8HAQ1RwN+Q>>f64;rc' > /dev/ttyS0;rc [210425_175617]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo hftU23DfEQrnM51LJ0d1203D8m8wthbh83MpDDN9cNPlh0m2FEWvF55BgAY1KSRCLJG8HAQ1RwN+Q>>f64;rc
+ 0
+send_file_b64 u67ptdC7Vti8KgX1B3X8I600joSg6IyCG1Qz03VT5VzfiuBW2EOpkM1bij9qJUsKYQKTNFi9sSgA 142 2672 210425_175623
+|_send echo 'echo u67ptdC7Vti8KgX1B3X8I600joSg6IyCG1Qz03VT5VzfiuBW2EOpkM1bij9qJUsKYQKTNFi9sSgA>>f64;rc' > /dev/ttyS0;rc [210425_175623]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo u67ptdC7Vti8KgX1B3X8I600joSg6IyCG1Qz03VT5VzfiuBW2EOpkMM1bij9qJUsKYQKTNFi9sSgA>>f64;rc
+ 0
+send_file_b64 H9Y4LV3mOz/o/8Hw+vsPs2OBeERKoqurnH52jt3f87ldxwHefHtvKdd6J6AX1RAPxRRUMXtZCTa0 143 2672 210425_175629
+|_send echo 'echo H9Y4LV3mOz/o/8Hw+vsPs2OBeERKoqurnH52jt3f87ldxwHefHtvKdd6J6AX1RAPxRRUMXtZCTa0>>f64;rc' > /dev/ttyS0;rc [210425_175629]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo H9Y4LV3mOz/o/8Hw+vsPs2OBeERKoqurnH52jt3f87ldxwHefHtvKddd6J6AX1RAPxRRUMXtZCTa0>>f64;rc
+ 0
+send_file_b64 oR+9n/AtICvTxHx/H/YNwVqAf08J7/qa1UMnXnnfbrEPG4hfjT06//cEQ6uAiA9eL8DA037HLOgS 144 2672 210425_175635
+|_send echo 'echo oR+9n/AtICvTxHx/H/YNwVqAf08J7/qa1UMnXnnfbrEPG4hfjT06//cEQ6uAiA9eL8DA037HLOgS>>f64;rc' > /dev/ttyS0;rc [210425_175635]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo oR+9n/AtICvTxHx/H/YNwVqAf08J7/qa1UMnXnnfbrEPG4hfjT06///cEQ6uAiA9eL8DA037HLOgS>>f64;rc
+ 0
+send_file_b64 Et3lZifnvNzZxOcwl58OimU5SqkklSQJ65gZPbfrn6z5OBj4LStjFbuEPvauF4UkXSEZQvFu2Cnn 145 2672 210425_175641
+|_send echo 'echo Et3lZifnvNzZxOcwl58OimU5SqkklSQJ65gZPbfrn6z5OBj4LStjFbuEPvauF4UkXSEZQvFu2Cnn>>f64;rc' > /dev/ttyS0;rc [210425_175641]
+[root@localhost tmp]# 
+[root@localhost tmp]# echo Et3lZifnvNzZxOcwl58OimU5SqkklSQJ65gZPbfrn6z5OBj4LStjFbbuEPvauF4UkXSEZQvFu2Cnn>>f64;rc
+ 0
+send_file_b64 w08AF1NM5HUw56FCNACDJyjXySS3tNMhHj87Bkez8OS1uVBrGAd+9VP5klfZJ75OQkPLYE8g2EiM 146 2672 210425_175647
+|_send echo 'echo w08AF1NM5HUw56FCNACDJyjXySS3tNMhHj87Bkez8OS1uVBrGAd+9VP5klfZJ75OQkPLYE8g2EiM>>f64;rc' > /dev/ttyS0;rc [210425_175647]
+[root@localhost tmp]# 
+[root@localhost tmp]#  -1
+_ERROR_
+sendfile static/test_script/stressapptest.elf error
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >2</a></div></div></div>
+[210425_175703]Start echo
+|_send echo -n _start;echo -n _test_;echo 10 ;rc [210425_175703]
+echo break re=[_exit_]
+[210425_175706]End echo in 2 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostuser root --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > loop[1]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS [PASS] [[pass 1/1/1] [fail 0/1/1]]</a></div></div></div>
+<div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >STATUS SUMMARY</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >PASS</a></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >pass_count _</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1</a></div><div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >fail_count _</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >0</a></div><div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >fail_info _</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ></a></div></div></div>

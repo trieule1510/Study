@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block title %}{{action}}{% endblock %}
+{% block body %}
+<script>
+	if ($(".msg").text().includes("You NOT is admin") == true){
+		alert($(".msg").text());
+	}
+</script>
+    <div class="w3-container">
+	 <form action="/edit/{{id}}"  method="post"  enctype="multipart/form-data">
+	 	<div class="w3-container w3-indigo w3-row">
+	    	<input class="w3-col m12 w3-input" type="file" name="file" autocomplete="off" multiple >
+    	</div>
+	  <div class="w3-container w3-indigo w3-row">
+			{% for e in device %}
+			    {% if e == "Note" or  e == "Remark" %}
+			    {% elif e == "id" or e == "client_info" or e == "time" %}
+			    	<input class="w3-black w3-col m12 w3-input {{e}}" type="hidden"  name="{{e}}" list="{{e}}" value="{{device[e]}}"/>
+			    {% else %}
+			    	<div class="w3-container w3-col m1 w3-indigo"><label class="{{e}}_label">{{e}}</label></div>
+					<input class="w3-black w3-col m3 w3-input {{e}}" type="text"  name="{{e}}" list="{{e}}" value="{{device[e]}}"/>
+					<datalist id="{{e}}">
+					{% for ee in datalist[e] %}
+				  		<option value="{{ee}}">
+			     	{% endfor %}
+			    	</datalist>
+				{% endif %}
+			{% endfor %}
+			
+			{% for e in device %}
+			    {% if e == "Note" or  e == "Remark" %}
+			    	<div class="w3-container w3-col m12 w3-indigo"><label>{{e}}</label></div>
+			    	<textarea  class="w3-black w3-col m12 w3-input {{e}}" id='{{e}}' name="{{e}}" rows='5' style='width:100%' >{{device[e]}}</textarea>
+			    {% endif %}
+			{% endfor %}
+			<input type="submit" value="SAVE" class= "w3-container w3-button w3-block w3-red w3-xlarge"></input>
+			<p></p>
+	  </div>
+	 </form>
+	</div>
+	<div class="w3-container">{{h_attached|safe}}</div>
+{% endblock %}

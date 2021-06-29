@@ -1,0 +1,6 @@
+search_board_type Mt.Jade
+./sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.172.2 'ipmitool -H 10.38.172.51 -U ADMIN -P ADMIN  sel list'
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+   1 | 04/27/2021 | 21:40:36 | Version Change | Invalid or unsupported firmware or software version | Asserted
+   2 | 04/27/2021 | 22:35:49 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+   3 | 04/27/2021 | 22:35:49 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted

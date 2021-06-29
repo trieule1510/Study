@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Device Manager</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+ 	<script src="{{ url_for('static', filename='js/js.js') }}"></script>
+</head>
+<body>
+	<button onclick="window.location.href='/';" id="go_home" class='go_button go_home' title="Go Home"><span>&#9764;</span></button>
+	<button onclick="go_top()" id="go_top" class='go_button go_top' title="Go Top"><span>&#8593;</span></button>
+	<button onclick="go_end()" id="go_end" class='go_button go_end' title="Go Bottom"><span>&#8595;</span></button>
+	<div class="container">
+		<div class="w3-bar w3-red">
+		  <a href="/" class="w3-bar-item w3-button">HOME</a>
+		  <a href="/page_request" class="w3-bar-item w3-button">REQUEST</a>
+		  <a href="/page_shared" class="w3-bar-item w3-button">SHARED</a>
+		  <a href="/page_history" class="w3-bar-item w3-button">HISTORY</a>
+		  <a href="/page_denied" class="w3-bar-item w3-button">DENIED</a>
+		  <a href="/add" class="w3-bar-item w3-button">ADD</a>	
+		</div>
+		<div class="w3-indigo"> <br> </div>
+		<div class="container w3-indigo">
+			<form class="w3-container w3-card-4 w3_filter w3-indigo" action="{{action}}" method="post">  
+				<div class="w3-row">
+					<p class="w3-col m1 w3-indigo "></p>
+					<p class="w3-col m1 w3-indigo ">Filter</p>
+				  	<input class="w3-input w3-border w3-col m8" name="filter" type="text" value="{{filter}}"> 
+				  	<p class="w3-col m2 w3-indigo "></p>     
+				</div>
+			</form>
+		</div>
+		<div class="w3-indigo"> <br> </div>
+		<div class="w3-panel w3-yellow"><p>{{msg}}</p></div>
+		<div class="container"><img src="/static/qr/{{device[3]}}.png"></div>
+	    <div class="container">
+   		    {% for i in range(0,len) %}
+				<p><label class="w3-text-blue" style="white-space: pre-line" ><b>{{ element[i] | safe}} : {{device[i] | safe }}</b></label></p>
+			{% endfor %}
+		</div>
+				  
+	</div>
+</body>
+</html>
+

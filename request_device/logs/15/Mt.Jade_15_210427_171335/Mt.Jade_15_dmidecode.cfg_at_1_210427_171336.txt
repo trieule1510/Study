@@ -1,0 +1,295 @@
+search_board_type Mt.Jade
+ipmitool -H 10.38.162.44 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  sol deactivate instance=2
+Setting large buffer to 32767
+ipmitool -H 10.38.162.44 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  sol activate=usesolkeepalive instance=2
+logs/15/Mt.Jade_15_210427_171335/Mt.Jade_15_dmidecode.cfg_at_1_210427_171336s0cli.log
+
+
+SMpro Rom Firmware v1.0 - build 20190626
+search_board_type Mt.Jade
+ipmitool -H 10.38.162.44 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  sol deactivate instance=4
+Setting large buffer to 32767
+ipmitool -H 10.38.162.44 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  sol activate=usesolkeepalive instance=4
+logs/15/Mt.Jade_15_210427_171335/Mt.Jade_15_dmidecode.cfg_at_1_210427_171336s1cli.log
+
+
+Pub key verify fail: 84:0xF1000009
+
+Calculated pub key hash: 85: len: 32
+D5C2B1C0485574B1077A8389A6A6B98E
+97691612D8A7C36935C17A16392AFF71
+
+
+Actual pub key hash: 86: len: 32
+A454B70A9F78317DAC0C7BA3CA51FD57
+DBEA5EA33C5B2FA47CB8B6A65D32209D
+
+
+CommonCertVerify fail: 265:0xF1000006
+
+CommonCertVerify fail: 340:0xF1000006
+CM:fuselock: 00000001 tmmdbglockr: 00000001
+tmmnsdbgcsr: 00000000 tmmsdbgcsr: 00000000
+Ignoring error code: 0000040A
+
+SMpro Runtime Firmware v1.4 - build 20210326
+Failsafe: 1
+Load PMpro
+
+Pub key verify fail: 84:0xF1000009
+
+Calculated pub key hash: 85: len: 32
+D5C2B1C0485574B1077A8389A6A6B98E
+97691612D8A7C36935C17A16392AFF71
+
+
+Actual pub key hash: 86: len: 32
+A454B70A9F78317DAC0C7BA3CA51FD57
+DBEA5EA33C5B2FA47CB8B6A65D32209D
+
+
+CommonCertVerify fail: 267:0xF1000006
+
+CommonCertVerify fail: 345:0xF1000006
+ERR: Authenticate PMpro
+Board: config 0
+Available CPM: 0x000000FFFFFFFFFF
+Release S1
+
+SMpro Rom Firmware v1.0 - build 20190626
+
+Pub key verify fail: 84:0xF1000009
+
+Calculated pub key hash: 85: len: 32
+D5C2B1C0485574B1077A8389A6A6B98E
+97691612D8A7C36935C17A16392AFF71
+
+
+Actual pub key hash: 86: len: 32
+A454B70A9F78317DAC0C7BA3CA51FD57
+DBEA5EA33C5B2FA47CB8B6A65D32209D
+
+
+CommonCertVerify fail: 265:0xF1000006
+
+CommonCertVerify fail: 340:0xF1000006
+CM:fuselock: 00000001 tmmdbglockr: 00000001
+tmmnsdbgcsr: 00000000 tmmsdbgcsr: 00000000
+Ignoring error code: 0000040A
+
+SMpro Runtime Firmware v1.4 - build 20210326
+Load PMpro
+
+Pub key verify fail: 84:0xF1000009
+
+Calculated pub key hash: 85: len: 32
+D5C2B1C0485574B1077A8389A6A6B98E
+97691612D8A7C36935C17A16392AFF71
+
+S1: Ready
+
+S1: Sync
+Actual pub key hash: 86: len: 32
+A454B70A9F78317DAC0C7BA3CA51FD57
+DBEA5EA33C5B2FA47CB8B6A65D32209D
+
+
+CommonCertVerify fail: 267:0xF1000006
+
+CommonCertVerify fail: 345:0xF1000006
+ERR: Authenticate PMpro
+Master: Ready
+Board: config 0
+Available CPM: 0x000000FFFFFFFFFF
+S1: Sync
+Boot PMpro
+Boot PMpro
+Load BL1
+ERR: BL1 load
+ERR: BL1 load/auth
+Probe I2C10 DIMM0
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM1
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM2
+Probe I2C10 DIMM0
+Probe I2C10 DIMM1
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM2
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM3
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM4
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM3
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM4
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM5
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM6
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM7
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM5
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM6
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM7
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C2 DIMM0
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM1
+I2C2: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C2 DIMM0
+Probe I2C2 DIMM1
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM2
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM3
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM2
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM3
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM4
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM5
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM6
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM4
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM5
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM6
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM7
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+DDR: Operational     DIMM: 0x00000100
+DDR: Failure         DIMM: 0x00000000
+DDR: Non-Operational DIMM: 0x00000000
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM7
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+DDR: Unsupported MCU mask 0x00000000
+DDR: Operational     DIMM: 0x00000000
+DDR: Failure         DIMM: 0x00000000
+DDR: Non-Operational DIMM: 0x00000000
+128KB OCM protection active
+PCP initialized
+vTPM: SCP Measurement Fails.
+SMpro ready
+S0-cli>128KB OCM protection active
+PCP initialized
+vTPM: SCP Measurement Completes.
+ 2P: reset host
+System reboot
+
+PMpro output start
+PMpro Runtime Firmware v1.4 - build 20210326
+2P mode: 0x00000002
+2P Cfg: 0xFFFFFF01
+2PLINK1 (RC/EP): 0x00000010/0x00000010 0x00000004/0x00000004
+2PLINK0: Link Down
+2PLINK1 (RC/EP): 0x00000010/0x00000010 0x00000004/0x00000004
+2PLINK1: Link Up
+PMpro output complete
+
+cli> mdw -l 0x50002d14
+0x80070908
+S0-cli> 
+
+cli> mdw -l 0x50002d18
+0x033800BC
+S0-cli> 

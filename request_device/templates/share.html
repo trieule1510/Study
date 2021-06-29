@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block title %}{{action}}{% endblock %}
+{% block body %}
+		<div class="w3-container">
+		    {% for i in range(0,len) %}
+		    {% if element[i] == "Info" or element[i] == "info" %}
+		    {% else %}
+		    <div class="w3-row">
+		    	<label class="w3-col m4 w3-text-blue" style="white-space: pre-line" >{{ element[i]|safe}}</label>
+		    	{% if element[i] == "Part_number" %}
+		    	<a class="w3-col m8 w3-text-blue"  href="/?search=id%3A{{device[0]}}+" >{{device[i]|safe }}</a>
+		    	{% else %}
+		    	<label class="w3-col m8 w3-text-blue" style="white-space: pre-line" >{{device[i]|safe}}</label>
+		    	{% endif %}
+		    </div>
+		    {% endif %}
+			{% endfor %}
+		</div>
+		<form class="w3-container w3-card-4" action="/request_submit/{{device[0]}}" method="post" enctype="multipart/form-data">
+			 <div class="w3-indigo w3-row"><label class="w3-indigo">{{device[5]}}</label></div>
+			 <div class="w3-row">
+			 	<input class="w3-col m12 w3-input" type="file" name="file" autocomplete="off" multiple >
+			 </div>
+			  <p>      
+			  	<label class="w3-text-blue"><b>Your email</b></label>
+			  	<input class="w3-input w3-border" name="email" type="text"  value="{{email}}">
+			  </p>
+			  <p>      
+			  	<label class="w3-text-blue"><b>Number</b></label>
+			  	<input class="w3-input w3-border" name="number" type="text" value="1">
+			  </p>
+			  <p>      
+			  	<label class="w3-text-blue"><b>Board Serial</b></label>
+			  	<input class="w3-input w3-border board_serial" name="board_serial" list="board_serial" type="text">
+			  	<datalist id="board_serial">
+					{% for e in board_serials %}
+				  		<option value="{{e}}">
+			     	{% endfor %}
+			    </datalist>
+			  </p>
+			  <p>      
+			  	<label class="w3-text-blue"><b>Note</b></label>
+			  	<textarea  class="w3-input w3-border" name="note"  rows='2' style='width:100%' >Request device for </textarea>
+			  </p>
+			  
+			  <p><button class="w3-btn w3-blue " onclick="return confirm('Are you sure Request ?')">Request</button></p>
+		</form>
+		<div class="w3-container"><img src="/static/qr/{{device[5]}}.png"></div>
+		<div class="w3-container">{{h_attached|safe}}</div>
+{% endblock %}

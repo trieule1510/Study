@@ -1,0 +1,211 @@
+<!DOCTYPE html><html lang='en'><head><title>Mt.Jade_37</title><link rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css'><script src='https://cdn.jsdelivr.net/npm/chart.js@2.8.0'></script><style>.eye_main {width:100%;}.eye_element {width:25%;}.eye_table {width:80%;}.eye_fail {background-color: Purple;}.eye_fail_mask {background-color: DarkRed;}.eye_pass {background-color: YellowGreen;}.eye_pass_mask {background-color: ForestGreen;}.eye_title {background-color: whilte;}.eye_hw {background-color: aqua;}.eye_point{width:auto;}.overflowTest {padding: 15px;width: auto;height: 600px;overflow: scroll;border: 1px solid #ccc;}</style></head><body><h1 align='center'><img src='data:image/png;base64,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' scale='0'></h1><p align='center'><font size='7' color='blue'><span>Mt.Jade_37</span></font></p>
+
+
+<div class='w3-container'> <div hidden>
+__start__CLI ARGV ./linux_test.py --test_case mem_test --loop 3 --start_test 1 --time 1800 --linux_script ./mem_test.sh --sensor_bg 1 --sendfile static/test_script/mem_test.sh,static/test_script/memtester.elf --cleannv 1 --hostip 10.38.172.2 --hostuser root --hostpass root --bmcip 10.38.172.51 --tty_bmc FTDBIL23 --board_type Mt.Jade --board Mt.Jade_37 --scp_fw cfg/scp_fw/altra_scp_signed_1.05.20210426.hpm --atfbios_fw cfg/atfbios_fw/jade_aptiov_atf_signed_1.05.20210426.hpm --test_cfg delivery_memtester.cfg --wait 0 --sys_log logs/37/Mt.Jade_37_210503_212453.log --test_cfg delivery_memtester.cfg --nv_scan SI_SOC_VMARGIN[0.-38.37],SI_DDR_VMARGIN[0.-60.60]  __end__
+</div><div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CLI ARGV</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >./linux_test.py --test_case mem_test --loop 3 --start_test 1 --time 1800 --linux_script ./mem_test.sh --sensor_bg 1 --sendfile static/test_script/mem_test.sh,static/test_script/memtester.elf --cleannv 1 --hostip 10.38.172.2 --hostuser root --hostpass root --bmcip 10.38.172.51 --tty_bmc FTDBIL23 --board_type Mt.Jade --board Mt.Jade_37 --scp_fw cfg/scp_fw/altra_scp_signed_1.05.20210426.hpm --atfbios_fw cfg/atfbios_fw/jade_aptiov_atf_signed_1.05.20210426.hpm --test_cfg delivery_memtester.cfg --wait 0 --sys_log logs/37/Mt.Jade_37_210503_212453.log --test_cfg delivery_memtester.cfg --nv_scan SI_SOC_VMARGIN[0.-38.37],SI_DDR_VMARGIN[0.-60.60]  </a></div></div>
+
+
+cleannv ...
+exec_cmd ./xconsole.py --cmd cleannv --hostuser root --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+
+
+search_board_type Mt.Jade
+./sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.172.51 'echo clean nvparam && gpiotool --set-data-low 226 && nvparm -c -o 0x110000 && nvparm -c -o 0x120000 && nvparm -c -o 0x5F0000 && gpiotool --set-data-high 226'
+[28031.883939] ttyUSB15' FTDBIL23
+[17037.090089] ttyUSB10' AD0K8YXF
+[17029.669679] ttyUSB5' AD0K8YXU
+[17022.761222] ttyUSB4' AD0K8YY7
+[   10.714282] ttyUSB13' AD0K8YYB
+[   10.694948] ttyUSB12' FTDBIMR1
+[   10.675291] ttyUSB11' AD0K8KF3
+[   10.487618] ttyUSB9' FTEZFHCC
+[   10.487352] ttyUSB8' AD0K9J3K
+[   10.487086] ttyUSB7' AD0K8YY4
+[   10.486835] ttyUSB6' FTBQZF1O
+[   10.485306] ttyUSB3' AB0KUEMT
+[   10.455534] ttyUSB2' AD0K8YXP
+[   10.417747] ttyUSB1' FTBELRP0
+[   10.374680] ttyUSB0' FTEZFKQR
+Program cfg/scp_fw/altra_scp_signed_1.05.20210426.hpm ... 
+exec_cmd ./xconsole.py --scp_fw cfg/scp_fw/altra_scp_signed_1.05.20210426.hpm --hostuser root --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+
+
+search_board_type Mt.Jade
+update_fw cfg/scp_fw/altra_scp_signed_1.05.20210426.hpm fw_type scp
+sshpass -p root scp  -o StrictHostKeyChecking=no  cfg/scp_fw/altra_scp_signed_1.05.20210426.hpm root@10.38.172.2:/tmp
+./sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.172.2 'echo y |ipmitool -H 10.38.172.51 -U ADMIN -P ADMIN -I lanplus -z 0x7fff hpm upgrade /tmp/altra_scp_signed_1.05.20210426.hpm force'
+check_firmware_upgrade 0
+<div class='w3-container'> <div hidden>
+__start__Firmware upgrade cfg/scp_fw/altra_scp_signed_1.05.20210426.hpm PASS__end__
+</div><div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >Firmware upgrade</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >cfg/scp_fw/altra_scp_signed_1.05.20210426.hpm PASS</a></div></div>
+
+
+Program cfg/atfbios_fw/jade_aptiov_atf_signed_1.05.20210426.hpm ... 
+exec_cmd ./xconsole.py --atfbios_fw cfg/atfbios_fw/jade_aptiov_atf_signed_1.05.20210426.hpm --hostuser root --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+
+
+search_board_type Mt.Jade
+update_fw cfg/atfbios_fw/jade_aptiov_atf_signed_1.05.20210426.hpm fw_type bios
+sshpass -p root scp  -o StrictHostKeyChecking=no  cfg/atfbios_fw/jade_aptiov_atf_signed_1.05.20210426.hpm root@10.38.172.2:/tmp
+./sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.172.2 'echo y |ipmitool -H 10.38.172.51 -U ADMIN -P ADMIN -I lanplus -z 0x7fff hpm upgrade /tmp/jade_aptiov_atf_signed_1.05.20210426.hpm force'
+check_firmware_upgrade 0
+<div class='w3-container'> <div hidden>
+__start__Firmware upgrade cfg/atfbios_fw/jade_aptiov_atf_signed_1.05.20210426.hpm PASS__end__
+</div><div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >Firmware upgrade</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >cfg/atfbios_fw/jade_aptiov_atf_signed_1.05.20210426.hpm PASS</a></div></div>
+
+
+
+
+
+
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostuser root --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --hostuser root --set_nvparm [SI_DDR_VMARGIN:1130496:0x0][SI_SOC_VMARGIN:1130504:0x0] --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+./xconsole.py --tty 2 --log logs/37/Mt.Jade_37_210503_212453/Mt.Jade_37_mem_test_delivery_memtester.cfg_at_1_210503_212745s0cli.log --hostuser root --note s0cli --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+./xconsole.py --tty 4 --log logs/37/Mt.Jade_37_210503_212453/Mt.Jade_37_mem_test_delivery_memtester.cfg_at_1_210503_212745s1cli.log --hostuser root --note s1cli --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+./xconsole.py --tty 3 --log logs/37/Mt.Jade_37_210503_212453/Mt.Jade_37_mem_test_delivery_memtester.cfg_at_1_210503_212745atf.log --hostuser root --note atf --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+./xconsole.py --tty 1 --log logs/37/Mt.Jade_37_210503_212453/Mt.Jade_37_mem_test_delivery_memtester.cfg_at_1_210503_212745uefi.log --hostuser root --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+./xconsole.py --tty FTDBIL23 --log logs/37/Mt.Jade_37_210503_212453/Mt.Jade_37_mem_test_delivery_memtester.cfg_at_1_210503_212745bmc.log --hostuser root --note bmc --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div hidden>
+__start__CHASSIS POWER ON 1 210503_212745__end__
+</div><div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 1</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/37/Mt.Jade_37_210503_212453/Mt.Jade_37_mem_test_delivery_memtester.cfg_at_1_210503_212745.txt'>210503_212745</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostuser root --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+|_send mdw -l 0x50002d14 [210503_212824]
+|_send mdw -l 0x50002d14 [210503_212825]
+|_send mdw -l 0x50002d18 [210503_212826]
+|_send mdw -l 0x50002d18 [210503_212827]
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div hidden>
+__start__DDR_INFO 210312_256GB_2666_SECDED_ECC_1P_2DPC_16_16xDIMM_16GB_18ASF2G72PDZ-2G6E1__end__
+</div><div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >210312_256GB_2666_SECDED_ECC_1P_2DPC_16_16xDIMM_16GB_18ASF2G72PDZ-2G6E1</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div hidden>
+__start__SOC_INFO __end__
+</div><div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ></a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div hidden>
+__start__CPU_TYPE ES1/ES2 non-TMM__end__
+</div><div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CPU_TYPE</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >ES1/ES2 non-TMM</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div hidden>
+__start__PCI_INFO <br>__end__
+</div><div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >PCI_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><br></a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div hidden>
+__start__ SI_DDR_VMARGIN[0x0] SI_SOC_VMARGIN[0x0] loop[1] TEST_FAIL [AUTO REBOOT] [[pass 0/1/27] [fail 1/1/27]]__end__
+</div><div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0x0] SI_SOC_VMARGIN[0x0] loop[1]</a>    <a class='w3-col m9 show-white-space w3-text-red' style='white-space: pre-line' >TEST_FAIL [AUTO REBOOT] [[pass 0/1/27] [fail 1/1/27]]</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/37/Mt.Jade_37_210503_212453/sensor-mem_test-1.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostuser root --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --hostuser root --set_nvparm [SI_DDR_VMARGIN:1130496:0x0][SI_SOC_VMARGIN:1130504:0xFFFFFFDA] --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+./xconsole.py --tty 2 --log logs/37/Mt.Jade_37_210503_212453/Mt.Jade_37_mem_test_delivery_memtester.cfg_at_2_210503_213023s0cli.log --hostuser root --note s0cli --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+./xconsole.py --tty 4 --log logs/37/Mt.Jade_37_210503_212453/Mt.Jade_37_mem_test_delivery_memtester.cfg_at_2_210503_213023s1cli.log --hostuser root --note s1cli --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+./xconsole.py --tty 3 --log logs/37/Mt.Jade_37_210503_212453/Mt.Jade_37_mem_test_delivery_memtester.cfg_at_2_210503_213023atf.log --hostuser root --note atf --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+./xconsole.py --tty 1 --log logs/37/Mt.Jade_37_210503_212453/Mt.Jade_37_mem_test_delivery_memtester.cfg_at_2_210503_213023uefi.log --hostuser root --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+./xconsole.py --tty FTDBIL23 --log logs/37/Mt.Jade_37_210503_212453/Mt.Jade_37_mem_test_delivery_memtester.cfg_at_2_210503_213023bmc.log --hostuser root --note bmc --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div hidden>
+__start__CHASSIS POWER ON 2 210503_213023__end__
+</div><div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 2</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/37/Mt.Jade_37_210503_212453/Mt.Jade_37_mem_test_delivery_memtester.cfg_at_2_210503_213023.txt'>210503_213023</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostuser root --hostip 10.38.172.2 --bmcip 10.38.172.51 --hostpass root --board_type Mt.Jade
+|_send mdw -l 0x50002d14 [210503_213119]
+|_send mdw -l 0x50002d14 [210503_213119]
+|_send mdw -l 0x50002d18 [210503_213121]
+|_send mdw -l 0x50002d18 [210503_213121]
+|_send root [210503_213323]
+|_send root [210503_213323]
+|_send alias rc='echo -n _rc_$?_ex;echo -n it_' [210503_213324]
+|_send cd /var/tmp;rc [210503_213326]
+|_send lspci;rc [210503_213328]
+|_send dmidecode;rc [210503_213329]
+|_send dhclient -v;rc [210503_213334]
+exec_cmd cksum static/test_script/mem_test.sh
+|_send cksum mem_test.sh;rc [210503_213336]
+[root@localhost tmp]# 
+[root@localhost tmp]# cksum mem_test.sh;rc
+cksum: mem_test.sh: No such file or directory
+_rc_1
+start sendfile static/test_script/mem_test.sh
+|_send wget http://10.38.19.97:2021//static/test_script/mem_test.sh -O mem_test.sh && chmod 777 mem_test.sh;rc [210503_213337]
+[root@localhost tmp]# 
+[root@localhost tmp]# wget http://10.38.19.97:2021//static/test_script/mem_test.ssh -O mem_test.sh && chmod 777 mem_test.sh;rc
+--2021-05-03 10:15:44--  http://10.38.19.97:2021//static/test_script/mem_test.sh
+Connecting to 10.38.19.97:2021... failed: Network is unreachable.
+_rc_4
+send_file_b64 mem_test.sh ... 210503_213343(3)
+|_send rm -rf f64;rc [210503_213343]
+send_file_b64 QlpoOTFBWSZTWWcxfTIABlT/hNEwAIB///+7/+ferv////4AAgAIYAf8GPvbxPPN7V77APW2AD7b 1 36 210503_213344
+|_send echo 'QlpoOTFBWSZTWWcxfTIABlT/hNEwAIB///+7/+ferv////4AAgAIYAf8GPvbxPPN7V77APW2AD7b'>>f64;rc [210503_213344]
+send_file_b64 vsPoGhCZRN6ETRk9MiA0DQGgaGhoBo0BkaAGiaTAJonojUjajyR6g0ANPUAAAGgBo0BqbRCp+qNp 2 36 210503_213350
+|_send echo 'vsPoGhCZRN6ETRk9MiA0DQGgaGhoBo0BkaAGiaTAJonojUjajyR6g0ANPUAAAGgBo0BqbRCp+qNp'>>f64;rc [210503_213350]
+send_file_b64 oQ00aNDQ0AAANAAANAABJqSpsppGJo2kZG1BoNA0yZNGgBpiDQAGjQbUk01T8lGgeoBiAAAAAAAA 3 36 210503_213355
+|_send echo 'oQ00aNDQ0AAANAAANAABJqSpsppGJo2kZG1BoNA0yZNGgBpiDQAGjQbUk01T8lGgeoBiAAAAAAAA'>>f64;rc [210503_213355]
+send_file_b64 AGgBIkCJiBGIyJsptU/VTzUmmmnlG1DI0DT1B6J6hoPU039/j0d6pArAQJyIOGyW08ePBTdLguQq 4 36 210503_213400
+|_send echo 'AGgBIkCJiBGIyJsptU/VTzUmmmnlG1DI0DT1B6J6hoPU039/j0d6pArAQJyIOGyW08ePBTdLguQq'>>f64;rc [210503_213400]
+send_file_b64 ELdYtADMAgxIxFjEEZEYMRjFgqjGQV5zSIoIoqqA4CqCJGCRggwWIKIjIxqiopVVVFMVREQVRPPw 5 36 210503_213405
+|_send echo 'ELdYtADMAgxIxFjEEZEYMRjFgqjGQV5zSIoIoqqA4CqCJGCRggwWIKIjIxqiopVVVFMVREQVRPPw'>>f64;rc [210503_213405]
+send_file_b64 z65WjoWw8q53q/1nMOG5vrI7vzya7D2WWZSu+a2e32G0LW16KpOiHPR0jZbdneVkBCZzKkL+F5MD 6 36 210503_213410
+|_send echo 'z65WjoWw8q53q/1nMOG5vrI7vzya7D2WWZSu+a2e32G0LW16KpOiHPR0jZbdneVkBCZzKkL+F5MD'>>f64;rc [210503_213410]
+send_file_b64 7oJxrUPuimA+zOKR6uKNwPuQWe1ULKfF0lqNigzDEs7gzCMi0RU4TiHbp5JkSrlhhpZyObuJJp9g 7 36 210503_213416
+|_send echo '7oJxrUPuimA+zOKR6uKNwPuQWe1ULKfF0lqNigzDEs7gzCMi0RU4TiHbp5JkSrlhhpZyObuJJp9g'>>f64;rc [210503_213416]
+send_file_b64 xU+YZfKxUpRtfjglXhojbdQXexdorv63k5qCH9rHx/vJDJw2OkEZAVPs6hIITZQFNvpbKfa8zNgT 8 36 210503_213421
+|_send echo 'xU+YZfKxUpRtfjglXhojbdQXexdorv63k5qCH9rHx/vJDJw2OkEZAVPs6hIITZQFNvpbKfa8zNgT'>>f64;rc [210503_213421]
+send_file_b64 r9Vb6YXleF6EYwqjyQQInElKv4S6yzhGU1GBWD2W/1f6B7Glg4UzHSqg4cSPwzEpgDXqSjVZQDUE 9 36 210503_213426
+|_send echo 'r9Vb6YXleF6EYwqjyQQInElKv4S6yzhGU1GBWD2W/1f6B7Glg4UzHSqg4cSPwzEpgDXqSjVZQDUE'>>f64;rc [210503_213426]
+send_file_b64 BSucugmnOGTZgyNCxKrPOkWMBIyUUlAMVeiqsF51GezvEY0b9apXwilRiELGN4FYDVIANsw065Rb 10 36 210503_213431
+|_send echo 'BSucugmnOGTZgyNCxKrPOkWMBIyUUlAMVeiqsF51GezvEY0b9apXwilRiELGN4FYDVIANsw065Rb'>>f64;rc [210503_213431]
+send_file_b64 AK5TRS0h2nMshsklIlZxvcbEvrKTZCFypbeFxQQiW5jJPAp5miueYYcLg7frmDBNu0YIi3MnYHbz 11 36 210503_213437
+|_send echo 'AK5TRS0h2nMshsklIlZxvcbEvrKTZCFypbeFxQQiW5jJPAp5miueYYcLg7frmDBNu0YIi3MnYHbz'>>f64;rc [210503_213437]
+send_file_b64 benqujGy04Bw0ADFoQzbbDjV2wBu4i4U0h7ag9c0PQou9wKnhWcl6LbP1tr6eov6ZoYSvAkRCkkN 12 36 210503_213442
+|_send echo 'benqujGy04Bw0ADFoQzbbDjV2wBu4i4U0h7ag9c0PQou9wKnhWcl6LbP1tr6eov6ZoYSvAkRCkkN'>>f64;rc [210503_213442]
+send_file_b64 w3F2FeNuCeJh7b5RBRhNNlWta+6rbdEuQMY3xgUaYxEyLpymL13QE2rmFUe2D5Xpu0H3OavS9qBt 13 36 210503_213447
+|_send echo 'w3F2FeNuCeJh7b5RBRhNNlWta+6rbdEuQMY3xgUaYxEyLpymL13QE2rmFUe2D5Xpu0H3OavS9qBt'>>f64;rc [210503_213447]
+send_file_b64 QBEJhvAvbagCP6VP0tHq75c+nhxyufyXXbOjXFoe/i+3f51HE4rwYIAKOFulAcReu5ymcnQ2TMGL 14 36 210503_213453
+|_send echo 'QBEJhvAvbagCP6VP0tHq75c+nhxyufyXXbOjXFoe/i+3f51HE4rwYIAKOFulAcReu5ymcnQ2TMGL'>>f64;rc [210503_213453]
+send_file_b64 4O6ryvfoZqmnTMWFLCmBssgJKOAV0PIiEAR82t5FREma2/Wg+zDmxnB9CWe0G8rh7pwY4SYtGqVM 15 36 210503_213458
+|_send echo '4O6ryvfoZqmnTMWFLCmBssgJKOAV0PIiEAR82t5FREma2/Wg+zDmxnB9CWe0G8rh7pwY4SYtGqVM'>>f64;rc [210503_213458]
+send_file_b64 7biM1yiYvpMEqRmWUYiUVXsM3DFBcBgK1jVIG7kA5IR3GBxa2l5u9N1ueOYkuj5RKty+MqZ4guLE 16 36 210503_213503
+|_send echo '7biM1yiYvpMEqRmWUYiUVXsM3DFBcBgK1jVIG7kA5IR3GBxa2l5u9N1ueOYkuj5RKty+MqZ4guLE'>>f64;rc [210503_213503]
+send_file_b64 U075TeaDOEIQyrEQxYlYzGv2hDGonyVscZ9xMJnxavpgW6Feq50BBLBYVD4EOxVJWxChlFTjphsp 17 36 210503_213508
+|_send echo 'U075TeaDOEIQyrEQxYlYzGv2hDGonyVscZ9xMJnxavpgW6Feq50BBLBYVD4EOxVJWxChlFTjphsp'>>f64;rc [210503_213508]
+send_file_b64 pScIemHsjCXSzg3Ado0l5g5HwRyDkyhzGrCaOKDmMKElcNpWsXjGqNzViqjBxDF830YZvHPTT1Lp 18 36 210503_213514
+|_send echo 'pScIemHsjCXSzg3Ado0l5g5HwRyDkyhzGrCaOKDmMKElcNpWsXjGqNzViqjBxDF830YZvHPTT1Lp'>>f64;rc [210503_213514]
+send_file_b64 l+9JfXi17P/HWGqk7f9yKB9VqLC7UDFT6APdNXyNwW2ouSIU6H2cDZLOR920+sr7y2uXwAp/yfGW 19 36 210503_213519
+|_send echo 'l+9JfXi17P/HWGqk7f9yKB9VqLC7UDFT6APdNXyNwW2ouSIU6H2cDZLOR920+sr7y2uXwAp/yfGW'>>f64;rc [210503_213519]
+send_file_b64 8z2u5cV+RFrwFTBj2kreio0VnUUMSh6pQih7Xe7Vt1ezO8ieiIkQPpWc4GG4WOfS9QGZ4tHRJTPf 20 36 210503_213524
+|_send echo '8z2u5cV+RFrwFTBj2kreio0VnUUMSh6pQih7Xe7Vt1ezO8ieiIkQPpWc4GG4WOfS9QGZ4tHRJTPf'>>f64;rc [210503_213524]
+send_file_b64 p0gSgfuiGocdQ2ZSU+sioV0KrO7iEn98IiXhKHTwnD2KZsB1LVIodcp79Uu2/GUoMZMgsvRkX1o2 21 36 210503_213530
+|_send echo 'p0gSgfuiGocdQ2ZSU+sioV0KrO7iEn98IiXhKHTwnD2KZsB1LVIodcp79Uu2/GUoMZMgsvRkX1o2'>>f64;rc [210503_213530]
+send_file_b64 ZTUhJECmBHDXmIrwfLMgW9Gj6RRAQFsgIeoQIqFtBhGtwxDGLJC7bEhZliDXpRcgstRuuroOGvc8 22 36 210503_213535
+|_send echo 'ZTUhJECmBHDXmIrwfLMgW9Gj6RRAQFsgIeoQIqFtBhGtwxDGLJC7bEhZliDXpRcgstRuuroOGvc8'>>f64;rc [210503_213535]
+send_file_b64 aSNhhCJghUcChSqtFZsVldFcUqJDlKq5PTKWhqJDrlPfNWoiFTCLytBrFpEJg7sytYq5TtNgrhSV 23 36 210503_213540
+|_send echo 'aSNhhCJghUcChSqtFZsVldFcUqJDlKq5PTKWhqJDrlPfNWoiFTCLytBrFpEJg7sytYq5TtNgrhSV'>>f64;rc [210503_213540]
+send_file_b64 JrOYMGMBdI4kJKqzH4OoskbjRxN9nIF5QgaYCjVOSMdghuDekvI7eGkhoLqGoXgg55AKh73yz+bc 24 36 210503_213545
+|_send echo 'JrOYMGMBdI4kJKqzH4OoskbjRxN9nIF5QgaYCjVOSMdghuDekvI7eGkhoLqGoXgg55AKh73yz+bc'>>f64;rc [210503_213545]
+send_file_b64 NVxSTRgIsHaZdvCGyNHxJtI29gBW701DgVW7bPDQcSWmA589SkLB7WYaQsXvvSVN3QzBn2ANiaIP 25 36 210503_213550
+|_send echo 'NVxSTRgIsHaZdvCGyNHxJtI29gBW701DgVW7bPDQcSWmA589SkLB7WYaQsXvvSVN3QzBn2ANiaIP'>>f64;rc [210503_213550]
+send_file_b64 1SSNnnobMBeO7WYpPeUIH6Wlle1iNyRd2BeS6wNQupoqXIH8GvYvjibHDCgujS8M8gwO7IUgxmJU 26 36 210503_213556
+|_send echo '1SSNnnobMBeO7WYpPeUIH6Wlle1iNyRd2BeS6wNQupoqXIH8GvYvjibHDCgujS8M8gwO7IUgxmJU'>>f64;rc [210503_213556]
+send_file_b64 YKbDVdrBtKIJO1ErTfqJwDEVGZX65X/O1bzmBcsCiki0ae3yvmks1UGpHQBaz0H3rrOwSrp5oEeu 27 36 210503_213601
+|_send echo 'YKbDVdrBtKIJO1ErTfqJwDEVGZX65X/O1bzmBcsCiki0ae3yvmks1UGpHQBaz0H3rrOwSrp5oEeu'>>f64;rc [210503_213601]
+send_file_b64 YGLVEj57ImFQxwTTLUwHjEu457V8rJo3IN+EiQoTfZdAMVGHd1PMV+alNy4QcHL0LIWOSNQ6MxZF 28 36 210503_213606
+|_send echo 'YGLVEj57ImFQxwTTLUwHjEu457V8rJo3IN+EiQoTfZdAMVGHd1PMV+alNy4QcHL0LIWOSNQ6MxZF'>>f64;rc [210503_213606]
+send_file_b64 Cjn0tFrWhlwcBSaoYsRA1SZeTHW6S5wZEM5RvKi0IgguISFlNdwKaathnQIGlUASyOhlDOvChZj7 29 36 210503_213611
+|_send echo 'Cjn0tFrWhlwcBSaoYsRA1SZeTHW6S5wZEM5RvKi0IgguISFlNdwKaathnQIGlUASyOhlDOvChZj7'>>f64;rc [210503_213611]
+send_file_b64 qea0DoI/nhJVFdVqetqA8n3yYxgrtKMVaQGSBSgQvHEWCvASmppnFWnBTsDRlYdXqLPRWcooZys/ 30 36 210503_213617
+|_send echo 'qea0DoI/nhJVFdVqetqA8n3yYxgrtKMVaQGSBSgQvHEWCvASmppnFWnBTsDRlYdXqLPRWcooZys/'>>f64;rc [210503_213617]
+send_file_b64 BfiNWiwBRUoJB8oMLtAGYAqwLJDDDXC7pSUgvKpwn+PNI87SWgGI1m58TqI2TiUQoDEJ7WVXxLQx 31 36 210503_213622
+|_send echo 'BfiNWiwBRUoJB8oMLtAGYAqwLJDDDXC7pSUgvKpwn+PNI87SWgGI1m58TqI2TiUQoDEJ7WVXxLQx'>>f64;rc [210503_213622]
+send_file_b64 wg8pWrSyLsNdRUY11+B9r39lZfJmh3dkUdKIjsxRvzWNm0YEMRikVSOXAn2IebhvORSdEmchVRem 32 36 210503_213627
+|_send echo 'wg8pWrSyLsNdRUY11+B9r39lZfJmh3dkUdKIjsxRvzWNm0YEMRikVSOXAn2IebhvORSdEmchVRem'>>f64;rc [210503_213627]
+send_file_b64 WRPCiKvShDbSNITzuTiIpt2Na3hcdSIGRvJwzCIKpmbBLYNDmAskrBsxMka9neAZAew8EJJsEQj9 33 36 210503_213632
+|_send echo 'WRPCiKvShDbSNITzuTiIpt2Na3hcdSIGRvJwzCIKpmbBLYNDmAskrBsxMka9neAZAew8EJJsEQj9'>>f64;rc [210503_213632]
+send_file_b64 bujDxulHd9Sr6pxabjUBGTrcqy75xfeo0N3RVOrLDpvhWwjjErnaKZz90F98YRDuL1l4oR/8XckU 34 36 210503_213637
+|_send echo 'bujDxulHd9Sr6pxabjUBGTrcqy75xfeo0N3RVOrLDpvhWwjjErnaKZz90F98YRDuL1l4oR/8XckU'>>f64;rc [210503_213637]
+send_file_b64 4UJBnMX0yA== 35 36 210503_213643
+|_send echo '4UJBnMX0yA=='>>f64;rc [210503_213643]
+|_send cat f64 | base64 -di | tar xvfj -;rc [210503_213645]
+send_file_b64 mem_test.sh ... 210503_213647
+exec_cmd cksum static/test_script/memtester.elf
+|_send cksum memtester.elf;rc [210503_213648]
+skip sendfile static/test_script/memtester.elf same cksum 718862820
+[210503_213649]Start ./mem_test.sh
+|_send echo -n _start;echo -n _test_;chmod 777 ./mem_test.sh;./mem_test.sh 1800 ;rc [210503_213649]
+wait[2400]
+wait[2340]
+wait[2280]

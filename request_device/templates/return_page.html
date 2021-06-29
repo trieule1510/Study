@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+{% block title %}{{action}}{% endblock %}
+{% block body %}
+<script>
+		$(document).ready(function(){
+			$('#form_return').submit(function () {
+				
+			    var return_number = $.trim($('.return_number').val());
+			    var return_note = $.trim($('.return_note').val());
+				console.log(return_number);
+			    if (return_number === '') {
+			        alert('Number is empty.');
+			        return false;
+			    }
+			    if (return_note === '') {
+			    	alert('Note is empty.');
+			        return false;
+			    }
+			    if (!$.isNumeric(return_number)) {
+			    	alert('Number is INVALIDQ.');
+			        return false;
+			    }
+			    
+			});
+		});
+</script>
+	<div class="w3-container">
+	    {% for i in range(0,len) %}
+	    {% if element[i] == "Info" or element[i] == "info" %}
+	    {% else %}
+	    <div class="w3-row">
+	    	<label class="w3-col m4 w3-text-blue" style="white-space: pre-line" >{{ element[i]|safe}}</label>
+	    	{% if element[i] == "Part_number" %}
+	    	<a class="w3-col m8 w3-text-blue"  href="/?search=id%3A{{device[1]}}+" >{{device[i]|safe }}</a>
+	    	{% else %}
+	    	<label class="w3-col m8 w3-text-blue" style="white-space: pre-line" >{{device[i]|safe}}</label>
+	    	{% endif %}
+	    </div>
+	    {% endif %}
+		{% endfor %}
+	</div>
+		
+	    <div class="container w3-col m12">
+	    	<div class="w3-indigo w3-row"><label class="w3-indigo">Return {{device[3]}}</label></div>
+		    <form id="form_return" class="w3-container w3-card-4" action="/page_shared_return/{{device[0]}}" method="post" enctype="multipart/form-data">
+			    <div class="w3-row">
+				    <input class="w3-col m12 w3-input" type="file" name="file" autocomplete="off" multiple >
+	    		</div>
+		    	<div class="w3-indigo w3-row">
+		    		<label class="w3-DarkViolet w3-col m2">Note</label>
+		    		<div class="w3-DarkViolet w3-row w3-col m10"> <textarea  class="return_note w3-input w3-border " name="return_note"  rows='1' style='width:100%' >Your device is Returned</textarea> </div>
+	    		</div>
+	    		<div class="w3-yellow"><p></p></div>
+	    		<div class="w3-indigo w3-row">
+	    			<label class="w3-DarkViolet w3-col m2">Number</label>
+		    		<input class="return_number w3-DarkViolet w3-border w3-col m10" name="return_number" type="text" value="{{device[4]}}">	
+		    	</div>
+	 		    <div class="w3-yellow"><p></p></div>
+	    		<div class="w3-indigo w3-row">
+	    			<label class="w3-DarkViolet w3-col m2">User</label>
+		    		<input class="w3-DarkViolet w3-border w3-col m10" name="return_user" type="text" value="{{device[2]}}">	
+		    	</div>
+		    	<div class="w3-yellow"><p></p></div>
+	    		<div class="w3-indigo w3-row">    
+				  	<label class="w3-text-blue w3-col m2"><b>Board Serial</b></label>
+				  	<input class="w3-input w3-border w3-col m10 board_serial" name="board_serial" list="board_serial" type="text" value="{{board_serial}}">
+				  	<datalist id="board_serial">
+					{% for e in board_serials %}
+				  		<option value="{{e}}">
+			     	{% endfor %}
+			    	</datalist>
+			  	</div>
+				<div class="w3-row"><button  class="w3-button w3-large w3-col m12 w3-green" onclick="return confirm('Are you sure Return ?')" >Return</button></div>
+			</form>
+		</div>
+		<div class="container w3-col m12"><p></p></div>
+		
+    	<div class="container w3-col m12">
+	    	<div class="w3-indigo w3-row"><label class="w3-indigo">Move {{device[3]}}</label></div>
+		    <form id="form_move_to" class="w3-container w3-card-4" action="/move_to/{{device[0]}}" method="post" enctype="multipart/form-data">
+		    	<div class="w3-row">
+			    	<input class="w3-col m12 w3-input" type="file" name="file" autocomplete="off" multiple >
+		    	</div>
+		    	<div class="w3-indigo w3-row">
+		    		<label class="w3-DarkViolet w3-col m2">Note</label>
+		    		<div class="w3-DarkViolet w3-row w3-col m10"> <textarea  class="w3-input w3-border " name="move_to_note"  rows='1' style='width:100%' >Shared device with</textarea> </div>
+	    		</div>
+	    		<div class="w3-yellow"><p></p></div>
+	    		<div class="w3-indigo w3-row">
+	    			<label class="w3-DarkViolet w3-col m2">Number</label>
+		    		<input class="return_number w3-DarkViolet w3-border w3-col m10" name="move_to_number" type="text" value="{{device[4]}}">	
+		    	</div>
+ 		    	<div class="w3-yellow"><p></p></div>
+	    		<div class="w3-indigo w3-row">
+	    			<label class="w3-DarkViolet w3-col m2">User</label>
+		    		<input class="w3-DarkViolet w3-border w3-col m10" name="move_to_user" type="text" value="{{device[2]}}">	
+		    	</div>
+		    	<div class="w3-yellow"><p></p></div>
+	    		<div class="w3-indigo w3-row">    
+				  	<label class="w3-text-blue w3-col m2"><b>Board Serial</b></label>
+				  	<input class="w3-input w3-border w3-col m10 board_serial" name="board_serial" list="board_serial" type="text" value="{{board_serial}}">
+				  	<datalist id="board_serial">
+					{% for e in board_serials %}
+				  		<option value="{{e}}">
+			     	{% endfor %}
+			    </datalist>
+			  	</div>
+				<div class="w3-row"><button  class="w3-button w3-large w3-col m12 w3-red" onclick="return confirm('Are you sure Move ?')">Move</button></div>
+			</form>
+		</div>
+		<div class="w3-container"><img src="/static/qr/{{device[3]}}.png"></div>
+		<div class="w3-container">{{h_attached|safe}}</div>
+{% endblock %}

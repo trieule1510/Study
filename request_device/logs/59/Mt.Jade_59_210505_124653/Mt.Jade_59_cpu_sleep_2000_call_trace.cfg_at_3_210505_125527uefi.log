@@ -1,0 +1,741 @@
+NOTICE:  DRAM FW version 210312
+CP: 0ff00900
+MEMC param:
+  mcu_enable_mask = 00000010 [default: 000000ff]
+CP: 1ff00900
+MEMC param:
+  mcu_enable_mask = 00000001 [default: 000000ff]
+DRAM populated DIMMs:
+  SK0 MC4 S0: RDIMM[ce:80] 32GB 3200 ECC 2R x4 RCD[32:86] M393A4K40DB2-CWE    
+  SK1 MC0 S0: RDIMM[ce:80] 32GB 3200 ECC 2R x4 RCD[32:86] M393A4K40DB2-CWE    
+CP: 3ff00100
+CP: 3ff00200
+CP: 04f01902
+CP: 10f01902
+CP: 0ff00a00
+CP: 0ff00b01
+CP: 04f01901
+CP: 04f01904
+CP: 04f02901
+CP: 04f01905
+CP: 04f02902
+CP: 04f02903
+CP: 04f02904
+CP: 04f01907
+CP: 04f01906
+CP: 04f01908
+CP: 04f01909
+CP: 0ff00b02
+CP: 0ff00c00
+CP: 1ff00a00
+CP: 1ff00b01
+CP: 10f01901
+CP: 10f01904
+CP: 10f02901
+CP: 10f01905
+CP: 10f02902
+CP: 10f02903
+CP: 10f02904
+CP: 10f01907
+CP: 10f01906
+CP: 10f01908
+CP: 10f01909
+CP: 1ff00b02
+CP: 1ff00c00
+CP: 3ff00300
+CP: 04001a02
+CP: 04001a03
+CP: 04001a04
+CP: 04101a02
+CP: 10001a02
+CP: 04101a03
+CP: 10001a03
+CP: 04101a04
+CP: 10001a04
+CP: 04001a05
+CP: 10101a02
+CP: 10101a03
+CP: 10101a04
+CP: 10001a05
+CP: 04101a05
+CP: 10101a05
+CP: 04f01a07
+CP: 04001a09
+CP: 10f01a07
+CP: 10001a09
+CP: 04101a09
+CP: 10101a09
+CP: 04001a0a
+CP: 10001a0a
+CP: 04001a0b
+CP: 04001a0c
+CP: 10001a0b
+CP: 04001a0c
+CP: 04101a0b
+CP: 10001a0c
+CP: 04101a0c
+CP: 10001a0c
+CP: 04101a0c
+CP: 10101a0b
+CP: 10101a0c
+CP: 10101a0c
+CP: 3ff00400
+CP: 0ff01000
+CP: 1ff01000
+CP: 0ff01101
+CP: 1ff01101
+DRAM ECC Initialization: [3] [ =>                   ]DRAM ECC Initialization: [6] [ ==>                  ]DRAM ECC Initialization: [9] [ ==>                  ]DRAM ECC Initialization: [12] [ ===>                 ]DRAM ECC Initialization: [15] [ ====>                ]DRAM ECC Initialization: [18] [ ====>                ]DRAM ECC Initialization: [21] [ =====>               ]DRAM ECC Initialization: [25] [ ======>              ]DRAM ECC Initialization: [28] [ ======>              ]DRAM ECC Initialization: [31] [ =======>             ]DRAM ECC Initialization: [34] [ =======>             ]DRAM ECC Initialization: [37] [ ========>            ]DRAM ECC Initialization: [40] [ =========>           ]DRAM ECC Initialization: [43] [ =========>           ]DRAM ECC Initialization: [46] [ ==========>          ]DRAM ECC Initialization: [50] [ ===========>         ]DRAM ECC Initialization: [53] [ ===========>         ]DRAM ECC Initialization: [56] [ ============>        ]DRAM ECC Initialization: [59] [ ============>        ]DRAM ECC Initialization: [62] [ =============>       ]DRAM ECC Initialization: [65] [ ==============>      ]DRAM ECC Initialization: [68] [ ==============>      ]DRAM ECC Initialization: [71] [ ===============>     ]DRAM ECC Initialization: [75] [ ================>    ]DRAM ECC Initialization: [78] [ ================>    ]DRAM ECC Initialization: [81] [ =================>   ]DRAM ECC Initialization: [84] [ =================>   ]DRAM ECC Initialization: [87] [ ==================>  ]DRAM ECC Initialization: [90] [ ===================> ]DRAM ECC Initialization: [93] [ ===================> ]DRAM ECC Initialization: [96] [ ==================== ]DRAM ECC Initialization: [100] [ ==================== ]
+CP: 0ff01200
+CP: 1ff01200
+CP: 3ff00800
+DRAM memory regions:
+  Node[0] Region[0]: 0x000080000000 - 0x0000bfffffff 
+  Node[0] Region[1]: 0x080000000000 - 0x08007fffffff 
+  Node[0] Region[2]: 0x0800c0000000 - 0x0807ffffffff 
+  Node[1] Region[3]: 0x0000c0000000 - 0x0000ffffffff 
+  Node[1] Region[4]: 0x400000000000 - 0x4000bfffffff 
+  Node[1] Region[5]: 0x400100000000 - 0x4007ffffffff 
+DRAM: 64GB DDR4 3200 SECDED ECC
+Checkpoint 2F
+Checkpoint 2E
+Checkpoint 31
+Checkpoint 32
+UEFI RC version: Master
+SCP FW version    : 1.5
+SCP FW build date : 20210426
+Failsafe status                 : 0
+Reset status                    : 3
+CPU info
+    CPU ID                      : 413FD0C1
+    CPU Clock                   : 3000 MHz
+    Number of active sockets    : 2
+    Number of active cores      : 160
+    Inter Socket Connection 0   : Width: x16 / Speed 25 GT/s
+    Inter Socket Connection 1   : Width: x16 / Speed 25 GT/s
+    Socket[0]: Core voltage     : 1040
+    Socket[0]: SCU ProductID    : A10001
+    Socket[0]: Max cores        : 80
+    Socket[0]: Warranty         : 1
+    Socket[0]: Subnuma          : 0
+    Socket[0]: RC disable mask  : 3
+    Socket[0]: AVS enabled      : 1
+    Socket[0]: AVS voltage      : 1000
+    Socket[1]: Core voltage     : 1030
+    Socket[1]: SCU ProductID    : A10001
+    Socket[1]: Max cores        : 80
+    Socket[1]: Warranty         : 1
+    Socket[1]: Subnuma          : 0
+    Socket[1]: RC disable mask  : 3
+    Socket[1]: AVS enabled      : 1
+    Socket[1]: AVS voltage      : 993
+SOC info
+    DDR Frequency               : 3200 MHz
+    Socket[0]: Soc voltage      : 785
+    Socket[0]: DIMM1 voltage    : 1260
+    Socket[0]: DIMM2 voltage    : 1260
+    Socket[1]: Soc voltage      : 785
+    Socket[1]: DIMM1 voltage    : 1260
+    Socket[1]: DIMM2 voltage    : 1260
+    PCP Clock                   : 1650 MHz
+    SOC Clock                   : 2000 MHz
+    SYS Clock                   : 400 MHz
+    AHB Clock                   : 200 MHz
+Manufacturer Configuration Setting:
+    4000: 0x3C (60)
+    4008: 0x25 (37)
+    4028: 0x1 (1)
+    4030: 0x0 (0)
+    4048: 0x0 (0)
+User Configuration Setting:
+    8000: 0xFFFFFFFF (-1)
+    8008: 0xFFFFFFFF (-1)
+    8010: 0xFFFFFFFF (-1)
+    8018: 0xFFFFFFFF (-1)
+    8038: 0xC80 (3200)
+    81C8: 0xFF (255)
+    81D0: 0xFF (255)
+Board Configuration Setting:
+    C000: 0xCD3A (52538)
+    C008: 0x0 (0)
+    C010: 0x0 (0)
+    C018: 0x0 (0)
+    C020: 0xFFFF (65535)
+    C028: 0xFFFF (65535)
+    C030: 0x80E8 (33000)
+    C038: 0x80E8 (33000)
+    C040: 0x2710 (10000)
+    C048: 0x2710 (10000)
+    C050: 0x0 (0)
+    C058: 0x190 (400)
+    C060: 0x190 (400)
+    C068: 0x190 (400)
+    C070: 0x190 (400)
+    C078: 0x190 (400)
+    C080: 0xFFFFFF01 (-255)
+    C088: 0x0 (0)
+    C090: 0x0 (0)
+    C098: 0x4 (4)
+    C0A0: 0x4 (4)
+    C0A8: 0x20002 (131074)
+    C0B0: 0x20002 (131074)
+    C0B8: 0x20002 (131074)
+    C0C0: 0x20002 (131074)
+    C0C8: 0x20002 (131074)
+    C0D0: 0x3 (3)
+    C0D8: 0x3 (3)
+    C0E0: 0x20002 (131074)
+    C0E8: 0x0 (0)
+    C0F0: 0x0 (0)
+    C0F8: 0x2020202 (33686018)
+    C100: 0x30003 (196611)
+    C108: 0x3 (3)
+    C110: 0x20002 (131074)
+    C118: 0x20002 (131074)
+    C120: 0x3 (3)
+    C128: 0x20002 (131074)
+    C130: 0x20002 (131074)
+    C138: 0x20002 (131074)
+    C140: 0x20002 (131074)
+    C148: 0x1 (1)
+    C150: 0x2 (2)
+    C158: 0x3 (3)
+    C160: 0x4 (4)
+    C168: 0xFFFFFFFF (-1)
+    C170: 0xFFFFFFFE (-2)
+    C178: 0xFFFFFFFD (-3)
+    C180: 0x0 (0)
+    C188: 0x0 (0)
+    C190: 0x0 (0)
+    C198: 0x0 (0)
+    C1A0: 0x0 (0)
+    C1A8: 0x0 (0)
+    C1B0: 0x2 (2)
+    C1B8: 0xC80 (3200)
+    C1C0: 0x20000 (131072)
+    C1C8: 0x20000 (131072)
+    C1D0: 0xFF060177 (-16383625)
+    C1D8: 0xFF060177 (-16383625)
+    C1E0: 0x60070 (393328)
+    C1E8: 0x60070 (393328)
+    C1F0: 0x0 (0)
+    C1F8: 0x0 (0)
+    C200: 0x0 (0)
+    C208: 0x0 (0)
+    C210: 0xC0CCC (789708)
+    C218: 0xC0CCC (789708)
+    C220: 0x30333 (197427)
+    C228: 0x30333 (197427)
+    C230: 0x30333 (197427)
+    C238: 0x30333 (197427)
+    C240: 0x30333 (197427)
+    C248: 0x30333 (197427)
+    C250: 0xEDEED (974573)
+    C258: 0xDEDDE (912862)
+    C260: 0xB7BB7 (752567)
+    C268: 0x7B77B (505723)
+    C270: 0x5 (5)
+    C278: 0x90DD90 (9493904)
+    C280: 0x5 (5)
+    C288: 0x90DD90 (9493904)
+    C290: 0x5 (5)
+    C298: 0x90DD90 (9493904)
+    C2A0: 0x5 (5)
+    C2A8: 0x90DD90 (9493904)
+    C2B0: 0x24 (36)
+    C2B8: 0x1A (26)
+    C2C0: 0x50 (80)
+    C2C8: 0x20 (32)
+    C2D0: 0x2800280 (41943680)
+    C2D8: 0x90909090 (-1869574000)
+    C2E0: 0x0 (0)
+    C2E8: 0xC000C0 (12583104)
+    C2F0: 0x0 (0)
+    C2F8: 0x0 (0)
+    C300: 0x0 (0)
+    C308: 0x0 (0)
+    C310: 0x2010201 (33620481)
+    C318: 0x0 (0)
+    C320: 0x0 (0)
+    C328: 0x0 (0)
+    C330: 0x1050106 (17105158)
+    C338: 0x5F4 (1524)
+    C340: 0x0 (0)
+    C348: 0x0 (0)
+    C350: 0x2020202 (33686018)
+    C358: 0x2020202 (33686018)
+    C360: 0x2020202 (33686018)
+    C368: 0x2020202 (33686018)
+    C370: 0x0 (0)
+    C378: 0x0 (0)
+    C380: 0x0 (0)
+    C388: 0x0 (0)
+    C390: 0x0 (0)
+    C398: 0x0 (0)
+    C3A0: 0x0 (0)
+    C3A8: 0x0 (0)
+    C3B0: 0x0 (0)
+    C3B8: 0x0 (0)
+    C3C0: 0x0 (0)
+    C3C8: 0x0 (0)
+    C3D0: 0x0 (0)
+    C3D8: 0x0 (0)
+    C3E0: 0x0 (0)
+    C3E8: 0x0 (0)
+    C3F0: 0x57575757 (1465341783)
+    C3F8: 0x57575757 (1465341783)
+    C400: 0x57575757 (1465341783)
+    C408: 0x57575757 (1465341783)
+    C410: 0x57575757 (1465341783)
+    C418: 0x57575757 (1465341783)
+    C420: 0x57575757 (1465341783)
+    C428: 0x57575757 (1465341783)
+    C430: 0x57575757 (1465341783)
+    C438: 0x57575757 (1465341783)
+    C440: 0x57575757 (1465341783)
+    C448: 0x57575757 (1465341783)
+    C450: 0x57575757 (1465341783)
+    C458: 0x57575757 (1465341783)
+    C460: 0x57575757 (1465341783)
+    C468: 0x57575757 (1465341783)
+    C470: 0x0 (0)
+    C478: 0x2020202 (33686018)
+    C480: 0x2020202 (33686018)
+    C488: 0x2020202 (33686018)
+    C490: 0x2020202 (33686018)
+    C498: 0x0 (0)
+    C4A0: 0x0 (0)
+    C4A8: 0x0 (0)
+    C4B0: 0x0 (0)
+    C4B8: 0x0 (0)
+    C4C0: 0x0 (0)
+    C4C8: 0x0 (0)
+    C4D0: 0x0 (0)
+    C4D8: 0x0 (0)
+    C4E0: 0x0 (0)
+    C4E8: 0x0 (0)
+    C4F0: 0x0 (0)
+    C4F8: 0x0 (0)
+    C500: 0x0 (0)
+    C508: 0x57575757 (1465341783)
+    C510: 0x57575757 (1465341783)
+    C518: 0x57575757 (1465341783)
+    C520: 0x57575757 (1465341783)
+    C528: 0x57575757 (1465341783)
+    C530: 0x57575757 (1465341783)
+    C538: 0x57575757 (1465341783)
+    C540: 0x57575757 (1465341783)
+    C548: 0x57575757 (1465341783)
+    C550: 0x57575757 (1465341783)
+    C558: 0x57575757 (1465341783)
+    C560: 0x57575757 (1465341783)
+    C568: 0x57575757 (1465341783)
+    C570: 0x57575757 (1465341783)
+    C578: 0x3 (3)
+    C580: 0x1A4 (420)
+    C588: 0x0 (0)
+    C590: 0x18000 (98304)
+    C598: 0x80018000 (-2147385344)
+    C5A0: 0x0 (0)
+    C5A8: 0x0 (0)
+    C5B0: 0x0 (0)
+    C5B8: 0x0 (0)
+    C5C0: 0x0 (0)
+    C5C8: 0x0 (0)
+    C5D0: 0x0 (0)
+    C5D8: 0x0 (0)
+    C5E0: 0x550055 (5570645)
+    C5E8: 0x64 (100)
+    C5F0: 0x5 (5)
+    C5F8: 0x1 (1)
+    C600: 0x2 (2)
+    C608: 0x5 (5)
+    C610: 0x0 (0)
+    C618: 0x0 (0)
+    C620: 0x0 (0)
+    C628: 0x0 (0)
+    C630: 0x0 (0)
+    C638: 0x0 (0)
+Checkpoint 4F
+Checkpoint 60
+Checkpoint 61
+Checkpoint 9A
+Checkpoint 90
+Checkpoint 91
+Checkpoint 92
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 9D
+Checkpoint 9A
+Checkpoint 9C
+Checkpoint 91
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint B4
+Checkpoint B4
+Checkpoint B4
+Checkpoint B4
+Checkpoint B4
+Checkpoint B4
+Checkpoint 98
+Checkpoint B4
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 97
+[2J[1;1H[2J[1;1H[1;1HCheckpoint 98
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint A0
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint AD
+[0;37;40m[0;30;40m[2J[1;1H[0;37;40m[21;7HUse the  and  keys to change the selection.                       
+      Press 'e' to edit the selected item, or 'c' for a command prompt.   [4;80H [4;1H      CentOS Linux (4.18.0-193.19.1.el8_2.aarch64) 8 (Core)                    [4;79H[5;1H      CentOS Linux (4.18.0-147.el8.aarch64) 8 (Core)                           [5;79H[0;30;47m[6;1H      CentOS Linux (4.18.0-80.11.2.el8.20201030+amp.aarch64) 8 (Core)          [0;37;40m[6;79H[7;1H      CentOS Linux (0-rescue-0de63a6733ab4ecaac501f7f2fb0c175) 8 (Core)        [7;79H[8;1H      System setup                                                             [8;79H[9;1H                                                                               [9;79H[10;1H                                                                               [10;79H[11;1H                                                                               [11;79H[12;1H                                                                               [12;79H[13;1H                                                                               [13;79H[14;1H                                                                               [14;79H[15;1H                                                                               [15;79H[16;1H                                                                               [16;79H[17;1H                                                                               [17;79H[18;1H                                                                               [18;79H[19;1H                                                                               [19;79H[19;80H [6;79H[23;1H   The selected entry will be started automatically in 5s.                     [6;79H[23;1H   The selected entry will be started automatically in 4s.                     [6;79H[23;1H   The selected entry will be started automatically in 3s.                     [6;79H[23;1H   The selected entry will be started automatically in 2s.                     [6;79H[23;1H   The selected entry will be started automatically in 1s.                     [6;79H[23;1H   The selected entry will be started automatically in 0s.                     [6;79H[0;30;40m[2J[1;1H[0;37;40m[0;30;40m[2J[1;1H[0;37;40mEFI stub: Booting Linux Kernel...
+EFI stub: Using DTB from configuration table
+EFI stub: Exiting boot services and installing virtual address map...
+[    0.000000] Booting Linux on physical CPU 0x0000120000 [0x413fd0c1]
+[    0.000000] Linux version 4.18.0-80.11.2.el8.20201030+amp.aarch64 (buildsw@eng01sys-r242.scc-lab.amperecomputing.com) (gcc version 8.3.0 (Ampere Computing 8.3.0-20191025-dynamic-nosysroot)) #1 SMP Fri Oct 30 19:50:50 PDT 2020
+[    0.000000] efi: Getting EFI parameters from FDT:
+[    0.000000] efi: EFI v2.70 by American Megatrends
+[    0.000000] efi:  ACPI 2.0=0xb0550000  SMBIOS 3.0=0xb3f7ff98  MEMATTR=0xaa1c7018  ESRT=0xaa1d1f98  RNG=0xb79cb318  MEMRESERVE=0xaa1cde18 
+[    0.000000] efi: seeding entropy pool
+[    0.000000] esrt: Reserving ESRT space from 0x00000000aa1d1f98 to 0x00000000aa1d1fd0.
+[    0.000000] Using crashkernel=auto, the size chosen is a best effort estimation.
+[    0.000000] cannot allocate crashkernel (size:0x20000000)
+[    0.000000] ACPI: Early table checksum verification disabled
+[    0.000000] ACPI: RSDP 0x00000000B0550000 000024 (v02 Ampere)
+[    0.000000] ACPI: XSDT 0x00000000B0540000 0000E4 (v01 Ampere Altra    00000000 AMI  01000013)
+[    0.000000] ACPI: FACP 0x00000000B0520000 000114 (v06 Ampere Altra    00000000 INTL 20190509)
+[    0.000000] ACPI: DSDT 0x00000000B0490000 02EE02 (v02 Ampere Jade     00000001 INTL 20200717)
+[    0.000000] ACPI: DBG2 0x00000000B0530000 00005C (v00 Ampere Altra    00000000 INTL 20190509)
+[    0.000000] ACPI: GTDT 0x00000000B0510000 000110 (v03 Ampere Altra    00000000 INTL 20190509)
+[    0.000000] ACPI: SSDT 0x00000000B0500000 00002D (v02 Ampere Altra    00000001 INTL 20190509)
+[    0.000000] ACPI: EINJ 0x00000000B04E0000 000150 (v01 Ampere Altra    00000001 INTL 20200717)
+[    0.000000] ACPI: HEST 0x00000000B04D0000 000308 (v01 Ampere Altra    00000001 INTL 20200717)
+[    0.000000] ACPI: SDEI 0x00000000B04C0000 000024 (v01 Ampere Altra    00000001 INTL 20200717)
+[    0.000000] ACPI: SPMI 0x00000000B0480000 000041 (v05 ALASKA A M I    00000000 AMI. 00000000)
+[    0.000000] ACPI: SPMI 0x00000000B0470000 000041 (v05 ALASKA A M I    00000000 AMI. 00000000)
+[    0.000000] ACPI: SPMI 0x00000000B0460000 000041 (v05 ALASKA A M I    00000000 AMI. 00000000)
+[    0.000000] ACPI: FIDT 0x00000000B0450000 00009C (v01 ALASKA A M I    01072009 AMI  00010013)
+[    0.000000] ACPI: SPCR 0x00000000B0440000 000050 (v02 A M I  APTIO V  01072009 AMI. 0005000F)
+[    0.000000] ACPI: BGRT 0x00000000B0430000 000038 (v01 ALASKA A M I    01072009 AMI  00010013)
+[    0.000000] ACPI: TPM2 0x00000000B0420000 000064 (v04 ALASKA A M I    00000001 AMI  00000000)
+[    0.000000] ACPI: PPTT 0x00000000B0400000 006E60 (v02 Ampere Altra    00000000 AMP. 01000013)
+[    0.000000] ACPI: SLIT 0x00000000B03F0000 000030 (v01 Ampere Altra    00000000 AMP. 01000013)
+[    0.000000] ACPI: SRAT 0x00000000B03E0000 000CF0 (v03 Ampere Altra    00000000 AMP. 01000013)
+[    0.000000] ACPI: BERT 0x00000000B04F0000 000030 (v01 Ampere Altra    00000001 INTL 20200717)
+[    0.000000] ACPI: MCFG 0x00000000B03D0000 0000EC (v01 Ampere Altra    00000001 AMP. 01000013)
+[    0.000000] ACPI: IORT 0x00000000B03C0000 000900 (v00 Ampere Altra    00000000 AMP. 01000013)
+[    0.000000] ACPI: APIC 0x00000000B0410000 003354 (v05 Ampere Altra    00000003 AMI  01000013)
+[    0.000000] ACPI: PCCT 0x00000000B03B0000 000ABC (v02 Ampere Altra    00000003 AMP. 01000013)
+[    0.000000] ACPI: WSMT 0x00000000B03A0000 000028 (v01 ALASKA A M I    01072009 AMI  00010013)
+[    0.000000] ACPI: FPDT 0x00000000B0390000 000044 (v01 ALASKA A M I    01072009 AMI  01000013)
+[    0.000000] ACPI: SPCR: console: pl011,mmio32,0x100002600000,115200
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x0 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x10000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x10100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x20000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x20100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x30000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x30100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x40000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x40100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x50000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x50100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x60000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x60100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x70000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x70100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x80000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x80100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x90000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x90100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0xa0000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0xa0100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0xb0000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0xb0100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0xc0000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0xc0100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0xd0000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0xd0100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0xe0000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0xe0100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0xf0000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0xf0100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x100000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x100100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x110000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x110100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x120000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x120100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x130000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x130100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x140000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x140100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x150000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x150100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x160000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x160100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x170000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x170100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x180000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x180100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x190000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x190100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x1a0000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x1a0100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x1b0000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x1b0100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x1c0000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x1c0100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x1d0000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x1d0100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x1e0000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x1e0100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x1f0000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x1f0100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x200000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x200100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x210000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x210100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x220000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x220100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x230000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x230100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x240000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x240100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x250000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x250100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x260000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x260100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x270000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x270100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100000000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100000100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100010000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100010100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100020000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100020100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100030000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100030100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100040000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100040100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100050000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100050100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100060000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100060100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100070000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100070100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100080000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100080100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100090000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100090100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1000a0000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1000a0100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1000b0000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1000b0100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1000c0000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1000c0100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1000d0000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1000d0100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1000e0000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1000e0100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1000f0000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1000f0100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100100000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100100100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100110000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100110100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100120000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100120100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100130000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100130100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100140000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100140100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100150000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100150100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100160000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100160100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100170000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100170100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100180000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100180100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100190000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100190100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1001a0000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1001a0100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1001b0000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1001b0100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1001c0000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1001c0100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1001d0000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1001d0100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1001e0000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1001e0100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1001f0000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1001f0100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100200000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100200100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100210000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100210100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100220000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100220100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100230000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100230100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100240000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100240100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100250000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100250100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100260000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100260100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100270000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100270100 -> Node 1
+[    0.000000] ACPI: SRAT: Node 0 PXM 0 [mem 0x88300000-0x883fffff]
+[    0.000000] ACPI: SRAT: Node 0 PXM 0 [mem 0x90000000-0xbfffffff]
+[    0.000000] ACPI: SRAT: Node 0 PXM 0 [mem 0x80000000000-0x8007fffffff]
+[    0.000000] ACPI: SRAT: Node 0 PXM 0 [mem 0x800c0000000-0x807ffffffff]
+[    0.000000] ACPI: SRAT: Node 1 PXM 1 [mem 0x400000000000-0x4000bfffffff]
+[    0.000000] ACPI: SRAT: Node 1 PXM 1 [mem 0x400100000000-0x4007ffffffff]
+[    0.000000] NUMA: NODE_DATA [mem 0x807ffffd100-0x807ffffffff]
+[    0.000000] NUMA: NODE_DATA [mem 0x4007ff7cd100-0x4007ff7cffff]
+[    0.000000] Zone ranges:
+[    0.000000]   DMA32    [mem 0x0000000088300000-0x00000000ffffffff]
+[    0.000000]   Normal   [mem 0x0000000100000000-0x00004007ffffffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000088300000-0x00000000883fffff]
+[    0.000000]   node   0: [mem 0x0000000090000000-0x0000000091ffffff]
+[    0.000000]   node   0: [mem 0x0000000092000000-0x000000009277ffff]
+[    0.000000]   node   0: [mem 0x0000000092780000-0x00000000b003ffff]
+[    0.000000]   node   0: [mem 0x00000000b0040000-0x00000000b031ffff]
+[    0.000000]   node   0: [mem 0x00000000b0320000-0x00000000b057ffff]
+[    0.000000]   node   0: [mem 0x00000000b0580000-0x00000000b05cffff]
+[    0.000000]   node   0: [mem 0x00000000b05d0000-0x00000000b1d0ffff]
+[    0.000000]   node   0: [mem 0x00000000b1d10000-0x00000000b79cffff]
+[    0.000000]   node   0: [mem 0x00000000b79d0000-0x00000000b7afffff]
+[    0.000000]   node   0: [mem 0x00000000b7b00000-0x00000000b7fdffff]
+[    0.000000]   node   0: [mem 0x00000000b7fe0000-0x00000000bfc1ffff]
+[    0.000000]   node   0: [mem 0x00000000bfc20000-0x00000000bfc2ffff]
+[    0.000000]   node   0: [mem 0x00000000bfc30000-0x00000000bfffffff]
+[    0.000000]   node   0: [mem 0x0000080000000000-0x000008007fffffff]
+[    0.000000]   node   0: [mem 0x00000800c0000000-0x00000807ffffffff]
+[    0.000000]   node   1: [mem 0x0000400000000000-0x00004000bfffffff]
+[    0.000000]   node   1: [mem 0x0000400100000000-0x00004007ffffffff]
+[    0.000000] Zeroed struct page in unavailable ranges: 1614 pages
+[    0.000000] Initmem setup node 0 [mem 0x0000000088300000-0x00000807ffffffff]
+[    0.000000] Initmem setup node 1 [mem 0x0000400000000000-0x00004007ffffffff]
+[    0.000000] psci: probing for conduit method from ACPI.
+[    0.000000] psci: PSCIv1.1 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: MIGRATE_INFO_TYPE not supported.
+[    0.000000] psci: SMC Calling Convention v1.0
+[    0.000000] random: get_random_bytes called from start_kernel+0xa0/0x4d8 with crng_init=0
+[    0.000000] percpu: Embedded 3 pages/cpu @(____ptrval____) s127448 r8192 d60968 u196608
+[    0.000000] Detected PIPT I-cache on CPU0
+[    0.000000] CPU features: detected: Virtualization Host Extensions
+[    0.000000] CPU features: kernel page table isolation forced ON by KASLR
+[    0.000000] CPU features: detected: Kernel page table isolation (KPTI)
+[    0.000000] CPU features: detected: Hardware dirty bit management
+[    0.000000] CPU features: detected: Speculative Store Bypassing Safe (SSBS)
+[    0.000000] Built 2 zonelists, mobility grouping on.  Total pages: 1027091
+[    0.000000] Policy zone: Normal
+[    0.000000] Kernel command line: BOOT_IMAGE=(hd2,gpt2)/vmlinuz-4.18.0-80.11.2.el8.20201030+amp.aarch64 root=/dev/mapper/cl-root ro crashkernel=auto rd.lvm.lv=cl/root rd.lvm.lv=cl/swap
+[    0.000000] Specific versions of hardware are certified with Red Hat Enterprise Linux 8. Please see the list of hardware certified with Red Hat Enterprise Linux 8 at https://access.re

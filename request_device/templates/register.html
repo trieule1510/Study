@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}{{action}}{% endblock %}
+{% block body %}
+	<div class="w3-container">
+		 <form action="/register"  method="post"  enctype="multipart/form-data">
+		  <div class="w3">
+			    <div class="w3-indigo"><label class="w3-indigo">Your email account</label></div>
+			    <input class="w3-input w3-animate-input w3-border w3-col m12" name="email" type="text" style="width:30%" value="{{search}}"> 
+		  </div>
+		  	<input type="submit" value="SEND" class= "w3-container w3-button w3-block w3-red w3-xlarge"></input>
+		 </form>
+    </div>		
+{% endblock %}

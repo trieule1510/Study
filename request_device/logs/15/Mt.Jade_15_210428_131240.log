@@ -1,0 +1,1719 @@
+<!DOCTYPE html><html lang='en'><head><title>Mt.Jade_15</title><link rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css'><script src='https://cdn.jsdelivr.net/npm/chart.js@2.8.0'></script><style>.eye_main {width:100%;}.eye_element {width:25%;}.eye_table {width:80%;}.eye_fail {background-color: Purple;}.eye_fail_mask {background-color: DarkRed;}.eye_pass {background-color: YellowGreen;}.eye_pass_mask {background-color: ForestGreen;}.eye_title {background-color: whilte;}.eye_hw {background-color: aqua;}.eye_point{width:auto;}.overflowTest {padding: 15px;width: auto;height: 600px;overflow: scroll;border: 1px solid #ccc;}</style></head><body><h1 align='center'><img src='data:image/png;base64,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' scale='0'></h1><p align='center'><font size='7' color='blue'><span>Mt.Jade_15</span></font></p>
+
+
+<div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CLI ARGV</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >./linux_test.py --start_test 0 --debug 1 --cleannv 1 --hostip 10.38.162.2 --hostuser amplab --hostpass Ampere@4655 --bmcip 10.38.162.44 --tty_bmc FTBZEDTA --tty_uefi AB0KUEMK --board_type Mt.Jade --board Mt.Jade_15 --scp_fw cfg/scp_fw/altra_scp_signed_1.05.20210422.hpm --atfbios_fw cfg/atfbios_fw/jade_aptiov_atf_signed_1.05.20210422.hpm --test_cfg memtester_300.cfg --wait 0 --sys_log logs/15/Mt.Jade_15_210428_131240.log --test_cfg memtester_300.cfg --nv_scan SI_PLT_EN[0],SI_DDR_ECC_MODE[1],SI_DDR_ZQCS_EN[1],SI_DDR_SCRUB_EN[0x000005a0]  </a></div></div>
+
+
+cleannv ...
+exec_cmd ./xconsole.py --cmd cleannv --hostuser amplab --hostip 10.38.162.2 --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+
+
+search_board_type Mt.Jade
+./sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.162.44 'echo clean nvparam && gpiotool --set-data-low 226 && nvparm -c -o 0x110000 && nvparm -c -o 0x120000 && nvparm -c -o 0x5F0000 && gpiotool --set-data-high 226'
+Program cfg/scp_fw/altra_scp_signed_1.05.20210422.hpm ... 
+exec_cmd ./xconsole.py --scp_fw cfg/scp_fw/altra_scp_signed_1.05.20210422.hpm --hostuser amplab --hostip 10.38.162.2 --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+
+
+search_board_type Mt.Jade
+update_fw cfg/scp_fw/altra_scp_signed_1.05.20210422.hpm fw_type scp
+sshpass -p Ampere@4655 scp  -o StrictHostKeyChecking=no  cfg/scp_fw/altra_scp_signed_1.05.20210422.hpm amplab@10.38.162.2:/tmp
+./sshpass -p Ampere@4655 ssh -o StrictHostKeyChecking=no -t amplab@10.38.162.2 'echo y |ipmitool -H 10.38.162.44 -U ADMIN -P ADMIN -I lanplus -z 0x7fff hpm upgrade /tmp/altra_scp_signed_1.05.20210422.hpm force'
+check_firmware_upgrade 0
+Program cfg/atfbios_fw/jade_aptiov_atf_signed_1.05.20210422.hpm ... 
+exec_cmd ./xconsole.py --atfbios_fw cfg/atfbios_fw/jade_aptiov_atf_signed_1.05.20210422.hpm --hostuser amplab --hostip 10.38.162.2 --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+
+
+search_board_type Mt.Jade
+update_fw cfg/atfbios_fw/jade_aptiov_atf_signed_1.05.20210422.hpm fw_type bios
+sshpass -p Ampere@4655 scp  -o StrictHostKeyChecking=no  cfg/atfbios_fw/jade_aptiov_atf_signed_1.05.20210422.hpm amplab@10.38.162.2:/tmp
+./sshpass -p Ampere@4655 ssh -o StrictHostKeyChecking=no -t amplab@10.38.162.2 'echo y |ipmitool -H 10.38.162.44 -U ADMIN -P ADMIN -I lanplus -z 0x7fff hpm upgrade /tmp/jade_aptiov_atf_signed_1.05.20210422.hpm force'
+check_firmware_upgrade 0
+
+
+
+
+exec_cmd ./xconsole.py --hostip 10.38.162.2 --hostuser amplab --set_nvparm [SI_DDR_SCRUB_EN:1146944:0x5A0][SI_DDR_ZQCS_EN:1147208:0x1][SI_DDR_ECC_MODE:1146952:0x1][SI_PLT_EN:1130752:0x0] --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+
+
+search_board_type Mt.Jade
+./sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.162.44 'echo set_nvparm && gpiotool --set-data-low 226 && echo SI_DDR_SCRUB_EN && nvparm -s 0x5A0 -o 0x118040  && echo SI_DDR_ZQCS_EN && nvparm -s 0x1 -o 0x118148  && echo SI_DDR_ECC_MODE && nvparm -s 0x1 -o 0x118048  && echo SI_PLT_EN && nvparm -s 0x0 -o 0x114100  && gpiotool --set-data-high 226'
+<div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >STATUS SUMMARY</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >PASS</a></div></div>
+
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> </div></div>
+
+
+<!DOCTYPE html><html lang='en'><head><title>Mt.Jade_15</title><link rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css'><script src='https://cdn.jsdelivr.net/npm/chart.js@2.8.0'></script><style>.eye_main {width:100%;}.eye_element {width:25%;}.eye_table {width:80%;}.eye_fail {background-color: Purple;}.eye_fail_mask {background-color: DarkRed;}.eye_pass {background-color: YellowGreen;}.eye_pass_mask {background-color: ForestGreen;}.eye_title {background-color: whilte;}.eye_hw {background-color: aqua;}.eye_point{width:auto;}.overflowTest {padding: 15px;width: auto;height: 600px;overflow: scroll;border: 1px solid #ccc;}</style></head><body><h1 align='center'><img src='data:image/png;base64,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' scale='0'></h1><p align='center'><font size='7' color='blue'><span>Mt.Jade_15</span></font></p>
+
+
+<div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CLI ARGV</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >./linux_test.py --start_test 1 --linux_script echo --time 1800 --debug 1 --cleannv 1 --hostip 10.38.162.2 --hostuser amplab --hostpass Ampere@4655 --bmcip 10.38.162.44 --tty_bmc FTBZEDTA --tty_uefi AB0KUEMK --board_type Mt.Jade --board Mt.Jade_15 --scp_fw cfg/scp_fw/altra_scp_signed_1.05.20210422.hpm --atfbios_fw cfg/atfbios_fw/jade_aptiov_atf_signed_1.05.20210422.hpm --test_cfg memtester_300.cfg --wait 0 --sys_log logs/15/Mt.Jade_15_210428_131240.log --test_cfg memtester_300.cfg --nv_scan SI_DDR_VMARGIN[0.-60.60]  </a></div></div>
+
+
+cleannv ...
+exec_cmd ./xconsole.py --cmd cleannv --hostuser amplab --hostip 10.38.162.2 --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+
+
+search_board_type Mt.Jade
+./sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.162.44 'echo clean nvparam && gpiotool --set-data-low 226 && nvparm -c -o 0x110000 && nvparm -c -o 0x120000 && nvparm -c -o 0x5F0000 && gpiotool --set-data-high 226'
+Program cfg/scp_fw/altra_scp_signed_1.05.20210422.hpm ... 
+exec_cmd ./xconsole.py --scp_fw cfg/scp_fw/altra_scp_signed_1.05.20210422.hpm --hostuser amplab --hostip 10.38.162.2 --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+
+
+search_board_type Mt.Jade
+update_fw cfg/scp_fw/altra_scp_signed_1.05.20210422.hpm fw_type scp
+sshpass -p Ampere@4655 scp  -o StrictHostKeyChecking=no  cfg/scp_fw/altra_scp_signed_1.05.20210422.hpm amplab@10.38.162.2:/tmp
+./sshpass -p Ampere@4655 ssh -o StrictHostKeyChecking=no -t amplab@10.38.162.2 'echo y |ipmitool -H 10.38.162.44 -U ADMIN -P ADMIN -I lanplus -z 0x7fff hpm upgrade /tmp/altra_scp_signed_1.05.20210422.hpm force'
+check_firmware_upgrade 0
+Program cfg/atfbios_fw/jade_aptiov_atf_signed_1.05.20210422.hpm ... 
+exec_cmd ./xconsole.py --atfbios_fw cfg/atfbios_fw/jade_aptiov_atf_signed_1.05.20210422.hpm --hostuser amplab --hostip 10.38.162.2 --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+
+
+search_board_type Mt.Jade
+update_fw cfg/atfbios_fw/jade_aptiov_atf_signed_1.05.20210422.hpm fw_type bios
+sshpass -p Ampere@4655 scp  -o StrictHostKeyChecking=no  cfg/atfbios_fw/jade_aptiov_atf_signed_1.05.20210422.hpm amplab@10.38.162.2:/tmp
+./sshpass -p Ampere@4655 ssh -o StrictHostKeyChecking=no -t amplab@10.38.162.2 'echo y |ipmitool -H 10.38.162.44 -U ADMIN -P ADMIN -I lanplus -z 0x7fff hpm upgrade /tmp/jade_aptiov_atf_signed_1.05.20210422.hpm force'
+check_firmware_upgrade 0
+
+
+
+
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostuser amplab --hostip 10.38.162.2 --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+
+
+search_board_type Mt.Jade
+CHASSIS POWER OFF[210428_131714]
+./sshpass -p Ampere@4655 ssh -o StrictHostKeyChecking=no -t amplab@10.38.162.2 'ipmitool -H 10.38.162.44 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  chassis power off'
+exec_cmd ./xconsole.py --cmd sel_list --hostuser amplab --hostip 10.38.162.2 --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+
+
+search_board_type Mt.Jade
+./sshpass -p Ampere@4655 ssh -o StrictHostKeyChecking=no -t amplab@10.38.162.2 'ipmitool -H 10.38.162.44 -U ADMIN -P ADMIN  sel list'
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+   1 | 04/27/2021 | 10:42:20 | Power Supply #0xf8 | Presence detected | Deasserted
+   2 | 04/27/2021 | 11:07:58 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+   3 | 04/27/2021 | 11:07:58 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+   4 | 04/27/2021 | 11:11:36 | OEM record c0 | 00cd3a | cbe570ffffff
+   5 | 04/27/2021 | 11:11:53 | OEM record c0 | 00cd3a | cbe57001ffff
+   6 | 04/27/2021 | 11:11:53 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+   7 | 04/27/2021 | 11:11:53 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+   8 | 04/27/2021 | 11:11:53 | OEM record c0 | 00cd3a | 0feb70020000
+   9 | 04/27/2021 | 11:11:53 | OEM record c0 | 00cd3a | ca8f7101ffff
+   a | 04/27/2021 | 11:11:54 | OEM record c0 | 00cd3a | ca907101ffff
+   b | 04/27/2021 | 11:11:54 | OEM record c0 | 00cd3a | 0feb70120000
+   c | 04/27/2021 | 11:11:54 | OEM record c0 | 00cd3a | ca8ff101ffff
+   d | 04/27/2021 | 11:11:55 | OEM record c0 | 00cd3a | ca90f101ffff
+   e | 04/27/2021 | 11:18:56 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+   f | 04/27/2021 | 11:18:56 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+  10 | 04/27/2021 | 11:19:31 | OEM record c0 | 00cd3a | cbe570ffffff
+  11 | 04/27/2021 | 11:19:48 | OEM record c0 | 00cd3a | cbe57001ffff
+  12 | 04/27/2021 | 11:19:48 | OEM record c0 | 00cd3a | ca8f7101ffff
+  13 | 04/27/2021 | 11:19:48 | OEM record c0 | 00cd3a | ca907101ffff
+  14 | 04/27/2021 | 11:19:49 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+  15 | 04/27/2021 | 11:19:49 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+  16 | 04/27/2021 | 11:19:49 | OEM record c0 | 00cd3a | 0feb70020000
+  17 | 04/27/2021 | 11:19:49 | OEM record c0 | 00cd3a | ca8ff101ffff
+  18 | 04/27/2021 | 11:19:49 | OEM record c0 | 00cd3a | ca90f101ffff
+  19 | 04/27/2021 | 11:19:50 | OEM record c0 | 00cd3a | 0feb70120000
+  1a | 04/27/2021 | 11:26:50 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+  1b | 04/27/2021 | 11:26:50 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+  1c | 04/27/2021 | 11:27:25 | OEM record c0 | 00cd3a | cbe570ffffff
+  1d | 04/27/2021 | 11:27:42 | OEM record c0 | 00cd3a | cbe57001ffff
+  1e | 04/27/2021 | 11:27:42 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+  1f | 04/27/2021 | 11:27:42 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+  20 | 04/27/2021 | 11:27:42 | OEM record c0 | 00cd3a | 0feb70020000
+  21 | 04/27/2021 | 11:27:42 | OEM record c0 | 00cd3a | ca8f7101ffff
+  22 | 04/27/2021 | 11:27:42 | OEM record c0 | 00cd3a | ca907101ffff
+  23 | 04/27/2021 | 11:27:43 | OEM record c0 | 00cd3a | 0feb70120000
+  24 | 04/27/2021 | 11:27:43 | OEM record c0 | 00cd3a | ca8ff101ffff
+  25 | 04/27/2021 | 11:27:43 | OEM record c0 | 00cd3a | ca90f101ffff
+  26 | 04/27/2021 | 11:34:46 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+  27 | 04/27/2021 | 11:34:46 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+  28 | 04/27/2021 | 11:35:21 | OEM record c0 | 00cd3a | cbe570ffffff
+  29 | 04/27/2021 | 11:35:38 | OEM record c0 | 00cd3a | cbe57001ffff
+  2a | 04/27/2021 | 11:35:38 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+  2b | 04/27/2021 | 11:35:38 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+  2c | 04/27/2021 | 11:35:38 | OEM record c0 | 00cd3a | 0feb70020000
+  2d | 04/27/2021 | 11:35:38 | OEM record c0 | 00cd3a | ca8f7101ffff
+  2e | 04/27/2021 | 11:35:38 | OEM record c0 | 00cd3a | ca907101ffff
+  2f | 04/27/2021 | 11:35:39 | OEM record c0 | 00cd3a | 0feb70120000
+  30 | 04/27/2021 | 11:35:39 | OEM record c0 | 00cd3a | ca8ff101ffff
+  31 | 04/27/2021 | 11:35:39 | OEM record c0 | 00cd3a | ca90f101ffff
+  32 | 04/27/2021 | 11:42:40 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+  33 | 04/27/2021 | 11:42:40 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+  34 | 04/27/2021 | 11:43:15 | OEM record c0 | 00cd3a | cbe570ffffff
+  35 | 04/27/2021 | 11:43:32 | OEM record c0 | 00cd3a | cbe57001ffff
+  36 | 04/27/2021 | 11:43:32 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+  37 | 04/27/2021 | 11:43:32 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+  38 | 04/27/2021 | 11:43:32 | OEM record c0 | 00cd3a | 0feb70020000
+  39 | 04/27/2021 | 11:43:32 | OEM record c0 | 00cd3a | ca8f7101ffff
+  3a | 04/27/2021 | 11:43:33 | OEM record c0 | 00cd3a | ca907101ffff
+  3b | 04/27/2021 | 11:43:33 | OEM record c0 | 00cd3a | 0feb70120000
+  3c | 04/27/2021 | 11:43:33 | OEM record c0 | 00cd3a | ca8ff101ffff
+  3d | 04/27/2021 | 11:43:34 | OEM record c0 | 00cd3a | ca90f101ffff
+  3e | 04/27/2021 | 11:50:34 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+  3f | 04/27/2021 | 11:50:34 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+  40 | 04/27/2021 | 11:51:09 | OEM record c0 | 00cd3a | cbe570ffffff
+  41 | 04/27/2021 | 11:51:26 | OEM record c0 | 00cd3a | ca907101ffff
+  42 | 04/27/2021 | 11:51:27 | OEM record c0 | 00cd3a | cbe57001ffff
+  43 | 04/27/2021 | 11:51:27 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+  44 | 04/27/2021 | 11:51:27 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+  45 | 04/27/2021 | 11:51:27 | OEM record c0 | 00cd3a | 0feb70020000
+  46 | 04/27/2021 | 11:51:27 | OEM record c0 | 00cd3a | ca8f7101ffff
+  47 | 04/27/2021 | 11:51:28 | OEM record c0 | 00cd3a | ca90f101ffff
+  48 | 04/27/2021 | 11:51:28 | OEM record c0 | 00cd3a | 0feb70120000
+  49 | 04/27/2021 | 11:51:28 | OEM record c0 | 00cd3a | ca8ff101ffff
+  4a | 04/27/2021 | 11:58:31 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+  4b | 04/27/2021 | 11:58:31 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+  4c | 04/27/2021 | 11:59:06 | OEM record c0 | 00cd3a | cbe570ffffff
+  4d | 04/27/2021 | 11:59:23 | OEM record c0 | 00cd3a | cbe57001ffff
+  4e | 04/27/2021 | 11:59:23 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+  4f | 04/27/2021 | 11:59:23 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+  50 | 04/27/2021 | 11:59:23 | OEM record c0 | 00cd3a | 0feb70020000
+  51 | 04/27/2021 | 11:59:23 | OEM record c0 | 00cd3a | ca8f7101ffff
+  52 | 04/27/2021 | 11:59:24 | OEM record c0 | 00cd3a | ca907101ffff
+  53 | 04/27/2021 | 11:59:24 | OEM record c0 | 00cd3a | 0feb70120000
+  54 | 04/27/2021 | 11:59:24 | OEM record c0 | 00cd3a | ca8ff101ffff
+  55 | 04/27/2021 | 11:59:25 | OEM record c0 | 00cd3a | ca90f101ffff
+  56 | 04/27/2021 | 12:06:25 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+  57 | 04/27/2021 | 12:06:25 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+  58 | 04/27/2021 | 12:07:00 | OEM record c0 | 00cd3a | cbe570ffffff
+  59 | 04/27/2021 | 12:07:17 | OEM record c0 | 00cd3a | ca907101ffff
+  5a | 04/27/2021 | 12:07:18 | OEM record c0 | 00cd3a | cbe57001ffff
+  5b | 04/27/2021 | 12:07:18 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+  5c | 04/27/2021 | 12:07:18 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+  5d | 04/27/2021 | 12:07:18 | OEM record c0 | 00cd3a | 0feb70020000
+  5e | 04/27/2021 | 12:07:19 | OEM record c0 | 00cd3a | ca8f7101ffff
+  5f | 04/27/2021 | 12:07:19 | OEM record c0 | 00cd3a | ca90f101ffff
+  60 | 04/27/2021 | 12:07:19 | OEM record c0 | 00cd3a | 0feb70120000
+  61 | 04/27/2021 | 12:07:20 | OEM record c0 | 00cd3a | ca8ff101ffff
+  62 | 04/27/2021 | 12:14:20 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+  63 | 04/27/2021 | 12:14:20 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+  64 | 04/27/2021 | 12:14:55 | OEM record c0 | 00cd3a | cbe570ffffff
+  65 | 04/27/2021 | 12:15:12 | OEM record c0 | 00cd3a | cbe57001ffff
+  66 | 04/27/2021 | 12:15:12 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+  67 | 04/27/2021 | 12:15:12 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+  68 | 04/27/2021 | 12:15:12 | OEM record c0 | 00cd3a | 0feb70020000
+  69 | 04/27/2021 | 12:15:12 | OEM record c0 | 00cd3a | ca8f7101ffff
+  6a | 04/27/2021 | 12:15:13 | OEM record c0 | 00cd3a | ca907101ffff
+  6b | 04/27/2021 | 12:15:13 | OEM record c0 | 00cd3a | 0feb70120000
+  6c | 04/27/2021 | 12:15:13 | OEM record c0 | 00cd3a | ca8ff101ffff
+  6d | 04/27/2021 | 12:15:13 | OEM record c0 | 00cd3a | ca90f101ffff
+  6e | 04/27/2021 | 12:22:15 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+  6f | 04/27/2021 | 12:22:15 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+  70 | 04/27/2021 | 12:22:50 | OEM record c0 | 00cd3a | cbe570ffffff
+  71 | 04/27/2021 | 12:23:07 | OEM record c0 | 00cd3a | cbe57001ffff
+  72 | 04/27/2021 | 12:23:07 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+  73 | 04/27/2021 | 12:23:07 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+  74 | 04/27/2021 | 12:23:07 | OEM record c0 | 00cd3a | 0feb70020000
+  75 | 04/27/2021 | 12:23:08 | OEM record c0 | 00cd3a | ca8f7101ffff
+  76 | 04/27/2021 | 12:23:08 | OEM record c0 | 00cd3a | ca907101ffff
+  77 | 04/27/2021 | 12:23:08 | OEM record c0 | 00cd3a | 0feb70120000
+  78 | 04/27/2021 | 12:23:08 | OEM record c0 | 00cd3a | ca8ff101ffff
+  79 | 04/27/2021 | 12:23:08 | OEM record c0 | 00cd3a | ca90f101ffff
+  7a | 04/27/2021 | 12:30:12 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+  7b | 04/27/2021 | 12:30:12 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+  7c | 04/27/2021 | 22:48:14 | Power Supply #0xf7 | AC lost or out-of-range | Asserted
+  7d | 04/27/2021 | 22:48:14 | Power Unit #0xe8 | AC lost | Asserted
+  7e | 04/27/2021 | 22:44:24 | Power Supply #0xf7 | AC lost or out-of-range | Deasserted
+  7f | 04/27/2021 | 22:44:24 | Power Unit #0xe8 | AC lost | Deasserted
+  80 | 04/27/2021 | 22:44:25 | OEM record c0 | 00cd3a | cbe570ffffff
+  81 | 04/27/2021 | 22:44:26 | Power Supply #0xf8 | Presence detected | Deasserted
+  82 | 04/27/2021 | 22:44:42 | OEM record c0 | 00cd3a | ca907101ffff
+  83 | 04/27/2021 | 22:44:42 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+  84 | 04/27/2021 | 22:44:42 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+  85 | 04/27/2021 | 22:44:42 | OEM record c0 | 00cd3a | cbe57001ffff
+  86 | 04/27/2021 | 22:44:43 | OEM record c0 | 00cd3a | 0feb70020000
+  87 | 04/27/2021 | 22:44:43 | OEM record c0 | 00cd3a | ca8f7101ffff
+  88 | 04/27/2021 | 22:44:43 | OEM record c0 | 00cd3a | ca90f101ffff
+  89 | 04/27/2021 | 22:44:44 | OEM record c0 | 00cd3a | 0feb70120000
+  8a | 04/27/2021 | 22:44:44 | OEM record c0 | 00cd3a | ca8ff101ffff
+  8b | 04/27/2021 | 22:45:02 | OEM record c0 | 00cd3a | 0feb70220000
+  8c | 04/27/2021 | 22:45:03 | OEM record c0 | 00cd3a | 0feb70320000
+  8d | 04/27/2021 | 22:45:05 | OEM record c0 | 00cd3a | 0feb70520000
+  8e | 04/27/2021 | 22:45:06 | OEM record c0 | 00cd3a | 0feb70620000
+  8f | 04/27/2021 | 22:45:41 | OEM record c0 | 00cd3a | 0feb70820000
+  90 | 04/27/2021 | 22:45:41 | System Firmwares #0xe4 | System boot initiated | Asserted
+  91 | 04/27/2021 | 22:52:34 | Power Supply #0xf8 | Presence detected | Deasserted
+  92 | 04/27/2021 | 23:15:20 | System Boot Initiated #0xdc | OS initiated hard reset | Asserted
+  93 | 04/27/2021 | 23:15:21 | OEM record c0 | 00cd3a | 0feb70020000
+  94 | 04/27/2021 | 23:15:21 | OEM record c0 | 00cd3a | cbe57001ffff
+  95 | 04/27/2021 | 23:15:21 | OEM record c0 | 00cd3a | ca8f7101ffff
+  96 | 04/27/2021 | 23:15:21 | OEM record c0 | 00cd3a | ca907101ffff
+  97 | 04/27/2021 | 23:15:22 | OEM record c0 | 00cd3a | 0feb70120000
+  98 | 04/27/2021 | 23:15:22 | OEM record c0 | 00cd3a | ca8ff101ffff
+  99 | 04/27/2021 | 23:15:22 | OEM record c0 | 00cd3a | ca90f101ffff
+  9a | 04/27/2021 | 23:15:40 | OEM record c0 | 00cd3a | 0feb70220000
+  9b | 04/27/2021 | 23:15:41 | OEM record c0 | 00cd3a | 0feb70320000
+  9c | 04/27/2021 | 23:15:43 | OEM record c0 | 00cd3a | 0feb70520000
+  9d | 04/27/2021 | 23:15:44 | OEM record c0 | 00cd3a | 0feb70620000
+  9e | 04/27/2021 | 23:16:25 | OEM record c0 | 00cd3a | 0feb70820000
+  9f | 04/27/2021 | 23:16:25 | System Firmwares #0xe4 | System boot initiated | Asserted
+  a0 | 04/27/2021 | 23:18:36 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+  a1 | 04/27/2021 | 23:18:36 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+  a2 | 04/27/2021 | 23:19:11 | OEM record c0 | 00cd3a | cbe570ffffff
+  a3 | 04/27/2021 | 23:19:28 | OEM record c0 | 00cd3a | cbe57001ffff
+  a4 | 04/27/2021 | 23:19:28 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+  a5 | 04/27/2021 | 23:19:28 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+  a6 | 04/27/2021 | 23:19:29 | OEM record c0 | 00cd3a | 0feb70020000
+  a7 | 04/27/2021 | 23:19:29 | OEM record c0 | 00cd3a | ca8f7101ffff
+  a8 | 04/27/2021 | 23:19:29 | OEM record c0 | 00cd3a | ca907101ffff
+  a9 | 04/27/2021 | 23:19:30 | OEM record c0 | 00cd3a | 0feb70120000
+  aa | 04/27/2021 | 23:19:30 | OEM record c0 | 00cd3a | ca8ff101ffff
+  ab | 04/27/2021 | 23:19:30 | OEM record c0 | 00cd3a | ca90f101ffff
+  ac | 04/27/2021 | 23:19:48 | OEM record c0 | 00cd3a | 0feb70220000
+  ad | 04/27/2021 | 23:19:49 | OEM record c0 | 00cd3a | 0feb70320000
+  ae | 04/27/2021 | 23:19:51 | OEM record c0 | 00cd3a | 0feb70520000
+  af | 04/27/2021 | 23:19:52 | OEM record c0 | 00cd3a | 0feb70620000
+  b0 | 04/27/2021 | 23:41:20 | Power Supply #0xf7 | AC lost or out-of-range | Asserted
+  b1 | 04/27/2021 | 23:41:20 | Power Unit #0xe8 | AC lost | Asserted
+  b2 | 04/27/2021 | 23:24:54 | Power Supply #0xf7 | AC lost or out-of-range | Deasserted
+  b3 | 04/27/2021 | 23:24:54 | Power Unit #0xe8 | AC lost | Deasserted
+  b4 | 04/27/2021 | 23:24:55 | OEM record c0 | 00cd3a | cbe570ffffff
+  b5 | 04/27/2021 | 23:24:56 | Power Supply #0xf8 | Presence detected | Deasserted
+  b6 | 04/27/2021 | 23:25:12 | OEM record c0 | 00cd3a | ca907101ffff
+  b7 | 04/27/2021 | 23:25:13 | OEM record c0 | 00cd3a | cbe57001ffff
+  b8 | 04/27/2021 | 23:25:13 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+  b9 | 04/27/2021 | 23:25:13 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+  ba | 04/27/2021 | 23:25:13 | OEM record c0 | 00cd3a | 0feb70020000
+  bb | 04/27/2021 | 23:25:14 | OEM record c0 | 00cd3a | ca8f7101ffff
+  bc | 04/27/2021 | 23:25:14 | OEM record c0 | 00cd3a | ca90f101ffff
+  bd | 04/27/2021 | 23:25:14 | OEM record c0 | 00cd3a | 0feb70120000
+  be | 04/27/2021 | 23:25:15 | OEM record c0 | 00cd3a | ca8ff101ffff
+  bf | 04/27/2021 | 23:25:32 | OEM record c0 | 00cd3a | 0feb70220000
+  c0 | 04/27/2021 | 23:25:33 | OEM record c0 | 00cd3a | 0feb70320000
+  c1 | 04/27/2021 | 23:25:35 | OEM record c0 | 00cd3a | 0feb70520000
+  c2 | 04/27/2021 | 23:25:36 | OEM record c0 | 00cd3a | 0feb70620000
+  c3 | 04/27/2021 | 23:25:59 | OEM record c0 | 00cd3a | 0feb70820000
+  c4 | 04/27/2021 | 23:25:59 | System Firmwares #0xe4 | System boot initiated | Asserted
+  c5 | 04/27/2021 | 23:51:32 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+  c6 | 04/27/2021 | 23:51:32 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+  c7 | 04/27/2021 | 23:57:24 | OEM record c0 | 00cd3a | cbe570ffffff
+  c8 | 04/27/2021 | 23:57:41 | OEM record c0 | 00cd3a | ca907101ffff
+  c9 | 04/27/2021 | 23:57:42 | OEM record c0 | 00cd3a | cbe57001ffff
+  ca | 04/27/2021 | 23:57:42 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+  cb | 04/27/2021 | 23:57:42 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+  cc | 04/27/2021 | 23:57:42 | OEM record c0 | 00cd3a | 0feb70020000
+  cd | 04/27/2021 | 23:57:42 | OEM record c0 | 00cd3a | ca8f7101ffff
+  ce | 04/27/2021 | 23:57:42 | OEM record c0 | 00cd3a | ca90f101ffff
+  cf | 04/27/2021 | 23:57:43 | OEM record c0 | 00cd3a | 0feb70120000
+  d0 | 04/27/2021 | 23:57:43 | OEM record c0 | 00cd3a | ca8ff101ffff
+  d1 | 04/27/2021 | 23:58:01 | OEM record c0 | 00cd3a | 0feb70220000
+  d2 | 04/27/2021 | 23:58:02 | OEM record c0 | 00cd3a | 0feb70320000
+  d3 | 04/27/2021 | 23:58:04 | OEM record c0 | 00cd3a | 0feb70520000
+  d4 | 04/27/2021 | 23:58:05 | OEM record c0 | 00cd3a | 0feb70620000
+  d5 | 04/27/2021 | 23:58:57 | OEM record c0 | 00cd3a | 0feb70820000
+  d6 | 04/27/2021 | 23:58:57 | System Firmwares #0xe4 | System boot initiated | Asserted
+  d7 | 04/28/2021 | 00:13:46 | OEM record c0 | 00cd3a | ca907101ffff
+  d8 | 04/28/2021 | 00:13:46 | OEM record c0 | 00cd3a | cbe57001ffff
+  d9 | 04/28/2021 | 00:13:47 | System Boot Initiated #0xdc | System Restart | Asserted
+  da | 04/28/2021 | 00:13:47 | OEM record c0 | 00cd3a | 0feb70020000
+  db | 04/28/2021 | 00:13:47 | OEM record c0 | 00cd3a | ca8f7101ffff
+  dc | 04/28/2021 | 00:13:47 | OEM record c0 | 00cd3a | ca90f101ffff
+  dd | 04/28/2021 | 00:13:48 | OEM record c0 | 00cd3a | 0feb70120000
+  de | 04/28/2021 | 00:13:48 | OEM record c0 | 00cd3a | ca8ff101ffff
+  df | 04/28/2021 | 00:14:05 | OEM record c0 | 00cd3a | 0feb70220000
+  e0 | 04/28/2021 | 00:14:06 | OEM record c0 | 00cd3a | 0feb70320000
+  e1 | 04/28/2021 | 00:14:08 | OEM record c0 | 00cd3a | 0feb70520000
+  e2 | 04/28/2021 | 00:14:09 | OEM record c0 | 00cd3a | 0feb70620000
+  e3 | 04/28/2021 | 00:16:08 | OEM record c0 | 00cd3a | 0feb70820000
+  e4 | 04/28/2021 | 00:16:08 | System Firmwares #0xe4 | System boot initiated | Asserted
+  e5 | 04/28/2021 | 00:34:54 | OEM record c0 | 00cd3a | ca907101ffff
+  e6 | 04/28/2021 | 00:34:55 | System Boot Initiated #0xdc | OS initiated hard reset | Asserted
+  e7 | 04/28/2021 | 00:34:55 | OEM record c0 | 00cd3a | cbe57001ffff
+  e8 | 04/28/2021 | 00:34:55 | OEM record c0 | 00cd3a | 0feb70020000
+  e9 | 04/28/2021 | 00:34:55 | OEM record c0 | 00cd3a | ca8f7101ffff
+  ea | 04/28/2021 | 00:34:55 | OEM record c0 | 00cd3a | ca90f101ffff
+  eb | 04/28/2021 | 00:34:56 | OEM record c0 | 00cd3a | 0feb70120000
+  ec | 04/28/2021 | 00:34:56 | OEM record c0 | 00cd3a | ca8ff101ffff
+  ed | 04/28/2021 | 00:35:14 | OEM record c0 | 00cd3a | 0feb70220000
+  ee | 04/28/2021 | 00:35:15 | OEM record c0 | 00cd3a | 0feb70320000
+  ef | 04/28/2021 | 00:35:17 | OEM record c0 | 00cd3a | 0feb70520000
+  f0 | 04/28/2021 | 00:35:18 | OEM record c0 | 00cd3a | 0feb70620000
+  f1 | 04/28/2021 | 00:35:51 | OEM record c0 | 00cd3a | 0feb70820000
+  f2 | 04/28/2021 | 00:35:51 | System Firmwares #0xe4 | System boot initiated | Asserted
+  f3 | 04/28/2021 | 00:41:24 | OEM record c0 | 00cd3a | ca907101ffff
+  f4 | 04/28/2021 | 00:41:25 | OEM record c0 | 00cd3a | ca8f7101ffff
+  f5 | 04/28/2021 | 00:41:25 | OEM record c0 | 00cd3a | ca90f101ffff
+  f6 | 04/28/2021 | 00:41:26 | OEM record c0 | 00cd3a | 0feb70020000
+  f7 | 04/28/2021 | 00:41:26 | OEM record c0 | 00cd3a | ca8ff101ffff
+  f8 | 04/28/2021 | 00:41:26 | System Boot Initiated #0xdc | OS initiated hard reset | Asserted
+  f9 | 04/28/2021 | 00:41:26 | OEM record c0 | 00cd3a | cbe57001ffff
+  fa | 04/28/2021 | 00:41:27 | OEM record c0 | 00cd3a | 0feb70120000
+  fb | 04/28/2021 | 00:41:44 | OEM record c0 | 00cd3a | 0feb70220000
+  fc | 04/28/2021 | 00:41:45 | OEM record c0 | 00cd3a | 0feb70320000
+  fd | 04/28/2021 | 00:41:47 | OEM record c0 | 00cd3a | 0feb70520000
+  fe | 04/28/2021 | 00:41:48 | OEM record c0 | 00cd3a | 0feb70620000
+  ff | 04/28/2021 | 00:43:39 | OEM record c0 | 00cd3a | ca907101ffff
+ 100 | 04/28/2021 | 00:43:40 | OEM record c0 | 00cd3a | ca8f7101ffff
+ 101 | 04/28/2021 | 00:43:40 | OEM record c0 | 00cd3a | ca90f101ffff
+ 102 | 04/28/2021 | 00:43:41 | System Boot Initiated #0xdc | OS initiated hard reset | Asserted
+ 103 | 04/28/2021 | 00:43:41 | OEM record c0 | 00cd3a | cbe57001ffff
+ 104 | 04/28/2021 | 00:43:41 | OEM record c0 | 00cd3a | 0feb70020000
+ 105 | 04/28/2021 | 00:43:41 | OEM record c0 | 00cd3a | ca8ff101ffff
+ 106 | 04/28/2021 | 00:43:42 | OEM record c0 | 00cd3a | 0feb70120000
+ 107 | 04/28/2021 | 00:43:58 | OEM record c0 | 00cd3a | 0feb70220000
+ 108 | 04/28/2021 | 00:43:59 | OEM record c0 | 00cd3a | 0feb70320000
+ 109 | 04/28/2021 | 00:44:01 | OEM record c0 | 00cd3a | 0feb70520000
+ 10a | 04/28/2021 | 00:44:02 | OEM record c0 | 00cd3a | 0feb70620000
+ 10b | 04/28/2021 | 00:47:04 | OEM record c0 | 00cd3a | 0feb70820000
+ 10c | 04/28/2021 | 00:47:04 | System Firmwares #0xe4 | System boot initiated | Asserted
+ 10d | 04/28/2021 | 00:47:30 | OEM record c0 | 00cd3a | ca907101ffff
+ 10e | 04/28/2021 | 00:47:31 | System Boot Initiated #0xdc | OS initiated hard reset | Asserted
+ 10f | 04/28/2021 | 00:47:31 | OEM record c0 | 00cd3a | cbe57001ffff
+ 110 | 04/28/2021 | 00:47:31 | OEM record c0 | 00cd3a | 0feb70020000
+ 111 | 04/28/2021 | 00:47:31 | OEM record c0 | 00cd3a | ca8f7101ffff
+ 112 | 04/28/2021 | 00:47:32 | OEM record c0 | 00cd3a | ca90f101ffff
+ 113 | 04/28/2021 | 00:47:32 | OEM record c0 | 00cd3a | 0feb70120000
+ 114 | 04/28/2021 | 00:47:32 | OEM record c0 | 00cd3a | ca8ff101ffff
+ 115 | 04/28/2021 | 00:47:50 | OEM record c0 | 00cd3a | 0feb70220000
+ 116 | 04/28/2021 | 00:47:51 | OEM record c0 | 00cd3a | 0feb70320000
+ 117 | 04/28/2021 | 00:47:53 | OEM record c0 | 00cd3a | 0feb70520000
+ 118 | 04/28/2021 | 00:47:54 | OEM record c0 | 00cd3a | 0feb70620000
+ 119 | 04/28/2021 | 00:51:57 | OEM record c0 | 00cd3a | ca907101ffff
+ 11a | 04/28/2021 | 00:51:57 | OEM record c0 | 00cd3a | cbe57001ffff
+ 11b | 04/28/2021 | 00:51:57 | System Boot Initiated #0xdc | System Restart | Asserted
+ 11c | 04/28/2021 | 00:51:58 | OEM record c0 | 00cd3a | 0feb70020000
+ 11d | 04/28/2021 | 00:51:59 | OEM record c0 | 00cd3a | ca8f7101ffff
+ 11e | 04/28/2021 | 00:51:59 | OEM record c0 | 00cd3a | ca90f101ffff
+ 11f | 04/28/2021 | 00:51:59 | OEM record c0 | 00cd3a | 0feb70120000
+ 120 | 04/28/2021 | 00:51:59 | OEM record c0 | 00cd3a | ca8ff101ffff
+ 121 | 04/28/2021 | 00:52:16 | OEM record c0 | 00cd3a | 0feb70220000
+ 122 | 04/28/2021 | 00:52:17 | OEM record c0 | 00cd3a | 0feb70320000
+ 123 | 04/28/2021 | 00:52:19 | OEM record c0 | 00cd3a | 0feb70520000
+ 124 | 04/28/2021 | 00:52:20 | OEM record c0 | 00cd3a | 0feb70620000
+ 125 | 04/28/2021 | 00:56:25 | OEM record c0 | 00cd3a | 0feb70820000
+ 126 | 04/28/2021 | 00:56:25 | System Firmwares #0xe4 | System boot initiated | Asserted
+ 127 | 04/28/2021 | 02:00:12 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+ 128 | 04/28/2021 | 02:00:12 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+ 129 | 04/28/2021 | 02:03:06 | OEM record c0 | 00cd3a | cbe570ffffff
+ 12a | 04/28/2021 | 02:03:23 | OEM record c0 | 00cd3a | ca907101ffff
+ 12b | 04/28/2021 | 02:03:24 | OEM record c0 | 00cd3a | cbe57001ffff
+ 12c | 04/28/2021 | 02:03:24 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+ 12d | 04/28/2021 | 02:03:24 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+ 12e | 04/28/2021 | 02:03:24 | OEM record c0 | 00cd3a | 0feb70020000
+ 12f | 04/28/2021 | 02:03:24 | OEM record c0 | 00cd3a | ca8f7101ffff
+ 130 | 04/28/2021 | 02:03:24 | OEM record c0 | 00cd3a | ca90f101ffff
+ 131 | 04/28/2021 | 02:03:25 | OEM record c0 | 00cd3a | 0feb70120000
+ 132 | 04/28/2021 | 02:03:25 | OEM record c0 | 00cd3a | ca8ff101ffff
+ 133 | 04/28/2021 | 02:03:43 | OEM record c0 | 00cd3a | 0feb70220000
+ 134 | 04/28/2021 | 02:03:44 | OEM record c0 | 00cd3a | 0feb70320000
+ 135 | 04/28/2021 | 02:03:46 | OEM record c0 | 00cd3a | 0feb70520000
+ 136 | 04/28/2021 | 02:03:47 | OEM record c0 | 00cd3a | 0feb70620000
+ 137 | 04/28/2021 | 02:04:20 | OEM record c0 | 00cd3a | 0feb70820000
+ 138 | 04/28/2021 | 02:04:20 | System Firmwares #0xe4 | System boot initiated | Asserted
+ 139 | 04/28/2021 | 02:06:33 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+ 13a | 04/28/2021 | 02:06:33 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+ 13b | 04/28/2021 | 02:08:34 | OEM record c0 | 00cd3a | cbe570ffffff
+ 13c | 04/28/2021 | 02:08:51 | OEM record c0 | 00cd3a | ca907101ffff
+ 13d | 04/28/2021 | 02:08:52 | OEM record c0 | 00cd3a | cbe57001ffff
+ 13e | 04/28/2021 | 02:08:52 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+ 13f | 04/28/2021 | 02:08:52 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+ 140 | 04/28/2021 | 02:08:52 | OEM record c0 | 00cd3a | 0feb70020000
+ 141 | 04/28/2021 | 02:08:52 | OEM record c0 | 00cd3a | ca8f7101ffff
+ 142 | 04/28/2021 | 02:08:52 | OEM record c0 | 00cd3a | ca90f101ffff
+ 143 | 04/28/2021 | 02:08:53 | OEM record c0 | 00cd3a | 0feb70120000
+ 144 | 04/28/2021 | 02:08:53 | OEM record c0 | 00cd3a | ca8ff101ffff
+ 145 | 04/28/2021 | 02:09:10 | OEM record c0 | 00cd3a | 0feb70220000
+ 146 | 04/28/2021 | 02:09:11 | OEM record c0 | 00cd3a | 0feb70320000
+ 147 | 04/28/2021 | 02:09:13 | OEM record c0 | 00cd3a | 0feb70520000
+ 148 | 04/28/2021 | 02:09:14 | OEM record c0 | 00cd3a | 0feb70620000
+ 149 | 04/28/2021 | 02:09:50 | OEM record c0 | 00cd3a | 0feb70820000
+ 14a | 04/28/2021 | 02:09:50 | System Firmwares #0xe4 | System boot initiated | Asserted
+ 14b | 04/28/2021 | 02:13:18 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+ 14c | 04/28/2021 | 02:13:18 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+
+
+exec_cmd ./xconsole.py --hostip 10.38.162.2 --hostuser amplab --set_nvparm [SI_DDR_VMARGIN:1130496:0x0] --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+
+
+search_board_type Mt.Jade
+./sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.162.44 'echo set_nvparm && gpiotool --set-data-low 226 && echo SI_DDR_VMARGIN && nvparm -s 0x0 -o 0x114000  && gpiotool --set-data-high 226'
+
+
+./xconsole.py --tty 2 --log logs/15/Mt.Jade_15_210428_131240/Mt.Jade_15_memtester_300.cfg_at_1_210428_131714s0cli.log --hostuser amplab --note s0cli --hostip 10.38.162.2 --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+
+
+./xconsole.py --tty 4 --log logs/15/Mt.Jade_15_210428_131240/Mt.Jade_15_memtester_300.cfg_at_1_210428_131714s1cli.log --hostuser amplab --note s1cli --hostip 10.38.162.2 --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+
+
+./xconsole.py --tty 3 --log logs/15/Mt.Jade_15_210428_131240/Mt.Jade_15_memtester_300.cfg_at_1_210428_131714atf.log --hostuser amplab --note atf --hostip 10.38.162.2 --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+
+
+./xconsole.py --tty AB0KUEMK --log logs/15/Mt.Jade_15_210428_131240/Mt.Jade_15_memtester_300.cfg_at_1_210428_131714uefi.log --hostuser amplab --note uefi --hostip 10.38.162.2 --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+
+
+./xconsole.py --tty FTBZEDTA --log logs/15/Mt.Jade_15_210428_131240/Mt.Jade_15_memtester_300.cfg_at_1_210428_131714bmc.log --hostuser amplab --note bmc --hostip 10.38.162.2 --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 1</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/15/Mt.Jade_15_210428_131240/Mt.Jade_15_memtester_300.cfg_at_1_210428_131714.txt'>210428_131714</a></a></div></div></div>
+
+
+exec_cmd ./xconsole.py --cmd on --hostuser amplab --hostip 10.38.162.2 --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+
+
+search_board_type Mt.Jade
+CHASSIS POWER ON[210428_131735]
+./sshpass -p Ampere@4655 ssh -o StrictHostKeyChecking=no -t amplab@10.38.162.2 'ipmitool -H 10.38.162.44 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  chassis power on'
+_expect  ['SMpro', 'Firmware'] [60]
+search_board_type Mt.Jade
+ipmitool -H 10.38.162.44 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  sol deactivate instance=2
+Setting large buffer to 32767
+Info: SOL payload already de-activated
+ipmitool -H 10.38.162.44 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  sol activate=usesolkeepalive instance=2
+logs/15/Mt.Jade_15_210428_131240/Mt.Jade_15_memtester_300.cfg_at_1_210428_131714s0cli.log
+
+
+SMpro Rom Firmware v1.0 - build 20190626
+[expected=SMpro 00:00:01]
+_expect  [search_board_type Mt.Jade
+ipmitool -H 10.38.162.44 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  sol deactivate instance=4
+Setting large buffer to 32767
+Info: SOL payload already de-activated
+ipmitool -H 10.38.162.44 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  sol activate=usesolkeepalive instance=4
+logs/15/Mt.Jade_15_210428_131240/Mt.Jade_15_memtester_300.cfg_at_1_210428_131714s1cli.log
+
+'Checkpoint', 'Platform Mem Tool', 'DRAM: 0GB', 'mismatch errors', 'Synchronous', 'initialization failure', 'DDRFAILSAFE', 'ERROR:', 'AEROe2>'] [60]
+search_board_type Mt.Jade
+[1455677.205459] ttyUSB8' AB0KUEMK
+[1308989.374452] ttyUSB5' AB0L3UG4
+[1308983.744275] ttyUSB4' AD0K8G2M
+[1307951.143726] ttyUSB7' FTBZEDTA
+[1043800.843829] ttyUSB3' FTBZAE9I
+[1043798.788743] ttyUSB1' FTEZFKTZ
+[264092.087327] ttyUSB23' AC01X3G2
+[264087.997358] ttyUSB22' AB0KUEMV
+[264082.307289] ttyUSB21' AC019YPT
+[262510.533711] ttyUSB6' FTEZFKEU
+[89362.577187] ttyUSB20' FTBELQ75
+[89247.579209] ttyUSB19' AB0KUEMF
+[   68.341247] ttyUSB16' FTBZED2J
+[   68.313006] ttyUSB15' FTBZDFWY
+[   67.989216] ttyUSB2' FTBZDDNC
+[   67.961579] ttyUSB0' FTBZEFOK
+logs/15/Mt.Jade_15_210428_131240/Mt.Jade_15_memtester_300.cfg_at_1_210428_131714uefi.log
+--------------------------------------------
+
+Pub key verify fail: 84:0xF1000009
+
+Calculated pub key hash: 85: len: 32
+D5C2B1C0485574B1077A8389A6A6B98E
+97691612D8A7C36935C17A16392AFF71
+
+
+Actual pub key hash: 86: len: 32
+A454B70A9F78317DAC0C7BA3CA51FD57
+DBEA5EA33C5B2FA47CB8B6A65D32209D
+
+
+CommonCertVerify fail: 265:0xF1000006
+
+CommonCertVerify fail: 340:0xF1000006
+CM:fuselock: 00000001 tmmdbglockr: 00000001
+tmmnsdbgcsr: 00000000 tmmsdbgcsr: 00000000
+Ignoring error code: 0000040A
+
+SMpro Runtime Firmware v1.5 - build 20210422
+Failsafe: 0
+Load PMpro
+
+SMpro Rom Firmware v1.0 - build 20190626
+
+Pub key verify fail: 84:0xF1000009
+
+Calculated pub key hash: 85: len: 32
+D5C2B1C0485574B1077A8389A6A6B98E
+97691612D8A7C36935C17A16392AFF71
+
+
+Actual pub key hash: 86: len: 32
+A454B70A9F78317DAC0C7BA3CA51FD57
+DBEA5EA33C5B2FA47CB8B6A65D32209D
+
+
+CommonCertVerify fail: 267:0xF1000006
+
+CommonCertVerify fail: 345:0xF1000006
+ERR: Authenticate PMpro
+Board: config 0
+Available CPM: 0x000000FFFFFFFFFF
+Release S1
+
+Pub key verify fail: 84:0xF1000009
+
+Calculated pub key hash: 85: len: 32
+D5C2B1C0485574B1077A8389A6A6B98E
+97691612D8A7C36935C17A16392AFF71
+
+
+Actual pub key hash: 86: len: 32
+A454B70A9F78317DAC0C7BA3CA51FD57
+DBEA5EA33C5B2FA47CB8B6A65D32209D
+
+
+CommonCertVerify fail: 265:0xF1000006
+
+CommonCertVerify fail: 340:0xF1000006
+CM:fuselock: 00000001 tmmdbglockr: 00000001
+tmmnsdbgcsr: 00000000 tmmsdbgcsr: 00000000
+Ignoring error code: 0000040A
+
+SMpro Runtime Firmware v1.5 - build 20210422
+Load PMpro
+S1: Ready
+
+Pub key verify fail: 84:0xF1000009
+
+Calculated pub key hash: 85: len: 32
+D5C2B1C0485574B1077A8389A6A6B98E
+97691612D8A7C36935C17A16392AFF71
+
+
+Actual pub key hash: 86: len: 32
+A454B70A9F78317DAC0C7BA3CA51FD57
+DBEA5EA33C5B2FA47CB8B6A65D32209D
+
+
+CommonCertVerify fail: 267:0xF1000006
+
+CommonCertVerify fail: 345:0xF1000006
+ERR: Authenticate PMpro
+S1: Sync
+Master: Ready
+Board: config 0
+Available CPM: 0x000000FFFFFFFFFF
+S1: Sync
+Boot PMpro
+Boot PMpro
+Load BL1
+ERR: Auth BL1 image 0xFFFFF8EE
+ERR: BL1 load/auth
+Probe I2C10 DIMM0
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM1
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM2
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM0
+Probe I2C10 DIMM1
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM2
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM3
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM4
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM5
+Probe I2C10 DIMM3
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM4
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM5
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM6
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM7
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM6
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM7
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C2 DIMM0
+Probe I2C2 DIMM1
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM2
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM3
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: I2C10: Clear bus
+Probe I2C2 DIMM0
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM1
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM2
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM4
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM5
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM6
+I2C2: Clear bus
+I2C2: Clear bClear bus
+I2C2: Clear bus
+Probe I2C2 DIMM3
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM4
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM5
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear buus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM6
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM7
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+DDR: Operational     DIMM: 0x00000001
+DDR: Failure         DIMM: 0x00000000
+DDR: Non-Operational DIMM: 0x00000000
+s
+Probe I2C2 DIMM7
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+DDR: Operational     DIMM: 0x00000100
+DDR: Failure         DIMM: 0x00000000
+DDR: Non-Operational DIMM: 0x00000000
+128KB OCM protection active
+PCP initialized
+NOTICE:  DRAM FW version 210312
+CP: 0ff00900
+MEMC param:
+  mcu_enable_mask = 00000010 [default: 000000ff]
+CP: 1ff00900
+MEMC param:
+  mcu_enable_mask = 00000001 [default: 000000ff]
+DRAM populated DIMMs:
+  SK0 MC4 S0: RDIMM[ce:80] 16GB 2666 ECC 2R x8 RCD[b3:80] M393A2K43CB2-CTD    
+  SK1 MC0 S0: RDIMM[ce:80] 16GB 2666 ECC 2R x8 RCD[b3:80] M393A2K43CB2-CTD    
+CP: 3ff00100
+CP: 3ff00200
+CP: 04f01902
+CP: 10f01902
+CP: 0ff00a00
+CP: 0ff00b01
+CP: 04f01901
+CP: 04f01904
+CP: 04f02901
+CP: 04f01905
+CP: 04f02902
+CP: 04f02903
+CP: 04f02904
+CP: 04f01907
+CP: 04f01906
+CP: 04f01908
+CP: 04f01909
+CP: 0ff00b02
+CP: 0ff00c00
+CP: 1ff00a00
+CP: 1ff00b01
+CP: 10f01901
+CP: 10f01904
+CP: 10f02901
+CP: 10f01905
+CP: 10f02902
+CP: 10f02903
+CP: 10f02904
+CP: 10f01907
+CP: 10f01906
+CP: 10f01908
+CP: 10f01909
+CP: 1ff00b02
+CP: 1ff00c00
+CP: 3ff00300
+CP: 04001a02
+CP: 04001a03
+CP: 04001a04
+CP: 10001a02
+CP: 04101a02
+CP: 10001a03
+CP: 04101a03
+CP: 10001a04
+CP: 04101a04
+CP: 10101a02
+CP: 04001a05
+CP: 10101a03
+CP: 10101a04
+CP: 10001a05
+CP: 04101a05
+CP: 10101a05
+CP: 04f01a07
+CP: 04001a09
+CP: 10f01a07
+CP: 10001a09
+128KB OCM protection active
+PCP initialized
+vTPM: SCP Measurement Completes.
+SMpro ready
+S1-cli> 
+PMpro output start
+PMpro Runtime Firmware v1.5 - build 20210422
+2P mode: 0x00000002
+2P Cfg: 0xFFFFFF01
+2PLINK1 (RC/EP): 0x00000010/0x00000000vTPM: SCP Measurement Completes.
+SMpro ready
+S0-cli> |_send mdw -l 0x50002d14 [210428_131756]
+|_send mdw -l 0x50002d14 [210428_131756]
+CP: 04101a09
+_expect  ['cli>'] [3]
+ 0x00000004/0x00000000
+2PLINK0 (RC/EP): 0x00000010/0x00000000 0x00000004/0x00000000
+2PLINK0 (RC/EP): 0x00000010/0x00000000 0x00000004/0x00000000
+2PLINK0: EP: Link Up
+2PLINK1 (RC/EP): 0x00000010/0x00000000 0x00000004/0x00000000
+2PLINK1: EP: Link Up
+PMpro output complete
+
+cli> mdw -l 0x50002[expected=cli> 00:00:00]
+CP: 10101a09
+_expect  ['cli>'] [3]
+
+PMpro output start
+PMpro Runtime Firmware v1.5 - build 20210422
+2P mode: 0x00000002
+2P Cfg: 0xFFFFFF01
+2PLINK0 (RC/EP): 0x00000010/0x00000010 0x00000004/0x00000004
+2PLINK1 (RC/EP): 0x00000010/0x00000010 0x00000004/0x00000004
+2PLINK0 (RC/EP): 0x00000010/0x00000010 0x00000004/0x00000004
+2PLINK0: Link Up
+2PLINK1 (RC/EP): 0x00000010/0x00000010 0x00000004/0x00000004
+2PLINK1: Link Up
+PMpro output complete
+
+cli> mdw -l 0x500[expected=cli> 00:00:00]
+|_send mdw -l 0x50002d18 [210428_131758]
+|_send mdw -l 0x50002d18 [210428_131758]
+_expect  ['cli>'] [3]
+d14
+0x80070A06
+S1-cli> 
+
+cli> mdw -l 0x50[expected=cli> 00:00:00]
+_expect  ['cli>'] [3]
+02d14
+0x80070908
+S0-cli> 
+
+cli> mdw -l 0x5[expected=cli> 00:00:00]
+002dCP: 04001a0a
+18
+0x033800BC
+S1-cli> 
+0002d18
+0x033800BC
+S0-cli> 
+CP: 10001a0a
+CP: 04001a0b
+CP: 04001a0c
+CP: 04001a0c
+CP: 04101a0b
+CP: 04101a0c
+CP: 04101a0c
+CP: 10001a0b
+CP: 10001a0c
+CP: 10001a0c
+CP: 10101a0b
+CP: 10101a0c
+CP: 10101a0c
+CP: 3ff00400
+CP: 0ff01000
+CP: 1ff01000
+CP: 0ff01101
+CP: 1ff01101
+DRAM ECC Initialization: [6] [ ==>                  ]DRAM ECC Initialization: [12] [ ===>                 ]DRAM ECC Initialization: [18] [ ====>                ]DRAM ECC Initialization: [25] [ ======>              ]DRAM ECC Initialization: [31] [ =======>             ]DRAM ECC Initialization: [37] [ ========>            ]DRAM ECC Initialization: [43] [ =========>           ]DRAM ECC Initialization: [50] [ ===========>         ]DRAM ECC Initialization: [56] [ ============>        ]DRAM ECC Initialization: [62] [ =============>       ]DRAM ECC Initialization: [68] [ ==============>      ]DRAM ECC Initialization: [75] [ ================>    ]DRAM ECC Initialization: [81] [ =================>   ]DRAM ECC Initialization: [87] [ ==================>  ]DRAM ECC Initialization: [93] [ ===================> ]DRAM ECC Initialization: [100] [ ==================== ]
+CP: 0ff01200
+CP: 1ff01200
+CP: 3ff00800
+DRAM memory regions:
+  Node[0] Region[0]: 0x000080000000 - 0x0000bfffffff 
+  Node[0] Region[1]: 0x080000000000 - 0x08007fffffff 
+  Node[0] Region[2]: 0x0800c0000000 - 0x0803ffffffff 
+  Node[1] Region[3]: 0x0000c0000000 - 0x0000ffffffff 
+  Node[1] Region[4]: 0x400000000000 - 0x4000bfffffff 
+  Node[1] Region[5]: 0x400100000000 - 0x4003ffffffff 
+DRAM: 32GB DDR4 2666 SECDED ECC
+ZQCS period(msec): 200
+ZQCS period(msec): 200
+Checkpoint 2F
+Checkpoint 2E
+Checkpoint 31
+[expected=Checkpoint 00:00:37]
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >210312_32GB_2666_SECDED_ECC_2P_1DPC_2_2xDIMM_16GB_M393A2K43CB2-CTD</a></div></div></div>
+
+
+
+
+
+
+_expect  ['login:', 'Shell>', 'Synchronous Exception', 'crashdump kernel', 'Kernel panic'] [600]
+Checkpoint 32
+UEFI RC version: Master
+SCP FW version    : 1.5
+SCP FW build date : 20210422
+Failsafe status                 : 0
+Reset status                    : 3
+CPU info
+    CPU ID                      : 413FD0C1
+    CPU Clock                   : 2800 MHz
+    Number of active sockets    : 2
+    Number of active cores      : 160
+    Inter Socket Connection 0   : Width: x16 / Speed 16 GT/s
+    Inter Socket Connection 1   : Width: x16 / Speed 16 GT/s
+    Socket[0]: Core voltage     : 970
+    Socket[0]: SCU ProductID    : A10001
+    Socket[0]: Max cores        : 80
+    Socket[0]: Warranty         : 0
+    Socket[0]: Subnuma          : 0
+    Socket[0]: RC disable mask  : 3
+    Socket[0]: AVS enabled      : 1
+    Socket[0]: AVS voltage      : 1013
+    Socket[1]: Core voltage     : 975
+    Socket[1]: SCU ProductID    : A10001
+    Socket[1]: Max cores        : 80
+    Socket[1]: Warranty         : 0
+    Socket[1]: Subnuma          : 0
+    Socket[1]: RC disable mask  : 3
+    Socket[1]: AVS enabled      : 1
+    Socket[1]: AVS voltage      : 1015
+SOC info
+    DDR Frequency               : 2666 MHz
+    Socket[0]: Soc voltage      : 750
+    Socket[0]: DIMM1 voltage    : 1200
+    Socket[0]: DIMM2 voltage    : 1200
+    Socket[1]: Soc voltage      : 750
+    Socket[1]: DIMM1 voltage    : 1200
+    Socket[1]: DIMM2 voltage    : 1200
+    PCP Clock                   : 1550 MHz
+    SOC Clock                   : 2000 MHz
+    SYS Clock                   : 400 MHz
+    AHB Clock                   : 200 MHz
+Manufacturer Configuration Setting:
+    4000: 0x0 (0)
+Board Configuration Setting:
+    C000: 0xCD3A (52538)
+    C008: 0x0 (0)
+    C010: 0x0 (0)
+    C018: 0x0 (0)
+    C020: 0xFFFF (65535)
+    C028: 0xFFFF (65535)
+    C030: 0x80E8 (33000)
+    C038: 0x80E8 (33000)
+    C040: 0x2710 (10000)
+    C048: 0x2710 (10000)
+    C050: 0x0 (0)
+    C058: 0x190 (400)
+    C060: 0x190 (400)
+    C068: 0x190 (400)
+    C070: 0x190 (400)
+    C078: 0x190 (400)
+    C080: 0xFFFFFF01 (-255)
+    C088: 0x0 (0)
+    C090: 0x0 (0)
+    C098: 0x4 (4)
+    C0A0: 0x4 (4)
+    C0A8: 0x20002 (131074)
+    C0B0: 0x20002 (131074)
+    C0B8: 0x20002 (131074)
+    C0C0: 0x20002 (131074)
+    C0C8: 0x20002 (131074)
+    C0D0: 0x3 (3)
+    C0D8: 0x3 (3)
+    C0E0: 0x20002 (131074)
+    C0E8: 0x0 (0)
+    C0F0: 0x0 (0)
+    C0F8: 0x2020202 (33686018)
+    C100: 0x30003 (196611)
+    C108: 0x3 (3)
+    C110: 0x20002 (131074)
+    C118: 0x20002 (131074)
+    C120: 0x3 (3)
+    C128: 0x20002 (131074)
+    C130: 0x20002 (131074)
+    C138: 0x20002 (131074)
+    C140: 0x20002 (131074)
+    C148: 0x1 (1)
+    C150: 0x2 (2)
+    C158: 0x3 (3)
+    C160: 0x4 (4)
+    C168: 0xFFFFFFFF (-1)
+    C170: 0xFFFFFFFE (-2)
+    C178: 0xFFFFFFFD (-3)
+    C180: 0x0 (0)
+    C188: 0x0 (0)
+    C190: 0x0 (0)
+    C198: 0x0 (0)
+    C1A0: 0x0 (0)
+    C1A8: 0x0 (0)
+    C1B0: 0x2 (2)
+    C1B8: 0xC80 (3200)
+    C1C0: 0x20000 (131072)
+    C1C8: 0x20000 (131072)
+    C1D0: 0xFF060177 (-16383625)
+    C1D8: 0xFF060177 (-16383625)
+    C1E0: 0x60070 (393328)
+    C1E8: 0x60070 (393328)
+    C1F0: 0x0 (0)
+    C1F8: 0x0 (0)
+    C200: 0x0 (0)
+    C208: 0x0 (0)
+    C210: 0xC0CCC (789708)
+    C218: 0xC0CCC (789708)
+    C220: 0x30333 (197427)
+    C228: 0x30333 (197427)
+    C230: 0x30333 (197427)
+    C238: 0x30333 (197427)
+    C240: 0x30333 (197427)
+    C248: 0x30333 (197427)
+    C250: 0xEDEED (974573)
+    C258: 0xDEDDE (912862)
+    C260: 0xB7BB7 (752567)
+    C268: 0x7B77B (505723)
+    C270: 0x5 (5)
+    C278: 0x90DD90 (9493904)
+    C280: 0x5 (5)
+    C288: 0x90DD90 (9493904)
+    C290: 0x5 (5)
+    C298: 0x90DD90 (9493904)
+    C2A0: 0x5 (5)
+    C2A8: 0x90DD90 (9493904)
+    C2B0: 0x24 (36)
+    C2B8: 0x1A (26)
+    C2C0: 0x50 (80)
+    C2C8: 0x20 (32)
+    C2D0: 0x2800280 (41943680)
+    C2D8: 0x90909090 (-1869574000)
+    C2E0: 0x0 (0)
+    C2E8: 0xC000C0 (12583104)
+    C2F0: 0x0 (0)
+    C2F8: 0x0 (0)
+    C300: 0x0 (0)
+    C308: 0x0 (0)
+    C310: 0x2010201 (33620481)
+    C318: 0x0 (0)
+    C320: 0x0 (0)
+    C328: 0x0 (0)
+    C330: 0x1050106 (17105158)
+    C338: 0x5F4 (1524)
+    C340: 0x0 (0)
+    C348: 0x0 (0)
+    C350: 0x2020202 (33686018)
+    C358: 0x2020202 (33686018)
+    C360: 0x2020202 (33686018)
+    C368: 0x2020202 (33686018)
+    C370: 0x0 (0)
+    C378: 0x0 (0)
+    C380: 0x0 (0)
+    C388: 0x0 (0)
+    C390: 0x0 (0)
+    C398: 0x0 (0)
+    C3A0: 0x0 (0)
+    C3A8: 0x0 (0)
+    C3B0: 0x0 (0)
+    C3B8: 0x0 (0)
+    C3C0: 0x0 (0)
+    C3C8: 0x0 (0)
+    C3D0: 0x0 (0)
+    C3D8: 0x0 (0)
+    C3E0: 0x0 (0)
+    C3E8: 0x0 (0)
+    C3F0: 0x57575757 (1465341783)
+    C3F8: 0x57575757 (1465341783)
+    C400: 0x57575757 (1465341783)
+    C408: 0x57575757 (1465341783)
+    C410: 0x57575757 (1465341783)
+    C418: 0x57575757 (1465341783)
+    C420: 0x57575757 (1465341783)
+    C428: 0x57575757 (1465341783)
+    C430: 0x57575757 (1465341783)
+    C438: 0x57575757 (1465341783)
+    C440: 0x57575757 (1465341783)
+    C448: 0x57575757 (1465341783)
+    C450: 0x57575757 (1465341783)
+    C458: 0x57575757 (1465341783)
+    C460: 0x57575757 (1465341783)
+    C468: 0x57575757 (1465341783)
+    C470: 0x0 (0)
+    C478: 0x2020202 (33686018)
+    C480: 0x2020202 (33686018)
+    C488: 0x2020202 (33686018)
+    C490: 0x2020202 (33686018)
+    C498: 0x0 (0)
+    C4A0: 0x0 (0)
+    C4A8: 0x0 (0)
+    C4B0: 0x0 (0)
+    C4B8: 0x0 (0)
+    C4C0: 0x0 (0)
+    C4C8: 0x0 (0)
+    C4D0: 0x0 (0)
+    C4D8: 0x0 (0)
+    C4E0: 0x0 (0)
+    C4E8: 0x0 (0)
+    C4F0: 0x0 (0)
+    C4F8: 0x0 (0)
+    C500: 0x0 (0)
+    C508: 0x57575757 (1465341783)
+    C510: 0x57575757 (1465341783)
+    C518: 0x57575757 (1465341783)
+    C520: 0x57575757 (1465341783)
+    C528: 0x57575757 (1465341783)
+    C530: 0x57575757 (1465341783)
+    C538: 0x57575757 (1465341783)
+    C540: 0x57575757 (1465341783)
+    C548: 0x57575757 (1465341783)
+    C550: 0x57575757 (1465341783)
+    C558: 0x57575757 (1465341783)
+    C560: 0x57575757 (1465341783)
+    C568: 0x57575757 (1465341783)
+    C570: 0x57575757 (1465341783)
+    C578: 0x3 (3)
+    C580: 0x1A4 (420)
+    C588: 0x0 (0)
+    C590: 0x18000 (98304)
+    C598: 0x80018000 (-2147385344)
+    C5A0: 0x0 (0)
+    C5A8: 0x0 (0)
+    C5B0: 0x0 (0)
+    C5B8: 0x0 (0)
+    C5C0: 0x0 (0)
+    C5C8: 0x0 (0)
+    C5D0: 0x0 (0)
+    C5D8: 0x0 (0)
+    C5E0: 0x550055 (5570645)
+    C5E8: 0x64 (100)
+    C5F0: 0x5 (5)
+    C5F8: 0x1 (1)
+    C600: 0x2 (2)
+    C608: 0x5 (5)
+    C610: 0x0 (0)
+    C618: 0x0 (0)
+    C620: 0x0 (0)
+    C628: 0x0 (0)
+    C630: 0x0 (0)
+    C638: 0x0 (0)
+Checkpoint 4F
+Checkpoint 60
+Checkpoint 61
+Checkpoint 9A
+Checkpoint 90
+Checkpoint 91
+Checkpoint 92
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 91
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 97
+[2J[1;1H[1;1H[25;78H98[1;1HCheckpoint 98
+[25;78H92[1;1HCheckpoint 92
+[25;78H92[1;1HCheckpoint 92
+[25;78H92[1;1HCheckpoint 92
+[25;78H92[1;1HCheckpoint 92
+[25;78H92[1;1HCheckpoint 92
+[25;78H92[1;1HCheckpoint 92
+[25;78H92[1;1HCheckpoint 92
+[25;78H92[1;1HCheckpoint 92
+[25;78H92[1;1HCheckpoint 92
+[25;78H92[1;1HCheckpoint 92
+[25;78H92[1;1HCheckpoint 92
+[0;37;40m[2J[1;1H[1;1H[1;1HVersion 2.21.1280. Copyright (C) 2021 AMI                                       [2;1HBIOS Date: 2021/04/22 17:15:46 Ver: 0ACOI 1.5.20210422                          [3;1H                                                                                [4;1H                                                                                [5;1H                                                                                [6;1H                                                                                [7;1H                                                                                [8;1H                                                                                [9;1H                                                                                [10;1H                                                                                [11;1H                                                                                [12;1H                                                                                [13;1H                                                                                [14;1H                                                                                [15;1H                                                                                [16;1H                                                                                [17;1H                                                                                [18;1H                                                                                [19;1H                                                                                [20;1H                                                                                [21;1H                                                                                [22;1H                                                                                [23;1H                                                                                [24;1H                                                                                [25;1H                                                                               [3;1H[3;1HEVALUATION COPY.[4;1H[4;1HPress <DEL> or <ESC> to enter setup.Checkpoint AD
+[2J[1;1H[2J[1;1H[1;1HUEFI Interactive Shell v2.2
+EDK II
+UEFI v2.70 (American Megatrends, 0x0005000F)
+[1;33;40mMapping table[0;37;40m
+[4;1H[1;37;40mmap[0;37;40m: No mapping found.
+[5;1HPress [1;37;40mESC[0;37;40m in 5 seconds to skip [1;33;40mstartup.nsh[0;37;40m or any other key to continue.[5;1HPress [1;37;40mESC[0;37;40m in 4 seconds to skip [1;33;40mstartup.nsh[0;37;40m or any other key to continue.[5;1HPress [1;37;40mESC[0;37;40m in 3 seconds to skip [1;33;40mstartup.nsh[0;37;40m or any other key to continue.[5;1HPress [1;37;40mESC[0;37;40m in 2 seconds to skip [1;33;40mstartup.nsh[0;37;40m or any other key to continue.[5;1HPress [1;37;40mESC[0;37;40m in 1 seconds to skip [1;33;40mstartup.nsh[0;37;40m or any other key to continue.
+[6;1H[1;33;40mShell> [0;37;40m[expected=Shell> 00:00:46]
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ></a></div></div></div>
+
+
+exec_cmd ./xconsole.py --cmd sel_list --hostuser amplab --hostip 10.38.162.2 --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+
+
+search_board_type Mt.Jade
+./sshpass -p Ampere@4655 ssh -o StrictHostKeyChecking=no -t amplab@10.38.162.2 'ipmitool -H 10.38.162.44 -U ADMIN -P ADMIN  sel list'
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+   1 | 04/27/2021 | 10:42:20 | Power Supply #0xf8 | Presence detected | Deasserted
+   2 | 04/27/2021 | 11:07:58 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+   3 | 04/27/2021 | 11:07:58 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+   4 | 04/27/2021 | 11:11:36 | OEM record c0 | 00cd3a | cbe570ffffff
+   5 | 04/27/2021 | 11:11:53 | OEM record c0 | 00cd3a | cbe57001ffff
+   6 | 04/27/2021 | 11:11:53 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+   7 | 04/27/2021 | 11:11:53 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+   8 | 04/27/2021 | 11:11:53 | OEM record c0 | 00cd3a | 0feb70020000
+   9 | 04/27/2021 | 11:11:53 | OEM record c0 | 00cd3a | ca8f7101ffff
+   a | 04/27/2021 | 11:11:54 | OEM record c0 | 00cd3a | ca907101ffff
+   b | 04/27/2021 | 11:11:54 | OEM record c0 | 00cd3a | 0feb70120000
+   c | 04/27/2021 | 11:11:54 | OEM record c0 | 00cd3a | ca8ff101ffff
+   d | 04/27/2021 | 11:11:55 | OEM record c0 | 00cd3a | ca90f101ffff
+   e | 04/27/2021 | 11:18:56 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+   f | 04/27/2021 | 11:18:56 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+  10 | 04/27/2021 | 11:19:31 | OEM record c0 | 00cd3a | cbe570ffffff
+  11 | 04/27/2021 | 11:19:48 | OEM record c0 | 00cd3a | cbe57001ffff
+  12 | 04/27/2021 | 11:19:48 | OEM record c0 | 00cd3a | ca8f7101ffff
+  13 | 04/27/2021 | 11:19:48 | OEM record c0 | 00cd3a | ca907101ffff
+  14 | 04/27/2021 | 11:19:49 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+  15 | 04/27/2021 | 11:19:49 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+  16 | 04/27/2021 | 11:19:49 | OEM record c0 | 00cd3a | 0feb70020000
+  17 | 04/27/2021 | 11:19:49 | OEM record c0 | 00cd3a | ca8ff101ffff
+  18 | 04/27/2021 | 11:19:49 | OEM record c0 | 00cd3a | ca90f101ffff
+  19 | 04/27/2021 | 11:19:50 | OEM record c0 | 00cd3a | 0feb70120000
+  1a | 04/27/2021 | 11:26:50 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+  1b | 04/27/2021 | 11:26:50 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+  1c | 04/27/2021 | 11:27:25 | OEM record c0 | 00cd3a | cbe570ffffff
+  1d | 04/27/2021 | 11:27:42 | OEM record c0 | 00cd3a | cbe57001ffff
+  1e | 04/27/2021 | 11:27:42 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+  1f | 04/27/2021 | 11:27:42 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+  20 | 04/27/2021 | 11:27:42 | OEM record c0 | 00cd3a | 0feb70020000
+  21 | 04/27/2021 | 11:27:42 | OEM record c0 | 00cd3a | ca8f7101ffff
+  22 | 04/27/2021 | 11:27:42 | OEM record c0 | 00cd3a | ca907101ffff
+  23 | 04/27/2021 | 11:27:43 | OEM record c0 | 00cd3a | 0feb70120000
+  24 | 04/27/2021 | 11:27:43 | OEM record c0 | 00cd3a | ca8ff101ffff
+  25 | 04/27/2021 | 11:27:43 | OEM record c0 | 00cd3a | ca90f101ffff
+  26 | 04/27/2021 | 11:34:46 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+  27 | 04/27/2021 | 11:34:46 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+  28 | 04/27/2021 | 11:35:21 | OEM record c0 | 00cd3a | cbe570ffffff
+  29 | 04/27/2021 | 11:35:38 | OEM record c0 | 00cd3a | cbe57001ffff
+  2a | 04/27/2021 | 11:35:38 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+  2b | 04/27/2021 | 11:35:38 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+  2c | 04/27/2021 | 11:35:38 | OEM record c0 | 00cd3a | 0feb70020000
+  2d | 04/27/2021 | 11:35:38 | OEM record c0 | 00cd3a | ca8f7101ffff
+  2e | 04/27/2021 | 11:35:38 | OEM record c0 | 00cd3a | ca907101ffff
+  2f | 04/27/2021 | 11:35:39 | OEM record c0 | 00cd3a | 0feb70120000
+  30 | 04/27/2021 | 11:35:39 | OEM record c0 | 00cd3a | ca8ff101ffff
+  31 | 04/27/2021 | 11:35:39 | OEM record c0 | 00cd3a | ca90f101ffff
+  32 | 04/27/2021 | 11:42:40 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+  33 | 04/27/2021 | 11:42:40 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+  34 | 04/27/2021 | 11:43:15 | OEM record c0 | 00cd3a | cbe570ffffff
+  35 | 04/27/2021 | 11:43:32 | OEM record c0 | 00cd3a | cbe57001ffff
+  36 | 04/27/2021 | 11:43:32 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+  37 | 04/27/2021 | 11:43:32 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+  38 | 04/27/2021 | 11:43:32 | OEM record c0 | 00cd3a | 0feb70020000
+  39 | 04/27/2021 | 11:43:32 | OEM record c0 | 00cd3a | ca8f7101ffff
+  3a | 04/27/2021 | 11:43:33 | OEM record c0 | 00cd3a | ca907101ffff
+  3b | 04/27/2021 | 11:43:33 | OEM record c0 | 00cd3a | 0feb70120000
+  3c | 04/27/2021 | 11:43:33 | OEM record c0 | 00cd3a | ca8ff101ffff
+  3d | 04/27/2021 | 11:43:34 | OEM record c0 | 00cd3a | ca90f101ffff
+  3e | 04/27/2021 | 11:50:34 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+  3f | 04/27/2021 | 11:50:34 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+  40 | 04/27/2021 | 11:51:09 | OEM record c0 | 00cd3a | cbe570ffffff
+  41 | 04/27/2021 | 11:51:26 | OEM record c0 | 00cd3a | ca907101ffff
+  42 | 04/27/2021 | 11:51:27 | OEM record c0 | 00cd3a | cbe57001ffff
+  43 | 04/27/2021 | 11:51:27 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+  44 | 04/27/2021 | 11:51:27 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+  45 | 04/27/2021 | 11:51:27 | OEM record c0 | 00cd3a | 0feb70020000
+  46 | 04/27/2021 | 11:51:27 | OEM record c0 | 00cd3a | ca8f7101ffff
+  47 | 04/27/2021 | 11:51:28 | OEM record c0 | 00cd3a | ca90f101ffff
+  48 | 04/27/2021 | 11:51:28 | OEM record c0 | 00cd3a | 0feb70120000
+  49 | 04/27/2021 | 11:51:28 | OEM record c0 | 00cd3a | ca8ff101ffff
+  4a | 04/27/2021 | 11:58:31 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+  4b | 04/27/2021 | 11:58:31 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+  4c | 04/27/2021 | 11:59:06 | OEM record c0 | 00cd3a | cbe570ffffff
+  4d | 04/27/2021 | 11:59:23 | OEM record c0 | 00cd3a | cbe57001ffff
+  4e | 04/27/2021 | 11:59:23 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+  4f | 04/27/2021 | 11:59:23 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+  50 | 04/27/2021 | 11:59:23 | OEM record c0 | 00cd3a | 0feb70020000
+  51 | 04/27/2021 | 11:59:23 | OEM record c0 | 00cd3a | ca8f7101ffff
+  52 | 04/27/2021 | 11:59:24 | OEM record c0 | 00cd3a | ca907101ffff
+  53 | 04/27/2021 | 11:59:24 | OEM record c0 | 00cd3a | 0feb70120000
+  54 | 04/27/2021 | 11:59:24 | OEM record c0 | 00cd3a | ca8ff101ffff
+  55 | 04/27/2021 | 11:59:25 | OEM record c0 | 00cd3a | ca90f101ffff
+  56 | 04/27/2021 | 12:06:25 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+  57 | 04/27/2021 | 12:06:25 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+  58 | 04/27/2021 | 12:07:00 | OEM record c0 | 00cd3a | cbe570ffffff
+  59 | 04/27/2021 | 12:07:17 | OEM record c0 | 00cd3a | ca907101ffff
+  5a | 04/27/2021 | 12:07:18 | OEM record c0 | 00cd3a | cbe57001ffff
+  5b | 04/27/2021 | 12:07:18 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+  5c | 04/27/2021 | 12:07:18 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+  5d | 04/27/2021 | 12:07:18 | OEM record c0 | 00cd3a | 0feb70020000
+  5e | 04/27/2021 | 12:07:19 | OEM record c0 | 00cd3a | ca8f7101ffff
+  5f | 04/27/2021 | 12:07:19 | OEM record c0 | 00cd3a | ca90f101ffff
+  60 | 04/27/2021 | 12:07:19 | OEM record c0 | 00cd3a | 0feb70120000
+  61 | 04/27/2021 | 12:07:20 | OEM record c0 | 00cd3a | ca8ff101ffff
+  62 | 04/27/2021 | 12:14:20 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+  63 | 04/27/2021 | 12:14:20 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+  64 | 04/27/2021 | 12:14:55 | OEM record c0 | 00cd3a | cbe570ffffff
+  65 | 04/27/2021 | 12:15:12 | OEM record c0 | 00cd3a | cbe57001ffff
+  66 | 04/27/2021 | 12:15:12 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+  67 | 04/27/2021 | 12:15:12 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+  68 | 04/27/2021 | 12:15:12 | OEM record c0 | 00cd3a | 0feb70020000
+  69 | 04/27/2021 | 12:15:12 | OEM record c0 | 00cd3a | ca8f7101ffff
+  6a | 04/27/2021 | 12:15:13 | OEM record c0 | 00cd3a | ca907101ffff
+  6b | 04/27/2021 | 12:15:13 | OEM record c0 | 00cd3a | 0feb70120000
+  6c | 04/27/2021 | 12:15:13 | OEM record c0 | 00cd3a | ca8ff101ffff
+  6d | 04/27/2021 | 12:15:13 | OEM record c0 | 00cd3a | ca90f101ffff
+  6e | 04/27/2021 | 12:22:15 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+  6f | 04/27/2021 | 12:22:15 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+  70 | 04/27/2021 | 12:22:50 | OEM record c0 | 00cd3a | cbe570ffffff
+  71 | 04/27/2021 | 12:23:07 | OEM record c0 | 00cd3a | cbe57001ffff
+  72 | 04/27/2021 | 12:23:07 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+  73 | 04/27/2021 | 12:23:07 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+  74 | 04/27/2021 | 12:23:07 | OEM record c0 | 00cd3a | 0feb70020000
+  75 | 04/27/2021 | 12:23:08 | OEM record c0 | 00cd3a | ca8f7101ffff
+  76 | 04/27/2021 | 12:23:08 | OEM record c0 | 00cd3a | ca907101ffff
+  77 | 04/27/2021 | 12:23:08 | OEM record c0 | 00cd3a | 0feb70120000
+  78 | 04/27/2021 | 12:23:08 | OEM record c0 | 00cd3a | ca8ff101ffff
+  79 | 04/27/2021 | 12:23:08 | OEM record c0 | 00cd3a | ca90f101ffff
+  7a | 04/27/2021 | 12:30:12 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+  7b | 04/27/2021 | 12:30:12 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+  7c | 04/27/2021 | 22:48:14 | Power Supply #0xf7 | AC lost or out-of-range | Asserted
+  7d | 04/27/2021 | 22:48:14 | Power Unit #0xe8 | AC lost | Asserted
+  7e | 04/27/2021 | 22:44:24 | Power Supply #0xf7 | AC lost or out-of-range | Deasserted
+  7f | 04/27/2021 | 22:44:24 | Power Unit #0xe8 | AC lost | Deasserted
+  80 | 04/27/2021 | 22:44:25 | OEM record c0 | 00cd3a | cbe570ffffff
+  81 | 04/27/2021 | 22:44:26 | Power Supply #0xf8 | Presence detected | Deasserted
+  82 | 04/27/2021 | 22:44:42 | OEM record c0 | 00cd3a | ca907101ffff
+  83 | 04/27/2021 | 22:44:42 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+  84 | 04/27/2021 | 22:44:42 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+  85 | 04/27/2021 | 22:44:42 | OEM record c0 | 00cd3a | cbe57001ffff
+  86 | 04/27/2021 | 22:44:43 | OEM record c0 | 00cd3a | 0feb70020000
+  87 | 04/27/2021 | 22:44:43 | OEM record c0 | 00cd3a | ca8f7101ffff
+  88 | 04/27/2021 | 22:44:43 | OEM record c0 | 00cd3a | ca90f101ffff
+  89 | 04/27/2021 | 22:44:44 | OEM record c0 | 00cd3a | 0feb70120000
+  8a | 04/27/2021 | 22:44:44 | OEM record c0 | 00cd3a | ca8ff101ffff
+  8b | 04/27/2021 | 22:45:02 | OEM record c0 | 00cd3a | 0feb70220000
+  8c | 04/27/2021 | 22:45:03 | OEM record c0 | 00cd3a | 0feb70320000
+  8d | 04/27/2021 | 22:45:05 | OEM record c0 | 00cd3a | 0feb70520000
+  8e | 04/27/2021 | 22:45:06 | OEM record c0 | 00cd3a | 0feb70620000
+  8f | 04/27/2021 | 22:45:41 | OEM record c0 | 00cd3a | 0feb70820000
+  90 | 04/27/2021 | 22:45:41 | System Firmwares #0xe4 | System boot initiated | Asserted
+  91 | 04/27/2021 | 22:52:34 | Power Supply #0xf8 | Presence detected | Deasserted
+  92 | 04/27/2021 | 23:15:20 | System Boot Initiated #0xdc | OS initiated hard reset | Asserted
+  93 | 04/27/2021 | 23:15:21 | OEM record c0 | 00cd3a | 0feb70020000
+  94 | 04/27/2021 | 23:15:21 | OEM record c0 | 00cd3a | cbe57001ffff
+  95 | 04/27/2021 | 23:15:21 | OEM record c0 | 00cd3a | ca8f7101ffff
+  96 | 04/27/2021 | 23:15:21 | OEM record c0 | 00cd3a | ca907101ffff
+  97 | 04/27/2021 | 23:15:22 | OEM record c0 | 00cd3a | 0feb70120000
+  98 | 04/27/2021 | 23:15:22 | OEM record c0 | 00cd3a | ca8ff101ffff
+  99 | 04/27/2021 | 23:15:22 | OEM record c0 | 00cd3a | ca90f101ffff
+  9a | 04/27/2021 | 23:15:40 | OEM record c0 | 00cd3a | 0feb70220000
+  9b | 04/27/2021 | 23:15:41 | OEM record c0 | 00cd3a | 0feb70320000
+  9c | 04/27/2021 | 23:15:43 | OEM record c0 | 00cd3a | 0feb70520000
+  9d | 04/27/2021 | 23:15:44 | OEM record c0 | 00cd3a | 0feb70620000
+  9e | 04/27/2021 | 23:16:25 | OEM record c0 | 00cd3a | 0feb70820000
+  9f | 04/27/2021 | 23:16:25 | System Firmwares #0xe4 | System boot initiated | Asserted
+  a0 | 04/27/2021 | 23:18:36 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+  a1 | 04/27/2021 | 23:18:36 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+  a2 | 04/27/2021 | 23:19:11 | OEM record c0 | 00cd3a | cbe570ffffff
+  a3 | 04/27/2021 | 23:19:28 | OEM record c0 | 00cd3a | cbe57001ffff
+  a4 | 04/27/2021 | 23:19:28 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+  a5 | 04/27/2021 | 23:19:28 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+  a6 | 04/27/2021 | 23:19:29 | OEM record c0 | 00cd3a | 0feb70020000
+  a7 | 04/27/2021 | 23:19:29 | OEM record c0 | 00cd3a | ca8f7101ffff
+  a8 | 04/27/2021 | 23:19:29 | OEM record c0 | 00cd3a | ca907101ffff
+  a9 | 04/27/2021 | 23:19:30 | OEM record c0 | 00cd3a | 0feb70120000
+  aa | 04/27/2021 | 23:19:30 | OEM record c0 | 00cd3a | ca8ff101ffff
+  ab | 04/27/2021 | 23:19:30 | OEM record c0 | 00cd3a | ca90f101ffff
+  ac | 04/27/2021 | 23:19:48 | OEM record c0 | 00cd3a | 0feb70220000
+  ad | 04/27/2021 | 23:19:49 | OEM record c0 | 00cd3a | 0feb70320000
+  ae | 04/27/2021 | 23:19:51 | OEM record c0 | 00cd3a | 0feb70520000
+  af | 04/27/2021 | 23:19:52 | OEM record c0 | 00cd3a | 0feb70620000
+  b0 | 04/27/2021 | 23:41:20 | Power Supply #0xf7 | AC lost or out-of-range | Asserted
+  b1 | 04/27/2021 | 23:41:20 | Power Unit #0xe8 | AC lost | Asserted
+  b2 | 04/27/2021 | 23:24:54 | Power Supply #0xf7 | AC lost or out-of-range | Deasserted
+  b3 | 04/27/2021 | 23:24:54 | Power Unit #0xe8 | AC lost | Deasserted
+  b4 | 04/27/2021 | 23:24:55 | OEM record c0 | 00cd3a | cbe570ffffff
+  b5 | 04/27/2021 | 23:24:56 | Power Supply #0xf8 | Presence detected | Deasserted
+  b6 | 04/27/2021 | 23:25:12 | OEM record c0 | 00cd3a | ca907101ffff
+  b7 | 04/27/2021 | 23:25:13 | OEM record c0 | 00cd3a | cbe57001ffff
+  b8 | 04/27/2021 | 23:25:13 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+  b9 | 04/27/2021 | 23:25:13 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+  ba | 04/27/2021 | 23:25:13 | OEM record c0 | 00cd3a | 0feb70020000
+  bb | 04/27/2021 | 23:25:14 | OEM record c0 | 00cd3a | ca8f7101ffff
+  bc | 04/27/2021 | 23:25:14 | OEM record c0 | 00cd3a | ca90f101ffff
+  bd | 04/27/2021 | 23:25:14 | OEM record c0 | 00cd3a | 0feb70120000
+  be | 04/27/2021 | 23:25:15 | OEM record c0 | 00cd3a | ca8ff101ffff
+  bf | 04/27/2021 | 23:25:32 | OEM record c0 | 00cd3a | 0feb70220000
+  c0 | 04/27/2021 | 23:25:33 | OEM record c0 | 00cd3a | 0feb70320000
+  c1 | 04/27/2021 | 23:25:35 | OEM record c0 | 00cd3a | 0feb70520000
+  c2 | 04/27/2021 | 23:25:36 | OEM record c0 | 00cd3a | 0feb70620000
+  c3 | 04/27/2021 | 23:25:59 | OEM record c0 | 00cd3a | 0feb70820000
+  c4 | 04/27/2021 | 23:25:59 | System Firmwares #0xe4 | System boot initiated | Asserted
+  c5 | 04/27/2021 | 23:51:32 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+  c6 | 04/27/2021 | 23:51:32 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+  c7 | 04/27/2021 | 23:57:24 | OEM record c0 | 00cd3a | cbe570ffffff
+  c8 | 04/27/2021 | 23:57:41 | OEM record c0 | 00cd3a | ca907101ffff
+  c9 | 04/27/2021 | 23:57:42 | OEM record c0 | 00cd3a | cbe57001ffff
+  ca | 04/27/2021 | 23:57:42 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+  cb | 04/27/2021 | 23:57:42 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+  cc | 04/27/2021 | 23:57:42 | OEM record c0 | 00cd3a | 0feb70020000
+  cd | 04/27/2021 | 23:57:42 | OEM record c0 | 00cd3a | ca8f7101ffff
+  ce | 04/27/2021 | 23:57:42 | OEM record c0 | 00cd3a | ca90f101ffff
+  cf | 04/27/2021 | 23:57:43 | OEM record c0 | 00cd3a | 0feb70120000
+  d0 | 04/27/2021 | 23:57:43 | OEM record c0 | 00cd3a | ca8ff101ffff
+  d1 | 04/27/2021 | 23:58:01 | OEM record c0 | 00cd3a | 0feb70220000
+  d2 | 04/27/2021 | 23:58:02 | OEM record c0 | 00cd3a | 0feb70320000
+  d3 | 04/27/2021 | 23:58:04 | OEM record c0 | 00cd3a | 0feb70520000
+  d4 | 04/27/2021 | 23:58:05 | OEM record c0 | 00cd3a | 0feb70620000
+  d5 | 04/27/2021 | 23:58:57 | OEM record c0 | 00cd3a | 0feb70820000
+  d6 | 04/27/2021 | 23:58:57 | System Firmwares #0xe4 | System boot initiated | Asserted
+  d7 | 04/28/2021 | 00:13:46 | OEM record c0 | 00cd3a | ca907101ffff
+  d8 | 04/28/2021 | 00:13:46 | OEM record c0 | 00cd3a | cbe57001ffff
+  d9 | 04/28/2021 | 00:13:47 | System Boot Initiated #0xdc | System Restart | Asserted
+  da | 04/28/2021 | 00:13:47 | OEM record c0 | 00cd3a | 0feb70020000
+  db | 04/28/2021 | 00:13:47 | OEM record c0 | 00cd3a | ca8f7101ffff
+  dc | 04/28/2021 | 00:13:47 | OEM record c0 | 00cd3a | ca90f101ffff
+  dd | 04/28/2021 | 00:13:48 | OEM record c0 | 00cd3a | 0feb70120000
+  de | 04/28/2021 | 00:13:48 | OEM record c0 | 00cd3a | ca8ff101ffff
+  df | 04/28/2021 | 00:14:05 | OEM record c0 | 00cd3a | 0feb70220000
+  e0 | 04/28/2021 | 00:14:06 | OEM record c0 | 00cd3a | 0feb70320000
+  e1 | 04/28/2021 | 00:14:08 | OEM record c0 | 00cd3a | 0feb70520000
+  e2 | 04/28/2021 | 00:14:09 | OEM record c0 | 00cd3a | 0feb70620000
+  e3 | 04/28/2021 | 00:16:08 | OEM record c0 | 00cd3a | 0feb70820000
+  e4 | 04/28/2021 | 00:16:08 | System Firmwares #0xe4 | System boot initiated | Asserted
+  e5 | 04/28/2021 | 00:34:54 | OEM record c0 | 00cd3a | ca907101ffff
+  e6 | 04/28/2021 | 00:34:55 | System Boot Initiated #0xdc | OS initiated hard reset | Asserted
+  e7 | 04/28/2021 | 00:34:55 | OEM record c0 | 00cd3a | cbe57001ffff
+  e8 | 04/28/2021 | 00:34:55 | OEM record c0 | 00cd3a | 0feb70020000
+  e9 | 04/28/2021 | 00:34:55 | OEM record c0 | 00cd3a | ca8f7101ffff
+  ea | 04/28/2021 | 00:34:55 | OEM record c0 | 00cd3a | ca90f101ffff
+  eb | 04/28/2021 | 00:34:56 | OEM record c0 | 00cd3a | 0feb70120000
+  ec | 04/28/2021 | 00:34:56 | OEM record c0 | 00cd3a | ca8ff101ffff
+  ed | 04/28/2021 | 00:35:14 | OEM record c0 | 00cd3a | 0feb70220000
+  ee | 04/28/2021 | 00:35:15 | OEM record c0 | 00cd3a | 0feb70320000
+  ef | 04/28/2021 | 00:35:17 | OEM record c0 | 00cd3a | 0feb70520000
+  f0 | 04/28/2021 | 00:35:18 | OEM record c0 | 00cd3a | 0feb70620000
+  f1 | 04/28/2021 | 00:35:51 | OEM record c0 | 00cd3a | 0feb70820000
+  f2 | 04/28/2021 | 00:35:51 | System Firmwares #0xe4 | System boot initiated | Asserted
+  f3 | 04/28/2021 | 00:41:24 | OEM record c0 | 00cd3a | ca907101ffff
+  f4 | 04/28/2021 | 00:41:25 | OEM record c0 | 00cd3a | ca8f7101ffff
+  f5 | 04/28/2021 | 00:41:25 | OEM record c0 | 00cd3a | ca90f101ffff
+  f6 | 04/28/2021 | 00:41:26 | OEM record c0 | 00cd3a | 0feb70020000
+  f7 | 04/28/2021 | 00:41:26 | OEM record c0 | 00cd3a | ca8ff101ffff
+  f8 | 04/28/2021 | 00:41:26 | System Boot Initiated #0xdc | OS initiated hard reset | Asserted
+  f9 | 04/28/2021 | 00:41:26 | OEM record c0 | 00cd3a | cbe57001ffff
+  fa | 04/28/2021 | 00:41:27 | OEM record c0 | 00cd3a | 0feb70120000
+  fb | 04/28/2021 | 00:41:44 | OEM record c0 | 00cd3a | 0feb70220000
+  fc | 04/28/2021 | 00:41:45 | OEM record c0 | 00cd3a | 0feb70320000
+  fd | 04/28/2021 | 00:41:47 | OEM record c0 | 00cd3a | 0feb70520000
+  fe | 04/28/2021 | 00:41:48 | OEM record c0 | 00cd3a | 0feb70620000
+  ff | 04/28/2021 | 00:43:39 | OEM record c0 | 00cd3a | ca907101ffff
+ 100 | 04/28/2021 | 00:43:40 | OEM record c0 | 00cd3a | ca8f7101ffff
+ 101 | 04/28/2021 | 00:43:40 | OEM record c0 | 00cd3a | ca90f101ffff
+ 102 | 04/28/2021 | 00:43:41 | System Boot Initiated #0xdc | OS initiated hard reset | Asserted
+ 103 | 04/28/2021 | 00:43:41 | OEM record c0 | 00cd3a | cbe57001ffff
+ 104 | 04/28/2021 | 00:43:41 | OEM record c0 | 00cd3a | 0feb70020000
+ 105 | 04/28/2021 | 00:43:41 | OEM record c0 | 00cd3a | ca8ff101ffff
+ 106 | 04/28/2021 | 00:43:42 | OEM record c0 | 00cd3a | 0feb70120000
+ 107 | 04/28/2021 | 00:43:58 | OEM record c0 | 00cd3a | 0feb70220000
+ 108 | 04/28/2021 | 00:43:59 | OEM record c0 | 00cd3a | 0feb70320000
+ 109 | 04/28/2021 | 00:44:01 | OEM record c0 | 00cd3a | 0feb70520000
+ 10a | 04/28/2021 | 00:44:02 | OEM record c0 | 00cd3a | 0feb70620000
+ 10b | 04/28/2021 | 00:47:04 | OEM record c0 | 00cd3a | 0feb70820000
+ 10c | 04/28/2021 | 00:47:04 | System Firmwares #0xe4 | System boot initiated | Asserted
+ 10d | 04/28/2021 | 00:47:30 | OEM record c0 | 00cd3a | ca907101ffff
+ 10e | 04/28/2021 | 00:47:31 | System Boot Initiated #0xdc | OS initiated hard reset | Asserted
+ 10f | 04/28/2021 | 00:47:31 | OEM record c0 | 00cd3a | cbe57001ffff
+ 110 | 04/28/2021 | 00:47:31 | OEM record c0 | 00cd3a | 0feb70020000
+ 111 | 04/28/2021 | 00:47:31 | OEM record c0 | 00cd3a | ca8f7101ffff
+ 112 | 04/28/2021 | 00:47:32 | OEM record c0 | 00cd3a | ca90f101ffff
+ 113 | 04/28/2021 | 00:47:32 | OEM record c0 | 00cd3a | 0feb70120000
+ 114 | 04/28/2021 | 00:47:32 | OEM record c0 | 00cd3a | ca8ff101ffff
+ 115 | 04/28/2021 | 00:47:50 | OEM record c0 | 00cd3a | 0feb70220000
+ 116 | 04/28/2021 | 00:47:51 | OEM record c0 | 00cd3a | 0feb70320000
+ 117 | 04/28/2021 | 00:47:53 | OEM record c0 | 00cd3a | 0feb70520000
+ 118 | 04/28/2021 | 00:47:54 | OEM record c0 | 00cd3a | 0feb70620000
+ 119 | 04/28/2021 | 00:51:57 | OEM record c0 | 00cd3a | ca907101ffff
+ 11a | 04/28/2021 | 00:51:57 | OEM record c0 | 00cd3a | cbe57001ffff
+ 11b | 04/28/2021 | 00:51:57 | System Boot Initiated #0xdc | System Restart | Asserted
+ 11c | 04/28/2021 | 00:51:58 | OEM record c0 | 00cd3a | 0feb70020000
+ 11d | 04/28/2021 | 00:51:59 | OEM record c0 | 00cd3a | ca8f7101ffff
+ 11e | 04/28/2021 | 00:51:59 | OEM record c0 | 00cd3a | ca90f101ffff
+ 11f | 04/28/2021 | 00:51:59 | OEM record c0 | 00cd3a | 0feb70120000
+ 120 | 04/28/2021 | 00:51:59 | OEM record c0 | 00cd3a | ca8ff101ffff
+ 121 | 04/28/2021 | 00:52:16 | OEM record c0 | 00cd3a | 0feb70220000
+ 122 | 04/28/2021 | 00:52:17 | OEM record c0 | 00cd3a | 0feb70320000
+ 123 | 04/28/2021 | 00:52:19 | OEM record c0 | 00cd3a | 0feb70520000
+ 124 | 04/28/2021 | 00:52:20 | OEM record c0 | 00cd3a | 0feb70620000
+ 125 | 04/28/2021 | 00:56:25 | OEM record c0 | 00cd3a | 0feb70820000
+ 126 | 04/28/2021 | 00:56:25 | System Firmwares #0xe4 | System boot initiated | Asserted
+ 127 | 04/28/2021 | 02:00:12 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+ 128 | 04/28/2021 | 02:00:12 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+ 129 | 04/28/2021 | 02:03:06 | OEM record c0 | 00cd3a | cbe570ffffff
+ 12a | 04/28/2021 | 02:03:23 | OEM record c0 | 00cd3a | ca907101ffff
+ 12b | 04/28/2021 | 02:03:24 | OEM record c0 | 00cd3a | cbe57001ffff
+ 12c | 04/28/2021 | 02:03:24 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+ 12d | 04/28/2021 | 02:03:24 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+ 12e | 04/28/2021 | 02:03:24 | OEM record c0 | 00cd3a | 0feb70020000
+ 12f | 04/28/2021 | 02:03:24 | OEM record c0 | 00cd3a | ca8f7101ffff
+ 130 | 04/28/2021 | 02:03:24 | OEM record c0 | 00cd3a | ca90f101ffff
+ 131 | 04/28/2021 | 02:03:25 | OEM record c0 | 00cd3a | 0feb70120000
+ 132 | 04/28/2021 | 02:03:25 | OEM record c0 | 00cd3a | ca8ff101ffff
+ 133 | 04/28/2021 | 02:03:43 | OEM record c0 | 00cd3a | 0feb70220000
+ 134 | 04/28/2021 | 02:03:44 | OEM record c0 | 00cd3a | 0feb70320000
+ 135 | 04/28/2021 | 02:03:46 | OEM record c0 | 00cd3a | 0feb70520000
+ 136 | 04/28/2021 | 02:03:47 | OEM record c0 | 00cd3a | 0feb70620000
+ 137 | 04/28/2021 | 02:04:20 | OEM record c0 | 00cd3a | 0feb70820000
+ 138 | 04/28/2021 | 02:04:20 | System Firmwares #0xe4 | System boot initiated | Asserted
+ 139 | 04/28/2021 | 02:06:33 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+ 13a | 04/28/2021 | 02:06:33 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+ 13b | 04/28/2021 | 02:08:34 | OEM record c0 | 00cd3a | cbe570ffffff
+ 13c | 04/28/2021 | 02:08:51 | OEM record c0 | 00cd3a | ca907101ffff
+ 13d | 04/28/2021 | 02:08:52 | OEM record c0 | 00cd3a | cbe57001ffff
+ 13e | 04/28/2021 | 02:08:52 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+ 13f | 04/28/2021 | 02:08:52 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+ 140 | 04/28/2021 | 02:08:52 | OEM record c0 | 00cd3a | 0feb70020000
+ 141 | 04/28/2021 | 02:08:52 | OEM record c0 | 00cd3a | ca8f7101ffff
+ 142 | 04/28/2021 | 02:08:52 | OEM record c0 | 00cd3a | ca90f101ffff
+ 143 | 04/28/2021 | 02:08:53 | OEM record c0 | 00cd3a | 0feb70120000
+ 144 | 04/28/2021 | 02:08:53 | OEM record c0 | 00cd3a | ca8ff101ffff
+ 145 | 04/28/2021 | 02:09:10 | OEM record c0 | 00cd3a | 0feb70220000
+ 146 | 04/28/2021 | 02:09:11 | OEM record c0 | 00cd3a | 0feb70320000
+ 147 | 04/28/2021 | 02:09:13 | OEM record c0 | 00cd3a | 0feb70520000
+ 148 | 04/28/2021 | 02:09:14 | OEM record c0 | 00cd3a | 0feb70620000
+ 149 | 04/28/2021 | 02:09:50 | OEM record c0 | 00cd3a | 0feb70820000
+ 14a | 04/28/2021 | 02:09:50 | System Firmwares #0xe4 | System boot initiated | Asserted
+ 14b | 04/28/2021 | 02:13:18 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+ 14c | 04/28/2021 | 02:13:18 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+ 14d | 04/28/2021 | 02:17:36 | OEM record c0 | 00cd3a | cbe570ffffff
+ 14e | 04/28/2021 | 02:17:53 | OEM record c0 | 00cd3a | ca907101ffff
+ 14f | 04/28/2021 | 02:17:54 | OEM record c0 | 00cd3a | cbe57001ffff
+ 150 | 04/28/2021 | 02:17:54 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+ 151 | 04/28/2021 | 02:17:54 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+ 152 | 04/28/2021 | 02:17:54 | OEM record c0 | 00cd3a | 0feb70020000
+ 153 | 04/28/2021 | 02:17:54 | OEM record c0 | 00cd3a | ca8f7101ffff
+ 154 | 04/28/2021 | 02:17:54 | OEM record c0 | 00cd3a | ca90f101ffff
+ 155 | 04/28/2021 | 02:17:55 | OEM record c0 | 00cd3a | 0feb70120000
+ 156 | 04/28/2021 | 02:17:55 | OEM record c0 | 00cd3a | ca8ff101ffff
+ 157 | 04/28/2021 | 02:18:13 | OEM record c0 | 00cd3a | 0feb70220000
+ 158 | 04/28/2021 | 02:18:14 | OEM record c0 | 00cd3a | 0feb70320000
+ 159 | 04/28/2021 | 02:18:16 | OEM record c0 | 00cd3a | 0feb70520000
+ 15a | 04/28/2021 | 02:18:17 | OEM record c0 | 00cd3a | 0feb70620000
+ 15b | 04/28/2021 | 02:18:54 | OEM record c0 | 00cd3a | 0feb70820000
+ 15c | 04/28/2021 | 02:18:54 | System Firmwares #0xe4 | System boot initiated | Asserted
+
+
+
+
+
+
+
+
+
+
+
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0x0] loop[1]</a>    <a class='w3-col m9 show-white-space w3-text-red' style='white-space: pre-line' >TEST_FAIL [Shell>] [[pass 0/1/3] [fail 1/1/3]]</a></div></div></div>
+
+
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostuser amplab --hostip 10.38.162.2 --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+exec_cmd ./xconsole.py --cmd sel_list --hostuser amplab --hostip 10.38.162.2 --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+exec_cmd ./xconsole.py --hostip 10.38.162.2 --hostuser amplab --set_nvparm [SI_DDR_VMARGIN:1130496:0xFFFFFFC4] --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+./xconsole.py --tty 2 --log logs/15/Mt.Jade_15_210428_131240/Mt.Jade_15_memtester_300.cfg_at_2_210428_131913s0cli.log --hostuser amplab --note s0cli --hostip 10.38.162.2 --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+./xconsole.py --tty 4 --log logs/15/Mt.Jade_15_210428_131240/Mt.Jade_15_memtester_300.cfg_at_2_210428_131913s1cli.log --hostuser amplab --note s1cli --hostip 10.38.162.2 --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+./xconsole.py --tty 3 --log logs/15/Mt.Jade_15_210428_131240/Mt.Jade_15_memtester_300.cfg_at_2_210428_131913atf.log --hostuser amplab --note atf --hostip 10.38.162.2 --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+./xconsole.py --tty AB0KUEMK --log logs/15/Mt.Jade_15_210428_131240/Mt.Jade_15_memtester_300.cfg_at_2_210428_131913uefi.log --hostuser amplab --note uefi --hostip 10.38.162.2 --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+./xconsole.py --tty FTBZEDTA --log logs/15/Mt.Jade_15_210428_131240/Mt.Jade_15_memtester_300.cfg_at_2_210428_131913bmc.log --hostuser amplab --note bmc --hostip 10.38.162.2 --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 2</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/15/Mt.Jade_15_210428_131240/Mt.Jade_15_memtester_300.cfg_at_2_210428_131913.txt'>210428_131913</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostuser amplab --hostip 10.38.162.2 --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+_expect  ['SMpro', 'Firmware'] [60]
+[expected=SMpro 00:00:01]
+_expect  ['Checkpoint', 'Platform Mem Tool', 'DRAM: 0GB', 'mismatch errors', 'Synchronous', 'initialization failure', 'DDRFAILSAFE', 'ERROR:', 'AEROe2>'] [60]
+|_send mdw -l 0x50002d14 [210428_132002]
+_expect  ['cli>'] [3]
+[expected=cli> 00:00:00]
+|_send mdw -l 0x50002d14 [210428_132003]
+_expect  ['cli>'] [3]
+[expected=cli> 00:00:00]
+|_send mdw -l 0x50002d18 [210428_132004]
+_expect  ['cli>'] [3]
+[expected=cli> 00:00:00]
+|_send mdw -l 0x50002d18 [210428_132005]
+_expect  ['cli>'] [3]
+[expected=cli> 00:00:00]
+[expected=Checkpoint 00:00:37]
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >210312_32GB_2666_SECDED_ECC_2P_1DPC_2_2xDIMM_16GB_M393A2K43CB2-CTD</a></div></div></div>
+_expect  ['login:', 'Shell>', 'Synchronous Exception', 'crashdump kernel', 'Kernel panic'] [600]
+[expected=Shell> 00:00:43]
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ></a></div></div></div>
+exec_cmd ./xconsole.py --cmd sel_list --hostuser amplab --hostip 10.38.162.2 --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0xFFFFFFC4] loop[1]</a>    <a class='w3-col m9 show-white-space w3-text-red' style='white-space: pre-line' >TEST_FAIL [Shell>] [[pass 0/2/3] [fail 2/2/3]]</a></div></div></div>
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostuser amplab --hostip 10.38.162.2 --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+exec_cmd ./xconsole.py --cmd sel_list --hostuser amplab --hostip 10.38.162.2 --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+exec_cmd ./xconsole.py --hostip 10.38.162.2 --hostuser amplab --set_nvparm [SI_DDR_VMARGIN:1130496:0x3C] --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+./xconsole.py --tty 2 --log logs/15/Mt.Jade_15_210428_131240/Mt.Jade_15_memtester_300.cfg_at_3_210428_132117s0cli.log --hostuser amplab --note s0cli --hostip 10.38.162.2 --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+./xconsole.py --tty 4 --log logs/15/Mt.Jade_15_210428_131240/Mt.Jade_15_memtester_300.cfg_at_3_210428_132117s1cli.log --hostuser amplab --note s1cli --hostip 10.38.162.2 --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+./xconsole.py --tty 3 --log logs/15/Mt.Jade_15_210428_131240/Mt.Jade_15_memtester_300.cfg_at_3_210428_132117atf.log --hostuser amplab --note atf --hostip 10.38.162.2 --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+./xconsole.py --tty AB0KUEMK --log logs/15/Mt.Jade_15_210428_131240/Mt.Jade_15_memtester_300.cfg_at_3_210428_132117uefi.log --hostuser amplab --note uefi --hostip 10.38.162.2 --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+./xconsole.py --tty FTBZEDTA --log logs/15/Mt.Jade_15_210428_131240/Mt.Jade_15_memtester_300.cfg_at_3_210428_132117bmc.log --hostuser amplab --note bmc --hostip 10.38.162.2 --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 3</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/15/Mt.Jade_15_210428_131240/Mt.Jade_15_memtester_300.cfg_at_3_210428_132117.txt'>210428_132117</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostuser amplab --hostip 10.38.162.2 --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+_expect  ['SMpro', 'Firmware'] [60]
+[expected=SMpro 00:00:00]
+_expect  ['Checkpoint', 'Platform Mem Tool', 'DRAM: 0GB', 'mismatch errors', 'Synchronous', 'initialization failure', 'DDRFAILSAFE', 'ERROR:', 'AEROe2>'] [60]
+|_send mdw -l 0x50002d14 [210428_132207]
+_expect  ['cli>'] [3]
+[expected=cli> 00:00:00]
+|_send mdw -l 0x50002d14 [210428_132209]
+|_send mdw -l 0x50002d18 [210428_132209]
+_expect  ['cli>'] [3]
+[expected=cli> 00:00:00]
+_expect  ['cli>'] [3]
+[expected=cli> 00:00:00]
+|_send mdw -l 0x50002d18 [210428_132211]
+_expect  ['cli>'] [3]
+[expected=cli> 00:00:00]
+[expected=Checkpoint 00:00:37]
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >210312_32GB_2666_SECDED_ECC_2P_1DPC_2_2xDIMM_16GB_M393A2K43CB2-CTD</a></div></div></div>
+_expect  ['login:', 'Shell>', 'Synchronous Exception', 'crashdump kernel', 'Kernel panic'] [600]
+[expected=Shell> 00:00:47]
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ></a></div></div></div>
+exec_cmd ./xconsole.py --cmd sel_list --hostuser amplab --hostip 10.38.162.2 --bmcip 10.38.162.44 --hostpass Ampere@4655 --board_type Mt.Jade
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0x3C] loop[1]</a>    <a class='w3-col m9 show-white-space w3-text-red' style='white-space: pre-line' >TEST_FAIL [Shell>] [[pass 0/3/3] [fail 3/3/3]]</a></div></div></div>
+<div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >STATUS SUMMARY</a>    <a class='w3-col m9 show-white-space w3-text-red' style='white-space: pre-line' >FAIL</a></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >pass_count _DDR_VMARGIN0x0_</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >0</a></div><div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >fail_count _DDR_VMARGIN0x0_</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1</a></div><div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >fail_info _DDR_VMARGIN0x0_</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' > Shell></a></div><div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >pass_count _DDR_VMARGIN0xFFFFFFC4_</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >0</a></div><div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >fail_count _DDR_VMARGIN0xFFFFFFC4_</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1</a></div><div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >fail_info _DDR_VMARGIN0xFFFFFFC4_</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' > Shell></a></div><div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >pass_count _DDR_VMARGIN0x3C_</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >0</a></div><div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >fail_count _DDR_VMARGIN0x3C_</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1</a></div><div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >fail_info _DDR_VMARGIN0x3C_</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' > Shell></a></div></div></div>

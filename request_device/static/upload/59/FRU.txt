@@ -1,0 +1,53 @@
+search_board_type Mt.Jade_59
+./sshpass -p amcc1234 ssh -o StrictHostKeyChecking=no -t amcclab@10.38.175.31 'ipmitool -H 10.38.175.43 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  fru print'
+Setting large buffer to 32767
+FRU Device Description : Builtin FRU Device (ID 0)
+ Chassis Type          : Rack Mount Chassis
+ Chassis Part Number   : B60.03008.0001
+ Chassis Serial        : 03900017J0SA
+ Board Mfg Date        : Tue Sep 29 07:58:00 2020
+ Board Mfg             : WIWYNN
+ Board Product         : Mt.Jade Motherboard
+ Board Serial          : B8103010003303800191J0SA
+ Board Part Number     : B81.03010.0033
+ Board Extra           : 70:E2:84:8F:E4:6A
+ Product Manufacturer  : WIWYNN
+ Product Name          : Mt.Jade Server System
+ Product Part Number   : B81.03001.0006
+ Product Version       : DVT
+ Product Serial        : B8103001000603900017J0SA
+ Product Asset Tag     : NULL
+ Product Extra         : NULL
+
+Connection to 10.38.175.31 closed.
+./sshpass -p amcc1234 ssh -o StrictHostKeyChecking=no -t amcclab@10.38.175.31 'ipmitool -H 10.38.175.43 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  mc info'
+Setting large buffer to 32767
+Device ID                 : 32
+Device Revision           : 1
+Firmware Revision         : 1.05
+IPMI Version              : 2.0
+Manufacturer ID           : 52538
+Manufacturer Name         : Unknown (0xCD3A)
+Product ID                : 130 (0x0082)
+Product Name              : Unknown (0x82)
+Device Available          : yes
+Provides Device SDRs      : yes
+Additional Device Support :
+    Sensor Device
+    SDR Repository Device
+    SEL Device
+    FRU Inventory Device
+    IPMB Event Receiver
+    IPMB Event Generator
+    Chassis Device
+Aux Firmware Rev Info     : 
+    0xf7
+    0x35
+    0x03
+    0x00
+Connection to 10.38.175.31 closed.
+./sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.175.43 'ifconfig|grep HWaddr'
+Warning: Permanently added '10.38.175.43' (RSA) to the list of known hosts.
+eth0      Link encap:Ethernet  HWaddr 70:E2:84:8F:E4:6A  
+usb0      Link encap:Ethernet  HWaddr 52:8B:D0:C9:8E:F5  
+Connection to 10.38.175.43 closed.

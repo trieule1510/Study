@@ -1,0 +1,214 @@
+[520750.154604] ttyUSB10' AH072U9K
+[520745.994690] ttyUSB1' AB0JI8KO
+[520736.326012] ttyUSB0' AB0KUEM7
+[435323.488600] ttyUSB4' AD0JU57O
+[435055.522872] ttyUSB6' AD0K9J3A
+[280929.159767] ttyUSB14' FTEZFHVX
+[   16.123966] ttyUSB13' AD0JUNRA
+[   16.122713] ttyUSB12' FTBZ7CEX
+[   16.121466] ttyUSB11' AC019YQ9
+[   16.118965] ttyUSB9' FTEZFKX8
+[   16.117715] ttyUSB8' AC01X49Y
+[   16.116480] ttyUSB7' AC01X41Z
+[   16.113971] ttyUSB5' AB0JI8KK
+[   16.111359] ttyUSB3' AM00F4ES
+[   16.110036] ttyUSB2' AC019YQK
+logs/139/Mt.Snow_139_210424_145907/Mt.Snow_139_memtester_300.cfg_at_2_210424_150238s0cli.log
+--------------------------------------------
+
+Pub key verify fail: 84:0xF1000009
+
+Calculated pub key hash: 85: len: 32
+D5C2B1C0485574B1077A8389A6A6B98E
+97691612D8A7C36935C17A16392AFF71
+
+
+Actual pub key hash: 86: len: 32
+A454B70A9F78317DAC0C7BA3CA51FD57
+DBEA5EA33C5B2FA47CB8B6A65D32209D
+
+
+CommonCertVerify fail: 265:0xF1000006
+
+CommonCertVerify fail: 340:0xF1000006
+CM:fuselock: 00000001 tmmdbglockr: 00000001
+tmmnsdbgcsr: 00000000 tmmsdbgcsr: 00000000
+Ignoring error code: 0000040A
+
+SMpro Runtime Firmware v1.4 - build 20210326
+Failsafe: 0
+Load PMpro
+
+Pub key verify fail: 84:0xF1000009
+
+Calculated pub key hash: 85: len: 32
+D5C2B1C0485574B1077A8389A6A6B98E
+97691612D8A7C36935C17A16392AFF71
+
+
+Actual pub key hash: 86: len: 32
+A454B70A9F78317DAC0C7BA3CA51FD57
+DBEA5EA33C5B2FA47CB8B6A65D32209D
+
+
+CommonCertVerify fail: 267:0xF1000006
+
+CommonCertVerify fail: 345:0xF1000006
+ERR: Authenticate PMpro
+Board: config 1
+use FW cpm mask: 0x0000000000000001
+Available CPM: 0x000000FFFFFFFFFF
+Boot PMpro
+Load BL1
+ERR: Auth BL1 image 0xFFFFF8EE
+ERR: BL1 load/auth
+Probe I2C10 DIMM0
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM1
+Probe I2C10 DIMM2
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM3
+Probe I2C10 DIMM4
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM5
+Probe I2C10 DIMM6
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM7
+Probe I2C2 DIMM0
+Probe I2C2 DIMM1
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM2
+Probe I2C2 DIMM3
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM4
+Probe I2C2 DIMM5
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM6
+Probe I2C2 DIMM7
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+DDR: Unsupported MCU mask 0x000000F0
+DDR: Fallback MCU mask 0x00000010
+DDR: Operational     DIMM: 0x00000100
+DDR: Failure         DIMM: 0x00000000
+DDR: Non-Operational DIMM: 0x000054AA
+128KB OCM protection active
+PCP initialized
+vTPM: SCP Measurement Completes.
+SMpro ready
+S0-cli> 
+cli> 
+PMpro output start
+PMpro Runtime Firmware v1.4 - build 20210326
+2P mode: 0x00000002
+
+PMpro output complete
+mdw -l 0x50002d14
+
+0x72060907
+S0-cli> 
+cli> mdw -l 0x50002d18
+
+0x03322D08
+S0-cli> ZQCS period(msec): 200
+
+Error: SMPRO S0 -  {UE}
+TIMER: 0x00000000012F6F4E
+MSG: 0x00000003
+DATA0: 0x2149008D
+DATA1: 0x000000F0
+[520750.154604] ttyUSB10' AH072U9K
+[520745.994690] ttyUSB1' AB0JI8KO
+[520736.326012] ttyUSB0' AB0KUEM7
+[435323.488600] ttyUSB4' AD0JU57O
+[435055.522872] ttyUSB6' AD0K9J3A
+[280929.159767] ttyUSB14' FTEZFHVX
+[   16.123966] ttyUSB13' AD0JUNRA
+[   16.122713] ttyUSB12' FTBZ7CEX
+[   16.121466] ttyUSB11' AC019YQ9
+[   16.118965] ttyUSB9' FTEZFKX8
+[   16.117715] ttyUSB8' AC01X49Y
+[   16.116480] ttyUSB7' AC01X41Z
+[   16.113971] ttyUSB5' AB0JI8KK
+[   16.111359] ttyUSB3' AM00F4ES
+[   16.110036] ttyUSB2' AC019YQK
+logs/139/Mt.Snow_139_210424_145907/Mt.Snow_139_memtester_300.cfg_at_2_210424_150238uefi.log
+--------------------------------------------
+NOTICE:  DRAM FW version 210212
+CP: 0ff00900
+MEMC param:
+  mcu_enable_mask = 00000010 [default: 000000ff]
+DRAM populated DIMMs:
+  SK0 MC4 S0: RDIMM[2c:80] 32GB 2666 ECC 2R x4 RCD[b3:80] 36ASF4G72PZ-2G6D1   
+CP: 3ff00100
+CP: 3ff00200
+CP: 04f01902
+CP: 0ff00a00
+CP: 0ff00b01
+CP: 04f01901
+CP: 04f01904
+CP: 04f02901
+CP: 04f01905
+CP: 04f02902
+CP: 04f02903
+CP: 04f02904
+CP: 04f01907
+CP: 04f01906
+CP: 04f01908
+CP: 04f01909
+CP: 0ff00b02
+CP: 0ff00c00
+CP: 3ff00300
+CP: 04001a02
+CP: 04001a03
+CP: 04001a04
+CP: 04101a02
+CP: 04101a03
+CP: 04101a04
+CP: 04001a05
+CP: 04101a05
+CP: 04f01a07
+CP: 04001a09
+CP: 04101a09
+CP: 04001a0a
+CP: 04001a0b
+CP: 04001a0c
+CP: 04001a0c
+CP: 04101a0b
+CP: 04101a0c
+CP: 04101a0c
+CP: 3ff00400
+CP: 0ff01000
+CP: 0ff01101
+DRAM ECC Initialization: [3] [ =>                   ]DRAM ECC Initialization: [6] [ ==>                  ]DRAM ECC Initialization: [9] [ ==>                  ]DRAM ECC Initialization: [12] [ ===>                 ]DRAM ECC Initialization: [15] [ ====>                ]DRAM ECC Initialization: [18] [ ====>                ]DRAM ECC Initialization: [21] [ =====>               ]DRAM ECC Initialization: [25] [ ======>              ]DRAM ECC Initialization: [28] [ ======>              ]DRAM ECC Initialization: [31] [ =======>             ]DRAM ECC Initialization: [34] [ =======>             ]DRAM ECC Initialization: [37] [ ========>            ]DRAM ECC Initialization: [40] [ =========>           ]DRAM ECC Initialization: [43] [ =========>           ]DRAM ECC Initialization: [46] [ ==========>          ]DRAM ECC Initialization: [50] [ ===========>         ]DRAM ECC Initialization: [53] [ ===========>         ]DRAM ECC Initialization: [56] [ ============>        ]DRAM ECC Initialization: [59] [ ============>        ]DRAM ECC Initialization: [62] [ =============>       ]DRAM ECC Initialization: [65] [ ==============>      ]DRAM ECC Initialization: [68] [ ==============>      ]DRAM ECC Initialization: [71] [ ===============>     ]DRAM ECC Initialization: [75] [ ================>    ]DRAM ECC Initialization: [78] [ ================>    ]DRAM ECC Initialization: [81] [ =================>   ]DRAM ECC Initialization: [84] [ =================>   ]DRAM ECC Initialization: [87] [ ==================>  ]DRAM ECC Initialization: [90] [ ===================> ]DRAM ECC Initialization: [93] [ ===================> ]DRAM ECC Initialization: [96] [ ==================== ]DRAM ECC Initialization: [100] [ ==================== ]
+CP: 0ff01200
+CP: 3ff00800
+DRAM memory regions:
+  Node[0] Region[0]: 0x000080000000 - 0x0000ffffffff 
+  Node[0] Region[1]: 0x080000000000 - 0x08007fffffff 
+  Node[0] Region[2]: 0x080100000000 - 0x0807ffffffff 
+DRAM: 32GB DDR4 2666 SECDED ECC
+Checkpoint

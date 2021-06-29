@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block title %} {{action}} {% endblock %}
+{% block body %}
+	<div class="container">
+		<div class="w3-container w3-row-padding ">
+			<form action="/action_nvparam">
+			  <div class="w3-row w3-indigo">
+			    <label class="w3-col m2" >BMCIP</label>
+				<input class="w3-input w3-border w3-col m10" id="bmcip" name="bmcip" list="bmcip" value="">
+				<datalist id="bmcip">
+				{% for ee in bmc_list %}
+			  		<option value="{{ee}}">
+		     	{% endfor %}
+		    	</datalist>
+			  </div>
+			<div class="w3-row "><p></p></div>
+		  	<div class="w3-row w3-indigo">
+		    	<label class="w3-col m2" >nvparm_configs</label>
+				<select class="w3-input w3-border w3-col m10" id="nvparm_configs" name="nvparm_configs" >
+					<option value="" ></option>
+		    		{% for i in nvparm_configs %}
+					<option value={{i}} > {{i}}</option>
+					{% endfor %}
+				</select>
+		  	</div>
+		  	<div class="w3-row "><p></p></div>
+		    <div class="w3-row w3-purple">
+			 	 <input type="submit" value="Write to BMC" class= "w3-button w3-large w3-red submit w3-col m12"></input>
+			</div>
+				{% for e in nv %}
+					<div class="w3-light-blue"> <br> </div>
+					<div class="w3-row">
+						<div class="w3-col m4">{{e}}</div>
+						<div class="w3-col m2">{{"0x%x" %(nv[e])}}</div>		
+						<div class="w3-col m6">
+							<input class="w3-input w3-border" id="{{e}}" name="{{e}}" value="">
+						</div>		    
+					</div>
+				{% endfor %} 
+			 	 <input type="submit" value="Write to BMC" class= "w3-button w3-large w3-red submit w3-col m12"></input>
+		 	</form>
+		</div>
+	</div>
+{% endblock %}

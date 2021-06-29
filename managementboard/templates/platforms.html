@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block title %} {{action}} {% endblock %}
+{% block body %}
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+<script>
+function debug(msg){
+	console.log(msg)
+}
+function check_platform_alive(ip,class_id)
+{
+	ajax_pwd = "/check_platform_alive/" + ip
+	$.ajax(ajax_pwd,
+	{
+		success: function (data, status, xhr) {
+			if (data.indexOf("True") != -1){
+				$(class_id).css('color', 'blue')
+			}else{
+				$(class_id).css('color', 'red')
+			}			
+		}
+	});	
+}
+</script>
+<div class="" style="margin-top:1px">
+  <div class="table-responsive"> 
+    <table class="js-dynamitable table table-bordered">
+      <thead>
+        <tr>
+        {% for title in titles %}
+          <th>{{title['name']}}<span class="js-sorter-desc glyphicon glyphicon-chevron-down pull-right"></span> <span class="js-sorter-asc glyphicon glyphicon-chevron-up pull-right"></span> </th>
+		{% endfor %}
+        </tr>
+        <tr>
+        {% for title in titles %}
+          <th><input  class="js-filter  form-control" type="text" value=""></th>
+        {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+	{% for platform in platforms %}
+  		<tr>
+  		{% for title in titles %}
+  			{% if title["name"] == "Note" %}
+  				<td class="{{title['name']}}_{{platform['id']}}" style="white-space: pre-line" >{{platform[title['name']]|safe}}</td>
+  			{% elif title["href"] != "" %}
+  				<td><a class="{{title['name']}}_{{platform['id']}}" style="white-space: pre-line" href="{{title['href']}}/{{platform['id']}}">{{platform[title['name']]|safe}}</a></td>
+  			{% else %}
+  				<td class="{{title['name']}}_{{platform['id']}}" style="white-space: pre-line" >{{platform[title['name']]|safe}}</td>
+  			{% endif %}
+  		{% endfor %}
+  		</tr>
+  		{% if is_check_alive %}
+  			<script>check_platform_alive("{{platform['bmcip']}}",".Team_{{platform['id']}}")</script>
+  		{% endif %}
+	{% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/dynamitable.jquery.min.js') }}"></script>
+{% endblock %}

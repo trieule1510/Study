@@ -1,0 +1,2844 @@
+<!DOCTYPE html><html lang='en'><head><title>Mt.Snow_212</title><link rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css'><script src='https://cdn.jsdelivr.net/npm/chart.js@2.8.0'></script><style>.eye_main {width:100%;}.eye_element {width:25%;}.eye_table {width:80%;}.eye_fail {background-color: Purple;}.eye_fail_mask {background-color: DarkRed;}.eye_pass {background-color: YellowGreen;}.eye_pass_mask {background-color: ForestGreen;}.eye_title {background-color: whilte;}.eye_hw {background-color: aqua;}.eye_point{width:auto;}.overflowTest {padding: 15px;width: auto;height: 600px;overflow: scroll;border: 1px solid #ccc;}</style></head><body><h1 align='center'><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABzZJREFUeNrsXc11IjkYlPuyV4eAN4Gxb3tbHMHYERgiwESAiQAcAUwEw0YAc9vbEMFCCFz35JV2PvzaGEmf/roluuo9nneNp7vpqq/0qVp0X729vQmgu7iCACAAnAUIAIAAAAgAgAAACACAAAAIAIAAAAgAgAAACACAAAAIAIAAAAgAgAAACACAAAAIAIAAAAgAgACAcqEEcPoCePj3j9978jUrmmsIIEgAC/l6k69+qQI4OwRcXV2BXUb1yx87+t/Nb3//c1+CAE5RgUpvLGr/3S/FBVhNIBzAWv2K7PXJr/fSBW7gAN3A5MzvVEM4gANcfvUPTuz/gwvI1510ggMcoFvV/+4C8vUMB7jc6lfk2ub9qvpvcnQBOEAY+deW6j+C+3dZAALg45nIZf0t5QQYAi6k+hWZO8d/tpTDwBBDwOU3fjoMSgiHIAB79d8qMg0N3zyycCCAzGDq+l/la0rz/3PIPiKGAMzVr8jrm6qfpntTTwFBAAVX//g415c/lwYXuM05IoYA9NWvSLvVvL0n0usYltgLQAB+pI1PfyEFsZE/Npq/VxeKXiCAcqpfkdXTvK0Wf6w075l6gRGliRBA5uQrkkaGP9GSTC6w1LyttvsMAZRh/bpKXRLJwkcgatu5RcQQwMfq71mqdGrbhhTI3uAC2TWEEACfnDmRy8GYcoJzGFC6CAFkVv19YY58p9xtUT7w6pkvQAAZVv+rxwKPucEFsomIIQBhjXz3wnzBx+QC49xdAAL4hYWp8fNd3lVCRFyh+v8nQTc1Oxf5umKc84yg6jj5tvV7wSt6KDXUZQc9WmgKAbSEZ2GOfDeR9mMLh64hgHaqf+RJmqsLKCHprh+0GhF32QFCI9+YvcCorYi46mj190Rg5OvhAmo2sDS4wAQCaA4zy7Rvn2i/toi4BwGkr/6+/PGgedu2yjfUBWwR8QICaGbs1+G1ge/0ZRURVx2rflX5uhOsQp+X1MfAWEU8gQBaGvubOggpAuUCe4MLDCCA+NWvTqquydpGiHxdkYULVB0h/9pS/eOmj4kEp8saGouIu+IApq92bxKEPlFcoImIuOpI9Y9yqv6aC2wMLtBIRNwFB5gJc+S7bfn4TFcck0fE1YVXvzp5gxw6f4MLqNnA0uACSRvCi7xDCIUpivwnw7x/ypn3H1fwpnQKEupPg1PdxIinz3JdugBojFcBzxcim7PkmnUnL9r2rkaMGq9/qGkjNY+HiJ/jxVDtK7mvRwjgY1Uq0r8yCf/U+FEYE0LKURB/EUH7CELeGVzgPnS2UrQAyCYfqKMPaYzY9/SV+9w57Eu5wrcQMVjuQxh8R/IiBUD5/ZPQX8Fz7ro5qZ/llrA2qNU/3wzfIvYV3aPPNosUABEwCax27ypyrH6t24hfl3+X3H7Bdi/ikDuSFyGARMQ7jaPUY8zoGGIcx3EdwJwjBLn/tWH2MvS9bpG1ACIQf6jNnaONodSc3RIhfxqIiSYEzfMInGYwxQiAPuzMs5vfHrtwOjHJ59K1Y/5KfUnPUwhT00zE4gJTn7ULWQmgdoVu4DGuKsJf64SqBzgZtpXstq00XDzRvq89Psvw3LBE2/0Z0wWyEQBNdyaOJ2xDpK80U8Sd4WTdJVzoeTqMPXkMEysSwuFke1FF3boAiKiF4wlaEvHbJu0ygiuMHN3t07DAuEm107DWqgBoPr9wqHpVFWPbB0zVMEUU/MRRCBtygz1t40VEiohbEYDHWL+hStgwt2+qflbk25AQZg5h1oFEsIoZETcuALLCheBfoBm7zHFThiaZzHjUuVALVp4NLsCe3jb6vACy/DXzw87Jql0DDqe7ebYNVanydSfM3xCqY0DncCUS3ZE8iQMwrqJZp0GB+8j+Ua5k7QvmsHCgofEhxO2SDwGO4/1ceN5+pYlLpw0KwbU51sEaEScVAJHCsfz3BieRw0RZPNGCG3wXYTHzXlgeWpmsB6ilVjbyt3SQIeT3Shv7Gb3BgYaskGPvCY9VxMEOQOSvGRYWJY5tK/JtOET6LvyvMWhzj+gO4ED+MBL5tgc4jUXhoMTzTui/L2CC8ypibwdgkq9IeYzVkOUW+TbgBjPh9+WQsxFxNAdgkr+P2Y1zHuAkLgzy3ClH83HOSTIHYJK/JfJjLps2NZnDFr7d26QT9KkvcJkqfiq+4Glgi+QPREGRb8LmcO0ggk9hWNAQ0Bb5DEsbiw6AmsN7OsccsCLiKiL5qxTkBzzACSJgLGu3DgGM2DXZ/PuSIt8E54V7oe29P3IeAmo7Mtp+wvCl6bt5luIEBwcnmIQMATaVHS0phcp7ouG7eV6oCIwPrawMBCw45CdcbhXrAU5dEIGNA+1DKytD4zVoi3xG5DsVgIsItLebOdsEAt0BBAABQAAQAAABABAAAAEAEAAAAQAQAAABABAAAAEAEAAAAQAQAAABABAAAAEAEAAAAQAQAAABABAAAAEA5eI/AQYANT2i2iNsRMcAAAAASUVORK5CYII=' scale='0'></h1><p align='center'><font size='7' color='blue'><span>Mt.Snow_212</span></font></p>
+
+
+<div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CLI ARGV</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >./linux_test.py --test_case mem_test --loop 10 --start_test 1 --time 1800 --linux_script ./test_delivery.sh --sensor_bg 1 --sendfile static/test_script/test_delivery.sh,static/test_script/memtester.elf,static/test_script/stressapptest.elf --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow --board Mt.Snow_212 --test_cfg delivery_mem_test.cfg --wait 0 --sys_log logs/212/Mt.Snow_212_210425_092519.log --test_cfg delivery_mem_test.cfg --nv_scan SI_SOC_VMARGIN[0.-38.37],SI_DDR_VMARGIN[0.-60.60]  </a></div></div>
+
+
+
+
+
+
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0x0][SI_SOC_VMARGIN:1130504:0x0] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_1_210425_092519uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 1</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_1_210425_092519.txt'>210425_092519</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210425_092821
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum diff 963489143 [root@localhost tmp]# 
+[root@localhost tmp]# cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n  _exit_
+3708817754 5030 test_delivery.sh
+_exit_code_0
+|_send wget http://hcm-l-027:2021//static/test_script/test_delivery.sh -O test_delivery.sh && chmod 777 test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+[root@localhost tmp]# 
+[root@localhost tmp]# wget http://hcm-l-027:2021//static/test_script/test_deliverry.sh -O test_delivery.sh && chmod 777 test_delivery.sh;echo -n _exit_code_$?_codde;echo -n _exit_
+--2021-04-24 22:28:33--  http://hcm-l-027:2021//static/test_script/test_delivery.sh
+Resolving hcm-l-027 (hcm-l-027)... failed: Name or service not known.
+wget: unable to resolve host address ‘hcm-l-027’
+_exit_code_4
+send_file_b64 test_delivery.sh ... 210425_092838
+|_send rm -rf f64;echo -n _exit_code_$?_code;echo -n _exit_
+|_send echo 'QlpoOTFBWSZTWevvBd8ACSl/hNAwAIB9/////6feiv////4AAgAIYAj/ePevWYjvXa2dra1QAAAB'>>f64
+|_send echo 'ro0GQiZFT9NKbJkegiep5NJg0GhGRoyM00DU9R6Q0wlTEp4IU8FI9NRtQxA9EDQ2oaMgAyDQMIIm'>>f64
+|_send echo 'EalN6p7VPUNqMjIZAADEDQMjJhNGJiAJNRSEJ+oQNNGRo0AABoBoAaZAA0A4aGTTQ0yNDTIyDIyN'>>f64
+|_send echo 'DIDE0ZNAGTIxDCRIJojIAJkyAk9U9TTT1NMT0agHqaA9T1AA0/Z9328PfJARQSRgh9t5Lt7iqqqB'>>f64
+|_send echo 'RhCQSgSWMAGJGIsRiJEYojBFGBFdRqIqgqwMBoggwYIIIrFYAymllLUqIiiu9PpoanEvO0sr66/t'>>f64
+|_send echo 'uO9lFSwLymcr4YFdbtCoIiwMo4w3peAUjl0gSIHsdfRrGgVdbEeeAznvYuyRg8Q8F08dEL95aTRF'>>f64
+|_send echo 'kkmWCLd08LcKKyfF4GxpzepYC+BxArzmlMc1wI6fSSRzSU05BBB5r+mZnhetEzU1YNpvBzoDMDli'>>f64
+|_send echo 'Jo3nm68f6OcZnBMyguREAJgCNMgIzLO+mBJABIs8i67ab7ZHAmsjxy+2oNFENEsQplVVtztncyq5'>>f64
+|_send echo '8iOVhmqav2ClV1tyoF+SMP3l2oOLYX259dqhNP3DRnJhZRm5JPMtOJER+bpaj0ECZRSDq8GSUShg'>>f64
+|_send echo 'xFszNLva9xthKRoWgsLblwdNwQq5Bds9U+9WjIow64pvaBXnrIJ30ASCPG4LcBxpBBrChMR+VZXO'>>f64
+|_send echo 'WiA2dtfQCNqmuW2lWiFQLIwcdXZCn5xDY5Q+rCoTPTv2agdvvHNREeoxuqVXy3GcYzMSJhb0eYZp'>>f64
+|_send echo 'KZKRlAnOOzO3uq/Vps4GFttL0LSrVRvoBOyeVCBSyzS51RUcpgdUv7BTXq1hNRU6i98EN+xccFIm'>>f64
+|_send echo '2i5XtDSYlH2GxNTShFYymEPHwnWXtq/7JheaAbnUyQsFGQpUIJSup9FRZDqmKrQ2Am0xhcR65zJt'>>f64
+|_send echo 'TgzuZ1BkYdd4OnCoYSe6As1Lil2IjTsgGRLSlSxOWI1EI35m91+5PCeEL2H22YmKlfBAKgZSEeY0'>>f64
+|_send echo 'JMaIBhXCD3nw+A3hehimGi7Knsv67/U+w/F387fHaVa6i3RML7kEgRQWLA2FEkgUfvDtoyIjjT3U'>>f64
+|_send echo '/cm0CLBQEVDHoLow6ZdZtU2Mfjlo0bkY5ks9WfXJtEJpD2TMr7nYJqxQnJUJk+s9Uh7a3ZfReWvF'>>f64
+|_send echo 'svFrw3VthmRW+Uqz1Qj4lLYPh29YDTsC6DaFPUCo6Ts1VwkNmuYzuym2rVxlPbkTkQICCYVVW59T'>>f64
+|_send echo 'WxjrwSfgLnp+5Us3zfNqa+AZ0+Abkm4+ZmkrhP6VHMfgPHym6XBdQGLy43B5QsVELD4BpDQUpsuC'>>f64
+|_send echo 'NTSJjF1Pa4S7Oz6uZA4lIkNxRQ0ymrssbu7G0pqqFgUMk2CbJ/ISJoXjA2oE0VQeQw/kgkrhtKth'>>f64
+|_send echo 'Qqr91EK1RB2nhq3rc+JuScVhU4CDtD2PR0GIRyPhzyMg79MwwuyF7yApxQcLFZbkOm9XzN4rxSVc'>>f64
+|_send echo '4fHkcnBmfYLxjtYvI8hHMNAOFwQ5s1d5+iLgLp8Veq7yOM+YETxY+K9dGTnQYQ0BD7gkQj99bO7d'>>f64
+|_send echo 'bf9m45scZFNkRIgdZShi5Cy0vabALzURnKGMggNBscNRBmuQpqfqI1BXIu39yhn+oCJbeJFVLaqm'>>f64
+|_send echo '0OpFVYuIKkS5fGs8M0RGYeE2QWXpQpNsggiqAwQsweOkWgfexF5mrmtKQgx08lh9phgMWhfWMDVE'>>f64
+|_send echo 'AMYvNI42JJZyuUCg5jFcMa1mKkgLV0nyGlHPTuqDsj8TEkTGkTSttQYGmCRMVVIp2vwZuO0L77EH'>>f64
+|_send echo 'JkhxKThSe3T5Ykd6DWyfBUQGJMWzJBqSer47JeZ4Xxz7qG/hSVJry1mOggIgZCQa3OXiZ0vTebb7'>>f64
+|_send echo 'I5GvxN98kj1skggiAQ9s5Iz6AG85JdTl2m4hos2zedC9G4PADJArlzfhI0b/DsIRXHklEQK5B5yG'>>f64
+|_send echo 'Tmm02JtHXp3VSoGWj7k2g5bjtAOQd9vvWCZciprn7JF/hPZC8t+tSFmfF3wipZrj6Fg28AGxMghG'>>f64
+|_send echo 'zpMuFt4vIwS2RyqQMDNZrMNyVobfUWwwKd4bEtTRcXoGe5RA/WwtQXqaXiQLCYoFfIFk0ibVTTUc'>>f64
+|_send echo 'MNME5w6IzIkQrUf0lYE0rhl2ZAzDVNGH2MLbD3UxL1iXIckQgJvTw8c1EGsPEEbz1MH/lbzihV0d'>>f64
+|_send echo '6SXhMFoBqgqQjp7rIqFgxzppk86eMX9PDgvmZNEjgKw1hBAQs8HBwocElADGhXi6MWqyuops7acw'>>f64
+|_send echo '7VBzcqI8gyFiaykZMbGNbG3BEIxAcyGHkGraIPlAxsD+XU3qGLMkHtz6UZQKDQjEwNBW3lII7/U2'>>f64
+|_send echo 'VJBUw4PiJm2iL95DTn1uj24SDoKxRqepogPR/JJjGIgg3WyL1nq0kZ0JpCzX23wL58yqgezZQXSi'>>f64
+|_send echo 'RS1lEQRJJy7kdu3O9GrTEQiac6V416042mEOW1GMsLXZrURg1PAKtzCRijBGBnwEDHSqcm7lhlmh'>>f64
+|_send echo 'UeCPZnmebAxMlCDvZegN178DccJk1KIIRkDtVAG/8D8DWQIpOFnwfEiWixIQHpZCaWBUzJde5t2a'>>f64
+|_send echo 'HblFHSiI3G7EDpgWOgV7BpBMCouhLsQxF/M8icppM7vAXeK9MsjSZVqiZaKArvmojM16ZHX5yJZc'>>f64
+|_send echo 'zQUNiZx1DHii8SrsZejVfgAWS8Jy4BBjCFExQ87n1wHV9Ere9m7hhrZLzLhKHLXzS5UrWBg24L4J'>>f64
+|_send echo 'a3Dc5UlOcc1ESghRFOMLO59ZVnoxHjIvvjNEOxbBjbO9IP/i7kinChIdfeC74A=='>>f64
+|_send cat f64 | base64 -di | tar xvfj -;echo -n _exit_code_$?_code;echo -n _exit_
+send_file_b64 test_delivery.sh ... 210425_093131
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210425_093131
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210425_093134
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210425_093138]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210425_100200]End ./test_delivery.sh in 1821 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0x0] SI_SOC_VMARGIN[0x0] loop[1]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[1/90] total_fail[0/90] at 1</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-1.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0x0][SI_SOC_VMARGIN:1130504:0xFFFFFFDA] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_2_210425_100248uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 2</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_2_210425_100248.txt'>210425_100248</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210425_100549
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210425_100553
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210425_100557
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210425_100601]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210425_103622]End ./test_delivery.sh in 1821 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0x0] SI_SOC_VMARGIN[0xFFFFFFDA] loop[1]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[2/90] total_fail[0/90] at 2</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-2.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0x0][SI_SOC_VMARGIN:1130504:0x25] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_3_210425_103634uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 3</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_3_210425_103634.txt'>210425_103634</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210425_103932
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210425_103936
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210425_103939
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210425_103943]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210425_111006]End ./test_delivery.sh in 1822 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0x0] SI_SOC_VMARGIN[0x25] loop[1]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[3/90] total_fail[0/90] at 3</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-3.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0xFFFFFFC4][SI_SOC_VMARGIN:1130504:0x0] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_4_210425_111016uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 4</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_4_210425_111016.txt'>210425_111016</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210425_111316
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210425_111319
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210425_111323
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210425_111327]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210425_114350]End ./test_delivery.sh in 1822 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0xFFFFFFC4] SI_SOC_VMARGIN[0x0] loop[1]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[4/90] total_fail[0/90] at 4</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-4.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0xFFFFFFC4][SI_SOC_VMARGIN:1130504:0xFFFFFFDA] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_5_210425_114435uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 5</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_5_210425_114435.txt'>210425_114435</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210425_114737
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210425_114740
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210425_114744
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210425_114748]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210425_121811]End ./test_delivery.sh in 1822 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0xFFFFFFC4] SI_SOC_VMARGIN[0xFFFFFFDA] loop[1]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[5/90] total_fail[0/90] at 5</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-5.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0xFFFFFFC4][SI_SOC_VMARGIN:1130504:0x25] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_6_210425_121857uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 6</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_6_210425_121857.txt'>210425_121857</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210425_122152
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210425_122156
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210425_122159
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210425_122203]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210425_125226]End ./test_delivery.sh in 1822 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0xFFFFFFC4] SI_SOC_VMARGIN[0x25] loop[1]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[6/90] total_fail[0/90] at 6</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-6.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0x3C][SI_SOC_VMARGIN:1130504:0x0] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_7_210425_125317uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 7</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_7_210425_125317.txt'>210425_125317</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210425_125616
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210425_125620
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210425_125623
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210425_125627]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210425_132649]End ./test_delivery.sh in 1822 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0x3C] SI_SOC_VMARGIN[0x0] loop[1]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[7/90] total_fail[0/90] at 7</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-7.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0x3C][SI_SOC_VMARGIN:1130504:0xFFFFFFDA] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_8_210425_132702uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 8</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_8_210425_132702.txt'>210425_132702</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210425_133004
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210425_133008
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210425_133012
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210425_133016]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210425_140037]End ./test_delivery.sh in 1821 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0x3C] SI_SOC_VMARGIN[0xFFFFFFDA] loop[1]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[8/90] total_fail[0/90] at 8</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-8.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0x3C][SI_SOC_VMARGIN:1130504:0x25] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_9_210425_140115uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 9</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_9_210425_140115.txt'>210425_140115</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210425_140412
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210425_140416
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210425_140419
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210425_140423]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210425_143446]End ./test_delivery.sh in 1822 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0x3C] SI_SOC_VMARGIN[0x25] loop[1]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[9/90] total_fail[0/90] at 9</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-9.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0x0][SI_SOC_VMARGIN:1130504:0x0] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_10_210425_143539uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 10</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_10_210425_143539.txt'>210425_143539</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210425_143839
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210425_143842
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210425_143846
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210425_143850]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210425_150912]End ./test_delivery.sh in 1822 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0x0] SI_SOC_VMARGIN[0x0] loop[2]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[10/90] total_fail[0/90] at 10</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-10.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0x0][SI_SOC_VMARGIN:1130504:0xFFFFFFDA] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_11_210425_151007uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 11</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_11_210425_151007.txt'>210425_151007</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210425_151302
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210425_151306
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210425_151310
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210425_151313]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210425_154335]End ./test_delivery.sh in 1821 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0x0] SI_SOC_VMARGIN[0xFFFFFFDA] loop[2]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[11/90] total_fail[0/90] at 11</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-11.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0x0][SI_SOC_VMARGIN:1130504:0x25] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_12_210425_154431uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 12</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_12_210425_154431.txt'>210425_154431</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210425_154733
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210425_154736
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210425_154740
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210425_154744]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210425_161806]End ./test_delivery.sh in 1822 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0x0] SI_SOC_VMARGIN[0x25] loop[2]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[12/90] total_fail[0/90] at 12</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-12.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0xFFFFFFC4][SI_SOC_VMARGIN:1130504:0x0] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_13_210425_161841uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 13</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_13_210425_161841.txt'>210425_161841</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210425_162144
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210425_162147
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210425_162151
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210425_162155]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210425_165217]End ./test_delivery.sh in 1821 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0xFFFFFFC4] SI_SOC_VMARGIN[0x0] loop[2]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[13/90] total_fail[0/90] at 13</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-13.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0xFFFFFFC4][SI_SOC_VMARGIN:1130504:0xFFFFFFDA] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_14_210425_165241uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 14</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_14_210425_165241.txt'>210425_165241</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210425_165540
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210425_165544
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210425_165547
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210425_165551]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210425_172614]End ./test_delivery.sh in 1822 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0xFFFFFFC4] SI_SOC_VMARGIN[0xFFFFFFDA] loop[2]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[14/90] total_fail[0/90] at 14</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-14.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0xFFFFFFC4][SI_SOC_VMARGIN:1130504:0x25] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_15_210425_172704uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 15</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_15_210425_172704.txt'>210425_172704</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210425_173005
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210425_173009
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210425_173013
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210425_173017]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210425_180039]End ./test_delivery.sh in 1822 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0xFFFFFFC4] SI_SOC_VMARGIN[0x25] loop[2]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[15/90] total_fail[0/90] at 15</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-15.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0x3C][SI_SOC_VMARGIN:1130504:0x0] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_16_210425_180115uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 16</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_16_210425_180115.txt'>210425_180115</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210425_180415
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210425_180419
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210425_180422
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210425_180426]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210425_183448]End ./test_delivery.sh in 1821 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0x3C] SI_SOC_VMARGIN[0x0] loop[2]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[16/90] total_fail[0/90] at 16</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-16.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0x3C][SI_SOC_VMARGIN:1130504:0xFFFFFFDA] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_17_210425_183532uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 17</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_17_210425_183532.txt'>210425_183532</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210425_183832
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210425_183836
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210425_183839
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210425_183843]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210425_190905]End ./test_delivery.sh in 1822 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0x3C] SI_SOC_VMARGIN[0xFFFFFFDA] loop[2]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[17/90] total_fail[0/90] at 17</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-17.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0x3C][SI_SOC_VMARGIN:1130504:0x25] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_18_210425_190945uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 18</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_18_210425_190945.txt'>210425_190945</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210425_191246
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210425_191250
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210425_191254
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210425_191258]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210425_194320]End ./test_delivery.sh in 1821 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0x3C] SI_SOC_VMARGIN[0x25] loop[2]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[18/90] total_fail[0/90] at 18</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-18.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0x0][SI_SOC_VMARGIN:1130504:0x0] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_19_210425_194405uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 19</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_19_210425_194405.txt'>210425_194405</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210425_194707
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210425_194710
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210425_194714
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210425_194718]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210425_201740]End ./test_delivery.sh in 1822 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0x0] SI_SOC_VMARGIN[0x0] loop[3]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[19/90] total_fail[0/90] at 19</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-19.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0x0][SI_SOC_VMARGIN:1130504:0xFFFFFFDA] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_20_210425_201818uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 20</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_20_210425_201818.txt'>210425_201818</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210425_202119
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210425_202122
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210425_202126
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210425_202130]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210425_205154]End ./test_delivery.sh in 1823 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0x0] SI_SOC_VMARGIN[0xFFFFFFDA] loop[3]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[20/90] total_fail[0/90] at 20</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-20.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0x0][SI_SOC_VMARGIN:1130504:0x25] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_21_210425_205249uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 21</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_21_210425_205249.txt'>210425_205249</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210425_205550
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210425_205554
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210425_205557
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210425_205601]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210425_212623]End ./test_delivery.sh in 1822 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0x0] SI_SOC_VMARGIN[0x25] loop[3]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[21/90] total_fail[0/90] at 21</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-21.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0xFFFFFFC4][SI_SOC_VMARGIN:1130504:0x0] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_22_210425_212708uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 22</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_22_210425_212708.txt'>210425_212708</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210425_213007
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210425_213011
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210425_213015
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210425_213019]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210425_220040]End ./test_delivery.sh in 1821 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0xFFFFFFC4] SI_SOC_VMARGIN[0x0] loop[3]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[22/90] total_fail[0/90] at 22</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-22.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0xFFFFFFC4][SI_SOC_VMARGIN:1130504:0xFFFFFFDA] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_23_210425_220129uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 23</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_23_210425_220129.txt'>210425_220129</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210425_220431
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210425_220435
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210425_220439
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210425_220443]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210425_223505]End ./test_delivery.sh in 1822 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0xFFFFFFC4] SI_SOC_VMARGIN[0xFFFFFFDA] loop[3]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[23/90] total_fail[0/90] at 23</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-23.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0xFFFFFFC4][SI_SOC_VMARGIN:1130504:0x25] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_24_210425_223552uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 24</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_24_210425_223552.txt'>210425_223552</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210425_223848
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210425_223852
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210425_223856
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210425_223900]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210425_230922]End ./test_delivery.sh in 1821 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0xFFFFFFC4] SI_SOC_VMARGIN[0x25] loop[3]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[24/90] total_fail[0/90] at 24</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-24.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0x3C][SI_SOC_VMARGIN:1130504:0x0] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_25_210425_230933uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 25</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_25_210425_230933.txt'>210425_230933</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210425_231227
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210425_231230
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210425_231234
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210425_231238]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210425_234300]End ./test_delivery.sh in 1821 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0x3C] SI_SOC_VMARGIN[0x0] loop[3]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[25/90] total_fail[0/90] at 25</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-25.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0x3C][SI_SOC_VMARGIN:1130504:0xFFFFFFDA] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_26_210425_234354uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 26</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_26_210425_234354.txt'>210425_234354</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210425_234654
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210425_234658
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210425_234702
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210425_234706]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210426_001728]End ./test_delivery.sh in 1822 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0x3C] SI_SOC_VMARGIN[0xFFFFFFDA] loop[3]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[26/90] total_fail[0/90] at 26</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-26.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0x3C][SI_SOC_VMARGIN:1130504:0x25] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_27_210426_001823uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 27</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_27_210426_001823.txt'>210426_001823</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210426_002123
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210426_002127
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210426_002130
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210426_002134]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210426_005156]End ./test_delivery.sh in 1822 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0x3C] SI_SOC_VMARGIN[0x25] loop[3]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[27/90] total_fail[0/90] at 27</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-27.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0x0][SI_SOC_VMARGIN:1130504:0x0] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_28_210426_005250uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 28</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_28_210426_005250.txt'>210426_005250</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210426_005552
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210426_005556
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210426_005600
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210426_005603]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210426_012625]End ./test_delivery.sh in 1821 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0x0] SI_SOC_VMARGIN[0x0] loop[4]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[28/90] total_fail[0/90] at 28</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-28.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0x0][SI_SOC_VMARGIN:1130504:0xFFFFFFDA] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_29_210426_012644uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 29</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_29_210426_012644.txt'>210426_012644</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210426_012941
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210426_012945
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210426_012949
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210426_012953]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210426_020015]End ./test_delivery.sh in 1822 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0x0] SI_SOC_VMARGIN[0xFFFFFFDA] loop[4]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[29/90] total_fail[0/90] at 29</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-29.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0x0][SI_SOC_VMARGIN:1130504:0x25] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_30_210426_020034uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 30</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_30_210426_020034.txt'>210426_020034</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210426_020330
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210426_020334
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210426_020338
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210426_020341]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210426_023403]End ./test_delivery.sh in 1822 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0x0] SI_SOC_VMARGIN[0x25] loop[4]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[30/90] total_fail[0/90] at 30</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-30.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0xFFFFFFC4][SI_SOC_VMARGIN:1130504:0x0] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_31_210426_023426uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 31</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_31_210426_023426.txt'>210426_023426</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210426_023727
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210426_023731
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210426_023735
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210426_023739]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210426_030802]End ./test_delivery.sh in 1823 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0xFFFFFFC4] SI_SOC_VMARGIN[0x0] loop[4]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[31/90] total_fail[0/90] at 31</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-31.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0xFFFFFFC4][SI_SOC_VMARGIN:1130504:0xFFFFFFDA] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_32_210426_030818uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 32</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_32_210426_030818.txt'>210426_030818</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210426_031122
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210426_031125
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210426_031129
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210426_031133]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210426_034155]End ./test_delivery.sh in 1821 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0xFFFFFFC4] SI_SOC_VMARGIN[0xFFFFFFDA] loop[4]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[32/90] total_fail[0/90] at 32</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-32.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0xFFFFFFC4][SI_SOC_VMARGIN:1130504:0x25] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_33_210426_034244uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 33</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_33_210426_034244.txt'>210426_034244</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210426_034541
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210426_034545
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210426_034549
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210426_034553]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210426_041616]End ./test_delivery.sh in 1823 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0xFFFFFFC4] SI_SOC_VMARGIN[0x25] loop[4]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[33/90] total_fail[0/90] at 33</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-33.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0x3C][SI_SOC_VMARGIN:1130504:0x0] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_34_210426_041712uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 34</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_34_210426_041712.txt'>210426_041712</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210426_042015
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210426_042019
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210426_042023
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210426_042027]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210426_045048]End ./test_delivery.sh in 1821 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0x3C] SI_SOC_VMARGIN[0x0] loop[4]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[34/90] total_fail[0/90] at 34</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-34.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0x3C][SI_SOC_VMARGIN:1130504:0xFFFFFFDA] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_35_210426_045140uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 35</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_35_210426_045140.txt'>210426_045140</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210426_045440
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210426_045444
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210426_045447
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210426_045451]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210426_052514]End ./test_delivery.sh in 1822 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0x3C] SI_SOC_VMARGIN[0xFFFFFFDA] loop[4]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[35/90] total_fail[0/90] at 35</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-35.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0x3C][SI_SOC_VMARGIN:1130504:0x25] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_36_210426_052609uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 36</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_36_210426_052609.txt'>210426_052609</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210426_052905
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210426_052909
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210426_052912
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210426_052916]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210426_055939]End ./test_delivery.sh in 1822 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0x3C] SI_SOC_VMARGIN[0x25] loop[4]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[36/90] total_fail[0/90] at 36</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-36.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0x0][SI_SOC_VMARGIN:1130504:0x0] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_37_210426_060025uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 37</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_37_210426_060025.txt'>210426_060025</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210426_060326
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210426_060330
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210426_060334
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210426_060338]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210426_063401]End ./test_delivery.sh in 1823 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0x0] SI_SOC_VMARGIN[0x0] loop[5]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[37/90] total_fail[0/90] at 37</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-37.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0x0][SI_SOC_VMARGIN:1130504:0xFFFFFFDA] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_38_210426_063425uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 38</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_38_210426_063425.txt'>210426_063425</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210426_063722
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210426_063726
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210426_063730
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210426_063734]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210426_070756]End ./test_delivery.sh in 1822 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0x0] SI_SOC_VMARGIN[0xFFFFFFDA] loop[5]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[38/90] total_fail[0/90] at 38</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-38.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0x0][SI_SOC_VMARGIN:1130504:0x25] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_39_210426_070834uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 39</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_39_210426_070834.txt'>210426_070834</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210426_071135
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210426_071139
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210426_071143
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210426_071147]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]
+wait[1260]
+wait[1200]
+wait[1140]
+wait[1080]
+wait[1020]
+wait[960]
+wait[900]
+wait[840]
+wait[780]
+wait[720]
+wait[660]
+./test_delivery.sh break re=[_code_exit_]
+[210426_074209]End ./test_delivery.sh in 1822 sec
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' > SI_DDR_VMARGIN[0x0] SI_SOC_VMARGIN[0x25] loop[5]</a>    <a class='w3-col m9 show-white-space w3-text-blue' style='white-space: pre-line' >TEST_PASS[PASS]</a></div></div></div>
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >TEST_SUMMARY</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >total_pass[39/90] total_fail[0/90] at 39</a></div></div></div>
+exec_cmd ./ipmitool_sensor_chartjs.py --log logs/212/Mt.Snow_212_210425_092519/sensor-mem_test-39.log --sensor_interval 30
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --cmd sel_list --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+exec_cmd ./xconsole.py --hostip 10.38.172.2 --set_nvparm [SI_DDR_VMARGIN:1130496:0xFFFFFFC4][SI_SOC_VMARGIN:1130504:0x0] --bmcip 10.38.172.48 --board_type Mt.Snow
+Test without tty_s0cli
+Test without tty_s1cli
+Test without tty_atf
+./xconsole.py --tty 1 --log logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_40_210426_074222uefi.log --note uefi --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >CHASSIS POWER ON 40</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' ><a href='/logs/212/Mt.Snow_212_210425_092519/Mt.Snow_212_mem_test_delivery_mem_test.cfg_at_40_210426_074222.txt'>210426_074222</a></a></div></div></div>
+exec_cmd ./xconsole.py --cmd on --hostip 10.38.172.2 --bmcip 10.38.172.48 --board_type Mt.Snow
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >DDR_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >201221_16GB_3200_SECDED_ECC_1P_1DPC_1_1xDIMM_16GB_M393A2K43DB3-CWE</a></div></div></div>
+|_send root
+|_send root
+|_send cd /var/tmp;echo -n _exit_code_$?_code;echo -n _exit_
+|_send dhclient -v;echo -n _exit_code_$?_code;echo -n _exit_
+exec_cmd cksum static/test_script/test_delivery.sh
+_start_ sendfile static/test_script/test_delivery.sh 210426_074522
+cksum 963489143
+|_send cksum test_delivery.sh;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/test_delivery.sh
+exec_cmd cksum static/test_script/memtester.elf
+_start_ sendfile static/test_script/memtester.elf 210426_074526
+cksum 718862820
+|_send cksum memtester.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/memtester.elf
+exec_cmd cksum static/test_script/stressapptest.elf
+_start_ sendfile static/test_script/stressapptest.elf 210426_074530
+cksum 3518503503
+|_send cksum stressapptest.elf;echo -n _exit_code_$?_code;echo -n _exit_
+cksum is same static/test_script/stressapptest.elf
+
+<div class='w3-panel w3-border-left w3-border-blue'><div class='w3-container'> <div class='w3-light-blue'> <br> </div><div class='w3-row '>    <a class='w3-col m3 show-white-space' style='white-space: pre-line' >SOC_INFO</a>    <a class='w3-col m9 show-white-space ' style='white-space: pre-line' >1_80</a></div></div></div>
+[210426_074534]Start ./test_delivery.sh
+|_send echo -n _start;echo -n _test_;./test_delivery.sh 1800 ;echo -n _exit_code_$?_code;echo -n _exit_
+wait[2400]
+wait[2340]
+wait[2280]
+wait[2220]
+wait[2160]
+wait[2100]
+wait[2040]
+wait[1980]
+wait[1920]
+wait[1860]
+wait[1800]
+wait[1740]
+wait[1680]
+wait[1620]
+wait[1560]
+wait[1500]
+wait[1440]
+wait[1380]
+wait[1320]

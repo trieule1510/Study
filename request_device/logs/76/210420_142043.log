@@ -1,0 +1,8 @@
+<div class='w3-container '><p>./linux_test.py --start_test 1 --linux_script dmidecode --time 60 --bmcip 10.38.172.55 --board Mt.Jade --wait 0 --sys_log logs/76/210420_142043.log --test_cfg dmidecode.cfg   </p></div>
+CHASSIS POWER OFF
+exec_cmd ipmitool -H 10.38.172.55 -U ADMIN -P ADMIN -I lanplus -z 0x7fff chassis power off
+Error: Unable to establish IPMI v2 / RMCP+ session
+exec_cmd ipmitool -H 10.38.172.55 -U ADMIN -P ADMIN -I lanplus -z 0x7fff chassis power off
+Error: Unable to establish IPMI v2 / RMCP+ session
+retry 2
+__ERROR__: exec_cmd ipmitool -H 10.38.172.55 -U ADMIN -P ADMIN -I lanplus -z 0x7fff chassis power off

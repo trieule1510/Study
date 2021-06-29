@@ -1,0 +1,14 @@
+sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.167.127 'rm -f /var/tmp/deviceInformation.sh'
+sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.167.127 'wget -P /var/tmp http://10.38.13.103/projects/hcm/diagnostic/QA/Scripts/deviceInformation.sh'
+--2021-06-18 16:45:15--  http://10.38.13.103/projects/hcm/diagnostic/QA/Scripts/deviceInformation.sh
+Connecting to 10.38.13.103:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1672 (1.6K) [text/x-sh]
+Saving to: ‘/var/tmp/deviceInformation.sh’
+
+deviceInformation.sh                          0%[                                                                                           ]       0  --.-KB/s               deviceInformation.sh                        100%[==========================================================================================>]   1.63K  --.-KB/s    in 0s      
+
+2021-06-18 16:45:15 (254 MB/s) - ‘/var/tmp/deviceInformation.sh’ saved [1672/1672]
+
+sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.167.127 'chmod 777 /var/tmp/deviceInformation.sh'
+sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.167.127 '/var/tmp/deviceInformation.sh 10.38.167.127_210619-0345.log'

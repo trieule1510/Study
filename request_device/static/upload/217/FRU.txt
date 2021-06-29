@@ -1,0 +1,87 @@
+search_board_type Mt.Snow_217
+ipmitool -H 10.38.165.35 -U admin -P password -I lanplus -z 0x7fff  fru print
+Setting large buffer to 32767
+FRU Device Description : Builtin FRU Device (ID 0)
+ Chassis Type          : Rack Mount Chassis
+ Chassis Part Number   : 25EC5-R27203-I0R
+ Chassis Serial        : K61212014600057
+ Board Mfg Date        : Sat Jan  1 07:26:00 2000
+ Board Mfg             : GIGABYTE
+ Board Product         : MP32-AR0-JG
+ Board Serial          : LG2P6000007
+ Board Part Number     : 5MP32AR0NR-JG-10B
+ Board Extra           : NULL
+ Product Manufacturer  : GIGABYTE
+ Product Name          : R272-P31-JG
+ Product Part Number   : 9NR272P31MR-JG-100
+ Product Version       : 100
+ Product Serial        : GLG2P8312A0001
+ Product Asset Tag     : 01234567890123456789AB
+
+FRU Device Description : FRU01 (ID 1)
+ Chassis Type          : Rack Mount Chassis
+ Chassis Part Number   : 01234567
+ Chassis Serial        : 01234567890123456789AB
+ Board Mfg Date        : Sat Jan  1 07:26:00 2000
+ Board Mfg             : NULL
+ Board Product         : MP32-AR0-JG
+ Board Serial          : 01234567890123456789AB
+ Board Part Number     : 01234567
+ Board Extra           : NULL
+ Product Manufacturer  : NULL
+ Product Name          : R272-P31-JG
+ Product Part Number   : 000000000001
+ Product Version       : 0100
+ Product Serial        : 01234567890123456789AB
+ Product Asset Tag     : 01234567890123456789AB
+
+ipmitool -H 10.38.165.35 -U admin -P password -I lanplus -z 0x7fff  mc info
+Setting large buffer to 32767
+Device ID                 : 32
+Device Revision           : 1
+Firmware Revision         : 12.50
+IPMI Version              : 2.0
+Manufacturer ID           : 15370
+Manufacturer Name         : Unknown (0x3C0A)
+Product ID                : 530 (0x0212)
+Product Name              : Unknown (0x212)
+Device Available          : yes
+Provides Device SDRs      : yes
+Additional Device Support :
+    Sensor Device
+    SDR Repository Device
+    SEL Device
+    FRU Inventory Device
+    IPMB Event Receiver
+    IPMB Event Generator
+    Chassis Device
+Aux Firmware Rev Info     : 
+    0x08
+    0x00
+    0x00
+    0x00
+./sshpass -p superuser ssh -o StrictHostKeyChecking=no -t sysadmin@10.38.165.35 'ifconfig|grep HWaddr'
+Warning: Permanently added '10.38.165.35' (RSA) to the list of known hosts.
+
+
+
+
+
+
+
+
+
+
+
+
+
+^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A
+
+
+
+
+bond0     Link encap:Ethernet  HWaddr 18:C0:4D:8D:97:55  
+eth0      Link encap:Ethernet  HWaddr 18:C0:4D:8D:97:55  
+eth1      Link encap:Ethernet  HWaddr 18:C0:4D:8D:97:55  
+usb0      Link encap:Ethernet  HWaddr 42:01:1C:37:B0:47  
+Connection to 10.38.165.35 closed.

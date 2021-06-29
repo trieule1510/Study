@@ -4,7 +4,6 @@ from flask import Flask,render_template
 app =Flask(__name__)
 parser = argparse.ArgumentParser(description='db')
 parser.add_argument('--port', dest='port',default=1234,type=int,help='www port''mlr')
-
 args = parser.parse_args()
 
 @app.route("/", methods=['POST', 'GET'])

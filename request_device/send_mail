@@ -1,0 +1,86 @@
+#!/usr/bin/python
+import argparse
+import traceback
+from threading import Thread
+import os
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+from email.mime.base import MIMEBase
+from email import encoders
+
+parser = argparse.ArgumentParser(description='send email')
+parser.add_argument('--subject', dest='subject',default="",help='subject')
+parser.add_argument('--body', dest='body',default="",help='body')
+parser.add_argument('--attachment_location', dest='attachment_location',default="",help='body')
+parser.add_argument('--email_user', dest='email_user',default="diag_equip@amperemail.onmicrosoft.com",help='email_user')
+parser.add_argument('--email_password', dest='email_password',default="Ampere@2020",help='email_password')
+parser.add_argument('--email_list', dest='email_list',default="",help='email_lists')
+parser.add_argument('--email_cc_list', dest='email_cc_list',default="",help='email_cc_list')
+
+args = parser.parse_args()
+
+def to_email_list():
+    email_list = args.email_list + "," + args.email_cc_list
+    email_list_all = ""
+    for e in email_list.split(","):
+        if e == "" : 
+            continue
+        if e.find("@") == -1:
+            e = e + "@amperecomputing.com"
+        email_list_all = email_list_all + e +","
+    email_list_all = email_list_all[0:len(email_list_all) -1]
+    return email_list_all
+    
+def open_file(filename):
+    try:
+        f = open(filename, "r")
+        text=f.read()
+        f.close()
+        return text;
+    except:
+        return ""
+def send_email(to,subject,body,attachment_location=""):
+    import smtplib
+    to = to.replace(",,",",").replace(",",", ")
+    print "send_email %s %s" %(to,subject)
+    try:
+        msg = MIMEMultipart()
+        msg['From'] = args.email_user
+        msg['To'] = to
+        msg['Subject'] = subject
+        msg.attach(MIMEText(body, 'html'))
+        if attachment_location != "":
+            for e in attachment_location.split(","):
+                if e == "":
+                    continue
+                try:
+                    filename = os.path.basename(e)
+                    attachment = open(e, "rb")
+                    part = MIMEBase('application', 'octet-stream')
+                    part.set_payload(attachment.read())
+                    encoders.encode_base64(part)
+                    part.add_header('Content-Disposition',
+                                    "attachment; filename= %s" % filename)
+                    msg.attach(part)
+                except:
+                    print traceback.print_exc()
+        server = smtplib.SMTP('smtp.office365.com', 587)
+        server.ehlo()
+        server.starttls()
+        email_pass = args.email_password
+        print "login %s %s" %(args.email_user,args.email_password)
+        server.login(args.email_user, email_pass)
+        text = msg.as_string()
+        server.sendmail(args.email_user, to.split(", "), text)
+        server.close()
+        return True
+    except:
+        traceback.print_exc()
+        print 'send_email went wrong...'
+        return False
+def send_email_th(to,subject,body,attachment_location=""):
+    bg = Thread(target = send_email, args = (to,subject,body,attachment_location))
+    bg.do_run = True
+    bg.start()
+email = to_email_list()
+send_email_th(email,args.subject,args.body,args.attachment_location)

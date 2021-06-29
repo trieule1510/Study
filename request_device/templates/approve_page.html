@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block title %}{{action}}{% endblock %}
+{% block body %}
+<div class="w3-container">
+    {% for i in range(0,len) %}
+    {% if element[i] == "Info" or element[i] == "info" %}
+    {% else %}
+    <div class="w3-row">
+    	<label class="w3-col m4 w3-text-blue" style="white-space: pre-line" >{{ element[i]|safe}}</label>
+    	{% if element[i] == "Part_number" %}
+    	<a class="w3-col m8 w3-text-blue"  href="/?search=id%3A{{device[1]}}+" >{{device[i]|safe }}</a>
+    	{% else %}
+    	<label class="w3-col m8 w3-text-blue" style="white-space: pre-line" >{{device[i]|safe}}</label>
+    	{% endif %}
+    </div>
+    {% endif %}
+	{% endfor %}
+</div>
+<div class="container w3-row">
+    <div class="container w3-col m12">
+	    <form class="w3-container w3-card-4" action="/approved/{{device[0]}}" method="post" enctype="multipart/form-data">
+	    	<div class="w3-indigo w3-row"><label class="w3-indigo">Approve {{device[3]}}</label></div>
+	    	<div class="w3-row">
+	    		<input class="w3-col m12 w3-input" type="file" name="file" autocomplete="off" multiple >
+	    	</div>
+	    	<div class="w3-indigo w3-row"><label class="w3-indigo">Approved Note</label></div>
+	    	<div class="w3-row">
+	    		<textarea  class="w3-input w3-border" name="note"  rows='2' style='width:100%' >Your device is Approved </textarea>
+	    	</div>
+	    	<div class="w3-indigo w3-row"><label class="w3-indigo">Number</label></div>
+	    	<input class="w3-input w3-border" name="number" type="text" value={{device[4]}}>
+			<div class="w3-row">
+				<button  class="w3-button w3-large w3-col m12 w3-green" id="approved" onclick="return confirm('Are you sure Approved ?')">Approved</button>
+			</div>
+		</form>
+	</div>
+	<div class="container w3-row">
+		<p></p>
+	</div>
+	<div class="container w3-col m12">
+	    <form class="w3-container w3-card-4" action="/denied/{{device[0]}}" method="post" enctype="multipart/form-data">
+	    	<div class="w3-indigo w3-row"><label class="w3-indigo">Deny {{device[3]}}</label></div>
+	    	<div class="w3-row">
+		    	<input class="w3-col m12 w3-input" type="file" name="file" autocomplete="off" multiple >
+	    	</div>
+	    	
+	    	<div class="w3-indigo w3-row"><label class="w3-indigo">Denied Note</label></div>
+	    	<div class="w3-row">
+	    		<textarea  class="w3-input w3-border" name="note"  rows='2' style='width:100%' >Sorry!Your device is Denied</textarea>
+	    	</div>
+	    	<div class="w3-indigo w3-row"><label class="w3-indigo">Number</label></div>
+	    	<input class="w3-input w3-border" name="number" type="text" value={{device[4]}}>
+			<div class="w3-row">
+				<button  class="w3-button w3-large w3-col m12 w3-red" id="denied" onclick="return confirm('Are you sure Denied ?')">Denied</button>
+			</div>
+		</form>
+	</div>
+</div>
+
+<div class="w3-container"><img src="/static/qr/{{device[3]}}.png"></div>
+<div class="w3-container">{{h_attached|safe}}</div>
+{% endblock %}

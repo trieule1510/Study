@@ -1,0 +1,84 @@
+Init telemetry success
+[789 : 884 INFO]BOOTFW VERSION: 1.05.20210426
+
+[327375.170000] I2C0: Resetting the controller
+Init telemetry success
+Starting to Read Current PostCode buffer...
+No Post Codes ...
+Stopping Bootlogo Daemon.
+Bootlogo: Switch to VGA
+[327416.190000] UsbConfigureHS(): USB Device 0 is running in High Speed
+[327416.190000] UsbConfigureHS(): USB Device 1 is running in High Speed
+[327416.190000] UsbConfigureHS(): USB Device 2 is running in High Speed
+[327416.190000] UsbConfigureLS(): USB Device 3 is running in Low Speed
+[327416.310000] HUB port 0 reset
+[327416.310000] UsbConfigureHS(): USB Device 0 is running in High Speed
+[327416.380000] HUB port 1 reset
+[327416.380000] UsbConfigureHS(): USB Device 1 is running in High Speed
+[327416.440000] HUB port 2 reset
+[327416.440000] UsbConfigureHS(): USB Device 2 is running in High Speed
+[327416.510000] HUB port 3 reset
+[327416.510000] UsbConfigureLS(): USB Device 3 is running in Low Speed
+[327419.290000] **************REMOTE_NDIS_RESET_MSG ???**************
+[327419.300000] **************REMOTE_NDIS_HALT_MSG ???**************
+[327419.320000] **************REMOTE_NDIS_HALT_MSG ???**************
+[327419.340000] **************REMOTE_NDIS_RESET_MSG ???**************
+[327419.350000] **************REMOTE_NDIS_HALT_MSG ???**************
+[789 : 872 CRITICAL][nwcfg.c:6359]No data while scanning /proc/net/arp 
+
+[789 : 872 CRITICAL][nwcfg.c:6391]No default entry in gateway info.
+
+[327453.030000] **************REMOTE_NDIS_HALT_MSG ???**************
+[327470.650000] UsbConfigureHS(): USB Device 0 is running in High Speed
+[327470.650000] UsbConfigureHS(): USB Device 1 is running in High Speed
+[327470.650000] UsbConfigureHS(): USB Device 2 is running in High Speed
+[327470.650000] UsbConfigureLS(): USB Device 3 is running in Low Speed
+[327470.960000] HUB port 0 reset
+[327470.960000] UsbConfigureHS(): USB Device 0 is running in High Speed
+[327471.090000] HUB port 0 reset
+[327471.090000] UsbConfigureHS(): USB Device 0 is running in High Speed
+[327471.280000] HUB port 1 reset
+[327471.280000] UsbConfigureHS(): USB Device 1 is running in High Speed
+[327471.410000] HUB port 1 reset
+[327471.410000] UsbConfigureHS(): USB Device 1 is running in High Speed
+[327471.610000] HUB port 2 reset
+[327471.610000] UsbConfigureHS(): USB Device 2 is running in High Speed
+[327471.740000] HUB port 2 reset
+[327471.740000] UsbConfigureHS(): USB Device 2 is running in High Speed
+[327471.940000] HUB port 3 reset
+[327471.940000] UsbConfigureLS(): USB Device 3 is running in Low Speed
+[327472.060000] HUB port 3 reset
+[327472.060000] UsbConfigureLS(): USB Device 3 is running in Low Speed
+[327479.800000] ProcessStandardRequest(): WARNING : Unsupported Request. EP Stalled
+[327479.800000] ProcessStandardRequest(): WARNING : bmRequestType: 0x1 bmRequest: 0xb
+file has vanished: "/conf/resolv.confppOyyr"
+rsync warning: some files vanished before they could be transferred (code 24) at main.c(1183) [sender=3.1.1]
+Couldn't watch /conf/: No such file or directory
+cat: read error: Invalid argument
+IFACEname : eth0
+IFACEname : eth1
+Delete the /conf/upnp/desc.tmpl for upnp restart
+PDK LPC Reset is invoked
+Restarting Bootlogo Daemon.
+Framebuffer information: 800x600 (32)bpp, 8388608
+Bootlogo: Show BMC IP Addr 10.38.175.43
+[328483.000000] Configuring the Host SPI Clock to HCLK/16 
+[328483.110000] Creating 1 MTD partitions on "MX25L25635F":
+[328483.110000] 0x000000000000-0x000002000000 : "Host SPI Flash"
+[328483.140000] Configuring the Host SPI Clock to HCLK/16 
+[328484.510000] Configuring the Host SPI Clock to HCLK/16 
+[328484.560000] Creating 1 MTD partitions on "MX25L25635F":
+[328484.560000] 0x000000000000-0x000002000000 : "Host SPI Flash"
+[328484.600000] Configuring the Host SPI Clock to HCLK/16 
+[789 : 889 INFO]Signal Sent Successfully to UART Logging application
+
+[3079 : 3079 INFO]INFO: Received Signal 14 from IPMI Stack 
+
+[3079 : 3079 INFO]START mirroring/logging...
+
+[3079 : 3079 INFO]INFO: Setting the Attributes for the UART...
+
+[3079 : 5585 INFO]Send Thread: Starting the thread to mirror data from /dev/ttyS3 to /dev/ttyS3
+
+[3079 : 5586 INFO]Recv Thread: Starting the thread to mirror data from /dev/ttyS3 to /dev/ttyS3
+

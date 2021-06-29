@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %} ADD BOARD {% endblock %}
+{% block body %}
+<script>
+function debug(msg){
+	console.log(msg)
+}
+function get_data(){
+	$.ajax("/get_file/" + $(".configs").val(),
+	{
+	    success: function (data, status, xhr) {
+	           $("#args").val(data);
+	    }
+	});
+}
+</script>
+<div class="w3-container w3-indigo w3-row-padding">
+	<form action="/cfg_edit">
+	  <div class="w3">
+	    <label>Config File Name</label>		
+		<input class="w3-black w3-input configs" type="configs"  name="configs" list="configs" value="" onChange="get_data()"/>
+		<datalist id="configs">
+		{% for ee in configs %}
+	  		<option value="{{ee}}">
+     	{% endfor %}
+    	</datalist>
+	  </div>
+	  <div class="w3">
+	    <label>ARGS</label>
+		<textarea  id='args' name="args"  rows='20' style='width:100%'> </textarea>
+	  </div>	  
+	  <input type="submit" value="Save" class= "w3-button w3-xlarge w3-circle w3-green"></input>
+	 </form>
+</div>
+		
+{% endblock %}

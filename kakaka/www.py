@@ -13,7 +13,13 @@ parser.add_argument('--db_table_devices', dest='db_table_devices',default="db_ta
 parser.add_argument('--db_element_devices', dest='db_element_devices',default="id,Chip,Vendor,Part_number,Note,Interface,Type,Ranks,RCD_Vendor,Capacity,speed,Count,Stock,Fail,Owner,Remark,Share",help='dbname')
 parser.add_argument('--db_table_request', dest='db_table_request',default="db_table_request",help='db_table_request')
 parser.add_argument('--db_element_request', dest='db_element_request',default="id,device_id,email,Part_number,number,note,info,client_info,time",help='db_element_request')
+parser.add_argument('--db_table_denied', dest='db_table_denied',default="db_table_denied",help='db_table_denied')
+parser.add_argument('--db_table_shared', dest='db_table_shared',default="db_table_shared",help='db_table_shared')
 
+
+parser.add_argument('--email_user', dest='email_user',default="diag_equip@amperemail.onmicrosoft.com",help='email_user')
+parser.add_argument('--email_password', dest='email_password',default="Ampere@2020",help='email_password')
+parser.add_argument('--email_list', dest='email_list',default="trle",help='email_lists')
 
 args = parser.parse_args()
 
@@ -34,10 +40,12 @@ def exec_cmd(e,retry = 3):
 
 def db_request():
     return [args.db_file,args.db_table_request,args.db_element_request]
-
 def db_devices():
     return [args.db_file,args.db_table_devices,args.db_element_devices]
-
+def db_denied():
+    return [args.db_file,args.db_table_denied,args.db_element_request]
+def db_shared():
+    return [args.db_file,args.db_table_shared,args.db_element_request]
 def db_element(db):
     return db[2].split(",")
 
@@ -45,6 +53,15 @@ def db_element(db):
 #    bg = Thread(target = send_email, args = (to,ascii(subject),ascii(body),attachment_location))
 #    bg.do_run = True
 #    bg.start()
+
+def get_db_index(element,db):
+    db_file, db_table,db_element = db_unpark(db)
+    index = -1
+    for e in db_element.split(","):
+        index = index + 1
+        if e == element:
+            return index
+    return -1
 
 def email_type(type, db, device, attachment_location):
     email = device[get_db_index("email", db)]
@@ -249,7 +266,7 @@ def get_devices(db,id,filter=""):
     devices = sql_db(db,id=id)
     if filter == "" or id != None:
         return devices
-    else
+    else:
         return devices_filter(devices,filter)
 
 @app.route("/", methods=['POST', 'GET'])
@@ -279,13 +296,9 @@ def share(id):
 def request_submit(id):
     msg = "Welcome to request_submit id = %s" % (id)
     submit_id = id_by_time()
-    print "submit_id = ",submit_id
     email = request.form["email"]
-    print "email = ",email
     number = request.form["number"]
-    print "number = ",number
     note = request.form["note"]
-    print "note =",note
     if note != "":
         note = "REQUEST %s: %s x%s" % (now(), note, number)
     f_pwd = save_file_upload(submit_id, request, "request")
@@ -305,7 +318,6 @@ def request_submit(id):
     value = [submit_id, id, email, part_number, number, note, info, client_info, time]
     sql_db(db_request(), value=value)
     #email_request(db_request(), value, f_pwd)
-
     return redirect("/submit_info/%s" % (id))
 
 @app.route("/submit_info/<path:id>", methods=['POST', 'GET'])
@@ -330,6 +342,88 @@ def page_request():
     action = "/page_request"
     return render_template('devices_page.html',devices=devices,msg=msg,action=action,filter=filter)
 
+@app.route("/page_request_submit/<path:id>", methods=['POST', 'GET'])
+def approve_page(id):
+    msg = "approve_page "
+    device = get_devices(db_request(),id=id)
+    if device == None:
+        return render_template('error.html',msg="INVALID ID")
+    return render_template('approve_page.html',msg=msg,len=len(device),device=device,element=db_element(db_request()))
+
+
+@app.route("/denied/<path:id>", methods=['POST', 'GET'])
+def denied(id):
+    msg = "page_denied"
+    device = get_devices(db_request(), id=id)
+    if device == None:
+        return render_template('error.html', msg="INVALID ID")
+    key = device[get_db_index("client_info", db_request())]
+    if is_admin(request.remote_addr) == False and key != request.remote_addr:
+        msg = msg + " denied Your is not admin"
+        return render_template('denied.html', msg=msg, len=len(device), device=device, element=db_element(db_request()))
+
+    # copy request_device to denied_device
+    value = [e for e in device]
+    number = value[get_db_index("number", db_devices())]
+    note = request.form["note"]
+    if note != "":
+        note = "DENIED %s: %s x%s" % (now(), note, number)
+        value[get_db_index("note", db_request())] = value[get_db_index("note", db_request())] + "\n" + note
+    sql_db(db_denied(), value=value)
+
+    msg = msg + " Your device denied. Please check email"
+    # rm request_device
+    sql_db(db_request(), id=id, rm_by_id=True)
+    #email_denied(db_request(), device, "")
+    return render_template('denied.html', msg=msg, len=len(device), device=device, element=db_element(db_request()))
+
+
+@app.route("/approved/<path:id>", methods=['POST', 'GET'])
+def approved(id):
+    msg = "page_approved"
+    # db_file,db_table,db_element = get_request_db()
+
+    device_request = get_devices(db_request(), id=id)
+    if device_request == None:
+        return render_template('error.html', msg="INVALID ID")
+    device_id = device_request[get_db_index("device_id", db_request())]
+    number = request.form["number"]
+    # number=device_request[get_db_index("number",db_request())]
+    if is_admin(request.remote_addr) == False:
+        msg = msg + " denied Your is not admin"
+        return render_template('denied.html', msg=msg, len=len(device_request), device=device_request,
+                               element=db_element(db_request()))
+    f_pwd = save_file_upload(id, request, "approved")
+    # copy device to shared_db
+    value = [e for e in device_request]
+    note = request.form["note"]
+    if note != "":
+        note = "APPROVE %s: %s x%s" % (now(), note, number)
+        value[get_db_index("note", db_shared())] = value[get_db_index("note", db_shared())] + "\n" + note
+    value[get_db_index("number", db_shared())] = number
+    print "value",value
+    sql_db(db_shared(), value=value)
+
+    # update number of devices_db
+    device_main = sql_db(db_devices(), id=device_id)
+    value = [e for e in device_main]
+
+    db_Stock = value[get_db_index("Stock", db_devices())]
+    if db_Stock == None:
+        db_Stock = 0
+    db_Share = value[get_db_index("Share", db_devices())]
+    if db_Share == None:
+        db_Share = 0
+
+    value[get_db_index("Stock", db_devices())] = int(db_Stock) - int(number)
+    value[get_db_index("Share", db_devices())] = int(db_Share) + int(number)
+    sql_db(db_devices(), value=value, id=device_id)
+
+    # remove device form request_db
+    sql_db(db_request(), id=id, rm_by_id=True)
+    #email_approved(db_request(), device_request, f_pwd)
+    return render_template('approve.html', msg=msg, len=len(device_request), device=device_request,
+                           element=db_element(db_request()))
 
 if __name__=="__main__":
     import logging

@@ -1,0 +1,54 @@
+<div class='w3-container '><p>./linux_test.py --start_test 0 --hostip 10.38.172.2 --hostuser root --hostpass root --bmcip 10.38.172.51 --board Mt.Jade --test_cfg memtester_300.cfg --wait 0 --sys_log logs/37/Mt.Jade_37_210421_141347.log --test_cfg memtester_300.cfg --nv_scan SI_PLT_EN[0],SI_DDR_ECC_MODE[1],SI_DDR_ZQCS_EN[1],SI_DDR_SCRUB_EN[0x000005a0]  </p></div>
+
+
+
+
+exec_cmd ./xconsole.py --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --set_nvparm [SI_DDR_SCRUB_EN:1146944:0x5A0][SI_DDR_ZQCS_EN:1147208:0x1][SI_DDR_ECC_MODE:1146952:0x1][SI_PLT_EN:1130752:0x0] --debug 0 --hostpass root --hostip 10.38.172.2
+<div class='w3-container '><p>./linux_test.py --start_test 1 --linux_script ./memtest_launcher_v12.sh --time 1800 --loop 10 --hostip 10.38.172.2 --hostuser root --hostpass root --bmcip 10.38.172.51 --board Mt.Jade --test_cfg memtester_300.cfg --wait 0 --sys_log logs/37/Mt.Jade_37_210421_141347.log --test_cfg memtester_300.cfg   </p></div>
+
+
+
+
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+./xconsole.py --tty 2 --log logs/37/Mt.Jade_37_210421_141347/Mt.Jade_memtester_300.cfg_at_1_210421_141400s0cli.log --hostip 10.38.172.2 --hostuser root --note s0cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 4 --log logs/37/Mt.Jade_37_210421_141347/Mt.Jade_memtester_300.cfg_at_1_210421_141400s1cli.log --hostip 10.38.172.2 --hostuser root --note s1cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 3 --log logs/37/Mt.Jade_37_210421_141347/Mt.Jade_memtester_300.cfg_at_1_210421_141400atf.log --hostip 10.38.172.2 --hostuser root --note atf --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 1 --log logs/37/Mt.Jade_37_210421_141347/Mt.Jade_memtester_300.cfg_at_1_210421_141400uefi.log --hostip 10.38.172.2 --hostuser root --note uefi --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+<div class='w3-container '><p><a href='/logs/37/Mt.Jade_37_210421_141347/Mt.Jade_memtester_300.cfg_at_1_210421_141400.txt'>CHASSIS POWER ON[210421_141400]</a></p></div>
+exec_cmd ./xconsole.py --cmd on --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+<div class='w3-container '><p>__INFO__: dimm_type_16xDIMM_16GB_18ASF2G72PDZ-2G6E1</p></div>
+|_send root
+|_send root
+|_send cd /var/tmp
+[210421_141623]Start ./memtest_launcher_v12.sh
+|_send ./memtest_launcher_v12.sh 1800
+./memtest_launcher_v12.sh break re=[No such file or directory]
+[210421_141625]End ./memtest_launcher_v12.sh in 2 sec
+<div class='w3-container  w3-text-blue w3-text-red'><p>__STATUS__:  loop[1] TEST_FAIL[No such file or directory] PASS[0/10]CLI[0]</p></div>
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+./xconsole.py --tty 2 --log logs/37/Mt.Jade_37_210421_141347/Mt.Jade_memtester_300.cfg_at_2_210421_141629s0cli.log --hostip 10.38.172.2 --hostuser root --note s0cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 4 --log logs/37/Mt.Jade_37_210421_141347/Mt.Jade_memtester_300.cfg_at_2_210421_141629s1cli.log --hostip 10.38.172.2 --hostuser root --note s1cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 3 --log logs/37/Mt.Jade_37_210421_141347/Mt.Jade_memtester_300.cfg_at_2_210421_141629atf.log --hostip 10.38.172.2 --hostuser root --note atf --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 1 --log logs/37/Mt.Jade_37_210421_141347/Mt.Jade_memtester_300.cfg_at_2_210421_141629uefi.log --hostip 10.38.172.2 --hostuser root --note uefi --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+<div class='w3-container '><p><a href='/logs/37/Mt.Jade_37_210421_141347/Mt.Jade_memtester_300.cfg_at_2_210421_141629.txt'>CHASSIS POWER ON[210421_141629]</a></p></div>
+exec_cmd ./xconsole.py --cmd on --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+<div class='w3-container '><p>__INFO__: dimm_type_16xDIMM_16GB_18ASF2G72PDZ-2G6E1</p></div>
+|_send root
+|_send root
+|_send cd /var/tmp
+[210421_141853]Start ./memtest_launcher_v12.sh
+|_send ./memtest_launcher_v12.sh 1800
+./memtest_launcher_v12.sh break re=[No such file or directory]
+[210421_141856]End ./memtest_launcher_v12.sh in 2 sec
+<div class='w3-container  w3-text-blue w3-text-red'><p>__STATUS__:  loop[2] TEST_FAIL[No such file or directory] PASS[0/10]CLI[0]</p></div>
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+./xconsole.py --tty 2 --log logs/37/Mt.Jade_37_210421_141347/Mt.Jade_memtester_300.cfg_at_3_210421_141859s0cli.log --hostip 10.38.172.2 --hostuser root --note s0cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 4 --log logs/37/Mt.Jade_37_210421_141347/Mt.Jade_memtester_300.cfg_at_3_210421_141859s1cli.log --hostip 10.38.172.2 --hostuser root --note s1cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 3 --log logs/37/Mt.Jade_37_210421_141347/Mt.Jade_memtester_300.cfg_at_3_210421_141859atf.log --hostip 10.38.172.2 --hostuser root --note atf --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 1 --log logs/37/Mt.Jade_37_210421_141347/Mt.Jade_memtester_300.cfg_at_3_210421_141859uefi.log --hostip 10.38.172.2 --hostuser root --note uefi --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+<div class='w3-container '><p><a href='/logs/37/Mt.Jade_37_210421_141347/Mt.Jade_memtester_300.cfg_at_3_210421_141859.txt'>CHASSIS POWER ON[210421_141859]</a></p></div>
+exec_cmd ./xconsole.py --cmd on --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+<div class='w3-container '><p>__INFO__: dimm_type_16xDIMM_16GB_18ASF2G72PDZ-2G6E1</p></div>

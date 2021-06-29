@@ -1,0 +1,311 @@
+<div class='w3-container '><p>./linux_test.py --start_test 1 --linux_script dmidecode --time 60 --debug 1 --cleannv 1 --bmcip 10.38.172.55 --board Mt.Jade --wait 0 --sys_log logs/76/210420_141132.log --test_cfg dmidecode.cfg --nv_scan SI_S0_PCP_ACTIVECPM_0_31[0x1],SI_S0_PCP_ACTIVECPM_32_63[0x0],SI_S1_PCP_ACTIVECPM_0_31[0x1],SI_S1_PCP_ACTIVECPM_32_63[0x0]  </p></div>
+exec_cmd sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.172.55 'echo cleannv && gpiotool --set-data-low 226 && nvparm -c -o 0x110000 && nvparm -c -o 0x120000 && nvparm -c  -o 0x5F0000 && gpiotool --set-data-high 226'
+
+
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+cleannv
+Inside Set Gpio low 
+
+GPIO pin is set to low 
+
+Erasing blocks: 1/1 (100%)Erasing blocks: 1/1 (100%)
+Erasing blocks: 1/1 (100%)Erasing blocks: 1/1 (100%)
+Erasing blocks: 1/1 (100%)Erasing blocks: 1/1 (100%)
+Inside Set Gpio high 
+
+GPIO pin is set to high 
+
+CHASSIS POWER OFF
+exec_cmd ipmitool -H 10.38.172.55 -U ADMIN -P ADMIN -I lanplus -z 0x7fff chassis power off
+
+
+Setting large buffer to 32767
+Chassis Power Control: Down/Off
+exec_cmd sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.172.55 'echo SI_S1_PCP_ACTIVECPM_32_63 && gpiotool --set-data-low 226 && nvparm -s 0x0 -o 0x118018 && gpiotool --set-data-high 226;\
+echo SI_S1_PCP_ACTIVECPM_0_31 && gpiotool --set-data-low 226 && nvparm -s 0x1 -o 0x118010 && gpiotool --set-data-high 226;\
+echo SI_S0_PCP_ACTIVECPM_32_63 && gpiotool --set-data-low 226 && nvparm -s 0x0 -o 0x118008 && gpiotool --set-data-high 226;\
+echo SI_S0_PCP_ACTIVECPM_0_31 && gpiotool --set-data-low 226 && nvparm -s 0x1 -o 0x118000 && gpiotool --set-data-high 226;\
+'
+
+
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+SI_S1_PCP_ACTIVECPM_32_63
+Inside Set Gpio low 
+
+GPIO pin is set to low 
+
+Erasing blocks: 1/1 (100%)Erasing blocks: 1/1 (100%)
+Inside Set Gpio high 
+
+GPIO pin is set to high 
+
+SI_S1_PCP_ACTIVECPM_0_31
+Inside Set Gpio low 
+
+GPIO pin is set to low 
+
+Erasing blocks: 1/1 (100%)Erasing blocks: 1/1 (100%)
+Inside Set Gpio high 
+
+GPIO pin is set to high 
+
+SI_S0_PCP_ACTIVECPM_32_63
+Inside Set Gpio low 
+
+GPIO pin is set to low 
+
+Erasing blocks: 1/1 (100%)Erasing blocks: 1/1 (100%)
+Inside Set Gpio high 
+
+GPIO pin is set to high 
+
+SI_S0_PCP_ACTIVECPM_0_31
+Inside Set Gpio low 
+
+GPIO pin is set to low 
+
+Erasing blocks: 1/1 (100%)Erasing blocks: 1/1 (100%)
+Inside Set Gpio high 
+
+GPIO pin is set to high 
+
+
+
+./xconsole.py --tty 2 --log logs/76/210420_141132/Mt.Jade_dmidecode.cfg_at_1_210420_141140s0cli.log --hostuser amcclab --note s0cli --board Mt.Jade --bmcip 10.38.172.55 --hostpass amcc1234
+
+
+./xconsole.py --tty 4 --log logs/76/210420_141132/Mt.Jade_dmidecode.cfg_at_1_210420_141140s1cli.log --hostuser amcclab --note s1cli --board Mt.Jade --bmcip 10.38.172.55 --hostpass amcc1234
+
+
+./xconsole.py --tty 3 --log logs/76/210420_141132/Mt.Jade_dmidecode.cfg_at_1_210420_141140atf.log --hostuser amcclab --note atf --board Mt.Jade --bmcip 10.38.172.55 --hostpass amcc1234
+
+
+./xconsole.py --tty 1 --log logs/76/210420_141132/Mt.Jade_dmidecode.cfg_at_1_210420_141140uefi.log --hostuser amcclab --note uefi --board Mt.Jade --bmcip 10.38.172.55 --hostpass amcc1234
+
+
+<div class='w3-container '><p><a href='/logs/76/210420_141132/Mt.Jade_dmidecode.cfg_at_1_210420_141140.txt'>CHASSIS POWER ON[210420_141140]</a></p></div>
+exec_cmd ipmitool -H 10.38.172.55 -U ADMIN -P ADMIN -I lanplus -z 0x7fff chassis power on
+
+
+Setting large buffer to 32767
+Chassis Power Control: Up/On
+ipmitool -H 10.38.172.55 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  sol deactivate instance=2
+Setting large buffer to 32767
+Info: SOL payload already de-activated
+ipmitool -H 10.38.172.55 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  sol activate=usesolkeepalive instance=2
+logs/76/210420_141132/Mt.Jade_dmidecode.cfg_at_1_210420_141140s0cli.log
+
+SEC:fuselock: 00000001 tmmdbglockr: 00000001
+tmmnsdbgcsr: 00000003 tmmsdbgcsr: 00000003
+
+SMpro Runtime Firmware v1.4 - build 20210326
+Failsafe: 0
+Load PMpro
+ipmitool -H 10.38.172.55 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  sol deactivate instance=4
+Setting large buffer to 32767
+Info: SOL payload already de-activated
+ipmitool -H 10.38.172.55 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  sol activate=usesolkeepalive instance=4
+logs/76/210420_141132/Mt.Jade_dmidecode.cfg_at_1_210420_141140s1cli.log
+
+ipmitool -H 10.38.172.55 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  sol deactivate instance=1
+Setting large buffer to 32767
+Info: SOL payload already de-activated
+ipmitool -H 10.38.172.55 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  sol activate=usesolkeepalive instance=1
+logs/76/210420_141132/Mt.Jade_dmidecode.cfg_at_1_210420_141140uefi.log
+
+Authenticated PMpro
+Board: config 0
+Available CPM: 0x0000000000000001
+Release S1
+
+SMpro Rom Firmware v1.0 - build 20190626
+SEC:fuselock: 00000001 tmmdbglockr: 00000001
+tmmnsdbgcsr: 00000003 tmmsdbgcsr: 00000003
+
+SMpro Runtime Firmware v1.4 - build 20210326
+Load PMpro
+S1: Ready
+S1: Sync
+Authenticated PMpro
+Master: Ready
+Board: config 0
+Available CPM: 0x0000000000000001
+S1: Sync
+Boot PMpro
+Probe I2C10 DIMM0
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM1
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM2
+I2C10: Clear bus
+I2C10: Clear bus
+Boot PMpro
+Load BL1
+BL1 authenticated
+Probe I2C10 DIMM0
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM1
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM3
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM4
+Probe I2C10 DIMM2
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM3
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM4
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: CleaI2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM5
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM6
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clearr bus
+I2C10: Clear bus
+Probe I2C10 DIMM5
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2 bus
+Probe I2C10 DIMM7
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C2 DIMM0
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM1
+I2C2: Clear bus
+C10: Clear bus
+Probe I2C10 DIMM6
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM7
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C2 DIMM0
+I2C2: Clear bus
+I2C2: Clear busI2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM2
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM3
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM4
+Probe I
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM1
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM2
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+2C2 DIMM5
+Probe I2C2 DIMM3
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM4
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM5
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: CProbe I2C2 DIMM6
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM7
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+DDR: Unsupported MCU mask 0x00000000
+DDR: Operational     DIMM: 0x00000000
+lear bus
+Probe I2C2 DIMM6
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM7
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+DDR: Failure         DIMM: 0x00000000
+DDR: Non-Operational DIMM: 0x00000000
+DDR: Unsupported MCU mask 0x00000000
+DDR: Operational     DIMM: 0x00000000
+DDR: Failure         DIMM: 0x00000000
+DDR: Non-Operational DIMM: 0x00000002
+128KB OCM protection active
+PCP initialized
+vTPM: SCP Measurement Fails.
+SMpro ready
+S0-cli>  2P: reset host
+NOTICE:  DRAM FW version 210212
+ERROR:   NO-DIMM Installed. STOP!
+<div class='w3-container '><p>__INFO__: number_dimm_0</p></div>
+<div class='w3-container  w3-text-blue w3-text-red'><p>__STATUS__:  SI_S1_PCP_ACTIVECPM_32_63[0x0] SI_S1_PCP_ACTIVECPM_0_31[0x1] SI_S0_PCP_ACTIVECPM_32_63[0x0] SI_S0_PCP_ACTIVECPM_0_31[0x1] loop[1] TEST_FAIL[ERROR:] PASS[0/1]CLI[0]</p></div>
+System reboot
+
+PMpro output start
+PMpro Runtime Firmware v1.4 - build 20210326
+2P mode: 0x00000002
+2P Cfg: 0xFFFFFF01
+2PLINK1 (RC/EP): 0x00000010/0x00000010 0x00000004/0x00000004
+2PLINK0: Link Down
+2PLINK1 (RC/EP): 0x00000010/0x00000010 0x0

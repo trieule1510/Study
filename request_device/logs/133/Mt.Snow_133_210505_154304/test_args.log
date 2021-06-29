@@ -1,0 +1,1 @@
+--start_test 1 --linux_script dmidecode,lspci -vvv --time 60 --sensor_bg 1 --hostip 10.38.172.2 --hostuser root --hostpass root --bmcip 10.38.172.63 --board_type Mt.Snow --board Mt.Snow_133 --test_cfg delivery_dmidecode.cfg --wait 0 --sys_log logs/133/Mt.Snow_133_210505_154304.log --test_cfg delivery_dmidecode.cfg

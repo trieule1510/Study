@@ -1,0 +1,111 @@
+./sshpass -p amcc1234 ssh -o StrictHostKeyChecking=no -t amcclab@10.38.161.3 'ls'
+Permission denied, please try again.
+./sshpass -p Ampere@4655 ssh -o StrictHostKeyChecking=no -t amplab@10.38.161.3 'ls'
+hostuser amplab
+hostpass Ampere@4655
+./sshpass -p None ssh -o StrictHostKeyChecking=no -t None@10.38.161.32 'gpiotool --set-data-high 56&&gpiotool --set-data-high 57&&gpiotool --set-data-high 58&&gpiotool --set-data-high 59'
+Warning: Permanently added '10.38.161.32' (RSA) to the list of known hosts.
+Permission denied, please try again.
+search_board_type Mt.Collins_169
+./sshpass -p Ampere@4655 ssh -o StrictHostKeyChecking=no -t amplab@10.38.161.3 'ipmitool -H 10.38.161.32 -U admin -P admin -I lanplus -z 0x7fff  fru print'
+Error: Unable to establish IPMI v2 / RMCP+ session
+Connection to 10.38.161.3 closed.
+Error: Unable to establish IPMI v2 / RMCP+ session
+Connection to 10.38.161.3 closed.
+Error: Unable to establish IPMI v2 / RMCP+ session
+Connection to 10.38.161.3 closed.
+ERROR:exec_cmd ./sshpass -p Ampere@4655 ssh -o StrictHostKeyChecking=no -t amplab@10.38.161.3 'ipmitool -H 10.38.161.32 -U admin -P admin -I lanplus -z 0x7fff  fru print' retry 3
+./sshpass -p Ampere@4655 ssh -o StrictHostKeyChecking=no -t amplab@10.38.161.3 'ipmitool -H 10.38.161.32 -U admin -P admin -I lanplus -z 0x7fff  mc info'
+Error: Unable to establish IPMI v2 / RMCP+ session
+Connection to 10.38.161.3 closed.
+Error: Unable to establish IPMI v2 / RMCP+ session
+Connection to 10.38.161.3 closed.
+Error: Unable to establish IPMI v2 / RMCP+ session
+Connection to 10.38.161.3 closed.
+ERROR:exec_cmd ./sshpass -p Ampere@4655 ssh -o StrictHostKeyChecking=no -t amplab@10.38.161.3 'ipmitool -H 10.38.161.32 -U admin -P admin -I lanplus -z 0x7fff  mc info' retry 3
+./sshpass -p superuser ssh -o StrictHostKeyChecking=no -t sysadmin@10.38.161.32 'ifconfig|grep HWaddr'
+bond0     Link encap:Ethernet  HWaddr 40:8D:5C:B1:E5:D5  
+eth0      Link encap:Ethernet  HWaddr 40:8D:5C:B1:E5:D5  
+eth1      Link encap:Ethernet  HWaddr 40:8D:5C:B1:E5:D5  
+usb0      Link encap:Ethernet  HWaddr 7E:45:5A:A8:E2:ED  
+Connection to 10.38.161.32 closed../sshpass -p None ssh -o StrictHostKeyChecking=no -t None@10.38.161.47 'gpiotool --set-data-high 56&&gpiotool --set-data-high 57&&gpiotool --set-data-high 58&&gpiotool --set-data-high 59'
+Permission denied, please try again.
+search_board_type Mt.Collins_169
+./sshpass -p Ampere@4655 ssh -o StrictHostKeyChecking=no -t amplab@10.38.161.3 'ipmitool -H 10.38.161.47 -U admin -P admin -I lanplus -z 0x7fff  fru print'
+Setting large buffer to 32767
+FRU Device Description : Builtin FRU Device (ID 0)
+ Product Name          : _83_,,
+ Product Part Number   : 466969cb01400200436f6c6c210000000000000070b73ebaaaaa000010a03ebaaaaa00000000000000000000a1
+ Product Version       : 0000
+
+Connection to 10.38.161.3 closed.
+./sshpass -p Ampere@4655 ssh -o StrictHostKeyChecking=no -t amplab@10.38.161.3 'ipmitool -H 10.38.161.47 -U admin -P admin -I lanplus -z 0x7fff  mc info'
+Setting large buffer to 32767
+Device ID                 : 32
+Device Revision           : 1
+Firmware Revision         : 0.15
+IPMI Version              : 2.0
+Manufacturer ID           : 0
+Manufacturer Name         : Unknown
+Product ID                : 514 (0x0202)
+Product Name              : Unknown (0x202)
+Device Available          : yes
+Provides Device SDRs      : yes
+Additional Device Support :
+    Sensor Device
+    SDR Repository Device
+    SEL Device
+    FRU Inventory Device
+    IPMB Event Receiver
+    IPMB Event Generator
+    Chassis Device
+Aux Firmware Rev Info     : 
+    0xf5
+    0x79
+    0x00
+    0x00
+Connection to 10.38.161.3 closed.
+./sshpass -p superuser ssh -o StrictHostKeyChecking=no -t sysadmin@10.38.161.47 'ifconfig|grep HWaddr'
+eth0      Link encap:Ethernet  HWaddr D0:F0:3C:8A:46:A4  
+usb0      Link encap:Ethernet  HWaddr 52:1C:4A:B9:D7:69  
+Connection to 10.38.161.47 closed../sshpass -p None ssh -o StrictHostKeyChecking=no -t None@10.38.161.47 'gpiotool --set-data-high 56&&gpiotool --set-data-high 57&&gpiotool --set-data-high 58&&gpiotool --set-data-high 59'
+Permission denied, please try again.
+search_board_type Mt.Collins_169
+./sshpass -p Ampere@4655 ssh -o StrictHostKeyChecking=no -t amplab@10.38.161.3 'ipmitool -H 10.38.161.47 -U admin -P admin -I lanplus -z 0x7fff  fru print'
+Setting large buffer to 32767
+FRU Device Description : Builtin FRU Device (ID 0)
+ Product Name          : _83_,,
+ Product Part Number   : 466969cb01400200436f6c6c2100000000000000702722d8aaaa0000101022d8aaaa00000000000000000000a1
+ Product Version       : 0000
+
+Connection to 10.38.161.3 closed.
+./sshpass -p Ampere@4655 ssh -o StrictHostKeyChecking=no -t amplab@10.38.161.3 'ipmitool -H 10.38.161.47 -U admin -P admin -I lanplus -z 0x7fff  mc info'
+Setting large buffer to 32767
+Device ID                 : 32
+Device Revision           : 1
+Firmware Revision         : 0.15
+IPMI Version              : 2.0
+Manufacturer ID           : 0
+Manufacturer Name         : Unknown
+Product ID                : 514 (0x0202)
+Product Name              : Unknown (0x202)
+Device Available          : yes
+Provides Device SDRs      : yes
+Additional Device Support :
+    Sensor Device
+    SDR Repository Device
+    SEL Device
+    FRU Inventory Device
+    IPMB Event Receiver
+    IPMB Event Generator
+    Chassis Device
+Aux Firmware Rev Info     : 
+    0xf5
+    0x79
+    0x00
+    0x00
+Connection to 10.38.161.3 closed.
+./sshpass -p superuser ssh -o StrictHostKeyChecking=no -t sysadmin@10.38.161.47 'ifconfig|grep HWaddr'
+eth0      Link encap:Ethernet  HWaddr D0:F0:3C:8A:46:A4  
+usb0      Link encap:Ethernet  HWaddr 52:1C:4A:B9:D7:69  
+Connection to 10.38.161.47 closed.

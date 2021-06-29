@@ -1,0 +1,281 @@
+Host 10.38.175.43 not found in /home/amcclab/.ssh/known_hosts
+search_board_type Mt.Jade
+ipmitool -H 10.38.175.43 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  sol deactivate instance=2
+Setting large buffer to 32767
+ipmitool -H 10.38.175.43 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  sol activate=usesolkeepalive instance=2
+logs/59/Mt.Jade_59_210505_125405/Mt.Jade_59_cpu_sleep_2000_call_trace.cfg_at_1_210505_125405s0cli.log
+
+
+SMpro Rom Firmware v1.0 - build 20190626
+Host 10.38.175.43 not found in /home/amcclab/.ssh/known_hosts
+search_board_type Mt.Jade
+ipmitool -H 10.38.175.43 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  sol deactivate instance=4
+Setting large buffer to 32767
+ipmitool -H 10.38.175.43 -U ADMIN -P ADMIN -I lanplus -z 0x7fff  sol activate=usesolkeepalive instance=4
+logs/59/Mt.Jade_59_210505_125405/Mt.Jade_59_cpu_sleep_2000_call_trace.cfg_at_1_210505_125405s1cli.log
+
+SEC:fuselock: 00000001 tmmdbglockr: 00000000
+tmmnsdbgcsr: 00000003 tmmsdbgcsr: 00000003
+
+SMpro Runtime Firmware v1.5 - build 20210426
+Failsafe: 0
+Load PMpro
+
+SMpro Rom Firmware v1.0 - build 20190626
+Enabling CLI
+Authenticated PMpro
+Board: config 0
+Available CPM: 0x000000FFFFFFFFFF
+Release S1
+SEC:fuselock: 00000001 tmmdbglockr: 00000000
+tmmnsdbgcsr: 00000003 tmmsdbgcsr: 00000003
+
+SMpro Runtime Firmware v1.5 - build 20210426
+Load PMpro
+S1: Ready
+Enabling CLI
+Authenticated PMpro
+Master: Ready
+Board: config 0
+Available CPM: 0x000000FFFFFFFFFF
+S1: Sync
+S1: Sync
+Boot PMpro
+Load BL1
+Boot PMpro
+Probe I2C10 DIMM0
+BL1 authenticated
+Probe I2C10 DIMM0
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM1
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM2
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM3
+I2C10: Clear bus
+Probe I2C10 DIMM1
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM2
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM3
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM4
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM5
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM4
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM5
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM6
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM7
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C2 DIMM0
+Probe I2C10 DIMM6
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C10 DIMM7
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+I2C10: Clear bus
+Probe I2C2 DIMM0
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM1
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM2
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM3
+Probe I2C2 DIMM1
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM2
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM3
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM4
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM4
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM5
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM6
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM7
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+DDR: Operational     DIMM: 0x00000001
+DDR: Failure         DIMM: 0x00000000
+Probe I2C2 DIMM5
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM6
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+Probe I2C2 DIMM7
+I2C2: Clear bus
+DDR: Non-Operational DIMM: 0x00000000
+128KB OCM protection active
+PCP initialized
+vTPM: SCP Measurement Completes.
+SMpro ready
+S1-cli>I2C2: Clear bus
+I2C2: Clear bus
+I2C2: Clear bus
+DDR: Operational     DIMM: 0x00000100
+DDR: Failure         DIMM: 0x00000000
+DDR: Non-Operational DIMM: 0x00000000
+128KB OCM protection active
+PCP initialized
+Host 10.38.175.43 not found in /home/amcclab/.ssh/known_hosts
+search_board_type Mt.Jade
+[1039315.803791] ttyUSB4' AD0JU57O
+[804974.374740] ttyUSB12' FTBZ7CEX
+[796927.482771] ttyUSB13' AD0JUNRA
+[783273.747501] ttyUSB10' AH072U9K
+[783269.079716] ttyUSB1' AB0JI8KO
+[783264.595438] ttyUSB0' AB0KUEM7
+[435055.522872] ttyUSB6' AD0K9J3A
+[280929.159767] ttyUSB14' FTEZFHVX
+[   16.121466] ttyUSB11' AC019YQ9
+[   16.118965] ttyUSB9' FTEZFKX8
+[   16.117715] ttyUSB8' AC01X49Y
+[   16.116480] ttyUSB7' AC01X41Z
+[   16.113971] ttyUSB5' AB0JI8KK
+[   16.111359] ttyUSB3' AM00F4ES
+[   16.110036] ttyUSB2' AC019YQK
+logs/59/Mt.Jade_59_210505_125405/Mt.Jade_59_cpu_sleep_2000_call_trace.cfg_at_1_210505_125405uefi.log
+--------------------------------------------
+NOTICE:  DRAM FW versionvTPM: SCP Measurement Completes.
+SMpro ready
+S0-cli> 
+PMpro output start
+PMpro Runtime Firmware v1.5 - build 20210426
+2P mode: 0x00000002
+2P Cfg: 0xFFFFFF01
+2PLINK0 (RC/EP): 0x00000010/0x00000000 0x00000004/0x00000000
+2PLINK1 (RC/EP): 0x00000010/0x00000000 0x00000004/0x00000000
+2PLINK0 (RC/EP): 0x00000010/0x00000000 0x00000004/0x00000000
+2PLINK0: EP: Link Up
+2PLINK1 (RC/EP): 0x00000010/0x00000000 0x00000004/0x00000000
+2PLINK1: EP: Link Up
+TPC: Throttling disabled
+
+PMpro output complete
+
+cli> 
+PMpro output start
+PMpro Runtime Firmware v1.5 - build 20210426
+2P mode: 0x00000002
+2P Cfg: 0xFFFFFF01
+2PLINK1 (RC/EP): 0x00000010/0x00000010 0x00000004/0x00000004
+2PLINK0 (RC/EP): 0x00000010/0x00000010 0x00000004/0x00000004
+2PLINK0 (RC/EP): 0x00000010/0x00000010 0x00000004/0x00000004
+2PLINK0: Link Up
+2PLINK1 (RC/EP): 0x00000010/0x00000010 0x00000004/0x00000004
+2PLINK1: Link Up
+Preset: 0x77777777 0x22222222
+2PLINK0 (RC/EP): 0x00000010/0x00000010 0x0000000F/0x0000000F
+Preset: 0x77777777 0x22222222
+2PLINK1 (RC/EP): 0x00000010/0x00000010 0x0000000F/0x0000000F
+TPC: Throttling disabled
+
+PMpro output complete
+
+cli> mdw -l 0x50002d14
+0x520C0503
+S1-cli> 
+
+cli> mdw -l 0x50002d18
+0x03382094
+S1-cli> 
+ mdw -l 0x50002d14
+0x520D0509
+S0-cli> 
+
+cli> mdw -l 0x50002d18
+0x03382094
+S0-cli> 
+ZQCS period(msec): 200
+ZQCS period(msec): 200

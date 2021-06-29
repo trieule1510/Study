@@ -1,0 +1,179 @@
+<div class='w3-container '><p>./linux_test.py --start_test 0 --hostip 10.38.172.2 --hostuser root --hostpass root --bmcip 10.38.172.51 --board Mt.Jade --test_cfg memtester_300.cfg --wait 0 --sys_log logs/37/Mt.Jade_37_210421_150637.log --test_cfg memtester_300.cfg --nv_scan SI_PLT_EN[0],SI_DDR_ECC_MODE[1],SI_DDR_ZQCS_EN[1],SI_DDR_SCRUB_EN[0x000005a0]  </p></div>
+
+
+
+
+exec_cmd ./xconsole.py --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --set_nvparm [SI_DDR_SCRUB_EN:1146944:0x5A0][SI_DDR_ZQCS_EN:1147208:0x1][SI_DDR_ECC_MODE:1146952:0x1][SI_PLT_EN:1130752:0x0] --debug 0 --hostpass root --hostip 10.38.172.2
+<div class='w3-container '><p>./linux_test.py --start_test 1 --linux_script echo --time 1800 --loop 2 --hostip 10.38.172.2 --hostuser root --hostpass root --bmcip 10.38.172.51 --board Mt.Jade --test_cfg memtester_300.cfg --wait 0 --sys_log logs/37/Mt.Jade_37_210421_150637.log --test_cfg memtester_300.cfg --nv_scan SI_DDR_VMARGIN[0.-60.60]  </p></div>
+
+
+
+
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+exec_cmd ./xconsole.py --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --set_nvparm [SI_DDR_VMARGIN:1130496:0x0] --debug 0 --hostpass root --hostip 10.38.172.2
+./xconsole.py --tty 2 --log logs/37/Mt.Jade_37_210421_150637/Mt.Jade_memtester_300.cfg_at_1_210421_150654s0cli.log --hostip 10.38.172.2 --hostuser root --note s0cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 4 --log logs/37/Mt.Jade_37_210421_150637/Mt.Jade_memtester_300.cfg_at_1_210421_150654s1cli.log --hostip 10.38.172.2 --hostuser root --note s1cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 3 --log logs/37/Mt.Jade_37_210421_150637/Mt.Jade_memtester_300.cfg_at_1_210421_150654atf.log --hostip 10.38.172.2 --hostuser root --note atf --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 1 --log logs/37/Mt.Jade_37_210421_150637/Mt.Jade_memtester_300.cfg_at_1_210421_150654uefi.log --hostip 10.38.172.2 --hostuser root --note uefi --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+<div class='w3-container '><p><a href='/logs/37/Mt.Jade_37_210421_150637/Mt.Jade_memtester_300.cfg_at_1_210421_150654.txt'>CHASSIS POWER ON[210421_150654]</a></p></div>
+exec_cmd ./xconsole.py --cmd on --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+<div class='w3-container '><p>__INFO__: 210212_256GB_2666_SECDED_ECC_1P_2DPC_16_16xDIMM_16GB_18ASF2G72PDZ-2G6E1</p></div>
+|_send root
+|_send root
+|_send cd /var/tmp
+[210421_150931]Start echo
+|_send echo 1800
+echo break re=[]#]
+[210421_150932]End echo in 1 sec
+|_send echo exit_code_$?_
+<div class='w3-container  w3-text-blue'><p>__STATUS__:  SI_DDR_VMARGIN[0x0] loop[1] TEST_PASS[PASS] total_pass[1/6] total_fail[0/6]</p></div>
+_DDR_VMARGIN0x0__pass_count 1
+_DDR_VMARGIN0x0__cli_fail_count 0
+_DDR_VMARGIN0x0__fail_info 
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+exec_cmd ./xconsole.py --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --set_nvparm [SI_DDR_VMARGIN:1130496:0xFFFFFFC4] --debug 0 --hostpass root --hostip 10.38.172.2
+./xconsole.py --tty 2 --log logs/37/Mt.Jade_37_210421_150637/Mt.Jade_memtester_300.cfg_at_2_210421_150938s0cli.log --hostip 10.38.172.2 --hostuser root --note s0cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 4 --log logs/37/Mt.Jade_37_210421_150637/Mt.Jade_memtester_300.cfg_at_2_210421_150938s1cli.log --hostip 10.38.172.2 --hostuser root --note s1cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 3 --log logs/37/Mt.Jade_37_210421_150637/Mt.Jade_memtester_300.cfg_at_2_210421_150938atf.log --hostip 10.38.172.2 --hostuser root --note atf --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 1 --log logs/37/Mt.Jade_37_210421_150637/Mt.Jade_memtester_300.cfg_at_2_210421_150938uefi.log --hostip 10.38.172.2 --hostuser root --note uefi --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+<div class='w3-container '><p><a href='/logs/37/Mt.Jade_37_210421_150637/Mt.Jade_memtester_300.cfg_at_2_210421_150938.txt'>CHASSIS POWER ON[210421_150938]</a></p></div>
+exec_cmd ./xconsole.py --cmd on --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+<div class='w3-container '><p>__INFO__: 210212_256GB_2666_SECDED_ECC_1P_2DPC_16_16xDIMM_16GB_18ASF2G72PDZ-2G6E1</p></div>
+|_send root
+|_send root
+|_send cd /var/tmp
+[210421_151215]Start echo
+|_send echo 1800
+echo break re=[]#]
+[210421_151216]End echo in 1 sec
+|_send echo exit_code_$?_
+<div class='w3-container  w3-text-blue'><p>__STATUS__:  SI_DDR_VMARGIN[0xFFFFFFC4] loop[1] TEST_PASS[PASS] total_pass[2/6] total_fail[0/6]</p></div>
+_DDR_VMARGIN0x0__pass_count 1
+_DDR_VMARGIN0x0__cli_fail_count 0
+_DDR_VMARGIN0x0__fail_info 
+_DDR_VMARGIN0xFFFFFFC4__pass_count 1
+_DDR_VMARGIN0xFFFFFFC4__cli_fail_count 0
+_DDR_VMARGIN0xFFFFFFC4__fail_info 
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+exec_cmd ./xconsole.py --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --set_nvparm [SI_DDR_VMARGIN:1130496:0x3C] --debug 0 --hostpass root --hostip 10.38.172.2
+./xconsole.py --tty 2 --log logs/37/Mt.Jade_37_210421_150637/Mt.Jade_memtester_300.cfg_at_3_210421_151223s0cli.log --hostip 10.38.172.2 --hostuser root --note s0cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 4 --log logs/37/Mt.Jade_37_210421_150637/Mt.Jade_memtester_300.cfg_at_3_210421_151223s1cli.log --hostip 10.38.172.2 --hostuser root --note s1cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 3 --log logs/37/Mt.Jade_37_210421_150637/Mt.Jade_memtester_300.cfg_at_3_210421_151223atf.log --hostip 10.38.172.2 --hostuser root --note atf --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 1 --log logs/37/Mt.Jade_37_210421_150637/Mt.Jade_memtester_300.cfg_at_3_210421_151223uefi.log --hostip 10.38.172.2 --hostuser root --note uefi --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+<div class='w3-container '><p><a href='/logs/37/Mt.Jade_37_210421_150637/Mt.Jade_memtester_300.cfg_at_3_210421_151223.txt'>CHASSIS POWER ON[210421_151223]</a></p></div>
+exec_cmd ./xconsole.py --cmd on --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+<div class='w3-container '><p>__INFO__: 210212_256GB_2666_SECDED_ECC_1P_2DPC_16_16xDIMM_16GB_18ASF2G72PDZ-2G6E1</p></div>
+|_send root
+|_send root
+|_send cd /var/tmp
+[210421_151459]Start echo
+|_send echo 1800
+echo break re=[]#]
+[210421_151500]End echo in 1 sec
+|_send echo exit_code_$?_
+<div class='w3-container  w3-text-blue'><p>__STATUS__:  SI_DDR_VMARGIN[0x3C] loop[1] TEST_PASS[PASS] total_pass[3/6] total_fail[0/6]</p></div>
+_DDR_VMARGIN0x0__pass_count 1
+_DDR_VMARGIN0x0__cli_fail_count 0
+_DDR_VMARGIN0x0__fail_info 
+_DDR_VMARGIN0xFFFFFFC4__pass_count 1
+_DDR_VMARGIN0xFFFFFFC4__cli_fail_count 0
+_DDR_VMARGIN0xFFFFFFC4__fail_info 
+_DDR_VMARGIN0x3C__pass_count 1
+_DDR_VMARGIN0x3C__cli_fail_count 0
+_DDR_VMARGIN0x3C__fail_info 
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+exec_cmd ./xconsole.py --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --set_nvparm [SI_DDR_VMARGIN:1130496:0x0] --debug 0 --hostpass root --hostip 10.38.172.2
+./xconsole.py --tty 2 --log logs/37/Mt.Jade_37_210421_150637/Mt.Jade_memtester_300.cfg_at_4_210421_151505s0cli.log --hostip 10.38.172.2 --hostuser root --note s0cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 4 --log logs/37/Mt.Jade_37_210421_150637/Mt.Jade_memtester_300.cfg_at_4_210421_151505s1cli.log --hostip 10.38.172.2 --hostuser root --note s1cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 3 --log logs/37/Mt.Jade_37_210421_150637/Mt.Jade_memtester_300.cfg_at_4_210421_151505atf.log --hostip 10.38.172.2 --hostuser root --note atf --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 1 --log logs/37/Mt.Jade_37_210421_150637/Mt.Jade_memtester_300.cfg_at_4_210421_151505uefi.log --hostip 10.38.172.2 --hostuser root --note uefi --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+<div class='w3-container '><p><a href='/logs/37/Mt.Jade_37_210421_150637/Mt.Jade_memtester_300.cfg_at_4_210421_151505.txt'>CHASSIS POWER ON[210421_151505]</a></p></div>
+exec_cmd ./xconsole.py --cmd on --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+<div class='w3-container '><p>__INFO__: 210212_256GB_2666_SECDED_ECC_1P_2DPC_16_16xDIMM_16GB_18ASF2G72PDZ-2G6E1</p></div>
+|_send root
+|_send root
+|_send cd /var/tmp
+[210421_151743]Start echo
+|_send echo 1800
+echo break re=[]#]
+[210421_151744]End echo in 1 sec
+|_send echo exit_code_$?_
+<div class='w3-container  w3-text-blue'><p>__STATUS__:  SI_DDR_VMARGIN[0x0] loop[2] TEST_PASS[PASS] total_pass[4/6] total_fail[0/6]</p></div>
+_DDR_VMARGIN0x0__pass_count 1
+_DDR_VMARGIN0x0__cli_fail_count 0
+_DDR_VMARGIN0x0__fail_info 
+_DDR_VMARGIN0xFFFFFFC4__pass_count 1
+_DDR_VMARGIN0xFFFFFFC4__cli_fail_count 0
+_DDR_VMARGIN0xFFFFFFC4__fail_info 
+_DDR_VMARGIN0x3C__pass_count 1
+_DDR_VMARGIN0x3C__cli_fail_count 0
+_DDR_VMARGIN0x3C__fail_info 
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+exec_cmd ./xconsole.py --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --set_nvparm [SI_DDR_VMARGIN:1130496:0xFFFFFFC4] --debug 0 --hostpass root --hostip 10.38.172.2
+./xconsole.py --tty 2 --log logs/37/Mt.Jade_37_210421_150637/Mt.Jade_memtester_300.cfg_at_5_210421_151750s0cli.log --hostip 10.38.172.2 --hostuser root --note s0cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 4 --log logs/37/Mt.Jade_37_210421_150637/Mt.Jade_memtester_300.cfg_at_5_210421_151750s1cli.log --hostip 10.38.172.2 --hostuser root --note s1cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 3 --log logs/37/Mt.Jade_37_210421_150637/Mt.Jade_memtester_300.cfg_at_5_210421_151750atf.log --hostip 10.38.172.2 --hostuser root --note atf --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 1 --log logs/37/Mt.Jade_37_210421_150637/Mt.Jade_memtester_300.cfg_at_5_210421_151750uefi.log --hostip 10.38.172.2 --hostuser root --note uefi --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+<div class='w3-container '><p><a href='/logs/37/Mt.Jade_37_210421_150637/Mt.Jade_memtester_300.cfg_at_5_210421_151750.txt'>CHASSIS POWER ON[210421_151750]</a></p></div>
+exec_cmd ./xconsole.py --cmd on --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+<div class='w3-container '><p>__INFO__: 210212_256GB_2666_SECDED_ECC_1P_2DPC_16_16xDIMM_16GB_18ASF2G72PDZ-2G6E1</p></div>
+|_send root
+|_send root
+|_send cd /var/tmp
+[210421_152030]Start echo
+|_send echo 1800
+echo break re=[]#]
+[210421_152031]End echo in 1 sec
+|_send echo exit_code_$?_
+<div class='w3-container  w3-text-blue'><p>__STATUS__:  SI_DDR_VMARGIN[0xFFFFFFC4] loop[2] TEST_PASS[PASS] total_pass[5/6] total_fail[0/6]</p></div>
+_DDR_VMARGIN0x0__pass_count 1
+_DDR_VMARGIN0x0__cli_fail_count 0
+_DDR_VMARGIN0x0__fail_info 
+_DDR_VMARGIN0xFFFFFFC4__pass_count 1
+_DDR_VMARGIN0xFFFFFFC4__cli_fail_count 0
+_DDR_VMARGIN0xFFFFFFC4__fail_info 
+_DDR_VMARGIN0x3C__pass_count 1
+_DDR_VMARGIN0x3C__cli_fail_count 0
+_DDR_VMARGIN0x3C__fail_info 
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+exec_cmd ./xconsole.py --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --set_nvparm [SI_DDR_VMARGIN:1130496:0x3C] --debug 0 --hostpass root --hostip 10.38.172.2
+./xconsole.py --tty 2 --log logs/37/Mt.Jade_37_210421_150637/Mt.Jade_memtester_300.cfg_at_6_210421_152036s0cli.log --hostip 10.38.172.2 --hostuser root --note s0cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 4 --log logs/37/Mt.Jade_37_210421_150637/Mt.Jade_memtester_300.cfg_at_6_210421_152036s1cli.log --hostip 10.38.172.2 --hostuser root --note s1cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 3 --log logs/37/Mt.Jade_37_210421_150637/Mt.Jade_memtester_300.cfg_at_6_210421_152036atf.log --hostip 10.38.172.2 --hostuser root --note atf --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 1 --log logs/37/Mt.Jade_37_210421_150637/Mt.Jade_memtester_300.cfg_at_6_210421_152036uefi.log --hostip 10.38.172.2 --hostuser root --note uefi --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+<div class='w3-container '><p><a href='/logs/37/Mt.Jade_37_210421_150637/Mt.Jade_memtester_300.cfg_at_6_210421_152036.txt'>CHASSIS POWER ON[210421_152036]</a></p></div>
+exec_cmd ./xconsole.py --cmd on --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+<div class='w3-container '><p>__INFO__: 210212_256GB_2666_SECDED_ECC_1P_2DPC_16_16xDIMM_16GB_18ASF2G72PDZ-2G6E1</p></div>
+|_send root
+|_send root
+|_send cd /var/tmp
+[210421_152311]Start echo
+|_send echo 1800
+echo break re=[]#]
+[210421_152313]End echo in 1 sec
+|_send echo exit_code_$?_
+<div class='w3-container  w3-text-blue'><p>__STATUS__:  SI_DDR_VMARGIN[0x3C] loop[2] TEST_PASS[PASS] total_pass[6/6] total_fail[0/6]</p></div>
+_DDR_VMARGIN0x0__pass_count 1
+_DDR_VMARGIN0x0__cli_fail_count 0
+_DDR_VMARGIN0x0__fail_info 
+_DDR_VMARGIN0xFFFFFFC4__pass_count 1
+_DDR_VMARGIN0xFFFFFFC4__cli_fail_count 0
+_DDR_VMARGIN0xFFFFFFC4__fail_info 
+_DDR_VMARGIN0x3C__pass_count 1
+_DDR_VMARGIN0x3C__cli_fail_count 0
+_DDR_VMARGIN0x3C__fail_info 
+_DDR_VMARGIN0x0__pass_count 1
+_DDR_VMARGIN0x0__cli_fail_count 0
+_DDR_VMARGIN0x0__fail_info 
+_DDR_VMARGIN0xFFFFFFC4__pass_count 1
+_DDR_VMARGIN0xFFFFFFC4__cli_fail_count 0
+_DDR_VMARGIN0xFFFFFFC4__fail_info 
+_DDR_VMARGIN0x3C__pass_count 1
+_DDR_VMARGIN0x3C__cli_fail_count 0
+_DDR_VMARGIN0x3C__fail_info 

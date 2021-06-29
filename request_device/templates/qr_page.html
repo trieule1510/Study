@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Device Manager</title>
+	<link rel="icon" href="/static/icon.png" type="image/x-icon" >
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+ 	<script src="{{ url_for('static', filename='js/js.js') }}"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="w3-container w3-row-padding">
+					{% for e in devices %}
+					<div class="w3-light-blue"> <br> </div>
+					<div class="w3-row">
+						<div class="w3-col m3  w3-right-align" style="white-space: pre-line" >{{e[2]}} {{e[9]}} {{e[10]}} {{e[3]}}</div> 
+						<div class="w3-col m2 container w3-center "><img width="43%" height="43%" src="/static/qr/{{e[3]}}.png"></div>
+						<div class="w3-col m3  w3-right-align" style="white-space: pre-line" >{{e[2]}} {{e[9]}} {{e[10]}} {{e[3]}}</div> 
+						<div class="w3-col m2 container w3-center "><img width="43%" height="43%" src="/static/qr/{{e[3]}}.png"></div>  
+					</div>
+					<div class="w3-light-blue"> <br> </div>
+					<div class="w3-row">
+						<div class="w3-col m3  w3-right-align" style="white-space: pre-line" >{{e[2]}} {{e[9]}} {{e[10]}} {{e[3]}}</div> 
+						<div class="w3-col m2 container w3-center "><img width="43%" height="43%" src="/static/qr/{{e[3]}}.png"></div>
+						<div class="w3-col m3  w3-right-align" style="white-space: pre-line" >{{e[2]}} {{e[9]}} {{e[10]}} {{e[3]}}</div> 
+						<div class="w3-col m2 container w3-center "><img width="43%" height="43%" src="/static/qr/{{e[3]}}.png"></div>  
+					</div>
+					<div class="w3-light-blue"> <br> </div>
+					<div class="w3-row">
+						<div class="w3-col m3  w3-right-align" style="white-space: pre-line" >{{e[2]}} {{e[9]}} {{e[10]}} {{e[3]}}</div> 
+						<div class="w3-col m2 container w3-center "><img width="43%" height="43%" src="/static/qr/{{e[3]}}.png"></div>
+						<div class="w3-col m3  w3-right-align" style="white-space: pre-line" >{{e[2]}} {{e[9]}} {{e[10]}} {{e[3]}}</div> 
+						<div class="w3-col m2 container w3-center "><img width="43%" height="43%" src="/static/qr/{{e[3]}}.png"></div>  
+					</div>
+					<div class="w3-light-blue"> <br> </div>
+					<div class="w3-row">
+						<div class="w3-col m3  w3-right-align" style="white-space: pre-line" >{{e[2]}} {{e[9]}} {{e[10]}} {{e[3]}}</div> 
+						<div class="w3-col m2 container w3-center "><img width="43%" height="43%" src="/static/qr/{{e[3]}}.png"></div>
+						<div class="w3-col m3  w3-right-align" style="white-space: pre-line" >{{e[2]}} {{e[9]}} {{e[10]}} {{e[3]}}</div> 
+						<div class="w3-col m2 container w3-center "><img width="43%" height="43%" src="/static/qr/{{e[3]}}.png"></div>  
+					</div>
+					<div class="w3-light-blue"> <br> </div>
+					<div class="w3-row">
+						<div class="w3-col m3  w3-right-align" style="white-space: pre-line" >{{e[2]}} {{e[9]}} {{e[10]}} {{e[3]}}</div> 
+						<div class="w3-col m2 container w3-center "><img width="43%" height="43%" src="/static/qr/{{e[3]}}.png"></div>
+						<div class="w3-col m3  w3-right-align" style="white-space: pre-line" >{{e[2]}} {{e[9]}} {{e[10]}} {{e[3]}}</div> 
+						<div class="w3-col m2 container w3-center "><img width="43%" height="43%" src="/static/qr/{{e[3]}}.png"></div>  
+					</div>
+					<div class="w3-light-blue"> <br> </div>
+					<div class="w3-row">
+						<div class="w3-col m3  w3-right-align" style="white-space: pre-line" >{{e[2]}} {{e[9]}} {{e[10]}} {{e[3]}}</div> 
+						<div class="w3-col m2 container w3-center "><img width="43%" height="43%" src="/static/qr/{{e[3]}}.png"></div>
+						<div class="w3-col m3  w3-right-align" style="white-space: pre-line" >{{e[2]}} {{e[9]}} {{e[10]}} {{e[3]}}</div> 
+						<div class="w3-col m2 container w3-center "><img width="43%" height="43%" src="/static/qr/{{e[3]}}.png"></div>  
+					</div>
+					<div class="w3-light-blue"> <br> </div>
+					<div class="w3-row">
+						<div class="w3-col m3  w3-right-align" style="white-space: pre-line" >{{e[2]}} {{e[9]}} {{e[10]}} {{e[3]}}</div> 
+						<div class="w3-col m2 container w3-center "><img width="43%" height="43%" src="/static/qr/{{e[3]}}.png"></div>
+						<div class="w3-col m3  w3-right-align" style="white-space: pre-line" >{{e[2]}} {{e[9]}} {{e[10]}} {{e[3]}}</div> 
+						<div class="w3-col m2 container w3-center "><img width="43%" height="43%" src="/static/qr/{{e[3]}}.png"></div>  
+					</div>
+					<div class="w3-light-blue"> <br> </div>
+				{% endfor %}
+		</div>
+	</div>
+</body>
+</html>

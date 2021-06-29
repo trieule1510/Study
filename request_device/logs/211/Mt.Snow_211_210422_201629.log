@@ -1,0 +1,14 @@
+<div class='w3-container '><p>./linux_test.py --test_case test_delivery --loop 10 --start_test 1 --time 1800 --linux_script ./test_delivery.sh --sensor_bg 1 --sol_atf 0 --sol_s0cli 0 --sol_s1cli 0 --bmcip 10.38.172.46 --board_type Mt.Snow --test_cfg test_delivery_01.cfg --wait 0 --sys_log logs/211/Mt.Snow_211_210422_201629.log --test_cfg test_delivery_01.cfg --nv_scan SI_SOC_VMARGIN[0.-38.37],SI_DDR_VMARGIN[0.-60.60]  </p></div>
+
+
+
+
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --bmcip 10.38.172.46 --board Mt.Snow --debug 0
+exec_cmd ./xconsole.py --bmcip 10.38.172.46 --board Mt.Snow --set_nvparm [SI_DDR_VMARGIN:1130496:0x0][SI_SOC_VMARGIN:1130504:0x0] --debug 0
+Test without tty_s0cli
+Test without tty_s0cli
+Test without tty_s0cli
+./xconsole.py --tty 1 --log logs/211/Mt.Snow_211_210422_201629/BMCIP_10.38.172.46_test_delivery_test_delivery_01.cfg_at_1_210422_201629uefi.log --note uefi --bmcip 10.38.172.46 --board Mt.Snow --debug 0
+<div class='w3-container '><p><a href='/logs/211/Mt.Snow_211_210422_201629/BMCIP_10.38.172.46_test_delivery_test_delivery_01.cfg_at_1_210422_201629.txt'>CHASSIS POWER ON[210422_201629]</a></p></div>
+exec_cmd ./xconsole.py --cmd on --bmcip 10.38.172.46 --board Mt.Snow --debug 0

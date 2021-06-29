@@ -1,0 +1,104 @@
+<div class='w3-container '><p>./linux_test.py --start_test 0 --hostip 10.38.172.2 --hostuser root --hostpass root --bmcip 10.38.172.51 --board Mt.Jade --test_cfg memtester_300.cfg --wait 0 --sys_log logs/37/Mt.Jade_37_210421_190620.log --test_cfg memtester_300.cfg --nv_scan SI_PLT_EN[0],SI_DDR_ECC_MODE[1],SI_DDR_ZQCS_EN[1],SI_DDR_SCRUB_EN[0x000005a0]  </p></div>
+
+
+
+
+exec_cmd ./xconsole.py --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --set_nvparm [SI_DDR_SCRUB_EN:1146944:0x5A0][SI_DDR_ZQCS_EN:1147208:0x1][SI_DDR_ECC_MODE:1146952:0x1][SI_PLT_EN:1130752:0x0] --debug 0 --hostpass root --hostip 10.38.172.2
+<div class='w3-container '><p>./linux_test.py --start_test 1 --linux_script echo --time 1800 --loop 2 --hostip 10.38.172.2 --hostuser root --hostpass root --bmcip 10.38.172.51 --board Mt.Jade --test_cfg memtester_300.cfg --wait 0 --sys_log logs/37/Mt.Jade_37_210421_190620.log --test_cfg memtester_300.cfg --nv_scan SI_DDR_VMARGIN[-60.60]  </p></div>
+
+
+
+
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+exec_cmd ./xconsole.py --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --set_nvparm [SI_DDR_VMARGIN:1130496:0xFFFFFFC4] --debug 0 --hostpass root --hostip 10.38.172.2
+./xconsole.py --tty 2 --log logs/37/Mt.Jade_37_210421_190620/Mt.Jade_memtester_300.cfg_at_1_210421_190644s0cli.log --hostip 10.38.172.2 --hostuser root --note s0cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 4 --log logs/37/Mt.Jade_37_210421_190620/Mt.Jade_memtester_300.cfg_at_1_210421_190644s1cli.log --hostip 10.38.172.2 --hostuser root --note s1cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 3 --log logs/37/Mt.Jade_37_210421_190620/Mt.Jade_memtester_300.cfg_at_1_210421_190644atf.log --hostip 10.38.172.2 --hostuser root --note atf --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 1 --log logs/37/Mt.Jade_37_210421_190620/Mt.Jade_memtester_300.cfg_at_1_210421_190644uefi.log --hostip 10.38.172.2 --hostuser root --note uefi --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+<div class='w3-container '><p><a href='/logs/37/Mt.Jade_37_210421_190620/Mt.Jade_memtester_300.cfg_at_1_210421_190644.txt'>CHASSIS POWER ON[210421_190644]</a></p></div>
+exec_cmd ./xconsole.py --cmd on --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+|_send help
+|_send help
+|_send mdw -l 0x50002d14
+|_send mdw -l 0x50002d14
+|_send mdw -l 0x50002d18
+|_send mdw -l 0x50002d18
+<div class='w3-container '><p>__INFO__: 210212_256GB_2666_SECDED_ECC_1P_2DPC_16_16xDIMM_16GB_18ASF2G72PDZ-2G6E1</p></div>
+|_send root
+|_send root
+|_send cd /var/tmp
+[210421_190926]Start echo
+|_send echo 1800
+echo break re=[]#]
+[210421_190927]End echo in 1 sec
+|_send echo exit_code_$?_
+OrderedDict([('atf ERROR:', '4:ERROR:   Failed to populate ROTPK error -16512\r\n5:ERROR:   Failed to populate rotpk key der\r\n10:ERROR:   Failed to populate ROTPK error -16512\r\n11:ERROR:   Failed to populate rotpk key der\r\n32:ERROR:   TPM: TPM startup failed\r\n33:ERROR:   TPM: Discovery unsuccessful\r')])
+<div class='w3-container  w3-text-blue'><p>__STATUS__:  SI_DDR_VMARGIN[0xFFFFFFC4] loop[1] TEST_PASS[PASS] total_pass[1/4] total_fail[0/4]</p></div>
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+exec_cmd ./xconsole.py --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --set_nvparm [SI_DDR_VMARGIN:1130496:0x3C] --debug 0 --hostpass root --hostip 10.38.172.2
+./xconsole.py --tty 2 --log logs/37/Mt.Jade_37_210421_190620/Mt.Jade_memtester_300.cfg_at_2_210421_190929s0cli.log --hostip 10.38.172.2 --hostuser root --note s0cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 4 --log logs/37/Mt.Jade_37_210421_190620/Mt.Jade_memtester_300.cfg_at_2_210421_190929s1cli.log --hostip 10.38.172.2 --hostuser root --note s1cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 3 --log logs/37/Mt.Jade_37_210421_190620/Mt.Jade_memtester_300.cfg_at_2_210421_190929atf.log --hostip 10.38.172.2 --hostuser root --note atf --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 1 --log logs/37/Mt.Jade_37_210421_190620/Mt.Jade_memtester_300.cfg_at_2_210421_190929uefi.log --hostip 10.38.172.2 --hostuser root --note uefi --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+<div class='w3-container '><p><a href='/logs/37/Mt.Jade_37_210421_190620/Mt.Jade_memtester_300.cfg_at_2_210421_190929.txt'>CHASSIS POWER ON[210421_190929]</a></p></div>
+exec_cmd ./xconsole.py --cmd on --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+|_send help
+|_send help
+|_send mdw -l 0x50002d14
+|_send mdw -l 0x50002d14
+|_send mdw -l 0x50002d18
+|_send mdw -l 0x50002d18
+<div class='w3-container '><p>__INFO__: 210212_256GB_2666_SECDED_ECC_1P_2DPC_16_16xDIMM_16GB_18ASF2G72PDZ-2G6E1</p></div>
+|_send root
+|_send root
+|_send cd /var/tmp
+[210421_191209]Start echo
+|_send echo 1800
+echo break re=[]#]
+[210421_191210]End echo in 1 sec
+|_send echo exit_code_$?_
+OrderedDict([('atf ERROR:', '4:ERROR:   Failed to populate ROTPK error -16512\r\n5:ERROR:   Failed to populate rotpk key der\r\n10:ERROR:   Failed to populate ROTPK error -16512\r\n11:ERROR:   Failed to populate rotpk key der\r\n32:ERROR:   TPM: TPM startup failed\r\n33:ERROR:   TPM: Discovery unsuccessful\r')])
+<div class='w3-container  w3-text-blue'><p>__STATUS__:  SI_DDR_VMARGIN[0x3C] loop[1] TEST_PASS[PASS] total_pass[2/4] total_fail[0/4]</p></div>
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+exec_cmd ./xconsole.py --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --set_nvparm [SI_DDR_VMARGIN:1130496:0xFFFFFFC4] --debug 0 --hostpass root --hostip 10.38.172.2
+./xconsole.py --tty 2 --log logs/37/Mt.Jade_37_210421_190620/Mt.Jade_memtester_300.cfg_at_3_210421_191217s0cli.log --hostip 10.38.172.2 --hostuser root --note s0cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 4 --log logs/37/Mt.Jade_37_210421_190620/Mt.Jade_memtester_300.cfg_at_3_210421_191217s1cli.log --hostip 10.38.172.2 --hostuser root --note s1cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 3 --log logs/37/Mt.Jade_37_210421_190620/Mt.Jade_memtester_300.cfg_at_3_210421_191217atf.log --hostip 10.38.172.2 --hostuser root --note atf --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 1 --log logs/37/Mt.Jade_37_210421_190620/Mt.Jade_memtester_300.cfg_at_3_210421_191217uefi.log --hostip 10.38.172.2 --hostuser root --note uefi --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+<div class='w3-container '><p><a href='/logs/37/Mt.Jade_37_210421_190620/Mt.Jade_memtester_300.cfg_at_3_210421_191217.txt'>CHASSIS POWER ON[210421_191217]</a></p></div>
+exec_cmd ./xconsole.py --cmd on --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+|_send help
+|_send help
+|_send mdw -l 0x50002d14
+|_send mdw -l 0x50002d14
+|_send mdw -l 0x50002d18
+|_send mdw -l 0x50002d18
+<div class='w3-container '><p>__INFO__: 210212_256GB_2666_SECDED_ECC_1P_2DPC_16_16xDIMM_16GB_18ASF2G72PDZ-2G6E1</p></div>
+|_send root
+|_send root
+|_send cd /var/tmp
+[210421_191451]Start echo
+|_send echo 1800
+echo break re=[]#]
+[210421_191452]End echo in 1 sec
+|_send echo exit_code_$?_
+OrderedDict([('uefi MEMC param:', '3:MEMC param:\r'), ('atf ERROR:', '4:ERROR:   Failed to populate ROTPK error -16512\r\n5:ERROR:   Failed to populate rotpk key der\r\n10:ERROR:   Failed to populate ROTPK error -16512\r\n11:ERROR:   Failed to populate rotpk key der\r\n32:ERROR:   TPM: TPM startup failed\r\n33:ERROR:   TPM: Discovery unsuccessful\r')])
+<div class='w3-container  w3-text-blue'><p>__STATUS__:  SI_DDR_VMARGIN[0xFFFFFFC4] loop[2] TEST_PASS[PASS] total_pass[3/4] total_fail[0/4]</p></div>
+CHASSIS POWER OFF
+exec_cmd ./xconsole.py --cmd off --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+exec_cmd ./xconsole.py --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --set_nvparm [SI_DDR_VMARGIN:1130496:0x3C] --debug 0 --hostpass root --hostip 10.38.172.2
+./xconsole.py --tty 2 --log logs/37/Mt.Jade_37_210421_190620/Mt.Jade_memtester_300.cfg_at_4_210421_191458s0cli.log --hostip 10.38.172.2 --hostuser root --note s0cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 4 --log logs/37/Mt.Jade_37_210421_190620/Mt.Jade_memtester_300.cfg_at_4_210421_191458s1cli.log --hostip 10.38.172.2 --hostuser root --note s1cli --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 3 --log logs/37/Mt.Jade_37_210421_190620/Mt.Jade_memtester_300.cfg_at_4_210421_191458atf.log --hostip 10.38.172.2 --hostuser root --note atf --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+./xconsole.py --tty 1 --log logs/37/Mt.Jade_37_210421_190620/Mt.Jade_memtester_300.cfg_at_4_210421_191458uefi.log --hostip 10.38.172.2 --hostuser root --note uefi --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root
+<div class='w3-container '><p><a href='/logs/37/Mt.Jade_37_210421_190620/Mt.Jade_memtester_300.cfg_at_4_210421_191458.txt'>CHASSIS POWER ON[210421_191458]</a></p></div>
+exec_cmd ./xconsole.py --cmd on --hostuser root --bmcip 10.38.172.51 --board Mt.Jade --debug 0 --hostpass root --hostip 10.38.172.2
+|_send help
+|_send help
+|_send mdw -l 0x50002d14
+|_send mdw -l 0x50002d14
+|_send mdw -l 0x50002d18
+|_send mdw -l 0x50002d18

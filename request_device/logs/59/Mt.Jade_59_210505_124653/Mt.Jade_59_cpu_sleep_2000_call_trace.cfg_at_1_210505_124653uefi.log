@@ -1,0 +1,1272 @@
+NOTICE:  DRAM FW version 210312
+CP: 0ff00900
+MEMC param:
+  mcu_enable_mask = 00000010 [default: 000000ff]
+CP: 1ff00900
+MEMC param:
+  mcu_enable_mask = 00000001 [default: 000000ff]
+DRAM populated DIMMs:
+  SK0 MC4 S0: RDIMM[ce:80] 32GB 3200 ECC 2R x4 RCD[32:86] M393A4K40DB2-CWE    
+  SK1 MC0 S0: RDIMM[ce:80] 32GB 3200 ECC 2R x4 RCD[32:86] M393A4K40DB2-CWE    
+CP: 3ff00100
+CP: 3ff00200
+CP: 04f01902
+CP: 10f01902
+CP: 0ff00a00
+CP: 0ff00b01
+CP: 04f01901
+CP: 04f01904
+CP: 04f02901
+CP: 04f01905
+CP: 04f02902
+CP: 04f02903
+CP: 04f02904
+CP: 04f01907
+CP: 04f01906
+CP: 04f01908
+CP: 04f01909
+CP: 0ff00b02
+CP: 0ff00c00
+CP: 1ff00a00
+CP: 1ff00b01
+CP: 10f01901
+CP: 10f01904
+CP: 10f02901
+CP: 10f01905
+CP: 10f02902
+CP: 10f02903
+CP: 10f02904
+CP: 10f01907
+CP: 10f01906
+CP: 10f01908
+CP: 10f01909
+CP: 1ff00b02
+CP: 1ff00c00
+CP: 3ff00300
+CP: 04001a02
+CP: 04001a03
+CP: 04001a04
+CP: 04101a02
+CP: 10001a02
+CP: 04101a03
+CP: 10001a03
+CP: 04101a04
+CP: 10001a04
+CP: 04001a05
+CP: 10101a02
+CP: 10101a03
+CP: 10101a04
+CP: 10001a05
+CP: 04101a05
+CP: 10101a05
+CP: 04f01a07
+CP: 04001a09
+CP: 10f01a07
+CP: 10001a09
+CP: 10101a09
+CP: 04101a09
+CP: 10001a0a
+CP: 04001a0a
+CP: 04001a0b
+CP: 04001a0c
+CP: 10001a0b
+CP: 04001a0c
+CP: 10001a0c
+CP: 04101a0b
+CP: 04101a0c
+CP: 10001a0c
+CP: 10101a0b
+CP: 04101a0c
+CP: 10101a0c
+CP: 10101a0c
+CP: 3ff00400
+CP: 0ff01000
+CP: 1ff01000
+CP: 0ff01101
+CP: 1ff01101
+DRAM ECC Initialization: [3] [ =>                   ]DRAM ECC Initialization: [6] [ ==>                  ]DRAM ECC Initialization: [9] [ ==>                  ]DRAM ECC Initialization: [12] [ ===>                 ]DRAM ECC Initialization: [15] [ ====>                ]DRAM ECC Initialization: [18] [ ====>                ]DRAM ECC Initialization: [21] [ =====>               ]DRAM ECC Initialization: [25] [ ======>              ]DRAM ECC Initialization: [28] [ ======>              ]DRAM ECC Initialization: [31] [ =======>             ]DRAM ECC Initialization: [34] [ =======>             ]DRAM ECC Initialization: [37] [ ========>            ]DRAM ECC Initialization: [40] [ =========>           ]DRAM ECC Initialization: [43] [ =========>           ]DRAM ECC Initialization: [46] [ ==========>          ]DRAM ECC Initialization: [50] [ ===========>         ]DRAM ECC Initialization: [53] [ ===========>         ]DRAM ECC Initialization: [56] [ ============>        ]DRAM ECC Initialization: [59] [ ============>        ]DRAM ECC Initialization: [62] [ =============>       ]DRAM ECC Initialization: [65] [ ==============>      ]DRAM ECC Initialization: [68] [ ==============>      ]DRAM ECC Initialization: [71] [ ===============>     ]DRAM ECC Initialization: [75] [ ================>    ]DRAM ECC Initialization: [78] [ ================>    ]DRAM ECC Initialization: [81] [ =================>   ]DRAM ECC Initialization: [84] [ =================>   ]DRAM ECC Initialization: [87] [ ==================>  ]DRAM ECC Initialization: [90] [ ===================> ]DRAM ECC Initialization: [93] [ ===================> ]DRAM ECC Initialization: [96] [ ==================== ]DRAM ECC Initialization: [100] [ ==================== ]
+CP: 0ff01200
+CP: 1ff01200
+CP: 3ff00800
+DRAM memory regions:
+  Node[0] Region[0]: 0x000080000000 - 0x0000bfffffff 
+  Node[0] Region[1]: 0x080000000000 - 0x08007fffffff 
+  Node[0] Region[2]: 0x0800c0000000 - 0x0807ffffffff 
+  Node[1] Region[3]: 0x0000c0000000 - 0x0000ffffffff 
+  Node[1] Region[4]: 0x400000000000 - 0x4000bfffffff 
+  Node[1] Region[5]: 0x400100000000 - 0x4007ffffffff 
+DRAM: 64GB DDR4 3200 SECDED ECC
+Checkpoint 2F
+Checkpoint 2E
+Checkpoint 31
+Checkpoint 32
+UEFI RC version: Master
+SCP FW version    : 1.5
+SCP FW build date : 20210426
+Failsafe status                 : 0
+Reset status                    : 3
+CPU info
+    CPU ID                      : 413FD0C1
+    CPU Clock                   : 3000 MHz
+    Number of active sockets    : 2
+    Number of active cores      : 160
+    Inter Socket Connection 0   : Width: x16 / Speed 25 GT/s
+    Inter Socket Connection 1   : Width: x16 / Speed 25 GT/s
+    Socket[0]: Core voltage     : 1040
+    Socket[0]: SCU ProductID    : A10001
+    Socket[0]: Max cores        : 80
+    Socket[0]: Warranty         : 1
+    Socket[0]: Subnuma          : 0
+    Socket[0]: RC disable mask  : 3
+    Socket[0]: AVS enabled      : 1
+    Socket[0]: AVS voltage      : 1000
+    Socket[1]: Core voltage     : 1030
+    Socket[1]: SCU ProductID    : A10001
+    Socket[1]: Max cores        : 80
+    Socket[1]: Warranty         : 1
+    Socket[1]: Subnuma          : 0
+    Socket[1]: RC disable mask  : 3
+    Socket[1]: AVS enabled      : 1
+    Socket[1]: AVS voltage      : 993
+SOC info
+    DDR Frequency               : 3200 MHz
+    Socket[0]: Soc voltage      : 785
+    Socket[0]: DIMM1 voltage    : 1260
+    Socket[0]: DIMM2 voltage    : 1260
+    Socket[1]: Soc voltage      : 785
+    Socket[1]: DIMM1 voltage    : 1260
+    Socket[1]: DIMM2 voltage    : 1260
+    PCP Clock                   : 1650 MHz
+    SOC Clock                   : 2000 MHz
+    SYS Clock                   : 400 MHz
+    AHB Clock                   : 200 MHz
+Manufacturer Configuration Setting:
+    4000: 0x3C (60)
+    4008: 0x25 (37)
+    4028: 0x1 (1)
+    4030: 0x0 (0)
+    4048: 0x0 (0)
+User Configuration Setting:
+    8000: 0xFFFFFFFF (-1)
+    8008: 0xFFFFFFFF (-1)
+    8010: 0xFFFFFFFF (-1)
+    8018: 0xFFFFFFFF (-1)
+    8038: 0xC80 (3200)
+    81C8: 0xFF (255)
+    81D0: 0xFF (255)
+Board Configuration Setting:
+    C000: 0xCD3A (52538)
+    C008: 0x0 (0)
+    C010: 0x0 (0)
+    C018: 0x0 (0)
+    C020: 0xFFFF (65535)
+    C028: 0xFFFF (65535)
+    C030: 0x80E8 (33000)
+    C038: 0x80E8 (33000)
+    C040: 0x2710 (10000)
+    C048: 0x2710 (10000)
+    C050: 0x0 (0)
+    C058: 0x190 (400)
+    C060: 0x190 (400)
+    C068: 0x190 (400)
+    C070: 0x190 (400)
+    C078: 0x190 (400)
+    C080: 0xFFFFFF01 (-255)
+    C088: 0x0 (0)
+    C090: 0x0 (0)
+    C098: 0x4 (4)
+    C0A0: 0x4 (4)
+    C0A8: 0x20002 (131074)
+    C0B0: 0x20002 (131074)
+    C0B8: 0x20002 (131074)
+    C0C0: 0x20002 (131074)
+    C0C8: 0x20002 (131074)
+    C0D0: 0x3 (3)
+    C0D8: 0x3 (3)
+    C0E0: 0x20002 (131074)
+    C0E8: 0x0 (0)
+    C0F0: 0x0 (0)
+    C0F8: 0x2020202 (33686018)
+    C100: 0x30003 (196611)
+    C108: 0x3 (3)
+    C110: 0x20002 (131074)
+    C118: 0x20002 (131074)
+    C120: 0x3 (3)
+    C128: 0x20002 (131074)
+    C130: 0x20002 (131074)
+    C138: 0x20002 (131074)
+    C140: 0x20002 (131074)
+    C148: 0x1 (1)
+    C150: 0x2 (2)
+    C158: 0x3 (3)
+    C160: 0x4 (4)
+    C168: 0xFFFFFFFF (-1)
+    C170: 0xFFFFFFFE (-2)
+    C178: 0xFFFFFFFD (-3)
+    C180: 0x0 (0)
+    C188: 0x0 (0)
+    C190: 0x0 (0)
+    C198: 0x0 (0)
+    C1A0: 0x0 (0)
+    C1A8: 0x0 (0)
+    C1B0: 0x2 (2)
+    C1B8: 0xC80 (3200)
+    C1C0: 0x20000 (131072)
+    C1C8: 0x20000 (131072)
+    C1D0: 0xFF060177 (-16383625)
+    C1D8: 0xFF060177 (-16383625)
+    C1E0: 0x60070 (393328)
+    C1E8: 0x60070 (393328)
+    C1F0: 0x0 (0)
+    C1F8: 0x0 (0)
+    C200: 0x0 (0)
+    C208: 0x0 (0)
+    C210: 0xC0CCC (789708)
+    C218: 0xC0CCC (789708)
+    C220: 0x30333 (197427)
+    C228: 0x30333 (197427)
+    C230: 0x30333 (197427)
+    C238: 0x30333 (197427)
+    C240: 0x30333 (197427)
+    C248: 0x30333 (197427)
+    C250: 0xEDEED (974573)
+    C258: 0xDEDDE (912862)
+    C260: 0xB7BB7 (752567)
+    C268: 0x7B77B (505723)
+    C270: 0x5 (5)
+    C278: 0x90DD90 (9493904)
+    C280: 0x5 (5)
+    C288: 0x90DD90 (9493904)
+    C290: 0x5 (5)
+    C298: 0x90DD90 (9493904)
+    C2A0: 0x5 (5)
+    C2A8: 0x90DD90 (9493904)
+    C2B0: 0x24 (36)
+    C2B8: 0x1A (26)
+    C2C0: 0x50 (80)
+    C2C8: 0x20 (32)
+    C2D0: 0x2800280 (41943680)
+    C2D8: 0x90909090 (-1869574000)
+    C2E0: 0x0 (0)
+    C2E8: 0xC000C0 (12583104)
+    C2F0: 0x0 (0)
+    C2F8: 0x0 (0)
+    C300: 0x0 (0)
+    C308: 0x0 (0)
+    C310: 0x2010201 (33620481)
+    C318: 0x0 (0)
+    C320: 0x0 (0)
+    C328: 0x0 (0)
+    C330: 0x1050106 (17105158)
+    C338: 0x5F4 (1524)
+    C340: 0x0 (0)
+    C348: 0x0 (0)
+    C350: 0x2020202 (33686018)
+    C358: 0x2020202 (33686018)
+    C360: 0x2020202 (33686018)
+    C368: 0x2020202 (33686018)
+    C370: 0x0 (0)
+    C378: 0x0 (0)
+    C380: 0x0 (0)
+    C388: 0x0 (0)
+    C390: 0x0 (0)
+    C398: 0x0 (0)
+    C3A0: 0x0 (0)
+    C3A8: 0x0 (0)
+    C3B0: 0x0 (0)
+    C3B8: 0x0 (0)
+    C3C0: 0x0 (0)
+    C3C8: 0x0 (0)
+    C3D0: 0x0 (0)
+    C3D8: 0x0 (0)
+    C3E0: 0x0 (0)
+    C3E8: 0x0 (0)
+    C3F0: 0x57575757 (1465341783)
+    C3F8: 0x57575757 (1465341783)
+    C400: 0x57575757 (1465341783)
+    C408: 0x57575757 (1465341783)
+    C410: 0x57575757 (1465341783)
+    C418: 0x57575757 (1465341783)
+    C420: 0x57575757 (1465341783)
+    C428: 0x57575757 (1465341783)
+    C430: 0x57575757 (1465341783)
+    C438: 0x57575757 (1465341783)
+    C440: 0x57575757 (1465341783)
+    C448: 0x57575757 (1465341783)
+    C450: 0x57575757 (1465341783)
+    C458: 0x57575757 (1465341783)
+    C460: 0x57575757 (1465341783)
+    C468: 0x57575757 (1465341783)
+    C470: 0x0 (0)
+    C478: 0x2020202 (33686018)
+    C480: 0x2020202 (33686018)
+    C488: 0x2020202 (33686018)
+    C490: 0x2020202 (33686018)
+    C498: 0x0 (0)
+    C4A0: 0x0 (0)
+    C4A8: 0x0 (0)
+    C4B0: 0x0 (0)
+    C4B8: 0x0 (0)
+    C4C0: 0x0 (0)
+    C4C8: 0x0 (0)
+    C4D0: 0x0 (0)
+    C4D8: 0x0 (0)
+    C4E0: 0x0 (0)
+    C4E8: 0x0 (0)
+    C4F0: 0x0 (0)
+    C4F8: 0x0 (0)
+    C500: 0x0 (0)
+    C508: 0x57575757 (1465341783)
+    C510: 0x57575757 (1465341783)
+    C518: 0x57575757 (1465341783)
+    C520: 0x57575757 (1465341783)
+    C528: 0x57575757 (1465341783)
+    C530: 0x57575757 (1465341783)
+    C538: 0x57575757 (1465341783)
+    C540: 0x57575757 (1465341783)
+    C548: 0x57575757 (1465341783)
+    C550: 0x57575757 (1465341783)
+    C558: 0x57575757 (1465341783)
+    C560: 0x57575757 (1465341783)
+    C568: 0x57575757 (1465341783)
+    C570: 0x57575757 (1465341783)
+    C578: 0x3 (3)
+    C580: 0x1A4 (420)
+    C588: 0x0 (0)
+    C590: 0x18000 (98304)
+    C598: 0x80018000 (-2147385344)
+    C5A0: 0x0 (0)
+    C5A8: 0x0 (0)
+    C5B0: 0x0 (0)
+    C5B8: 0x0 (0)
+    C5C0: 0x0 (0)
+    C5C8: 0x0 (0)
+    C5D0: 0x0 (0)
+    C5D8: 0x0 (0)
+    C5E0: 0x550055 (5570645)
+    C5E8: 0x64 (100)
+    C5F0: 0x5 (5)
+    C5F8: 0x1 (1)
+    C600: 0x2 (2)
+    C608: 0x5 (5)
+    C610: 0x0 (0)
+    C618: 0x0 (0)
+    C620: 0x0 (0)
+    C628: 0x0 (0)
+    C630: 0x0 (0)
+    C638: 0x0 (0)
+Checkpoint 4F
+Checkpoint 60
+Checkpoint 61
+Checkpoint 9A
+Checkpoint 90
+Checkpoint 91
+Checkpoint 92
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 94
+Checkpoint 95
+Checkpoint 96
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 9D
+Checkpoint 9A
+Checkpoint 9C
+Checkpoint 91
+Checkpoint B4
+Checkpoint B4
+Checkpoint B4
+Checkpoint B4
+Checkpoint B4
+Checkpoint B4
+Checkpoint 98
+Checkpoint B4
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 97
+[2J[1;1H[2J[1;1H[1;1HCheckpoint 98
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint A0
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint 92
+Checkpoint AD
+[0;37;40m[0;30;40m[2J[1;1H[0;37;40m[21;7HUse the  and  keys to change the selection.                       
+      Press 'e' to edit the selected item, or 'c' for a command prompt.   [4;80H [4;1H      CentOS Linux (4.18.0-193.19.1.el8_2.aarch64) 8 (Core)                    [4;79H[5;1H      CentOS Linux (4.18.0-147.el8.aarch64) 8 (Core)                           [5;79H[0;30;47m[6;1H      CentOS Linux (4.18.0-80.11.2.el8.20201030+amp.aarch64) 8 (Core)          [0;37;40m[6;79H[7;1H      CentOS Linux (0-rescue-0de63a6733ab4ecaac501f7f2fb0c175) 8 (Core)        [7;79H[8;1H      System setup                                                             [8;79H[9;1H                                                                               [9;79H[10;1H                                                                               [10;79H[11;1H                                                                               [11;79H[12;1H                                                                               [12;79H[13;1H                                                                               [13;79H[14;1H                                                                               [14;79H[15;1H                                                                               [15;79H[16;1H                                                                               [16;79H[17;1H                                                                               [17;79H[18;1H                                                                               [18;79H[19;1H                                                                               [19;79H[19;80H [6;79H[23;1H   The selected entry will be started automatically in 5s.                     [6;79H[23;1H   The selected entry will be started automatically in 4s.                     [6;79H[23;1H   The selected entry will be started automatically in 3s.                     [6;79H[23;1H   The selected entry will be started automatically in 2s.                     [6;79H[23;1H   The selected entry will be started automatically in 1s.                     [6;79H[23;1H   The selected entry will be started automatically in 0s.                     [6;79H[0;30;40m[2J[1;1H[0;37;40m[0;30;40m[2J[1;1H[0;37;40mEFI stub: Booting Linux Kernel...
+EFI stub: Using DTB from configuration table
+EFI stub: Exiting boot services and installing virtual address map...
+[    0.000000] Booting Linux on physical CPU 0x0000120000 [0x413fd0c1]
+[    0.000000] Linux version 4.18.0-80.11.2.el8.20201030+amp.aarch64 (buildsw@eng01sys-r242.scc-lab.amperecomputing.com) (gcc version 8.3.0 (Ampere Computing 8.3.0-20191025-dynamic-nosysroot)) #1 SMP Fri Oct 30 19:50:50 PDT 2020
+[    0.000000] efi: Getting EFI parameters from FDT:
+[    0.000000] efi: EFI v2.70 by American Megatrends
+[    0.000000] efi:  ACPI 2.0=0xb0550000  SMBIOS 3.0=0xb3f7ff98  MEMATTR=0xaa1c7018  ESRT=0xaa1d1f98  RNG=0xb79cb318  MEMRESERVE=0xaa1cde18 
+[    0.000000] efi: seeding entropy pool
+[    0.000000] esrt: Reserving ESRT space from 0x00000000aa1d1f98 to 0x00000000aa1d1fd0.
+[    0.000000] Using crashkernel=auto, the size chosen is a best effort estimation.
+[    0.000000] cannot allocate crashkernel (size:0x20000000)
+[    0.000000] ACPI: Early table checksum verification disabled
+[    0.000000] ACPI: RSDP 0x00000000B0550000 000024 (v02 Ampere)
+[    0.000000] ACPI: XSDT 0x00000000B0540000 0000E4 (v01 Ampere Altra    00000000 AMI  01000013)
+[    0.000000] ACPI: FACP 0x00000000B0520000 000114 (v06 Ampere Altra    00000000 INTL 20190509)
+[    0.000000] ACPI: DSDT 0x00000000B0490000 02EE02 (v02 Ampere Jade     00000001 INTL 20200717)
+[    0.000000] ACPI: DBG2 0x00000000B0530000 00005C (v00 Ampere Altra    00000000 INTL 20190509)
+[    0.000000] ACPI: GTDT 0x00000000B0510000 000110 (v03 Ampere Altra    00000000 INTL 20190509)
+[    0.000000] ACPI: SSDT 0x00000000B0500000 00002D (v02 Ampere Altra    00000001 INTL 20190509)
+[    0.000000] ACPI: EINJ 0x00000000B04E0000 000150 (v01 Ampere Altra    00000001 INTL 20200717)
+[    0.000000] ACPI: HEST 0x00000000B04D0000 000308 (v01 Ampere Altra    00000001 INTL 20200717)
+[    0.000000] ACPI: SDEI 0x00000000B04C0000 000024 (v01 Ampere Altra    00000001 INTL 20200717)
+[    0.000000] ACPI: SPMI 0x00000000B0480000 000041 (v05 ALASKA A M I    00000000 AMI. 00000000)
+[    0.000000] ACPI: SPMI 0x00000000B0470000 000041 (v05 ALASKA A M I    00000000 AMI. 00000000)
+[    0.000000] ACPI: SPMI 0x00000000B0460000 000041 (v05 ALASKA A M I    00000000 AMI. 00000000)
+[    0.000000] ACPI: FIDT 0x00000000B0450000 00009C (v01 ALASKA A M I    01072009 AMI  00010013)
+[    0.000000] ACPI: SPCR 0x00000000B0440000 000050 (v02 A M I  APTIO V  01072009 AMI. 0005000F)
+[    0.000000] ACPI: BGRT 0x00000000B0430000 000038 (v01 ALASKA A M I    01072009 AMI  00010013)
+[    0.000000] ACPI: TPM2 0x00000000B0420000 000064 (v04 ALASKA A M I    00000001 AMI  00000000)
+[    0.000000] ACPI: PPTT 0x00000000B0400000 006E60 (v02 Ampere Altra    00000000 AMP. 01000013)
+[    0.000000] ACPI: SLIT 0x00000000B03F0000 000030 (v01 Ampere Altra    00000000 AMP. 01000013)
+[    0.000000] ACPI: SRAT 0x00000000B03E0000 000CF0 (v03 Ampere Altra    00000000 AMP. 01000013)
+[    0.000000] ACPI: BERT 0x00000000B04F0000 000030 (v01 Ampere Altra    00000001 INTL 20200717)
+[    0.000000] ACPI: MCFG 0x00000000B03D0000 0000EC (v01 Ampere Altra    00000001 AMP. 01000013)
+[    0.000000] ACPI: IORT 0x00000000B03C0000 000900 (v00 Ampere Altra    00000000 AMP. 01000013)
+[    0.000000] ACPI: APIC 0x00000000B0410000 003354 (v05 Ampere Altra    00000003 AMI  01000013)
+[    0.000000] ACPI: PCCT 0x00000000B03B0000 000ABC (v02 Ampere Altra    00000003 AMP. 01000013)
+[    0.000000] ACPI: WSMT 0x00000000B03A0000 000028 (v01 ALASKA A M I    01072009 AMI  00010013)
+[    0.000000] ACPI: FPDT 0x00000000B0390000 000044 (v01 ALASKA A M I    01072009 AMI  01000013)
+[    0.000000] ACPI: SPCR: console: pl011,mmio32,0x100002600000,115200
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x0 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x10000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x10100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x20000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x20100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x30000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x30100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x40000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x40100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x50000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x50100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x60000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x60100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x70000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x70100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x80000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x80100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x90000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x90100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0xa0000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0xa0100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0xb0000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0xb0100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0xc0000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0xc0100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0xd0000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0xd0100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0xe0000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0xe0100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0xf0000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0xf0100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x100000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x100100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x110000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x110100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x120000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x120100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x130000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x130100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x140000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x140100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x150000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x150100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x160000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x160100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x170000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x170100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x180000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x180100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x190000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x190100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x1a0000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x1a0100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x1b0000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x1b0100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x1c0000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x1c0100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x1d0000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x1d0100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x1e0000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x1e0100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x1f0000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x1f0100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x200000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x200100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x210000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x210100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x220000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x220100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x230000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x230100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x240000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x240100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x250000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x250100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x260000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x260100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x270000 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 0 -> MPIDR 0x270100 -> Node 0
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100000000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100000100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100010000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100010100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100020000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100020100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100030000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100030100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100040000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100040100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100050000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100050100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100060000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100060100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100070000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100070100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100080000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100080100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100090000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100090100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1000a0000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1000a0100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1000b0000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1000b0100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1000c0000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1000c0100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1000d0000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1000d0100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1000e0000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1000e0100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1000f0000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1000f0100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100100000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100100100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100110000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100110100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100120000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100120100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100130000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100130100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100140000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100140100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100150000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100150100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100160000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100160100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100170000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100170100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100180000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100180100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100190000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100190100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1001a0000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1001a0100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1001b0000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1001b0100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1001c0000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1001c0100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1001d0000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1001d0100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1001e0000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1001e0100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1001f0000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x1001f0100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100200000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100200100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100210000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100210100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100220000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100220100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100230000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100230100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100240000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100240100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100250000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100250100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100260000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100260100 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100270000 -> Node 1
+[    0.000000] ACPI: NUMA: SRAT: PXM 1 -> MPIDR 0x100270100 -> Node 1
+[    0.000000] ACPI: SRAT: Node 0 PXM 0 [mem 0x88300000-0x883fffff]
+[    0.000000] ACPI: SRAT: Node 0 PXM 0 [mem 0x90000000-0xbfffffff]
+[    0.000000] ACPI: SRAT: Node 0 PXM 0 [mem 0x80000000000-0x8007fffffff]
+[    0.000000] ACPI: SRAT: Node 0 PXM 0 [mem 0x800c0000000-0x807ffffffff]
+[    0.000000] ACPI: SRAT: Node 1 PXM 1 [mem 0x400000000000-0x4000bfffffff]
+[    0.000000] ACPI: SRAT: Node 1 PXM 1 [mem 0x400100000000-0x4007ffffffff]
+[    0.000000] NUMA: NODE_DATA [mem 0x807ffffd100-0x807ffffffff]
+[    0.000000] NUMA: NODE_DATA [mem 0x4007ff7cd100-0x4007ff7cffff]
+[    0.000000] Zone ranges:
+[    0.000000]   DMA32    [mem 0x0000000088300000-0x00000000ffffffff]
+[    0.000000]   Normal   [mem 0x0000000100000000-0x00004007ffffffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000088300000-0x00000000883fffff]
+[    0.000000]   node   0: [mem 0x0000000090000000-0x0000000091ffffff]
+[    0.000000]   node   0: [mem 0x0000000092000000-0x000000009277ffff]
+[    0.000000]   node   0: [mem 0x0000000092780000-0x00000000b003ffff]
+[    0.000000]   node   0: [mem 0x00000000b0040000-0x00000000b031ffff]
+[    0.000000]   node   0: [mem 0x00000000b0320000-0x00000000b057ffff]
+[    0.000000]   node   0: [mem 0x00000000b0580000-0x00000000b05cffff]
+[    0.000000]   node   0: [mem 0x00000000b05d0000-0x00000000b1d0ffff]
+[    0.000000]   node   0: [mem 0x00000000b1d10000-0x00000000b79cffff]
+[    0.000000]   node   0: [mem 0x00000000b79d0000-0x00000000b7afffff]
+[    0.000000]   node   0: [mem 0x00000000b7b00000-0x00000000b7fdffff]
+[    0.000000]   node   0: [mem 0x00000000b7fe0000-0x00000000bfc1ffff]
+[    0.000000]   node   0: [mem 0x00000000bfc20000-0x00000000bfc2ffff]
+[    0.000000]   node   0: [mem 0x00000000bfc30000-0x00000000bfffffff]
+[    0.000000]   node   0: [mem 0x0000080000000000-0x000008007fffffff]
+[    0.000000]   node   0: [mem 0x00000800c0000000-0x00000807ffffffff]
+[    0.000000]   node   1: [mem 0x0000400000000000-0x00004000bfffffff]
+[    0.000000]   node   1: [mem 0x0000400100000000-0x00004007ffffffff]
+[    0.000000] Zeroed struct page in unavailable ranges: 1614 pages
+[    0.000000] Initmem setup node 0 [mem 0x0000000088300000-0x00000807ffffffff]
+[    0.000000] Initmem setup node 1 [mem 0x0000400000000000-0x00004007ffffffff]
+[    0.000000] psci: probing for conduit method from ACPI.
+[    0.000000] psci: PSCIv1.1 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: MIGRATE_INFO_TYPE not supported.
+[    0.000000] psci: SMC Calling Convention v1.0
+[    0.000000] random: get_random_bytes called from start_kernel+0xa0/0x4d8 with crng_init=0
+[    0.000000] percpu: Embedded 3 pages/cpu @(____ptrval____) s127448 r8192 d60968 u196608
+[    0.000000] Detected PIPT I-cache on CPU0
+[    0.000000] CPU features: detected: Virtualization Host Extensions
+[    0.000000] CPU features: kernel page table isolation forced ON by KASLR
+[    0.000000] CPU features: detected: Kernel page table isolation (KPTI)
+[    0.000000] CPU features: detected: Hardware dirty bit management
+[    0.000000] CPU features: detected: Speculative Store Bypassing Safe (SSBS)
+[    0.000000] Built 2 zonelists, mobility grouping on.  Total pages: 1027091
+[    0.000000] Policy zone: Normal
+[    0.000000] Kernel command line: BOOT_IMAGE=(hd2,gpt2)/vmlinuz-4.18.0-80.11.2.el8.20201030+amp.aarch64 root=/dev/mapper/cl-root ro crashkernel=auto rd.lvm.lv=cl/root rd.lvm.lv=cl/swap
+[    0.000000] Specific versions of hardware are certified with Red Hat Enterprise Linux 8. Please see the list of hardware certified with Red Hat Enterprise Linux 8 at https://access.redhat.com/ecosystem.
+[    0.000000] log_buf_len individual max cpu contribution: 4096 bytes
+[    0.000000] log_buf_len total cpu_extra contributions: 651264 bytes
+[    0.000000] log_buf_len min size: 1048576 bytes
+[    0.000000] log_buf_len: 2097152 bytes
+[    0.000000] early log buf free: 1026824(97%)
+[    0.000000] software IO TLB: mapped [mem 0xbbc20000-0xbfc20000] (64MB)
+[    0.000000] Memory: 65453888K/65799168K available (9596K kernel code, 1930K rwdata, 5760K rodata, 4416K init, 9290K bss, 345280K reserved, 0K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=160, Nodes=2
+[    0.000000] ftrace: allocating 32390 entries in 8 pages
+[    0.000000] rcu: Hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=4096 to nr_cpu_ids=160.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=160
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] GICv3: GIC: Using split EOI/Deactivate mode
+[    0.000000] GICv3: Distributor has no Range Selector support
+[    0.000000] GICv3: no VLPI support, no direct LPI support
+[    0.000000] GICv3: CPU0: found redistributor 120000 region 0:0x00001001005c0000
+[    0.000000] SRAT: PXM 0 -> ITS 2 -> Node 0
+[    0.000000] SRAT: PXM 0 -> ITS 3 -> Node 0
+[    0.000000] SRAT: PXM 0 -> ITS 4 -> Node 0
+[    0.000000] SRAT: PXM 0 -> ITS 5 -> Node 0
+[    0.000000] SRAT: PXM 0 -> ITS 6 -> Node 0
+[    0.000000] SRAT: PXM 0 -> ITS 7 -> Node 0
+[    0.000000] SRAT: PXM 1 -> ITS 10 -> Node 1
+[    0.000000] SRAT: PXM 1 -> ITS 11 -> Node 1
+[    0.000000] SRAT: PXM 1 -> ITS 12 -> Node 1
+[    0.000000] SRAT: PXM 1 -> ITS 13 -> Node 1
+[    0.000000] SRAT: PXM 1 -> ITS 14 -> Node 1
+[    0.000000] SRAT: PXM 1 -> ITS 15 -> Node 1
+[    0.000000] ITS [mem 0x100100080000-0x10010009ffff]
+[    0.000000] ITS@0x0000100100080000: allocated 8192 Devices @807c0d50000 (indirect, esz 8, psz 64K, shr 1)
+[    0.000000] ITS@0x0000100100080000: allocated 32768 Interrupt Collections @807c0d60000 (flat, esz 2, psz 64K, shr 1)
+[    0.000000] ITS [mem 0x1001000a0000-0x1001000bffff]
+[    0.000000] ITS@0x00001001000a0000: allocated 8192 Devices @807c0d80000 (indirect, esz 8, psz 64K, shr 1)
+[    0.000000] ITS@0x00001001000a0000: allocated 32768 Interrupt Collections @807c0d90000 (flat, esz 2, psz 64K, shr 1)
+[    0.000000] ITS [mem 0x1001000c0000-0x1001000dffff]
+[    0.000000] ITS@0x00001001000c0000: allocated 8192 Devices @807c0db0000 (indirect, esz 8, psz 64K, shr 1)
+[    0.000000] ITS@0x00001001000c0000: allocated 32768 Interrupt Collections @807c0dc0000 (flat, esz 2, psz 64K, shr 1)
+[    0.000000] ITS [mem 0x1001000e0000-0x1001000fffff]
+[    0.000000] ITS@0x00001001000e0000: allocated 8192 Devices @807c0de0000 (indirect, esz 8, psz 64K, shr 1)
+[    0.000000] ITS@0x00001001000e0000: allocated 32768 Interrupt Collections @807c0df0000 (flat, esz 2, psz 64K, shr 1)
+[    0.000000] ITS [mem 0x100100100000-0x10010011ffff]
+[    0.000000] ITS@0x0000100100100000: allocated 8192 Devices @807c0e10000 (indirect, esz 8, psz 64K, shr 1)
+[    0.000000] ITS@0x0000100100100000: allocated 32768 Interrupt Collections @807c0e20000 (flat, esz 2, psz 64K, shr 1)
+[    0.000000] ITS [mem 0x100100120000-0x10010013ffff]
+[    0.000000] ITS@0x0000100100120000: allocated 8192 Devices @807c0e40000 (indirect, esz 8, psz 64K, shr 1)
+[    0.000000] ITS@0x0000100100120000: allocated 32768 Interrupt Collections @807c0e50000 (flat, esz 2, psz 64K, shr 1)
+[    0.000000] ITS [mem 0x500100080000-0x50010009ffff]
+[    0.000000] ITS@0x0000500100080000: allocated 8192 Devices @807c0e70000 (indirect, esz 8, psz 64K, shr 1)
+[    0.000000] ITS@0x0000500100080000: allocated 32768 Interrupt Collections @807c0e80000 (flat, esz 2, psz 64K, shr 1)
+[    0.000000] ITS [mem 0x5001000a0000-0x5001000bffff]
+[    0.000000] ITS@0x00005001000a0000: allocated 8192 Devices @807c0ea0000 (indirect, esz 8, psz 64K, shr 1)
+[    0.000000] ITS@0x00005001000a0000: allocated 32768 Interrupt Collections @807c0eb0000 (flat, esz 2, psz 64K, shr 1)
+[    0.000000] ITS [mem 0x5001000c0000-0x5001000dffff]
+[    0.000000] ITS@0x00005001000c0000: allocated 8192 Devices @807c0ed0000 (indirect, esz 8, psz 64K, shr 1)
+[    0.000000] ITS@0x00005001000c0000: allocated 32768 Interrupt Collections @807c0ee0000 (flat, esz 2, psz 64K, shr 1)
+[    0.000000] ITS [mem 0x5001000e0000-0x5001000fffff]
+[    0.000000] ITS@0x00005001000e0000: allocated 8192 Devices @807c0f00000 (indirect, esz 8, psz 64K, shr 1)
+[    0.000000] ITS@0x00005001000e0000: allocated 32768 Interrupt Collections @807c0f10000 (flat, esz 2, psz 64K, shr 1)
+[    0.000000] ITS [mem 0x500100100000-0x50010011ffff]
+[    0.000000] ITS@0x0000500100100000: allocated 8192 Devices @807c0f30000 (indirect, esz 8, psz 64K, shr 1)
+[    0.000000] ITS@0x0000500100100000: allocated 32768 Interrupt Collections @807c0f40000 (flat, esz 2, psz 64K, shr 1)
+[    0.000000] ITS [mem 0x500100120000-0x50010013ffff]
+[    0.000000] ITS@0x0000500100120000: allocated 8192 Devices @807c0f60000 (indirect, esz 8, psz 64K, shr 1)
+[    0.000000] ITS@0x0000500100120000: allocated 32768 Interrupt Collections @807c0f70000 (flat, esz 2, psz 64K, shr 1)
+[    0.000000] GICv3: using LPI property table @0x00000807c0f80000
+[    0.000000] GICv3: CPU0: using allocated LPI pending table @0x00000807c0fa0000
+[    0.000000] rcu: 	Offload RCU callbacks from CPUs: (none).
+[    0.000000] ACPI GTDT: found 1 memory-mapped timer block(s).
+[    0.000000] arch_timer: cp15 and mmio timer(s) running at 25.00MHz (phys/phys).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x5c40939b5, max_idle_ns: 440795202646 ns
+[    0.000000] sched_clock: 56 bits at 25MHz, resolution 40ns, wraps every 4398046511100ns
+[    0.000268] Console: colour dummy device 80x25
+[    0.000455] mempolicy: Enabling automatic NUMA balancing. Configure with numa_balancing= or the kernel.numa_balancing sysctl
+[    0.000471] ACPI: Core revision 20180531
+[    0.000994] Calibrating delay loop (skipped), value calculated using timer frequency.. 50.00 BogoMIPS (lpj=250000)
+[    0.000996] pid_max: default: 163840 minimum: 1280
+[    0.001304] Security Framework initialized
+[    0.001305] Yama: becoming mindful.
+[    0.001308] SELinux:  Initializing.
+[    0.007756] Dentry cache hash table entries: 8388608 (order: 10, 67108864 bytes)
+[    0.010916] Inode-cache hash table entries: 4194304 (order: 9, 33554432 bytes)
+[    0.011076] Mount-cache hash table entries: 131072 (order: 4, 1048576 bytes)
+[    0.011177] Mountpoint-cache hash table entries: 131072 (order: 4, 1048576 bytes)
+[    0.016330] ASID allocator initialised with 32768 entries
+[    0.016343] rcu: Hierarchical SRCU implementation.
+[    0.016558] Platform MSI: ITS@0x100100080000 domain created
+[    0.016560] Platform MSI: ITS@0x1001000a0000 domain created
+[    0.016562] Platform MSI: ITS@0x1001000c0000 domain created
+[    0.016563] Platform MSI: ITS@0x1001000e0000 domain created
+[    0.016565] Platform MSI: ITS@0x100100100000 domain created
+[    0.016567] Platform MSI: ITS@0x100100120000 domain created
+[    0.016568] Platform MSI: ITS@0x500100080000 domain created
+[    0.016570] Platform MSI: ITS@0x5001000a0000 domain created
+[    0.016572] Platform MSI: ITS@0x5001000c0000 domain created
+[    0.016573] Platform MSI: ITS@0x5001000e0000 domain created
+[    0.016575] Platform MSI: ITS@0x500100100000 domain created
+[    0.016576] Platform MSI: ITS@0x500100120000 domain created
+[    0.016580] PCI/MSI: ITS@0x100100080000 domain created
+[    0.016582] PCI/MSI: ITS@0x1001000a0000 domain created
+[    0.016583] PCI/MSI: ITS@0x1001000c0000 domain created
+[    0.016585] PCI/MSI: ITS@0x1001000e0000 domain created
+[    0.016586] PCI/MSI: ITS@0x100100100000 domain created
+[    0.016588] PCI/MSI: ITS@0x100100120000 domain created
+[    0.016589] PCI/MSI: ITS@0x500100080000 domain created
+[    0.016591] PCI/MSI: ITS@0x5001000a0000 domain created
+[    0.016592] PCI/MSI: ITS@0x5001000c0000 domain created
+[    0.016594] PCI/MSI: ITS@0x5001000e0000 domain created
+[    0.016595] PCI/MSI: ITS@0x500100100000 domain created
+[    0.016596] PCI/MSI: ITS@0x500100120000 domain created
+[    0.016618] Remapping and enabling EFI services.
+[    0.018894] smp: Bringing up secondary CPUs ...
+[    0.019091] Detected PIPT I-cache on CPU1
+[    0.019109] GICv3: CPU1: found redistributor 1a0000 region 0:0x00001001007c0000
+[    0.019116] GICv3: CPU1: using allocated LPI pending table @0x00000807c0fb0000
+[    0.019197] CPU1: Booted secondary processor 0x00001a0000 [0x413fd0c1]
+[    0.019608] Detected PIPT I-cache on CPU2
+[    0.019623] GICv3: CPU2: found redistributor 140000 region 0:0x0000100100640000
+[    0.019630] GICv3: CPU2: using allocated LPI pending table @0x00000807c0fc0000
+[    0.019710] CPU2: Booted secondary processor 0x0000140000 [0x413fd0c1]
+[    0.020025] Detected PIPT I-cache on CPU3
+[    0.020041] GICv3: CPU3: found redistributor 1c0000 region 0:0x0000100100840000
+[    0.020047] GICv3: CPU3: using allocated LPI pending table @0x00000807c0fd0000
+[    0.020129] CPU3: Booted secondary processor 0x00001c0000 [0x413fd0c1]
+[    0.020430] Detected PIPT I-cache on CPU4
+[    0.020443] GICv3: CPU4: found redistributor 100000 region 0:0x0000100100540000
+[    0.020449] GICv3: CPU4: using allocated LPI pending table @0x00000807c0fe0000
+[    0.020532] CPU4: Booted secondary processor 0x0000100000 [0x413fd0c1]
+[    0.020867] Detected PIPT I-cache on CPU5
+[    0.020881] GICv3: CPU5: found redistributor 180000 region 0:0x0000100100740000
+[    0.020887] GICv3: CPU5: using allocated LPI pending table @0x00000807c0ff0000
+[    0.020970] CPU5: Booted secondary processor 0x0000180000 [0x413fd0c1]
+[    0.021295] Detected PIPT I-cache on CPU6
+[    0.021310] GICv3: CPU6: found redistributor 160000 region 0:0x00001001006c0000
+[    0.021317] GICv3: CPU6: using allocated LPI pending table @0x00000807c1000000
+[    0.021402] CPU6: Booted secondary processor 0x0000160000 [0x413fd0c1]
+[    0.021711] Detected PIPT I-cache on CPU7
+[    0.021727] GICv3: CPU7: found redistributor 1e0000 region 0:0x00001001008c0000
+[    0.021734] GICv3: CPU7: using allocated LPI pending table @0x00000807c1010000
+[    0.021819] CPU7: Booted secondary processor 0x00001e0000 [0x413fd0c1]
+[    0.022278] Detected PIPT I-cache on CPU8
+[    0.022290] GICv3: CPU8: found redistributor a0000 region 0:0x00001001003c0000
+[    0.022296] GICv3: CPU8: using allocated LPI pending table @0x00000807c1020000
+[    0.022382] CPU8: Booted secondary processor 0x00000a0000 [0x413fd0c1]
+[    0.022695] Detected PIPT I-cache on CPU9
+[    0.022711] GICv3: CPU9: found redistributor 220000 region 0:0x00001001009c0000
+[    0.022718] GICv3: CPU9: using allocated LPI pending table @0x00000807c1030000
+[    0.022801] CPU9: Booted secondary processor 0x0000220000 [0x413fd0c1]
+[    0.023109] Detected PIPT I-cache on CPU10
+[    0.023122] GICv3: CPU10: found redistributor c0000 region 0:0x0000100100440000
+[    0.023128] GICv3: CPU10: using allocated LPI pending table @0x00000807c1040000
+[    0.023211] CPU10: Booted secondary processor 0x00000c0000 [0x413fd0c1]
+[    0.023529] Detected PIPT I-cache on CPU11
+[    0.023546] GICv3: CPU11: found redistributor 240000 region 0:0x0000100100a40000
+[    0.023552] GICv3: CPU11: using allocated LPI pending table @0x00000807c1050000
+[    0.023634] CPU11: Booted secondary processor 0x0000240000 [0x413fd0c1]
+[    0.024003] Detected PIPT I-cache on CPU12
+[    0.024015] GICv3: CPU12: found redistributor 80000 region 0:0x0000100100340000
+[    0.024022] GICv3: CPU12: using allocated LPI pending table @0x00000807c1060000
+[    0.024106] CPU12: Booted secondary processor 0x0000080000 [0x413fd0c1]
+[    0.024488] Detected PIPT I-cache on CPU13
+[    0.024504] GICv3: CPU13: found redistributor 200000 region 0:0x0000100100940000
+[    0.024512] GICv3: CPU13: using allocated LPI pending table @0x00000807c1070000
+[    0.024597] CPU13: Booted secondary processor 0x0000200000 [0x413fd0c1]
+[    0.024914] Detected PIPT I-cache on CPU14
+[    0.024927] GICv3: CPU14: found redistributor e0000 region 0:0x00001001004c0000
+[    0.024935] GICv3: CPU14: using allocated LPI pending table @0x00000807c1080000
+[    0.025019] CPU14: Booted secondary processor 0x00000e0000 [0x413fd0c1]
+[    0.025334] Detected PIPT I-cache on CPU15
+[    0.025352] GICv3: CPU15: found redistributor 260000 region 0:0x0000100100ac0000
+[    0.025359] GICv3: CPU15: using allocated LPI pending table @0x00000807c1090000
+[    0.025441] CPU15: Booted secondary processor 0x0000260000 [0x413fd0c1]
+[    0.025891] Detected PIPT I-cache on CPU16
+[    0.025901] GICv3: CPU16: found redistributor 20000 region 0:0x00001001001c0000
+[    0.025909] GICv3: CPU16: using allocated LPI pending table @0x00000807c10a0000
+[    0.025995] CPU16: Booted secondary processor 0x0000020000 [0x413fd0c1]
+[    0.026322] Detected PIPT I-cache on CPU17
+[    0.026333] GICv3: CPU17: found redistributor 40000 region 0:0x0000100100240000
+[    0.026341] GICv3: CPU17: using allocated LPI pending table @0x00000807c10b0000
+[    0.026428] CPU17: Booted secondary processor 0x0000040000 [0x413fd0c1]
+[    0.026799] Detected PIPT I-cache on CPU18
+[    0.026809] GICv3: CPU18: found redistributor 0 region 0:0x0000100100140000
+[    0.026817] GICv3: CPU18: using allocated LPI pending table @0x00000807c10c0000
+[    0.026903] CPU18: Booted secondary processor 0x0000000000 [0x413fd0c1]
+[    0.027216] Detected PIPT I-cache on CPU19
+[    0.027227] GICv3: CPU19: found redistributor 60000 region 0:0x00001001002c0000
+[    0.027235] GICv3: CPU19: using allocated LPI pending table @0x00000807c10d0000
+[    0.027324] CPU19: Booted secondary processor 0x0000060000 [0x413fd0c1]
+[    0.027688] Detected PIPT I-cache on CPU20
+[    0.027701] GICv3: CPU20: found redistributor 130000 region 0:0x0000100100600000
+[    0.027709] GICv3: CPU20: using allocated LPI pending table @0x00000807c10e0000
+[    0.027792] CPU20: Booted secondary processor 0x0000130000 [0x413fd0c1]
+[    0.028108] Detected PIPT I-cache on CPU21
+[    0.028123] GICv3: CPU21: found redistributor 1b0000 region 0:0x0000100100800000
+[    0.028132] GICv3: CPU21: using allocated LPI pending table @0x00000807c10f0000
+[    0.028214] CPU21: Booted secondary processor 0x00001b0000 [0x413fd0c1]
+[    0.028521] Detected PIPT I-cache on CPU22
+[    0.028535] GICv3: CPU22: found redistributor 150000 region 0:0x0000100100680000
+[    0.028543] GICv3: CPU22: using allocated LPI pending table @0x00000807c1100000
+[    0.028625] CPU22: Booted secondary processor 0x0000150000 [0x413fd0c1]
+[    0.029073] Detected PIPT I-cache on CPU23
+[    0.029088] GICv3: CPU23: found redistributor 1d0000 region 0:0x0000100100880000
+[    0.029096] GICv3: CPU23: using allocated LPI pending table @0x00000807c1110000
+[    0.029179] CPU23: Booted secondary processor 0x00001d0000 [0x413fd0c1]
+[    0.029491] Detected PIPT I-cache on CPU24
+[    0.029504] GICv3: CPU24: found redistributor 110000 region 0:0x0000100100580000
+[    0.029512] GICv3: CPU24: using allocated LPI pending table @0x00000807c1120000
+[    0.029597] CPU24: Booted secondary processor 0x0000110000 [0x413fd0c1]
+[    0.029918] Detected PIPT I-cache on CPU25
+[    0.029932] GICv3: CPU25: found redistributor 190000 region 0:0x0000100100780000
+[    0.029941] GICv3: CPU25: using allocated LPI pending table @0x00000807c1130000
+[    0.030023] CPU25: Booted secondary processor 0x0000190000 [0x413fd0c1]
+[    0.030469] Detected PIPT I-cache on CPU26
+[    0.030484] GICv3: CPU26: found redistributor 170000 region 0:0x0000100100700000
+[    0.030492] GICv3: CPU26: using allocated LPI pending table @0x00000807c1140000
+[    0.030579] CPU26: Booted secondary processor 0x0000170000 [0x413fd0c1]
+[    0.030897] Detected PIPT I-cache on CPU27
+[    0.030913] GICv3: CPU27: found redistributor 1f0000 region 0:0x0000100100900000
+[    0.030922] GICv3: CPU27: using allocated LPI pending table @0x00000807c1150000
+[    0.031008] CPU27: Booted secondary processor 0x00001f0000 [0x413fd0c1]
+[    0.031311] Detected PIPT I-cache on CPU28
+[    0.031323] GICv3: CPU28: found redistributor b0000 region 0:0x0000100100400000
+[    0.031332] GICv3: CPU28: using allocated LPI pending table @0x00000807c1160000
+[    0.031417] CPU28: Booted secondary processor 0x00000b0000 [0x413fd0c1]
+[    0.031874] Detected PIPT I-cache on CPU29
+[    0.031890] GICv3: CPU29: found redistributor 230000 region 0:0x0000100100a00000
+[    0.031899] GICv3: CPU29: using allocated LPI pending table @0x00000807c1170000
+[    0.031984] CPU29: Booted secondary processor 0x0000230000 [0x413fd0c1]
+[    0.032296] Detected PIPT I-cache on CPU30
+[    0.032309] GICv3: CPU30: found redistributor d0000 region 0:0x0000100100480000
+[    0.032318] GICv3: CPU30: using allocated LPI pending table @0x00000807c1180000
+[    0.032405] CPU30: Booted secondary processor 0x00000d0000 [0x413fd0c1]
+[    0.032717] Detected PIPT I-cache on CPU31
+[    0.032734] GICv3: CPU31: found redistributor 250000 region 0:0x0000100100a80000
+[    0.032742] GICv3: CPU31: using allocated LPI pending table @0x00000807c1190000
+[    0.032827] CPU31: Booted secondary processor 0x0000250000 [0x413fd0c1]
+[    0.033277] Detected PIPT I-cache on CPU32
+[    0.033289] GICv3: CPU32: found redistributor 90000 region 0:0x0000100100380000
+[    0.033298] GICv3: CPU32: using allocated LPI pending table @0x00000807c11a0000
+[    0.033384] CPU32: Booted secondary processor 0x0000090000 [0x413fd0c1]
+[    0.033704] Detected PIPT I-cache on CPU33
+[    0.033720] GICv3: CPU33: found redistributor 210000 region 0:0x0000100100980000
+[    0.033730] GICv3: CPU33: using allocated LPI pending table @0x00000807c11b0000
+[    0.033813] CPU33: Booted secondary processor 0x0000210000 [0x413fd0c1]
+[    0.034129] Detected PIPT I-cache on CPU34
+[    0.034143] GICv3: CPU34: found redistributor f0000 region 0:0x0000100100500000
+[    0.034153] GICv3: CPU34: using allocated LPI pending table @0x00000807c11c0000
+[    0.034238] CPU34: Booted secondary processor 0x00000f0000 [0x413fd0c1]
+[    0.034613] Detected PIPT I-cache on CPU35
+[    0.034631] GICv3: CPU35: found redistributor 270000 region 0:0x0000100100b00000
+[    0.034640] GICv3: CPU35: using allocated LPI pending table @0x00000807c11d0000
+[    0.034726] CPU35: Booted secondary processor 0x0000270000 [0x413fd0c1]
+[    0.035084] Detected PIPT I-cache on CPU36
+[    0.035094] GICv3: CPU36: found redistributor 30000 region 0:0x0000100100200000
+[    0.035104] GICv3: CPU36: using allocated LPI pending table @0x00000807c11e0000
+[    0.035191] CPU36: Booted secondary processor 0x0000030000 [0x413fd0c1]
+[    0.035511] Detected PIPT I-cache on CPU37
+[    0.035522] GICv3: CPU37: found redistributor 50000 region 0:0x0000100100280000
+[    0.035532] GICv3: CPU37: using allocated LPI pending table @0x00000807c11f0000
+[    0.035621] CPU37: Booted secondary processor 0x0000050000 [0x413fd0c1]
+[    0.035926] Detected PIPT I-cache on CPU38
+[    0.035937] GICv3: CPU38: found redistributor 10000 region 0:0x0000100100180000
+[    0.035947] GICv3: CPU38: using allocated LPI pending table @0x00000807c1200000
+[    0.036034] CPU38: Booted secondary processor 0x0000010000 [0x413fd0c1]
+[    0.036474] Detected PIPT I-cache on CPU39
+[    0.036486] GICv3: CPU39: found redistributor 70000 region 0:0x0000100100300000
+[    0.036496] GICv3: CPU39: using allocated LPI pending table @0x00000807c1210000
+[    0.036586] CPU39: Booted secondary processor 0x0000070000 [0x413fd0c1]
+[    0.036901] Detected PIPT I-cache on CPU40
+[    0.036914] GICv3: CPU40: found redistributor 120100 region 0:0x00001001005e0000
+[    0.036921] GICv3: CPU40: using allocated LPI pending table @0x00000807c1220000
+[    0.037007] CPU40: Booted secondary processor 0x0000120100 [0x413fd0c1]
+[    0.037301] Detected PIPT I-cache on CPU41
+[    0.037315] GICv3: CPU41: found redistributor 1a0100 region 0:0x00001001007e0000
+[    0.037321] GICv3: CPU41: using allocated LPI pending table @0x00000807c1230000
+[    0.037405] CPU41: Booted secondary processor 0x00001a0100 [0x413fd0c1]
+[    0.037690] Detected PIPT I-cache on CPU42
+[    0.037703] GICv3: CPU42: found redistributor 140100 region 0:0x0000100100660000
+[    0.037709] GICv3: CPU42: using allocated LPI pending table @0x00000807c1240000
+[    0.037792] CPU42: Booted secondary processor 0x0000140100 [0x413fd0c1]
+[    0.038082] Detected PIPT I-cache on CPU43
+[    0.038096] GICv3: CPU43: found redistributor 1c0100 region 0:0x0000100100860000
+[    0.038102] GICv3: CPU43: using allocated LPI pending table @0x00000807c1250000
+[    0.038184] CPU43: Booted secondary processor 0x00001c0100 [0x413fd0c1]
+[    0.038484] Detected PIPT I-cache on CPU44
+[    0.038497] GICv3: CPU44: found redistributor 100100 region 0:0x0000100100560000
+[    0.038503] GICv3: CPU44: using allocated LPI pending table @0x00000807c1260000
+[    0.038588] CPU44: Booted secondary processor 0x0000100100 [0x413fd0c1]
+[    0.038887] Detected PIPT I-cache on CPU45
+[    0.038901] GICv3: CPU45: found redistributor 180100 region 0:0x0000100100760000
+[    0.038907] GICv3: CPU45: using allocated LPI pending table @0x00000807c1270000
+[    0.038990] CPU45: Booted secondary processor 0x0000180100 [0x413fd0c1]
+[    0.039289] Detected PIPT I-cache on CPU46
+[    0.039303] GICv3: CPU46: found redistributor 160100 region 0:0x00001001006e0000
+[    0.039309] GICv3: CPU46: using allocated LPI pending table @0x00000807c1280000
+[    0.039395] CPU46: Booted secondary processor 0x0000160100 [0x413fd0c1]
+[    0.039690] Detected PIPT I-cache on CPU47
+[    0.039706] GICv3: CPU47: found redistributor 1e0100 region 0:0x00001001008e0000
+[    0.039711] GICv3: CPU47: using allocated LPI pending table @0x00000807c1290000
+[    0.039796] CPU47: Booted secondary processor 0x00001e0100 [0x413fd0c1]
+[    0.040095] Detected PIPT I-cache on CPU48
+[    0.040106] GICv3: CPU48: found redistributor a0100 region 0:0x00001001003e0000
+[    0.040112] GICv3: CPU48: using allocated LPI pending table @0x00000807c12a0000
+[    0.040200] CPU48: Booted secondary processor 0x00000a0100 [0x413fd0c1]
+[    0.040486] Detected PIPT I-cache on CPU49
+[    0.040501] GICv3: CPU49: found redistributor 220100 region 0:0x00001001009e0000
+[    0.040507] GICv3: CPU49: using allocated LPI pending table @0x00000807c12b0000
+[    0.040592] CPU49: Booted secondary processor 0x0000220100 [0x413fd0c1]
+[    0.040886] Detected PIPT I-cache on CPU50
+[    0.040898] GICv3: CPU50: found redistributor c0100 region 0:0x0000100100460000
+[    0.040905] GICv3: CPU50: using allocated LPI pending table @0x00000807c12c0000
+[    0.040992] CPU50: Booted secondary processor 0x00000c0100 [0x413fd0c1]
+[    0.041280] Detected PIPT I-cache on CPU51
+[    0.041295] GICv3: CPU51: found redistributor 240100 region 0:0x0000100100a60000
+[    0.041302] GICv3: CPU51: using allocated LPI pending table @0x00000807c12d0000
+[    0.041386] CPU51: Booted secondary processor 0x0000240100 [0x413fd0c1]
+[    0.041682] Detected PIPT I-cache on CPU52
+[    0.041692] GICv3: CPU52: found redistributor 80100 region 0:0x0000100100360000
+[    0.041699] GICv3: CPU52: using allocated LPI pending table @0x00000807c12e0000
+[    0.041786] CPU52: Booted secondary processor 0x0000080100 [0x413fd0c1]
+[    0.042286] Detected PIPT I-cache on CPU53
+[    0.042301] GICv3: CPU53: found redistributor 200100 region 0:0x0000100100960000
+[    0.042307] GICv3: CPU53: using allocated LPI pending table @0x00000807c12f0000
+[    0.042391] CPU53: Booted secondary processor 0x0000200100 [0x413fd0c1]
+[    0.042684] Detected PIPT I-cache on CPU54
+[    0.042696] GICv3: CPU54: found redistributor e0100 region 0:0x00001001004e0000
+[    0.042703] GICv3: CPU54: using allocated LPI pending table @0x00000807c1300000
+[    0.042789] CPU54: Booted secondary processor 0x00000e0100 [0x413fd0c1]
+[    0.043089] Detected PIPT I-cache on CPU55
+[    0.043105] GICv3: CPU55: found redistributor 260100 region 0:0x0000100100ae0000
+[    0.043112] GICv3: CPU55: using allocated LPI pending table @0x00000807c1310000
+[    0.043197] CPU55: Booted secondary processor 0x0000260100 [0x413fd0c1]
+[    0.043491] Detected PIPT I-cache on CPU56
+[    0.043500] GICv3: CPU56: found redistributor 20100 region 0:0x00001001001e0000
+[    0.043506] GICv3: CPU56: using allocated LPI pending table @0x00000807c1320000
+[    0.043595] CPU56: Booted secondary processor 0x0000020100 [0x413fd0c1]
+[    0.043907] Detected PIPT I-cache on CPU57
+[    0.043917] GICv3: CPU57: found redistributor 40100 region 0:0x0000100100260000
+[    0.043924] GICv3: CPU57: using allocated LPI pending table @0x00000807c1330000
+[    0.044011] CPU57: Booted secondary processor 0x0000040100 [0x413fd0c1]
+[    0.044301] Detected PIPT I-cache on CPU58
+[    0.044310] GICv3: CPU58: found redistributor 100 region 0:0x0000100100160000
+[    0.044316] GICv3: CPU58: using allocated LPI pending table @0x00000807c1340000
+[    0.044405] CPU58: Booted secondary processor 0x0000000100 [0x413fd0c1]
+[    0.044689] Detected PIPT I-cache on CPU59
+[    0.044700] GICv3: CPU59: found redistributor 60100 region 0:0x00001001002e0000
+[    0.044707] GICv3: CPU59: using allocated LPI pending table @0x00000807c1350000
+[    0.044798] CPU59: Booted secondary processor 0x0000060100 [0x413fd0c1]
+[    0.045078] Detected PIPT I-cache on CPU60
+[    0.045091] GICv3: CPU60: found redistributor 130100 region 0:0x0000100100620000
+[    0.045097] GICv3: CPU60: using allocated LPI pending table @0x00000807c1360000
+[    0.045183] CPU60: Booted secondary processor 0x0000130100 [0x413fd0c1]
+[    0.045481] Detected PIPT I-cache on CPU61
+[    0.045495] GICv3: CPU61: found redistributor 1b0100 region 0:0x0000100100820000
+[    0.045501] GICv3: CPU61: using allocated LPI pending table @0x00000807c1370000
+[    0.045587] CPU61: Booted secondary processor 0x00001b0100 [0x413fd0c1]
+[    0.045885] Detected PIPT I-cache on CPU62
+[    0.045898] GICv3: CPU62: found redistributor 150100 region 0:0x00001001006a0000
+[    0.045904] GICv3: CPU62: using allocated LPI pending table @0x00000807c1380000
+[    0.045992] CPU62: Booted secondary processor 0x0000150100 [0x413fd0c1]
+[    0.046277] Detected PIPT I-cache on CPU63
+[    0.046292] GICv3: CPU63: found redistributor 1d0100 region 0:0x00001001008a0000
+[    0.046299] GICv3: CPU63: using allocated LPI pending table @0x00000807c1390000
+[    0.046386] CPU63: Booted secondary processor 0x00001d0100 [0x413fd0c1]
+[    0.046681] Detected PIPT I-cache on CPU64
+[    0.046693] GICv3: CPU64: found redistributor 110100 region 0:0x00001001005a0000
+[    0.046699] GICv3: CPU64: using allocated LPI pending table @0x00000807c13a0000
+[    0.046787] CPU64: Booted secondary processor 0x0000110100 [0x413fd0c1]
+[    0.047086] Detected PIPT I-cache on CPU65
+[    0.047100] GICv3: CPU65: found redistributor 190100 region 0:0x00001001007a0000
+[    0.047107] GICv3: CPU65: using allocated LPI pending table @0x00000807c13b0000
+[    0.047193] CPU65: Booted secondary processor 0x0000190100 [0x413fd0c1]
+[    0.047486] Detected PIPT I-cache on CPU66
+[    0.047500] GICv3: CPU66: found redistributor 170100 region 0:0x0000100100720000
+[    0.047508] GICv3: CPU66: using allocated LPI pending table @0x00000807c13c0000
+[    0.047594] CPU66: Booted secondary processor 0x0000170100 [0x413fd0c1]
+[    0.047892] Detected PIPT I-cache on CPU67
+[    0.047907] GICv3: CPU67: found redistributor 1f0100 region 0:0x0000100100920000
+[    0.047913] GICv3: CPU67: using allocated LPI pending table @0x00000807c13d0000
+[    0.048001] CPU67: Booted secondary processor 0x00001f0100 [0x413fd0c1]
+[    0.048292] Detected PIPT I-cache on CPU68
+[    0.048304] GICv3: CPU68: found redistributor b0100 region 0:0x0000100100420000
+[    0.048311] GICv3: CPU68: using allocated LPI pending table @0x00000807c13e0000
+[    0.048396] CPU68: Booted secondary processor 0x00000b0100 [0x413fd0c1]
+[    0.048686] Detected PIPT I-cache on CPU69
+[    0.048701] GICv3: CPU69: found redistributor 230100 region 0:0x0000100100a20000
+[    0.048708] GICv3: CPU69: using allocated LPI pending table @0x00000807c13f0000
+[    0.048794] CPU69: Booted secondary processor 0x0000230100 [0x413fd0c1]
+[    0.049088] Detected PIPT I-cache on CPU70
+[    0.049100] GICv3: CPU70: found redistributor d0100 region 0:0x00001001004a0000
+[    0.049107] GICv3: CPU70: using allocated LPI pending table @0x00000807c1400000
+[    0.049196] CPU70: Booted secondary processor 0x00000d0100 [0x413fd0c1]
+[    0.049484] Detected PIPT I-cache on CPU71
+[    0.049499] GICv3: CPU71: found redistributor 250100 region 0:0x0000100100aa0000
+[    0.049506] GICv3: CPU71: using allocated LPI pending table @0x00000807c1410000
+[    0.049594] CPU71: Booted secondary processor 0x0000250100 [0x413fd0c1]
+[    0.049888] Detected PIPT I-cache on CPU72
+[    0.049899] GICv3: CPU72: found redistributor 90100 region 0:0x00001001003a0000
+[    0.049906] GICv3: CPU72: using allocated LPI pending table @0x00000807c1420000
+[    0.049994] CPU72: Booted secondary processor 0x0000090100 [0x413fd0c1]
+[    0.050298] Detected PIPT I-cache on CPU73
+[    0.050313] GICv3: CPU73: found redistributor 210100 region 0:0x00001001009a0000
+[    0.050321] GICv3: CPU73: using allocated LPI pending table @0x00000807c1430000
+[    0.050409] CPU73: Booted secondary processor 0x0000210100 [0x413fd0c1]
+[    0.050708] Detected PIPT I-cache on CPU74
+[    0.050720] GICv3: CPU74: found redistributor f0100 region 0:0x0000100100520000
+[    0.050728] GICv3: CPU74: using allocated LPI pending table @0x00000807c1440000
+[    0.050815] CPU74: Booted secondary processor 0x00000f0100 [0x413fd0c1]
+[    0.051116] Detected PIPT I-cache on CPU75
+[    0.051133] GICv3: CPU75: found redistributor 270100 region 0:0x0000100100b20000
+[    0.051140] GICv3: CPU75: using allocated LPI pending table @0x00000807c1450000
+[    0.051228] CPU75: Booted secondary processor 0x0000270100 [0x413fd0c1]
+[    0.051534] Detected PIPT I-cache on CPU76
+[    0.051543] GICv3: CPU76: found redistributor 30100 region 0:0x0000100100220000
+[    0.051550] GICv3: CPU76: using allocated LPI pending table @0x00000807c1460000
+[    0.051641] CPU76: Booted secondary processor 0x0000030100 [0x413fd0c1]
+[    0.051924] Detected PIPT I-cache on CPU77
+[    0.051934] GICv3: CPU77: found redistributor 50100 region 0:0x00001001002a0000
+[    0.051941] GICv3: CPU77: using allocated LPI pending table @0x00000807c1470000
+[    0.052031] CPU77: Booted secondary processor 0x0000050100 [0x413fd0c1]
+[    0.052325] Detected PIPT I-cache on CPU78
+[    0.052334] GICv3: CPU78: found redistributor 10100 region 0:0x00001001001a0000
+[    0.052341] GICv3: CPU78: using allocated LPI pending table @0x00000807c1480000
+[    0.052433] CPU78: Booted secondary processor 0x0000010100 [0x413fd0c1]
+[    0.052726] Detected PIPT I-cache on CPU79
+[    0.052737] GICv3: CPU79: found redistributor 70100 region 0:0x0000100100320000
+[    0.052745] GICv3: CPU79: using allocated LPI pending table @0x00000807c1490000
+[    0.052834] CPU79: Booted secondary processor 0x0000070100 [0x413fd0c1]
+[    0.053421] Detected PIPT I-cache on CPU80
+[    0.053519] GICv3: CPU80: found redistributor 100120000 region 1:0x00005001005c0000
+[    0.053540] GICv3: CPU80: using allocated LPI pending table @0x00000807c14a0000
+[    0.053659] CPU80: Booted secondary processor 0x0100120000 [0x413fd0c1]
+[    0.054492] Detected PIPT I-cache on CPU81
+[    0.054595] GICv3: CPU81: found redistributor 1001a0000 region 1:0x00005001007c0000
+[    0.054615] GICv3: CPU81: using allocated LPI pending table @0x00000807c14b0000
+[    0.054754] CPU81: Booted secondary processor 0x01001a0000 [0x413fd0c1]
+[    0.055447] Detected PIPT I-cache on CPU82
+[    0.055548] GICv3: CPU82: found redistributor 100140000 region 1:0x0000500100640000
+[    0.055569] GICv3: CPU82: using allocated LPI pending table @0x00000807c14c0000
+[    0.055702] CPU82: Booted secondary processor 0x0100140000 [0x413fd0c1]
+[    0.056423] Detected PIPT I-cache on CPU83
+[    0.056528] GICv3: CPU83: found redistributor 1001c0000 region 1:0x0000500100840000
+[    0.056550] GICv3: CPU83: using allocated LPI pending table @0x00000807c14d0000
+[    0.056692] CPU83: Booted secondary processor 0x01001c0000 [0x413fd0c1]
+[    0.057432] Detected PIPT I-cache on CPU84
+[    0.057531] GICv3: CPU84: found redistributor 100100000 region 1:0x0000500100540000
+[    0.057553] GICv3: CPU84: using allocated LPI pending table @0x00000807c14e0000
+[    0.057683] CPU84: Booted secondary processor 0x0100100000 [0x413fd0c1]
+[    0.058395] Detected PIPT I-cache on CPU85
+[    0.058493] GICv3: CPU85: found redistributor 100180000 region 1:0x0000500100740000
+[    0.058514] GICv3: CPU85: using allocated LPI pending table @0x00000807c14f0000
+[    0.058655] CPU85: Booted secondary processor 0x0100180000 [0x413fd0c1]
+[    0.059462] Detected PIPT I-cache on CPU86
+[    0.059563] GICv3: CPU86: found redistributor 100160000 region 1:0x00005001006c0000
+[    0.059584] GICv3: CPU86: using allocated LPI pending table @0x00000807c1500000
+[    0.059719] CPU86: Booted secondary processor 0x0100160000 [0x413fd0c1]
+[    0.060436] Detected PIPT I-cache on CPU87
+[    0.060541] GICv3: CPU87: found redistributor 1001e0000 region 1:0x00005001008c0000
+[    0.060563] GICv3: CPU87: using allocated LPI pending table @0x00000807c1510000
+[    0.060704] CPU87: Booted secondary processor 0x01001e0000 [0x413fd0c1]
+[    0.061394] Detected PIPT I-cache on CPU88
+[    0.061486] GICv3: CPU88: found redistributor 1000a0000 region 1:0x00005001003c0000
+[    0.061506] GICv3: CPU88: using allocated LPI pending table @0x00000807c1520000
+[    0.061636] CPU88: Booted secondary processor 0x01000a0000 [0x413fd0c1]
+[    0.062381] Detected PIPT I-cache on CPU89
+[    0.062481] GICv3: CPU89: found redistributor 100220000 region 1:0x00005001009c0000
+[    0.062502] GICv3: CPU89: using allocated LPI pending table @0x00000807c1530000
+[    0.062646] CPU89: Booted secondary processor 0x0100220000 [0x413fd0c1]
+[    0.063375] Detected PIPT I-cache on CPU90
+[    0.063469] GICv3: CPU90: found redistributor 1000c0000 region 1:0x0000500100440000
+[    0.063489] GICv3: CPU90: using allocated LPI pending table @0x00000807c1540000
+[    0.063626] CPU90: Booted secondary processor 0x01000c0000 [0x413fd0c1]
+[    0.064380] Detected PIPT I-cache on CPU91
+[    0.064483] GICv3: CPU91: found redistributor 100240000 region 1:0x0000500100a40000
+[    0.064504] GICv3: CPU91: using allocated LPI pending table @0x00000807c1550000
+[    0.064648] CPU91: Booted secondary processor 0x0100240000 [0x413fd0c1]
+[    0.065446] Detected PIPT I-cache on CPU92
+[    0.065541] GICv3: CPU92: found redistributor 100080000 region 1:0x0000500100340000
+[    0.065562] GICv3: CPU92: using allocated LPI pending table @0x00000807c1560000
+[    0.065694] CPU92: Booted secondary processor 0x0100080000 [0x413fd0c1]
+[    0.066459] Detected PIPT I-cache on CPU93
+[    0.066563] GICv3: CPU93: found redistributor 100200000 region 1:0x0000500100940000
+[    0.066585] GICv3: CPU93: using allocated LPI pending table @0x00000807c1570000
+[    0.066728] CPU93: Booted secondary processor 0x0100200000 [0x413fd0c1]
+[    0.067455] Detected PIPT I-cache on CPU94
+[    0.067553] GICv3: CPU94: found redistributor 1000e0000 region 1:0x00005001004c0000
+[    0.067573] GICv3: CPU94: using allocated LPI pending table @0x00000807c1580000
+[    0.067713] CPU94: Booted secondary processor 0x01000e0000 [0x413fd0c1]
+[    0.068460] Detected PIPT I-cache on CPU95
+[    0.068567] GICv3: CPU95: found redistributor 100260000 region 1:0x0000500100ac0000
+[    0.068589] GICv3: CPU95: using allocated LPI pending table @0x00000807c1590000
+[    0.068735] CPU95: Booted secondary processor 0x0100260000 [0x413fd0c1]
+[    0.069642] Detected PIPT I-cache on CPU96
+[    0.069736] GICv3: CPU96: found redistributor 100020000 region 1:0x00005001001c0000
+[    0.069757] GICv3: CPU96: using allocated LPI pending table @0x00000807c15a0000
+[    0.069890] CPU96: Booted secondary processor 0x0100020000 [0x413fd0c1]
+[    0.070580] Detected PIPT I-cache on CPU97
+[    0.070670] GICv3: CPU97: found redistributor 100040000 region 1:0x0000500100240000
+[    0.070690] GICv3: CPU97: using allocated LPI pending table @0x00000807c15b0000
+[    0.070835] CPU97: Booted secondary processor 0x0100040000 [0x413fd0c1]
+[    0.071653] Detected PIPT I-cache on CPU98
+[    0.071744] GICv3: CPU98: found redistributor 100000000 region 1:0x0000500100140000
+[    0.071765] GICv3: CPU98: using allocated LPI pending table @0x00000807c15c0000
+[    0.071902] CPU98: Booted secondary processor 0x0100000000 [0x413fd0c1]
+[    0.072593] Detected PIPT I-cache on CPU99
+[    0.072686] GICv3: CPU99: found redistributor 100060000 region 1:0x00005001002c0000
+[    0.072708] GICv3: CPU99: using allocated LPI pending table @0x00000807c15d0000
+[    0.072856] CPU99: Booted secondary processor 0x0100060000 [0x413fd0c1]
+[    0.073583] Detected PIPT I-cache on CPU100
+[    0.073680] GICv3: CPU100: found redistributor 100130000 region 1:0x0000500100600000
+[    0.073701] GICv3: CPU100: using allocated LPI pending table @0x00000807c15e0000
+[    0.073837] CPU100: Booted secondary processor 0x0100130000 [0x413fd0c1]
+[    0.074585] Detected PIPT I-cache on CPU101
+[    0.074682] GICv3: CPU101: found redistributor 1001b0000 region 1:0x0000500100800000
+[    0.074703] GICv3: CPU101: using allocated LPI pending table @0x00000807c15f0000
+[    0.074853] CPU101: Booted secondary processor 0x01001b0000 [0x413fd0c1]
+[    0.075593] Detected PIPT I-cache on CPU102
+[    0.075690] GICv3: CPU102: found redistributor 100150000 region 1:0x0000500100680000
+[    0.075711] GICv3: CPU102: using allocated LPI pending table @0x00000807c1600000
+[    0.075853] CPU102: Booted secondary processor 0x0100150000 [0x413fd0c1]
+[    0.076666] Detected PIPT I-cache on CPU103
+[    0.076769] GICv3: CPU103: found redistributor 1001d0000 region 1:0x0000500100880000
+[    0.076791] GICv3: CPU103: using allocated LPI pending table @0x00000807c1610000
+[    0.076942] CPU103: Booted secondary processor 0x01001d0000 [0x413fd0c1]
+[    0.077649] Detected PIPT I-cache on CPU104
+[    0.077747] GICv3: CPU104: found redistributor 100110000 region 1:0x0000500100580000
+[    0.077769] GICv3: CPU104: using allocated LPI pending table @0x00000807c1620000
+[    0.077907] CPU104: Booted second Killed
+logout
+Connection to 10.38.175.31 closed.

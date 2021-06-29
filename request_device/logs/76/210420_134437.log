@@ -1,0 +1,122 @@
+<div class='w3-container '><p>./linux_test.py --start_test 1 --linux_script dmidecode --time 60 --sol 1 --debug 1 --hostip 10.38.172.2 --hostuser root --hostpass root --bmcip 10.38.172.55 --tty_uefi AB0KUEMT --tty_atf AB0KUEMA --tty_s0cli AB0KUEMX --tty_s1cli AB0KUEMK --board Mt.Jade --wait 0 --sys_log logs/76/210420_134437.log --test_cfg dmidecode.cfg --nv_scan SI_S0_PCP_ACTIVECPM_0_31[0x1],SI_S0_PCP_ACTIVECPM_32_63[0x0],SI_S1_PCP_ACTIVECPM_0_31[0x1],SI_S1_PCP_ACTIVECPM_32_63[0x0]  </p></div>
+CHASSIS POWER OFF
+exec_cmd sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.172.2 'ipmitool -H 10.38.172.55 -U ADMIN -P ADMIN -I lanplus -z 0x7fff chassis power off'
+
+
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Setting large buffer to 32767
+Chassis Power Control: Down/Off
+exec_cmd sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.172.55 'echo SI_S1_PCP_ACTIVECPM_32_63 && gpiotool --set-data-low 226 && nvparm -s 0x0 -o 0x118018 && gpiotool --set-data-high 226;\
+echo SI_S1_PCP_ACTIVECPM_0_31 && gpiotool --set-data-low 226 && nvparm -s 0x1 -o 0x118010 && gpiotool --set-data-high 226;\
+echo SI_S0_PCP_ACTIVECPM_32_63 && gpiotool --set-data-low 226 && nvparm -s 0x0 -o 0x118008 && gpiotool --set-data-high 226;\
+echo SI_S0_PCP_ACTIVECPM_0_31 && gpiotool --set-data-low 226 && nvparm -s 0x1 -o 0x118000 && gpiotool --set-data-high 226;\
+'
+
+
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+SI_S1_PCP_ACTIVECPM_32_63
+Inside Set Gpio low 
+
+GPIO pin is set to low 
+
+Erasing blocks: 1/1 (100%)Erasing blocks: 1/1 (100%)
+Inside Set Gpio high 
+
+GPIO pin is set to high 
+
+SI_S1_PCP_ACTIVECPM_0_31
+Inside Set Gpio low 
+
+GPIO pin is set to low 
+
+Erasing blocks: 1/1 (100%)Erasing blocks: 1/1 (100%)
+Inside Set Gpio high 
+
+GPIO pin is set to high 
+
+SI_S0_PCP_ACTIVECPM_32_63
+Inside Set Gpio low 
+
+GPIO pin is set to low 
+
+Erasing blocks: 1/1 (100%)Erasing blocks: 1/1 (100%)
+Inside Set Gpio high 
+
+GPIO pin is set to high 
+
+SI_S0_PCP_ACTIVECPM_0_31
+Inside Set Gpio low 
+
+GPIO pin is set to low 
+
+Erasing blocks: 1/1 (100%)Erasing blocks: 1/1 (100%)
+Inside Set Gpio high 
+
+GPIO pin is set to high 
+
+
+
+./xconsole.py --tty AB0KUEMX --log logs/76/210420_134437/Mt.Jade_dmidecode.cfg_at_1_210420_134437s0cli.log --hostuser root --note s0cli --board Mt.Jade --hostip 10.38.172.2 --bmcip 10.38.172.55 --hostpass root
+
+
+./xconsole.py --tty AB0KUEMK --log logs/76/210420_134437/Mt.Jade_dmidecode.cfg_at_1_210420_134437s1cli.log --hostuser root --note s1cli --board Mt.Jade --hostip 10.38.172.2 --bmcip 10.38.172.55 --hostpass root
+
+
+./xconsole.py --tty AB0KUEMA --log logs/76/210420_134437/Mt.Jade_dmidecode.cfg_at_1_210420_134437atf.log --hostuser root --note atf --board Mt.Jade --hostip 10.38.172.2 --bmcip 10.38.172.55 --hostpass root
+
+
+./xconsole.py --tty AB0KUEMT --log logs/76/210420_134437/Mt.Jade_dmidecode.cfg_at_1_210420_134437uefi.log --hostuser root --note uefi --board Mt.Jade --hostip 10.38.172.2 --bmcip 10.38.172.55 --hostpass root
+
+
+<div class='w3-container '><p><a href='/logs/76/210420_134437/Mt.Jade_dmidecode.cfg_at_1_210420_134437.txt'>CHASSIS POWER ON[210420_134437]</a></p></div>
+exec_cmd sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.172.2 'ipmitool -H 10.38.172.55 -U ADMIN -P ADMIN -I lanplus -z 0x7fff chassis power on'
+
+
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Setting large buffer to 32767
+Chassis Power Control: Up/On
+[766720.346819] ttyUSB1' FTBELRP0
+[760956.946947] ttyUSB3' FTBQZF1O
+[758197.743938] ttyUSB5' AD0K9J3K
+[758190.325810] ttyUSB4' AD0K8YXP
+[698277.608500] ttyUSB2' FTEZFKQR
+[676695.120014] ttyUSB0' FTBZED1L
+[76089.245076] ttyUSB8' AD0K8YYB
+[76042.655147] ttyUSB7' AD0K8KF3
+[76023.705003] ttyUSB6' AD0K8YY4
+[75470.996882] ttyUSB9' FTEZFHCC
+logs/76/210420_134437/Mt.Jade_dmidecode.cfg_at_1_210420_134437s0cli.log
+Traceback (most recent call last):
+  File "./xconsole.py", line 686, in <module>
+    tty.logfile_read = open(args.log, 'a+')
+AttributeError: 'NoneType' object has no attribute 'logfile_read'
+[766720.346819] ttyUSB1' FTBELRP0
+[760956.946947] ttyUSB3' FTBQZF1O
+[758197.743938] ttyUSB5' AD0K9J3K
+[758190.325810] ttyUSB4' AD0K8YXP
+[698277.608500] ttyUSB2' FTEZFKQR
+[676695.120014] ttyUSB0' FTBZED1L
+[76089.245076] ttyUSB8' AD0K8YYB
+[76042.655147] ttyUSB7' AD0K8KF3
+[76023.705003] ttyUSB6' AD0K8YY4
+[75470.996882] ttyUSB9' FTEZFHCC
+[766720.346819] ttyUSB1' FTBELRP0
+[760956.946947] ttyUSB3' FTBQZF1O
+[758197.743938] ttyUSB5' AD0K9J3K
+[758190.325810] ttyUSB4' AD0K8YXP
+[698277.608500] ttyUSB2' FTEZFKQR
+[676695.120014] ttyUSB0' FTBZED1L
+[76089.245076] ttyUSB8' AD0K8YYB
+[76042.655147] ttyUSB7' AD0K8KF3
+[76023.705003] ttyUSB6' AD0K8YY4
+[75470.996882] ttyUSB9' FTEZFHCC
+logs/76/210420_134437/Mt.Jade_dmidecode.cfg_at_1_210420_134437s1cli.log
+logs/76/210420_134437/Mt.Jade_dmidecode.cfg_at_1_210420_134437uefi.log
+Traceback (most recent call last):
+  File "./xconsole.py", line 686, in <module>
+Traceback (most recent call last):
+  File "./xconsole.py", line 686, in <module>
+    tty.logfile_read = open(args.log, 'a+')
+AttributeError: 'NoneType' object has no attribute 'logfile_read'
+<div class='w3-container '><p>__INFO__: number_dimm_0</p></div>
+<div class='w3-container  w3-text-blue w3-text-red'><p>__STATUS__:  SI_S1_PCP_ACTIVECPM_32_63[0x0] SI_S1_PCP_ACTIVECPM_0_31[0x1] SI_S0_PCP_ACTIVECPM_32_63[0x0] SI_S0_PCP_ACTIVECPM_0_31[0x1] loop[1] TEST_FAIL[TIMEOUT DDRINIT] PASS[0/1]CLI[1]</p></div>

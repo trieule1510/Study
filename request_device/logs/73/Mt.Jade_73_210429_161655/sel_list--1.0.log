@@ -1,0 +1,38 @@
+search_board_type Mt.Jade
+./sshpass -p amcc1234 ssh -o StrictHostKeyChecking=no -t amcclab@10.38.15.173 'ipmitool -H 10.38.15.14 -U ADMIN -P ADMIN  sel list'
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+   1 | 04/29/2021 | 04:34:26 | Event Logging Disabled #0xdd | Log area reset/cleared | Asserted
+   2 | 04/29/2021 | 05:09:37 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+   3 | 04/29/2021 | 05:09:37 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+   4 | 04/29/2021 | 05:10:11 | OEM record c0 | 00cd3a | ca907101ffff
+   5 | 04/29/2021 | 05:10:11 | OEM record c0 | 00cd3a | cbe57001ffff
+   6 | 04/29/2021 | 05:10:11 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+   7 | 04/29/2021 | 05:10:11 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+   8 | 04/29/2021 | 05:10:12 | OEM record c0 | 00cd3a | 0feb70020000
+   9 | 04/29/2021 | 05:10:12 | OEM record c0 | 00cd3a | ca8f7101ffff
+   a | 04/29/2021 | 05:10:12 | OEM record c0 | 00cd3a | ca90f101ffff
+   b | 04/29/2021 | 05:10:13 | OEM record c0 | 00cd3a | 0feb70120000
+   c | 04/29/2021 | 05:10:13 | OEM record c0 | 00cd3a | ca8ff101ffff
+   d | 04/29/2021 | 05:10:46 | OEM record c0 | 00cd3a | 0feb70220000
+   e | 04/29/2021 | 05:10:47 | OEM record c0 | 00cd3a | 0feb70320000
+   f | 04/29/2021 | 05:10:49 | OEM record c0 | 00cd3a | 0feb70520000
+  10 | 04/29/2021 | 05:10:50 | OEM record c0 | 00cd3a | 0feb70620000
+  11 | 04/29/2021 | 05:11:26 | OEM record c0 | 00cd3a | 0feb70820000
+  12 | 04/29/2021 | 05:11:26 | System Firmwares #0xe4 | System boot initiated | Asserted
+  13 | 04/29/2021 | 05:14:36 | System ACPI Power State #0x7a | S5/G2: soft-off | Asserted
+  14 | 04/29/2021 | 05:14:36 | System ACPI Power State #0x8a | S5/G2: soft-off | Asserted
+  15 | 04/29/2021 | 05:15:11 | OEM record c0 | 00cd3a | cbe57001ffff
+  16 | 04/29/2021 | 05:15:11 | OEM record c0 | 00cd3a | ca8f7101ffff
+  17 | 04/29/2021 | 05:15:11 | System ACPI Power State #0x7a | S0/G0: working | Asserted
+  18 | 04/29/2021 | 05:15:11 | System ACPI Power State #0x8a | S0/G0: working | Asserted
+  19 | 04/29/2021 | 05:15:11 | OEM record c0 | 00cd3a | ca907101ffff
+  1a | 04/29/2021 | 05:15:12 | OEM record c0 | 00cd3a | 0feb70020000
+  1b | 04/29/2021 | 05:15:12 | OEM record c0 | 00cd3a | ca8ff101ffff
+  1c | 04/29/2021 | 05:15:12 | OEM record c0 | 00cd3a | ca90f101ffff
+  1d | 04/29/2021 | 05:15:13 | OEM record c0 | 00cd3a | 0feb70120000
+  1e | 04/29/2021 | 05:15:45 | OEM record c0 | 00cd3a | 0feb70220000
+  1f | 04/29/2021 | 05:15:46 | OEM record c0 | 00cd3a | 0feb70320000
+  20 | 04/29/2021 | 05:15:48 | OEM record c0 | 00cd3a | 0feb70520000
+  21 | 04/29/2021 | 05:15:49 | OEM record c0 | 00cd3a | 0feb70620000
+  22 | 04/29/2021 | 05:16:25 | OEM record c0 | 00cd3a | 0feb70820000
+  23 | 04/29/2021 | 05:16:25 | System Firmwares #0xe4 | System boot initiated | Asserted

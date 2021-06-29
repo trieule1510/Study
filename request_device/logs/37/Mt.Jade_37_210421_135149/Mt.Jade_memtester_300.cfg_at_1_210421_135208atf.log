@@ -1,0 +1,71 @@
+NOTICE:  Booting Trusted Firmware
+NOTICE:  BL1: v2.1(release):1.04 Build 20210326
+NOTICE:  BL1: Built : 17:01:12, Mar 26 2021
+ERROR:   Failed to populate ROTPK error -16512
+ERROR:   Failed to populate rotpk key der
+NOTICE:  ROTPK is not deployed on platform. Skipping ROTPK verification.
+NOTICE:  BL1: Booting BL2
+NOTICE:  BL2: v2.1(release):1.04 Build 20210326
+NOTICE:  BL2: Built : 17:01:12, Mar 26 2021
+ERROR:   Failed to populate ROTPK error -16512
+ERROR:   Failed to populate rotpk key der
+NOTICE:  ROTPK is not deployed on platform. Skipping ROTPK verification.
+NOTICE:  BL1: Booting BL31
+NOTICE:  BL31: v2.1(release):1.04 Build 20210326
+NOTICE:  BL31: Built : 17:01:12, Mar 26 2021
+NOTICE:  BL31: Image v1.04 - Build 20210326
+NOTICE:  Booting Ampere TPM
+NOTICE:  Built : 17:01:15, Mar 26 2021
+NOTICE:  v2.1(emag2,release):ec7f4e3
+NOTICE:  Running at S-EL0
+NOTICE:  Secure Partition memory layout:
+NOTICE:    Image regions
+NOTICE:      Text region            : 0x90000000 - 0x90034000
+NOTICE:      Read-only data region  : 0x90034000 - 0x9003d000
+NOTICE:      Data region            : 0x9003d000 - 0x9003e000
+NOTICE:      BSS region             : 0x9003e000 - 0x90042000
+NOTICE:      Total image memory     : 0x90000000 - 0x90400000
+NOTICE:    SPM regions
+NOTICE:      SPM <-> SP buffer      : 0x90400000 - 0x90410000
+NOTICE:      NS <-> SP buffer       : 0x88500000 - 0x88600000
+NOTICE:  TPM: Slave is configured at SPI1_CS0
+ERROR:   TPM: TPM startup failed
+ERROR:   TPM: Discovery unsuccessful
+NOTICE:  Booting Ampere Hotplug SP
+NOTICE:  Built : 17:01:18, Mar 26 2021
+NOTICE:  v2.1(emag2,release):ec7f4e3
+NOTICE:  Running at S-EL0
+NOTICE:  Secure Partition memory layout:
+NOTICE:    Image regions
+NOTICE:      Text region            : 0x90000000 - 0x90007000
+NOTICE:      Read-only data region  : 0x90007000 - 0x90008000
+NOTICE:      Data region            : 0x90008000 - 0x90009000
+NOTICE:      BSS region             : 0x90009000 - 0x9000c000
+NOTICE:      Total image memory     : 0x90000000 - 0x90400000
+NOTICE:    SPM regions
+NOTICE:      SPM <-> SP buffer      : 0x90400000 - 0x90410000
+NOTICE:      NS <-> SP buffer       : 0x88400000 - 0x88500000
+NOTICE:  HP: Port info
+NOTICE:  HP: Ready
+UpdatePeCoffPermissions: Mapping section 1 of image at 0x91B05000 with RW-XN permissions and size 0x1000
+Loading MM driver at 0x00091B01000 EntryPoint=0x00091B03980 StandaloneMmCpu.efi
+MmInstallProtocolInterface: 26EEB3DE-B689-492E-80F0-BE8BD7DA4BA7 91B05050
+UpdatePeCoffPermissions: Mapping section 1 of image at 0x91AF9000 with RW-XN permissions and size 0x1000
+Loading MM driver at 0x00091AF5000 EntryPoint=0x00091AF7A50 SpiNorProxyMm.efi
+UpdatePeCoffPermissions: Mapping section 1 of image at 0x91AF1000 with RW-XN permissions and size 0x1000
+Loading MM driver at 0x00091AED000 EntryPoint=0x00091AEF444 FwUpgradeMm.efi
+UpdatePeCoffPermissions: Mapping section 1 of image at 0x91AEA000 with RW-XN permissions and size 0x1000
+Loading MM driver at 0x00091AE6000 EntryPoint=0x00091AE876C SecVarMm.efi
+UpdatePeCoffPermissions: Mapping section 1 of image at 0x91AE3000 with RW-XN permissions and size 0x1000
+Loading MM driver at 0x00091ADF000 EntryPoint=0x00091AE1FBC NvparamProxyMm.efi
+NOTICE:  HP: first scan vport 2, state 1
+NOTICE:  HP: first scan vport 3, state 1
+NOTICE:  HP: first scan vport 4, state 1
+NOTICE:  HP: first scan vport 5, state 1
+NOTICE:  HP: first scan vport 6, state 1
+NOTICE:  HP: first scan vport 7, state 1
+NOTICE:  HP: first scan vport 8, state 1
+NOTICE:  HP: first scan vport 9, state 1
+NOTICE:  HP: Port info
+MmInstallProtocolInterface: 24E70042-D5C5-4260-8C39-0AD3AA32E93D 0
+MmInstallProtocolInterface: 7CE88FB3-4BD7-4679-87A8-A8D8DEE50D2B 0
