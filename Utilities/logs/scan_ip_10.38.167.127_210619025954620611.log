@@ -1,0 +1,448 @@
+sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.167.127 'rm -f /var/tmp/deviceInformation.sh'
+sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.167.127 'wget -P /var/tmp http://10.38.13.103/projects/hcm/diagnostic/QA/Scripts/deviceInformation.sh'
+--2021-06-18 16:00:09--  http://10.38.13.103/projects/hcm/diagnostic/QA/Scripts/deviceInformation.sh
+Connecting to 10.38.13.103:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1672 (1.6K) [text/x-sh]
+Saving to: ‘/var/tmp/deviceInformation.sh’
+
+deviceInformation.sh                          0%[                                                                                           ]       0  --.-KB/s               deviceInformation.sh                        100%[==========================================================================================>]   1.63K  --.-KB/s    in 0s      
+
+2021-06-18 16:00:09 (275 MB/s) - ‘/var/tmp/deviceInformation.sh’ saved [1672/1672]
+
+sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.167.127 'chmod 777 /var/tmp/deviceInformation.sh'
+sshpass -p root ssh -o StrictHostKeyChecking=no -t root@10.38.167.127 '/var/tmp/deviceInformation.sh 10.38.167.127_210619-0300.log'
+/var/tmp/deviceInformation.sh: line 48: ipmitool: command not found
+/var/tmp/deviceInformation.sh: line 48: ipmitool: command not found
+/var/tmp/deviceInformation.sh: line 48: ipmitool: command not found
+/var/tmp/deviceInformation.sh: line 48: ipmitool: command not found
+/var/tmp/deviceInformation.sh: line 48: nvme: command not found
+/var/tmp/deviceInformation.sh: line 48: nvme: command not found
+sshpass -p root scp root@10.38.167.127:10.38.167.127_210619-0300.log .
+------------------------------------------------------------------
+-                                                                -
+-        			Information                                    -
+-                                                                -
+------------------------------------------------------------------
+-----  info @  -----
+
+CMD: ipmitool lan print
+
+
+CMD: ipmitool fru print
+
+
+CMD: ipmitool mc info
+
+
+CMD: ipmitool mc guid
+
+
+CMD: dmidecode -t bios
+# dmidecode 3.2
+Getting SMBIOS data from sysfs.
+SMBIOS 3.3.0 present.
+# SMBIOS implementations newer than version 3.2.0 are not
+# fully supported by this version of dmidecode.
+
+Handle 0x0000, DMI type 0, 26 bytes
+BIOS Information
+	Vendor: GIGABYTE
+	Version: F12 (SCP: 1.5.20210426)
+	Release Date: 05/13/2021
+	ROM Size: 0 MB
+	Characteristics:
+		PCI is supported
+		BIOS is upgradeable
+		Boot from CD is supported
+		Selectable boot is supported
+		ACPI is supported
+		UEFI is supported
+	BIOS Revision: 5.15
+	Firmware Revision: 1.5
+
+Handle 0x0014, DMI type 13, 22 bytes
+BIOS Language Information
+	Language Description Format: Long
+	Installable Languages: 1
+		en|US|iso8859-1
+	Currently Installed Language: en|US|iso8859-1
+
+
+
+CMD: dmidecode -t processor
+# dmidecode 3.2
+Getting SMBIOS data from sysfs.
+SMBIOS 3.3.0 present.
+# SMBIOS implementations newer than version 3.2.0 are not
+# fully supported by this version of dmidecode.
+
+Handle 0x0004, DMI type 4, 48 bytes
+Processor Information
+	Socket Designation: CPU 1
+	Type: Central Processor
+	Family: ARMv8
+	Manufacturer: Ampere(R)
+	ID: C1 D0 3F 41 00 00 00 00
+	Signature: Implementor 0x41, Variant 0x3, Architecture 15, Part 0xd0c, Revision 1
+	Version: Ampere(R) Altra(R) Processor
+	Voltage: 1.0 V
+	External Clock: 1550 MHz
+	Max Speed: 3000 MHz
+	Current Speed: 2800 MHz
+	Status: Populated, Enabled
+	Upgrade: None
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: 0x0007
+	Serial Number: 000000000000000030D80306033837D4
+	Asset Tag: 00000001
+	Part Number: Q80-30
+	Core Count: 80
+	Core Enabled: 80
+	Thread Count: 80
+	Characteristics:
+		64-bit capable
+
+
+
+CMD: lscpu
+Architecture:        aarch64
+Byte Order:          Little Endian
+CPU(s):              80
+On-line CPU(s) list: 0-79
+Thread(s) per core:  2
+Core(s) per socket:  40
+Socket(s):           1
+NUMA node(s):        1
+Vendor ID:           ARM
+Model:               1
+Stepping:            r3p1
+CPU max MHz:         3000.0000
+CPU min MHz:         1000.0000
+BogoMIPS:            50.00
+L1d cache:           64K
+L1i cache:           64K
+L2 cache:            1024K
+NUMA node0 CPU(s):   0-79
+Flags:               fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp ssbs
+
+
+CMD: free -h
+              total        used        free      shared  buff/cache   available
+Mem:           14Gi       1.9Gi        12Gi        42Mi       457Mi        11Gi
+Swap:          15Gi          0B        15Gi
+
+	Part Number: M393A2K43DB3-CWE     
+	Part Number: Array 1 Part Number 2
+	Part Number: Array 1 Part Number 3
+	Part Number: Array 1 Part Number 4
+	Part Number: Array 1 Part Number 5
+	Part Number: Array 1 Part Number 6
+	Part Number: Array 1 Part Number 7
+	Part Number: Array 1 Part Number 8
+	Part Number: Array 1 Part Number 9
+	Part Number: Array 1 Part Number 10
+	Part Number: Array 1 Part Number 11
+	Part Number: Array 1 Part Number 12
+	Part Number: Array 1 Part Number 13
+	Part Number: Array 1 Part Number 14
+	Part Number: Array 1 Part Number 15
+	Part Number: Array 1 Part Number 16
+Count DIMM: 
+16
+
+CMD: lspci -nn -D -k
+0000:00:00.0 Host bridge [0600]: Ampere Computing, LLC Device [1def:e100]
+0000:00:01.0 PCI bridge [0604]: Ampere Computing, LLC Device [1def:e101] (rev 04)
+	Kernel driver in use: pcieport
+0000:00:02.0 PCI bridge [0604]: Ampere Computing, LLC Device [1def:e102] (rev 04)
+	Kernel driver in use: pcieport
+0000:00:03.0 PCI bridge [0604]: Ampere Computing, LLC Device [1def:e103] (rev 04)
+	Kernel driver in use: pcieport
+0000:00:04.0 PCI bridge [0604]: Ampere Computing, LLC Device [1def:e104] (rev 04)
+	Kernel driver in use: pcieport
+0001:00:00.0 Host bridge [0600]: Ampere Computing, LLC Device [1def:e100]
+0001:00:01.0 PCI bridge [0604]: Ampere Computing, LLC Device [1def:e101] (rev 04)
+	Kernel driver in use: pcieport
+0001:00:02.0 PCI bridge [0604]: Ampere Computing, LLC Device [1def:e102] (rev 04)
+	Kernel driver in use: pcieport
+0001:00:03.0 PCI bridge [0604]: Ampere Computing, LLC Device [1def:e103] (rev 04)
+	Kernel driver in use: pcieport
+0001:00:04.0 PCI bridge [0604]: Ampere Computing, LLC Device [1def:e104] (rev 04)
+	Kernel driver in use: pcieport
+0001:01:00.0 Ethernet controller [0200]: Mellanox Technologies MT2892 Family [ConnectX-6 Dx] [15b3:101d]
+	Subsystem: Mellanox Technologies Device [15b3:0011]
+0001:01:00.1 Ethernet controller [0200]: Mellanox Technologies MT2892 Family [ConnectX-6 Dx] [15b3:101d]
+	Subsystem: Mellanox Technologies Device [15b3:0011]
+0002:00:00.0 Host bridge [0600]: Ampere Computing, LLC Device [1def:e110]
+0002:00:01.0 PCI bridge [0604]: Ampere Computing, LLC Device [1def:e111] (rev 04)
+	Kernel driver in use: pcieport
+0002:00:03.0 PCI bridge [0604]: Ampere Computing, LLC Device [1def:e113] (rev 04)
+	Kernel driver in use: pcieport
+0002:00:05.0 PCI bridge [0604]: Ampere Computing, LLC Device [1def:e115] (rev 04)
+	Kernel driver in use: pcieport
+0002:00:07.0 PCI bridge [0604]: Ampere Computing, LLC Device [1def:e117] (rev 04)
+	Kernel driver in use: pcieport
+0003:00:00.0 Host bridge [0600]: Ampere Computing, LLC Device [1def:e110]
+0003:00:01.0 PCI bridge [0604]: Ampere Computing, LLC Device [1def:e111] (rev 04)
+	Kernel driver in use: pcieport
+0003:00:03.0 PCI bridge [0604]: Ampere Computing, LLC Device [1def:e113] (rev 04)
+	Kernel driver in use: pcieport
+0003:00:05.0 PCI bridge [0604]: Ampere Computing, LLC Device [1def:e115] (rev 04)
+	Kernel driver in use: pcieport
+0003:03:00.0 Ethernet controller [0200]: Intel Corporation I350 Gigabit Network Connection [8086:1521] (rev 01)
+	Kernel driver in use: igb
+	Kernel modules: igb
+0003:03:00.1 Ethernet controller [0200]: Intel Corporation I350 Gigabit Network Connection [8086:1521] (rev 01)
+	Kernel driver in use: igb
+	Kernel modules: igb
+0004:00:00.0 Host bridge [0600]: Ampere Computing, LLC Device [1def:e110]
+0004:00:01.0 PCI bridge [0604]: Ampere Computing, LLC Device [1def:e111] (rev 04)
+	Kernel driver in use: pcieport
+0004:00:03.0 PCI bridge [0604]: Ampere Computing, LLC Device [1def:e113] (rev 04)
+	Kernel driver in use: pcieport
+0004:00:05.0 PCI bridge [0604]: Ampere Computing, LLC Device [1def:e115] (rev 04)
+	Kernel driver in use: pcieport
+0004:01:00.0 PCI bridge [0604]: ASPEED Technology, Inc. AST1150 PCI-to-PCI Bridge [1a03:1150] (rev 04)
+0004:02:00.0 VGA compatible controller [0300]: ASPEED Technology, Inc. ASPEED Graphics Family [1a03:2000] (rev 41)
+	Subsystem: ASPEED Technology, Inc. ASPEED Graphics Family [1a03:2000]
+	Kernel driver in use: ast
+	Kernel modules: ast
+0004:03:00.0 USB controller [0c03]: Renesas Technology Corp. uPD720201 USB 3.0 Host Controller [1912:0014] (rev 03)
+	Kernel driver in use: xhci_hcd
+0005:00:00.0 Host bridge [0600]: Ampere Computing, LLC Device [1def:e110]
+0005:00:01.0 PCI bridge [0604]: Ampere Computing, LLC Device [1def:e111] (rev 04)
+	Kernel driver in use: pcieport
+0005:00:03.0 PCI bridge [0604]: Ampere Computing, LLC Device [1def:e113] (rev 04)
+	Kernel driver in use: pcieport
+0005:00:05.0 PCI bridge [0604]: Ampere Computing, LLC Device [1def:e115] (rev 04)
+	Kernel driver in use: pcieport
+0005:00:07.0 PCI bridge [0604]: Ampere Computing, LLC Device [1def:e117] (rev 04)
+	Kernel driver in use: pcieport
+0005:03:00.0 Non-Volatile memory controller [0108]: Samsung Electronics Co Ltd NVMe SSD Controller SM981/PM981 [144d:a808]
+	Subsystem: Samsung Electronics Co Ltd Device [144d:a801]
+	Kernel driver in use: nvme
+	Kernel modules: nvme
+000c:00:00.0 Host bridge [0600]: Ampere Computing, LLC Device [1def:e100]
+000c:00:01.0 PCI bridge [0604]: Ampere Computing, LLC Device [1def:e101] (rev 04)
+	Kernel driver in use: pcieport
+000c:00:02.0 PCI bridge [0604]: Ampere Computing, LLC Device [1def:e102] (rev 04)
+	Kernel driver in use: pcieport
+000c:00:03.0 PCI bridge [0604]: Ampere Computing, LLC Device [1def:e103] (rev 04)
+	Kernel driver in use: pcieport
+000c:00:04.0 PCI bridge [0604]: Ampere Computing, LLC Device [1def:e104] (rev 04)
+	Kernel driver in use: pcieport
+000d:00:00.0 Host bridge [0600]: Ampere Computing, LLC Device [1def:e100]
+000d:00:01.0 PCI bridge [0604]: Ampere Computing, LLC Device [1def:e101] (rev 04)
+	Kernel driver in use: pcieport
+000d:00:02.0 PCI bridge [0604]: Ampere Computing, LLC Device [1def:e102] (rev 04)
+	Kernel driver in use: pcieport
+000d:00:03.0 PCI bridge [0604]: Ampere Computing, LLC Device [1def:e103] (rev 04)
+	Kernel driver in use: pcieport
+000d:00:04.0 PCI bridge [0604]: Ampere Computing, LLC Device [1def:e104] (rev 04)
+	Kernel driver in use: pcieport
+
+
+CMD: lspci -t
+-+-[000d:00]-+-00.0
+ |           +-01.0-[01]--
+ |           +-02.0-[02]--
+ |           +-03.0-[03]--
+ |           \-04.0-[04]--
+ +-[000c:00]-+-00.0
+ |           +-01.0-[01]--
+ |           +-02.0-[02]--
+ |           +-03.0-[03]--
+ |           \-04.0-[04]--
+ +-[0005:00]-+-00.0
+ |           +-01.0-[01]--
+ |           +-03.0-[02]--
+ |           +-05.0-[03]----00.0
+ |           \-07.0-[04]--
+ +-[0004:00]-+-00.0
+ |           +-01.0-[01-02]----00.0-[02]----00.0
+ |           +-03.0-[03]----00.0
+ |           \-05.0-[04]--
+ +-[0003:00]-+-00.0
+ |           +-01.0-[01]--
+ |           +-03.0-[02]--
+ |           \-05.0-[03]--+-00.0
+ |                        \-00.1
+ +-[0002:00]-+-00.0
+ |           +-01.0-[01]--
+ |           +-03.0-[02]--
+ |           +-05.0-[03]--
+ |           \-07.0-[04]--
+ +-[0001:00]-+-00.0
+ |           +-01.0-[01]--+-00.0
+ |           |            \-00.1
+ |           +-02.0-[02]--
+ |           +-03.0-[03]--
+ |           \-04.0-[04]--
+ \-[0000:00]-+-00.0
+             +-01.0-[01]--
+             +-02.0-[02]--
+             +-03.0-[03]--
+             \-04.0-[04]--
+
+_______________ 0001:01:00.0 _______________
+0001:01:00.0 Ethernet controller [0200]: Mellanox Technologies MT2892 Family [ConnectX-6 Dx] [15b3:101d]
+	Subsystem: Mellanox Technologies Device 0011
+			[PN] Part number: MCX623102AN-ADAT         
+		LnkCap:	Port #0, Speed 16GT/s, Width x16, ASPM not supported
+		LnkSta:	Speed 16GT/s, Width x4, TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
+		LnkSta2: Current De-emphasis Level: -6dB, EqualizationComplete+, EqualizationPhase1+
+
+
+_______________ 0001:01:00.1 _______________
+0001:01:00.1 Ethernet controller [0200]: Mellanox Technologies MT2892 Family [ConnectX-6 Dx] [15b3:101d]
+	Subsystem: Mellanox Technologies Device 0011
+			[PN] Part number: MCX623102AN-ADAT         
+		LnkCap:	Port #0, Speed 16GT/s, Width x16, ASPM not supported
+		LnkSta:	Speed 16GT/s, Width x4, TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
+		LnkSta2: Current De-emphasis Level: -6dB, EqualizationComplete-, EqualizationPhase1-
+
+
+_______________ 0003:03:00.0 _______________
+0003:03:00.0 Ethernet controller [0200]: Intel Corporation I350 Gigabit Network Connection [8086:1521] (rev 01)
+		LnkCap:	Port #0, Speed 5GT/s, Width x4, ASPM L0s L1, Exit Latency L0s <4us, L1 <32us
+		LnkSta:	Speed 5GT/s, Width x2, TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
+		LnkSta2: Current De-emphasis Level: -6dB, EqualizationComplete-, EqualizationPhase1-
+	Kernel driver in use: igb
+
+
+_______________ 0003:03:00.1 _______________
+0003:03:00.1 Ethernet controller [0200]: Intel Corporation I350 Gigabit Network Connection [8086:1521] (rev 01)
+		LnkCap:	Port #0, Speed 5GT/s, Width x4, ASPM L0s L1, Exit Latency L0s <4us, L1 <32us
+		LnkSta:	Speed 5GT/s, Width x2, TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
+		LnkSta2: Current De-emphasis Level: -6dB, EqualizationComplete-, EqualizationPhase1-
+	Kernel driver in use: igb
+
+
+_______________ 0004:01:00.0 _______________
+0004:01:00.0 PCI bridge [0604]: ASPEED Technology, Inc. AST1150 PCI-to-PCI Bridge [1a03:1150] (rev 04)
+	Capabilities: [c0] Subsystem: ASPEED Technology, Inc. AST1150 PCI-to-PCI Bridge
+		LnkCap:	Port #0, Speed 5GT/s, Width x1, ASPM L0s L1, Exit Latency L0s <4us, L1 <2us
+		LnkSta:	Speed 5GT/s, Width x1, TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
+		LnkSta2: Current De-emphasis Level: -6dB, EqualizationComplete-, EqualizationPhase1-
+
+
+_______________ 0004:02:00.0 _______________
+0004:02:00.0 VGA compatible controller [0300]: ASPEED Technology, Inc. ASPEED Graphics Family [1a03:2000] (rev 41)
+	Subsystem: ASPEED Technology, Inc. ASPEED Graphics Family
+	Kernel driver in use: ast
+
+
+_______________ 0004:03:00.0 _______________
+0004:03:00.0 USB controller [0c03]: Renesas Technology Corp. uPD720201 USB 3.0 Host Controller [1912:0014] (rev 03)
+		LnkCap:	Port #0, Speed 5GT/s, Width x1, ASPM L0s L1, Exit Latency L0s <4us, L1 unlimited
+		LnkSta:	Speed 5GT/s, Width x1, TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
+		LnkSta2: Current De-emphasis Level: -6dB, EqualizationComplete-, EqualizationPhase1-
+	Kernel driver in use: xhci_hcd
+
+
+_______________ 0005:03:00.0 _______________
+0005:03:00.0 Non-Volatile memory controller [0108]: Samsung Electronics Co Ltd NVMe SSD Controller SM981/PM981 [144d:a808]
+	Subsystem: Samsung Electronics Co Ltd Device a801
+		LnkCap:	Port #0, Speed 8GT/s, Width x4, ASPM not supported
+		LnkSta:	Speed 8GT/s, Width x4, TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
+		LnkSta2: Current De-emphasis Level: -6dB, EqualizationComplete+, EqualizationPhase1+
+	Kernel driver in use: nvme
+
+
+
+CMD: lsscsi -v
+[N:0:4:1]    dsk/nvm SAMSUNG MZ1LB960HAJQ-00007__1              /dev/nvme0n1
+  dir: /sys/class/nvme/nvme0/nvme0n1  [/sys/devices/pci0005:00/0005:00:05.0/0005:03:00.0/nvme/nvme0/nvme0n1]
+
+
+CMD: nvme list
+
+
+CMD: nvme list-subsys
+
+
+CMD: lsblk -at
+NAME        ALIGNMENT MIN-IO OPT-IO PHY-SEC LOG-SEC ROTA SCHED RQ-SIZE   RA WSAME
+nvme0n1             0    512      0     512     512    0 none     1023  128    0B
+├─nvme0n1p1         0    512      0     512     512    0 none     1023  128    0B
+├─nvme0n1p2         0    512      0     512     512    0 none     1023  128    0B
+└─nvme0n1p3         0    512      0     512     512    0 none     1023  128    0B
+  ├─cl-root         0    512      0     512     512    0           128 4096    0B
+  ├─cl-swap         0    512      0     512     512    0           128 4096    0B
+  └─cl-home         0    512      0     512     512    0           128 4096    0B
+
+
+CMD: lsusb -t
+/:  Bus 02.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/4p, 5000M
+    |__ Port 3: Dev 2, If 0, Class=Hub, Driver=hub/4p, 5000M
+/:  Bus 01.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/4p, 480M
+    |__ Port 3: Dev 2, If 0, Class=Hub, Driver=hub/4p, 480M
+
+
+CMD: ifconfig -a
+eno1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.38.167.127  netmask 255.255.255.0  broadcast 10.38.167.255
+        inet6 fe80::1ac0:4dff:fe8d:96f3  prefixlen 64  scopeid 0x20<link>
+        ether 18:c0:4d:8d:96:f3  txqueuelen 1000  (Ethernet)
+        RX packets 5376  bytes 652671 (637.3 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1769  bytes 331762 (323.9 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0x10400000-1041ffff  
+
+eno2: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 18:c0:4d:8d:96:f4  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0x10420000-1043ffff  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+
+
+CMD: ip addr
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eno1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 18:c0:4d:8d:96:f3 brd ff:ff:ff:ff:ff:ff
+    inet 10.38.167.127/24 brd 10.38.167.255 scope global dynamic noprefixroute eno1
+       valid_lft 3551sec preferred_lft 3551sec
+    inet6 fe80::1ac0:4dff:fe8d:96f3/64 scope link 
+       valid_lft forever preferred_lft forever
+3: eno2: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
+    link/ether 18:c0:4d:8d:96:f4 brd ff:ff:ff:ff:ff:ff
+
+
+CMD: ip route
+default via 10.38.167.1 dev eno1 proto dhcp metric 100 
+10.38.167.0/24 dev eno1 proto kernel scope link src 10.38.167.127 metric 100 
+
+
+CMD: ip rule
+0:	from all lookup local 
+32766:	from all lookup main 
+32767:	from all lookup default 
+
+
+CMD: uname -a
+Linux localhost.localdomain 4.18.0-80.11.2.el8.20200711+amp.aarch64 #1 SMP Sat Jul 11 04:10:46 PDT 2020 aarch64 aarch64 aarch64 GNU/Linux
+
+
+CMD: cat /etc/centos-release
+CentOS Linux release 8.0.1905 (Core) 
+

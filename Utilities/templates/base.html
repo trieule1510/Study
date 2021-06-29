@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}</title>
+   	<link rel="icon" href="/static/icon.png" type="image/x-icon" >
+   	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+ 	<script src="{{ url_for('static', filename='js/js.js') }}"></script>
+ 	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<style>
+	body {
+	  font-family: consolas;
+	}
+</style>
+</head>
+<body>
+	<button onclick="window.location.href='/';" id="go_home" class='go_button go_home' title="Go Home"><span>&#9764;</span></button>
+	<button onclick="go_hide()" id="go_hide" class='go_button go_hide' title="Go Hide"><span>&#8616;</span></button>
+	<button onclick="go_top()" id="go_top" class='go_button go_top' title="Go Top"><span>&#8593;</span></button>
+	<button onclick="go_end()" id="go_end" class='go_button go_end' title="Go Bottom"><span>&#8595;</span></button>
+	<div class="XXX-container">
+		<div class="w3-bar w3-red">
+		  <a href="/" class="w3-bar-item w3-button">/devices</a>
+		  <a href="/page_request" class="w3-bar-item w3-button">/request</a>
+		  <a href="/page_shared" class="w3-bar-item w3-button">/shared</a>
+		  <a href="/page_history" class="w3-bar-item w3-button">/history</a>
+		  <a href="/page_denied" class="w3-bar-item w3-button">/denied</a>
+		  <a href="/platforms" class="w3-bar-item w3-button">/platforms</a>
+		  <a href="/platforms_map" class="w3-bar-item w3-button">/platforms_map</a>		  
+		  <a href="/device_chart/Part_number/Vendor/Chip/Interface/Type/Capacity/Fail/speed" class="w3-bar-item w3-button">/device_chart</a>
+		  <a href="/share_chart/email/Part_number/number/client_info" class="w3-bar-item w3-button">/share_chart</a>
+		  <a href="/platforms_chart/email/System_Type/Team/Location/Board_Rev/Cielo/Board_Status/Task/hostip" class="w3-bar-item w3-button">/platforms_chart</a>
+		  <a href="/nvparm" class="w3-bar-item w3-button">/nvparm</a>
+		  <a href="/cfg_edit" class="w3-bar-item w3-button">/cfg_edit</a>
+		  <a href="/test_panel" class="w3-bar-item w3-button">/test_panel</a>
+		  <a href="/register" class="w3-bar-item w3-button">/register</a>
+		</div>
+		<div class="w3-indigo"> <br> </div>
+		<div class="XXX-container ">
+			<form class="w3-container w3-card-4 w3_search " action="{{action}}">  
+				<div class="w3-row">
+					<p class="w3-col m1 "></p>
+					<p class="w3-col m1 ">Filter</p>
+				  	<input class="w3-input w3-border w3-col m8" name="search" list="search" type="text" value="{{search}}"> 
+  					<datalist id="search">
+					{% for e in search_list %}
+				  		<option value="{{e}}">
+			    	{% endfor %}
+			    	</datalist>
+				  	<p class="w3-col m2 w3-indigo "></p>     
+				</div>
+			</form>
+		</div>
+		<div class="w3-container">
+			<div class="w3-panel w3-dark-grey msg {{msg_color}}" style="white-space: pre-line">{{msg|safe}}</div>
+		</div>
+		<div id="wait" style="display:none;width:69px;height:89px;border:1px solid black;position:absolute;top:50%;left:50%;padding:2px;"><img src='/static/icon.png' width="64" height="64" /><br>Loading..</div>
+		<input type="hidden" id="tab_session" name="tab_session" value="{{tab_session}}"></input>
+	</div>
+	<div class="XXX-container">
+		{% block body %} {% endblock %}
+	</div>
+</body>
+</html>
